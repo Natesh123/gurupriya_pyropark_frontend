@@ -98,7 +98,7 @@ export default function Home() {
       {/* NAVIGATION */}
       <Navbar priceListUrl={priceListUrl} />
 
-      <main className="flex-grow">
+      <main className="flex-grow pt-[100px] sm:pt-[110px] lg:pt-[125px] xl:pt-[135px]">
         {/* HERO SECTION */}
         <Banner priceListUrl={priceListUrl} />
         
@@ -110,15 +110,15 @@ export default function Home() {
             <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-festive-gold rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
             
             <div className="container mx-auto px-1 flex flex-row items-center justify-center gap-1 sm:gap-4 relative z-10 text-center flex-wrap">
-              <span className="text-lg sm:text-3xl animate-bounce shadow-festive-gold drop-shadow-lg">🎉</span>
-              <h3 className="text-white font-black text-[12px] sm:text-xl md:text-2xl tracking-wide uppercase drop-shadow-sm">
+              <span className="text-lg sm:text-xl animate-bounce shadow-festive-gold drop-shadow-lg">🎉</span>
+              <h3 className="text-white font-semibold text-[12px] sm:text-xl md:text-xl tracking-wide uppercase drop-shadow-sm">
                 <span className="hidden sm:inline">Minimum Order Value:</span>
                 <span className="sm:hidden">Minimum Order:</span>
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-festive-gold to-yellow-500 font-extrabold ml-1 text-[14px] sm:text-xl md:text-2xl">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-festive-gold to-yellow-500 font-semibold ml-1 text-[14px] sm:text-xl md:text-xl">
                   ₹{Number(minOrderValue).toLocaleString('en-IN')}
                 </span>
               </h3>
-              <span className="text-lg sm:text-3xl animate-bounce shadow-festive-gold drop-shadow-lg" style={{animationDelay: '0.2s'}}>🎉</span>
+              <span className="text-lg sm:text-xl animate-bounce shadow-festive-gold drop-shadow-lg" style={{animationDelay: '0.2s'}}>🎉</span>
             </div>
           </div>
         )}
@@ -138,7 +138,7 @@ export default function Home() {
 
             <div className="container mx-auto px-4 relative z-10">
                 <div className="text-center mb-10 md:mb-14">
-                    <h2 className="text-2xl md:text-3xl font-black text-slate-800 tracking-tight mb-3">Why Choose Us?</h2>
+                    <h2 className="text-xl md:text-xl font-semibold text-slate-800 tracking-tight mb-3">Why Choose Us?</h2>
                     <div className="w-24 h-1 bg-gradient-to-r from-emerald-400 to-emerald-600 mx-auto rounded-full"></div>
                 </div>
 
@@ -172,7 +172,7 @@ export default function Home() {
                                   {item.icon}
                               </div>
                           </div>
-                          <span className="text-slate-800 font-black text-sm sm:text-base tracking-wide text-center leading-tight mb-2">{item.label}</span>
+                          <span className="text-slate-800 font-semibold text-sm sm:text-base tracking-wide text-center leading-tight mb-2">{item.label}</span>
                           <span className="text-slate-500 font-medium text-xs sm:text-sm text-center">{item.desc}</span>
                       </div>
                     ))}
@@ -181,7 +181,7 @@ export default function Home() {
         </section>
 
         {/* BRAND INTRODUCTION SECTION (CINEMATIC GLASSMORPHISM) */}
-        <section id="about-us" className="relative py-24 md:py-36 overflow-hidden scroll-mt-24 min-h-[800px] flex items-center justify-center">
+        <section id="about-us" className="relative pt-24 pb-8 md:pt-36 md:pb-12 overflow-hidden scroll-mt-24 min-h-[800px] flex items-center justify-center">
             {/* Full-width Cinematic Background */}
             <div className="absolute inset-0 z-0">
                 <img 
@@ -231,11 +231,11 @@ export default function Home() {
                             </div>
                             
                             {/* Sparkle effects */}
-                            <div className="absolute -top-4 right-2 text-2xl animate-bounce">✨</div>
+                            <div className="absolute -top-4 right-2 text-xl animate-bounce">✨</div>
                             <div className="absolute -bottom-2 left-2 text-xl animate-[bounce_2s_infinite]">✨</div>
                         </div>
 
-                        <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-white mb-6 leading-[1.2] uppercase tracking-tighter drop-shadow-2xl">
+                        <h2 className="text-xl md:text-xl lg:text-xl xl:text-xl font-semibold text-white mb-6 leading-[1.2] uppercase tracking-tighter drop-shadow-2xl">
                             Bringing The <br className="hidden lg:block"/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-orange-500 drop-shadow-[0_0_15px_rgba(245,158,11,0.5)]">Spark</span> <br className="hidden lg:block"/>
                             To Your Celebrations
                         </h2>
@@ -258,23 +258,23 @@ export default function Home() {
                     <div className="w-full lg:w-1/2 flex flex-col justify-center gap-5 md:gap-6 relative z-10">
                         {/* Metric 1 */}
                         <div className="bg-white/5 hover:bg-white/10 backdrop-blur-md border border-white/10 rounded-[2rem] p-5 md:p-6 flex items-center gap-6 transition-all duration-300 hover:-translate-x-2 shadow-[0_10px_30px_rgba(0,0,0,0.1)] group/metric">
-                            <div className="w-14 h-14 md:w-16 md:h-16 shrink-0 rounded-2xl bg-white/10 flex items-center justify-center text-2xl md:text-3xl border border-white/20 group-hover/metric:scale-110 group-hover/metric:rotate-3 transition-all duration-300">
+                            <div className="w-14 h-14 md:w-16 md:h-16 shrink-0 rounded-2xl bg-white/10 flex items-center justify-center text-xl md:text-xl border border-white/20 group-hover/metric:scale-110 group-hover/metric:rotate-3 transition-all duration-300">
                                 🏭
                             </div>
                             <div className="text-left">
-                                <h4 className="text-white font-black text-base md:text-lg uppercase tracking-wider mb-1">Sivakasi Direct</h4>
-                                <p className="text-slate-400 text-[10px] md:text-xs uppercase tracking-widest">Authentic Quality</p>
+                                <h4 className="text-white font-semibold text-base md:text-lg uppercase tracking-wider mb-1">Sivakasi Direct</h4>
+                                <p className="text-slate-400 text-[10px] md:text-xs uppercase tracking-wider">Authentic Quality</p>
                             </div>
                         </div>
 
                         {/* Metric 2 */}
                         <div className="bg-white/5 hover:bg-emerald-900/40 backdrop-blur-md border border-white/10 hover:border-emerald-500/30 rounded-[2rem] p-5 md:p-6 flex items-center gap-6 transition-all duration-300 hover:-translate-x-2 shadow-[0_10px_30px_rgba(0,0,0,0.1)] group/metric">
-                            <div className="w-14 h-14 md:w-16 md:h-16 shrink-0 rounded-2xl bg-emerald-500/10 flex items-center justify-center text-2xl md:text-3xl border border-emerald-500/30 group-hover/metric:scale-110 group-hover/metric:-rotate-3 transition-all duration-300 shadow-[0_0_20px_rgba(16,185,129,0.2)]">
+                            <div className="w-14 h-14 md:w-16 md:h-16 shrink-0 rounded-2xl bg-emerald-500/10 flex items-center justify-center text-xl md:text-xl border border-emerald-500/30 group-hover/metric:scale-110 group-hover/metric:-rotate-3 transition-all duration-300 shadow-[0_0_20px_rgba(16,185,129,0.2)]">
                                 ✅
                             </div>
                             <div className="text-left">
-                                <h4 className="text-emerald-50 font-black text-base md:text-lg uppercase tracking-wider mb-1">100% Safe</h4>
-                                <p className="text-emerald-400/80 text-[10px] md:text-xs uppercase tracking-widest">Tested & Certified</p>
+                                <h4 className="text-emerald-50 font-semibold text-base md:text-lg uppercase tracking-wider mb-1">100% Safe</h4>
+                                <p className="text-emerald-400/80 text-[10px] md:text-xs uppercase tracking-wider">Tested & Certified</p>
                             </div>
                         </div>
 
@@ -282,12 +282,12 @@ export default function Home() {
                         <div className="bg-gradient-to-r from-amber-500/10 to-orange-500/10 hover:from-amber-500/20 hover:to-orange-500/20 backdrop-blur-md border border-amber-500/30 rounded-[2rem] p-5 md:p-6 flex items-center gap-6 transition-all duration-300 hover:-translate-x-2 shadow-[0_15px_40px_rgba(245,158,11,0.15)] group/metric relative overflow-hidden">
                             <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent group-hover/metric:animate-[shimmer_1.5s_infinite] skew-x-12"></div>
                             
-                            <div className="w-14 h-14 md:w-16 md:h-16 shrink-0 rounded-2xl bg-amber-500/20 flex items-center justify-center text-2xl md:text-3xl border border-amber-500/40 group-hover/metric:scale-110 group-hover/metric:rotate-12 transition-all duration-300 shadow-[0_0_20px_rgba(245,158,11,0.3)] relative z-10">
+                            <div className="w-14 h-14 md:w-16 md:h-16 shrink-0 rounded-2xl bg-amber-500/20 flex items-center justify-center text-xl md:text-xl border border-amber-500/40 group-hover/metric:scale-110 group-hover/metric:rotate-12 transition-all duration-300 shadow-[0_0_20px_rgba(245,158,11,0.3)] relative z-10">
                                 💰
                             </div>
                             <div className="text-left relative z-10">
-                                <h4 className="text-white font-black text-base md:text-lg uppercase tracking-wider mb-1">Wholesale Price</h4>
-                                <p className="text-amber-300 text-[10px] md:text-xs uppercase tracking-widest">Best Market Price</p>
+                                <h4 className="text-white font-semibold text-base md:text-lg uppercase tracking-wider mb-1">Wholesale Price</h4>
+                                <p className="text-amber-300 text-[10px] md:text-xs uppercase tracking-wider">Best Market Price</p>
                             </div>
                         </div>
                     </div>

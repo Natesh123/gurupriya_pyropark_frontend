@@ -55,13 +55,13 @@ export default function ContactSection() {
     };
 
     return (
-        <section id="contact" className="w-full py-20 md:py-32 bg-slate-50 scroll-mt-24">
+        <section id="contact" className="w-full pt-8 pb-20 md:pt-12 md:pb-32 bg-slate-50 scroll-mt-24">
             
             <div className="container mx-auto px-4 xl:px-0 max-w-6xl">
                 
                 {/* Header Title (Above the split screen) */}
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight mb-4">
+                    <h2 className="text-xl md:text-xl font-semibold text-slate-900 tracking-tight mb-4">
                         Get in <span className="text-emerald-600">Touch</span>
                     </h2>
                     <p className="text-slate-500 font-medium text-sm md:text-base max-w-2xl mx-auto">
@@ -83,19 +83,19 @@ export default function ContactSection() {
                             
                             {/* Top: Header & Profile */}
                             <div className="mb-12">
-                                <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight mb-8">Contact Information</h3>
+                                <h3 className="text-xl md:text-xl font-bold text-white tracking-tight mb-8">Contact Information</h3>
                                 
                                 <div className="flex items-center gap-4 bg-emerald-800/50 p-4 rounded-2xl border border-emerald-700/50 backdrop-blur-sm">
-                                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-white font-black text-xl shadow-inner shrink-0">
+                                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-white font-semibold text-xl shadow-inner shrink-0">
                                         G
                                     </div>
                                     <div>
-                                        <span className="text-[10px] font-bold text-emerald-300 uppercase tracking-widest block mb-0.5">Proprietor</span>
-                                        <p className="text-lg font-black text-white leading-none">G.Mookaiya</p>
+                                        <span className="text-[10px] font-bold text-emerald-300 uppercase tracking-wider block mb-0.5">Proprietor</span>
+                                        <p className="text-lg font-semibold text-white leading-none">G.Mookaiya</p>
                                     </div>
                                     <div className="ml-auto hidden sm:flex items-center gap-1.5 bg-emerald-900/50 px-3 py-1.5 rounded-full border border-emerald-700/50">
                                         <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                                        <span className="text-[9px] font-bold text-emerald-200 uppercase tracking-widest">Online</span>
+                                        <span className="text-[9px] font-bold text-emerald-200 uppercase tracking-wider">Online</span>
                                     </div>
                                 </div>
                             </div>
@@ -109,8 +109,8 @@ export default function ContactSection() {
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clipRule="evenodd" /></svg>
                                     </div>
                                     <div>
-                                        <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest block mb-1">Direct Line</span>
-                                        <a href="tel:+916382650924" className="text-xl md:text-2xl font-black text-white hover:text-amber-400 transition-colors tracking-tight">
+                                        <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block mb-1">Direct Line</span>
+                                        <a href="tel:+916382650924" className="text-xl md:text-xl font-semibold text-white hover:text-amber-400 transition-colors tracking-tight">
                                             +91 63826 50924
                                         </a>
                                     </div>
@@ -122,7 +122,7 @@ export default function ContactSection() {
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5"><path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" /><path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" /></svg>
                                     </div>
                                     <div>
-                                        <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest block mb-1">Email Address</span>
+                                        <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block mb-1">Email Address</span>
                                         <a href="mailto:moorthyguru1995@gmail.com" className="text-sm md:text-base font-medium text-emerald-50 hover:text-white transition-colors">
                                             moorthyguru1995@gmail.com
                                         </a>
@@ -135,7 +135,7 @@ export default function ContactSection() {
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd" /></svg>
                                     </div>
                                     <div>
-                                        <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest block mb-1.5">Official Showroom</span>
+                                        <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block mb-1.5">Official Showroom</span>
                                         <p className="text-base font-medium text-emerald-50 leading-relaxed">
                                         BHARATHINAGAR, 2nd St,<br/>
                                         Viswanatham<br/>

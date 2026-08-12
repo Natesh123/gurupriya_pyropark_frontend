@@ -44,7 +44,7 @@ function Navbar({ priceListUrl = "" }) {
         className: "fixed top-0 left-0 w-full max-w-[100vw] z-50 flex flex-col",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: `w-full bg-gradient-to-r from-red-600 via-red-500 to-red-600 text-white text-[10px] sm:text-xs font-bold tracking-widest uppercase relative overflow-hidden transition-all duration-500 shadow-md border-b border-red-700/50 ${scrolled ? 'h-0 py-0 opacity-0' : 'py-2.5 opacity-100'}`,
+                className: `w-full bg-gradient-to-r from-red-600 via-red-500 to-red-600 text-white text-[10px] sm:text-xs font-bold tracking-wider uppercase relative overflow-hidden transition-all duration-500 shadow-md border-b border-red-700/50 ${scrolled ? 'h-0 py-0 opacity-0' : 'py-2.5 opacity-100'}`,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "animate-marquee whitespace-nowrap flex items-center",
                     children: [
@@ -56,7 +56,7 @@ function Navbar({ priceListUrl = "" }) {
                             columnNumber: 21
                         }, this),
                         daysLeft > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "text-yellow-300 drop-shadow-[0_0_8px_rgba(253,224,71,0.6)] font-black mx-2 tracking-[0.2em]",
+                            className: "text-yellow-300 drop-shadow-[0_0_8px_rgba(253,224,71,0.6)] font-semibold mx-2 tracking-wider",
                             children: [
                                 "★ ONLY ",
                                 daysLeft,
@@ -67,15 +67,15 @@ function Navbar({ priceListUrl = "" }) {
                             lineNumber: 37,
                             columnNumber: 37
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "text-yellow-300 font-black mx-2",
+                            className: "text-yellow-300 font-semibold mx-2",
                             children: "HAPPY DIWALI!"
                         }, void 0, false, {
                             fileName: "[project]/app/components/Navbar.tsx",
                             lineNumber: 37,
-                            columnNumber: 198
+                            columnNumber: 199
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "font-black text-yellow-300 mr-8",
+                            className: "font-semibold text-yellow-300 mr-8",
                             children: "+91 63826 50924"
                         }, void 0, false, {
                             fileName: "[project]/app/components/Navbar.tsx",
@@ -90,7 +90,7 @@ function Navbar({ priceListUrl = "" }) {
                             columnNumber: 21
                         }, this),
                         daysLeft > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "text-yellow-300 drop-shadow-[0_0_8px_rgba(253,224,71,0.6)] font-black mx-2 tracking-[0.2em]",
+                            className: "text-yellow-300 drop-shadow-[0_0_8px_rgba(253,224,71,0.6)] font-semibold mx-2 tracking-wider",
                             children: [
                                 "★ ONLY ",
                                 daysLeft,
@@ -101,15 +101,15 @@ function Navbar({ priceListUrl = "" }) {
                             lineNumber: 41,
                             columnNumber: 37
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "text-yellow-300 font-black mx-2",
+                            className: "text-yellow-300 font-semibold mx-2",
                             children: "HAPPY DIWALI!"
                         }, void 0, false, {
                             fileName: "[project]/app/components/Navbar.tsx",
                             lineNumber: 41,
-                            columnNumber: 198
+                            columnNumber: 199
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "font-black text-yellow-300 mr-8",
+                            className: "font-semibold text-yellow-300 mr-8",
                             children: "+91 63826 50924"
                         }, void 0, false, {
                             fileName: "[project]/app/components/Navbar.tsx",
@@ -124,7 +124,7 @@ function Navbar({ priceListUrl = "" }) {
                             columnNumber: 21
                         }, this),
                         daysLeft > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "text-yellow-300 drop-shadow-[0_0_8px_rgba(253,224,71,0.6)] font-black mx-2 tracking-[0.2em]",
+                            className: "text-yellow-300 drop-shadow-[0_0_8px_rgba(253,224,71,0.6)] font-semibold mx-2 tracking-wider",
                             children: [
                                 "★ ONLY ",
                                 daysLeft,
@@ -135,15 +135,15 @@ function Navbar({ priceListUrl = "" }) {
                             lineNumber: 45,
                             columnNumber: 37
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "text-yellow-300 font-black mx-2",
+                            className: "text-yellow-300 font-semibold mx-2",
                             children: "HAPPY DIWALI!"
                         }, void 0, false, {
                             fileName: "[project]/app/components/Navbar.tsx",
                             lineNumber: 45,
-                            columnNumber: 198
+                            columnNumber: 199
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "font-black text-yellow-300",
+                            className: "font-semibold text-yellow-300",
                             children: "+91 63826 50924"
                         }, void 0, false, {
                             fileName: "[project]/app/components/Navbar.tsx",
@@ -205,7 +205,7 @@ function Navbar({ priceListUrl = "" }) {
                                         className: "flex flex-col -gap-1 xl:gap-0 mt-0.5 xl:mt-1",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                                className: "font-black text-[13px] sm:text-[15px] lg:text-[17px] xl:text-[22px] tracking-tighter xl:tracking-tight leading-none xl:leading-tight text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]",
+                                                className: "font-semibold text-[13px] sm:text-[15px] lg:text-[17px] xl:text-[22px] tracking-tighter xl:tracking-tight leading-none xl:leading-tight text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]",
                                                 children: [
                                                     "GURUPRIYA ",
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -223,7 +223,7 @@ function Navbar({ priceListUrl = "" }) {
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "hidden sm:block text-[8px] lg:text-[9px] xl:text-[11px] font-bold text-amber-200/90 tracking-[0.2em] uppercase mt-1 drop-shadow-sm",
+                                                className: "hidden sm:block text-[8px] lg:text-[9px] xl:text-[11px] font-bold text-amber-200/90 tracking-wider uppercase mt-1 drop-shadow-sm",
                                                 children: "Premium Sivakasi Fireworks"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/Navbar.tsx",
@@ -272,7 +272,7 @@ function Navbar({ priceListUrl = "" }) {
                                                 href: item.name === "Pricelist" && priceListUrl ? priceListUrl : item.link,
                                                 target: item.name === "Pricelist" && priceListUrl ? "_blank" : undefined,
                                                 rel: item.name === "Pricelist" && priceListUrl ? "noreferrer" : undefined,
-                                                className: "whitespace-nowrap text-[11px] xl:text-[13px] 2xl:text-[15px] font-black uppercase tracking-[0.05em] lg:tracking-[0.1em] transition-all duration-300 text-white hover:text-festive-gold drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] hover:drop-shadow-[0_0_12px_rgba(255,215,0,0.6)]",
+                                                className: "whitespace-nowrap text-[11px] xl:text-[13px] 2xl:text-[15px] font-semibold uppercase tracking-[0.05em] lg:tracking-wide transition-all duration-300 text-white hover:text-festive-gold drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] hover:drop-shadow-[0_0_12px_rgba(255,215,0,0.6)]",
                                                 children: item.name
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/Navbar.tsx",
@@ -333,7 +333,7 @@ function Navbar({ priceListUrl = "" }) {
                                                 columnNumber: 29
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "font-black text-[10px] xl:text-xs uppercase tracking-[0.15em] text-white drop-shadow-sm",
+                                                className: "font-semibold text-[10px] xl:text-xs uppercase tracking-wider text-white drop-shadow-sm",
                                                 children: "Cart"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/Navbar.tsx",
@@ -341,7 +341,7 @@ function Navbar({ priceListUrl = "" }) {
                                                 columnNumber: 29
                                             }, this),
                                             cartCount > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "absolute -top-1.5 -right-1.5 bg-yellow-400 text-slate-900 text-[9px] xl:text-[10px] font-black w-5 h-5 rounded-full flex items-center justify-center shadow-md border-2 border-orange-500 animate-bounce",
+                                                className: "absolute -top-1.5 -right-1.5 bg-yellow-400 text-slate-900 text-[9px] xl:text-[10px] font-semibold w-5 h-5 rounded-full flex items-center justify-center shadow-md border-2 border-orange-500 animate-bounce",
                                                 children: cartCount
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/Navbar.tsx",
@@ -387,7 +387,7 @@ function Navbar({ priceListUrl = "" }) {
                                                 className: "flex flex-col",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "whitespace-nowrap text-[9px] font-bold uppercase text-yellow-400 tracking-widest mb-0.5 drop-shadow-sm",
+                                                        className: "whitespace-nowrap text-[9px] font-bold uppercase text-yellow-400 tracking-wider mb-0.5 drop-shadow-sm",
                                                         children: "Enquiry & Bulk"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/Navbar.tsx",
@@ -395,7 +395,7 @@ function Navbar({ priceListUrl = "" }) {
                                                         columnNumber: 33
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "whitespace-nowrap text-[11px] font-black leading-tight text-white tracking-wider drop-shadow-md",
+                                                        className: "whitespace-nowrap text-[11px] font-semibold leading-tight text-white tracking-wider drop-shadow-md",
                                                         children: "+91 63826 50924"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/Navbar.tsx",
@@ -418,7 +418,7 @@ function Navbar({ priceListUrl = "" }) {
                                         href: priceListUrl || "#",
                                         target: priceListUrl ? "_blank" : undefined,
                                         rel: priceListUrl ? "noreferrer" : undefined,
-                                        className: "whitespace-nowrap relative group px-4 py-2 xl:px-5 xl:py-2.5 rounded-full font-black text-[10px] xl:text-xs uppercase tracking-widest text-emerald-700 bg-white hover:bg-slate-50 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-1.5 hover:-translate-y-0.5",
+                                        className: "whitespace-nowrap relative group px-4 py-2 xl:px-5 xl:py-2.5 rounded-full font-semibold text-[10px] xl:text-xs uppercase tracking-wider text-emerald-700 bg-white hover:bg-slate-50 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-1.5 hover:-translate-y-0.5",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "relative z-10 flex items-center gap-1.5",
                                             children: [
@@ -495,7 +495,7 @@ function Navbar({ priceListUrl = "" }) {
                                                 columnNumber: 29
                                             }, this),
                                             cartCount > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "absolute -top-1 -right-1 bg-yellow-400 border-2 border-orange-500 text-slate-900 text-[9px] font-black w-5 h-5 rounded-full flex items-center justify-center shadow-md animate-bounce",
+                                                className: "absolute -top-1 -right-1 bg-yellow-400 border-2 border-orange-500 text-slate-900 text-[9px] font-semibold w-5 h-5 rounded-full flex items-center justify-center shadow-md animate-bounce",
                                                 children: cartCount
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/Navbar.tsx",
@@ -591,7 +591,7 @@ function Navbar({ priceListUrl = "" }) {
                                     target: item.name === "Pricelist" && priceListUrl ? "_blank" : undefined,
                                     rel: item.name === "Pricelist" && priceListUrl ? "noreferrer" : undefined,
                                     onClick: ()=>setIsOpen(false),
-                                    className: "text-2xl sm:text-3xl font-black text-white/80 uppercase tracking-widest hover:text-festive-gold hover:scale-110 transition-all duration-300",
+                                    className: "text-xl sm:text-xl font-semibold text-white/80 uppercase tracking-wider hover:text-festive-gold hover:scale-110 transition-all duration-300",
                                     children: item.name
                                 }, item.name, false, {
                                     fileName: "[project]/app/components/Navbar.tsx",
@@ -605,7 +605,7 @@ function Navbar({ priceListUrl = "" }) {
                                         className: "flex flex-col items-center gap-1 bg-emerald-900/50 border border-emerald-500/30 p-5 rounded-3xl w-full",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-emerald-300 font-bold uppercase tracking-widest text-xs mb-2",
+                                                className: "text-emerald-300 font-bold uppercase tracking-wider text-xs mb-2",
                                                 children: "Direct Support"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/Navbar.tsx",
@@ -613,7 +613,7 @@ function Navbar({ priceListUrl = "" }) {
                                                 columnNumber: 30
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-white font-black text-xl tracking-wide",
+                                                className: "text-white font-semibold text-xl tracking-wide",
                                                 children: "+91 63826 50924"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/Navbar.tsx",
@@ -631,7 +631,7 @@ function Navbar({ priceListUrl = "" }) {
                                         target: priceListUrl ? "_blank" : undefined,
                                         rel: priceListUrl ? "noreferrer" : undefined,
                                         onClick: ()=>setIsOpen(false),
-                                        className: "w-full py-4 rounded-full font-black text-sm uppercase tracking-widest bg-gradient-to-r from-festive-gold to-yellow-400 text-festive-green flex items-center justify-center gap-3 shadow-[0_0_20px_rgba(255,215,0,0.3)] hover:scale-105 transition-transform duration-300",
+                                        className: "w-full py-4 rounded-full font-semibold text-sm uppercase tracking-wider bg-gradient-to-r from-festive-gold to-yellow-400 text-festive-green flex items-center justify-center gap-3 shadow-[0_0_20px_rgba(255,215,0,0.3)] hover:scale-105 transition-transform duration-300",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                                 xmlns: "http://www.w3.org/2000/svg",
@@ -755,8 +755,8 @@ function Banner({ priceListUrl = "" }) {
             fetchBanners();
         }
     }["Banner.useEffect"], []);
-    const imagesToUse = defaultBannerImages;
-    const isDynamic = false;
+    const imagesToUse = dynamicBanners.length > 0 ? dynamicBanners : defaultBannerImages;
+    const isDynamic = dynamicBanners.length > 0;
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Banner.useEffect": ()=>{
             const slideInterval = setInterval({
@@ -774,195 +774,252 @@ function Banner({ priceListUrl = "" }) {
         imagesToUse.length
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "relative w-full h-[40vh] sm:h-[45vh] md:h-[50vh] lg:h-[55vh] overflow-hidden bg-black shadow-2xl",
+        className: "flex flex-col w-full",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute inset-0 w-full h-full",
-                children: imagesToUse.map((src, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: `absolute inset-0 transition-opacity duration-1500 ease-in-out ${currentSlide === index ? 'opacity-100 z-10' : 'opacity-0 z-0'}`,
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                src: src,
-                                alt: "Festive Banner",
-                                className: `relative z-10 w-full h-full object-cover object-center transition-transform duration-[12000ms] ease-out ${currentSlide === index ? 'scale-[1.05]' : 'scale-100'}`
-                            }, void 0, false, {
-                                fileName: "[project]/app/components/Banner.tsx",
-                                lineNumber: 72,
-                                columnNumber: 25
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: `absolute inset-0 z-10 ${("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" : 'bg-black/40'}`
-                            }, void 0, false, {
-                                fileName: "[project]/app/components/Banner.tsx",
-                                lineNumber: 77,
-                                columnNumber: 25
-                            }, this)
-                        ]
-                    }, index, true, {
-                        fileName: "[project]/app/components/Banner.tsx",
-                        lineNumber: 66,
-                        columnNumber: 21
-                    }, this))
-            }, void 0, false, {
-                fileName: "[project]/app/components/Banner.tsx",
-                lineNumber: 64,
-                columnNumber: 13
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: `absolute inset-0 z-20 flex ${("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" : 'items-center'}`,
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: `container mx-auto px-4 lg:px-12 flex flex-col ${("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" : 'justify-center items-center md:items-end text-center md:text-right h-full w-full'}`,
-                    children: [
-                        !isDynamic && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "animate-slideDown max-w-3xl flex flex-col items-center md:items-end text-center md:text-right w-full mt-24 md:mt-32",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-red-600 to-red-800 text-white mb-3 animate-sparkle shadow-[0_0_15px_rgba(220,38,38,0.6)] border border-red-500/50",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-[10px] sm:text-xs md:text-sm font-black tracking-widest uppercase text-shadow-sm",
-                                        children: "அருங்குளம் ஸ்ரீ வீரம்மமாள் எல்லம்மாள் துணை"
+                className: `relative w-full overflow-hidden bg-black shadow-2xl ${!isDynamic ? 'h-[40vh] sm:h-[45vh] md:h-[50vh] lg:h-[55vh]' : ''}`,
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: `w-full ${!isDynamic ? 'h-full absolute inset-0' : ''}`,
+                        children: imagesToUse.map((src, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: isDynamic ? `${currentSlide === index ? 'block' : 'hidden'} w-full relative` : `absolute inset-0 transition-opacity duration-1500 ease-in-out ${currentSlide === index ? 'opacity-100 z-10' : 'opacity-0 z-0'}`,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                        src: src,
+                                        alt: "Festive Banner",
+                                        className: isDynamic ? "w-full h-auto object-contain block" : `relative z-10 w-full h-full object-cover object-center transition-transform duration-[12000ms] ease-out ${currentSlide === index ? 'scale-[1.05]' : 'scale-100'}`
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/Banner.tsx",
-                                        lineNumber: 90,
-                                        columnNumber: 33
+                                        lineNumber: 76,
+                                        columnNumber: 29
+                                    }, this),
+                                    !isDynamic && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "absolute inset-0 z-10 bg-black/40"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/components/Banner.tsx",
+                                        lineNumber: 85,
+                                        columnNumber: 44
                                     }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/app/components/Banner.tsx",
-                                    lineNumber: 89,
-                                    columnNumber: 30
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "text-gray-200 text-base md:text-lg font-bold mb-1 tracking-widest uppercase drop-shadow-sm",
-                                    children: "Welcome To"
-                                }, void 0, false, {
-                                    fileName: "[project]/app/components/Banner.tsx",
-                                    lineNumber: 93,
-                                    columnNumber: 29
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                    className: "text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-2 md:mb-3 leading-[1.1] tracking-tighter drop-shadow-xl",
+                                ]
+                            }, index, true, {
+                                fileName: "[project]/app/components/Banner.tsx",
+                                lineNumber: 67,
+                                columnNumber: 25
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/app/components/Banner.tsx",
+                        lineNumber: 65,
+                        columnNumber: 17
+                    }, this),
+                    !isDynamic && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "absolute inset-0 z-20 flex items-center",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "container mx-auto px-4 lg:px-12 flex flex-col justify-center items-center md:items-end text-center md:text-right h-full w-full",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "animate-slideDown max-w-3xl flex flex-col items-center md:items-end text-center md:text-right w-full mt-24 md:mt-32",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "text-white",
-                                            children: "GURUPRIYA"
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-red-600 to-red-800 text-white mb-3 animate-sparkle shadow-[0_0_15px_rgba(220,38,38,0.6)] border border-red-500/50",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-[10px] sm:text-xs md:text-sm font-semibold tracking-wider uppercase text-shadow-sm",
+                                                children: "அருங்குளம் ஸ்ரீ வீரம்மமாள் எல்லம்மாள் துணை"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/components/Banner.tsx",
+                                                lineNumber: 97,
+                                                columnNumber: 37
+                                            }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Banner.tsx",
-                                            lineNumber: 97,
+                                            lineNumber: 96,
+                                            columnNumber: 34
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                            className: "text-gray-200 text-base md:text-lg font-bold mb-1 tracking-wider uppercase drop-shadow-sm",
+                                            children: "Welcome To"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/components/Banner.tsx",
+                                            lineNumber: 100,
                                             columnNumber: 33
                                         }, this),
-                                        " ",
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-festive-gold to-yellow-500",
-                                            children: "FIREWORKS"
-                                        }, void 0, false, {
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                            className: "text-xl sm:text-xl md:text-xl lg:text-xl font-semibold mb-2 md:mb-3 leading-[1.1] tracking-tighter drop-shadow-xl",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-white",
+                                                    children: "GURUPRIYA"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/components/Banner.tsx",
+                                                    lineNumber: 104,
+                                                    columnNumber: 37
+                                                }, this),
+                                                " ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-festive-gold to-yellow-500",
+                                                    children: "FIREWORKS"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/components/Banner.tsx",
+                                                    lineNumber: 104,
+                                                    columnNumber: 83
+                                                }, this),
+                                                " ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-white",
+                                                    children: "INDUSTRIES"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/components/Banner.tsx",
+                                                    lineNumber: 104,
+                                                    columnNumber: 212
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
                                             fileName: "[project]/app/components/Banner.tsx",
-                                            lineNumber: 97,
-                                            columnNumber: 79
+                                            lineNumber: 103,
+                                            columnNumber: 33
                                         }, this),
-                                        " ",
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "text-white",
-                                            children: "INDUSTRIES"
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                            className: "text-lg sm:text-xl md:text-xl font-semibold mb-4 md:mb-5 text-white drop-shadow-[0_4px_10px_rgba(0,0,0,0.8)] tracking-wide",
+                                            children: "SIVAKASI."
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Banner.tsx",
-                                            lineNumber: 97,
-                                            columnNumber: 208
+                                            lineNumber: 106,
+                                            columnNumber: 33
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "bg-red-600 text-white font-semibold text-xl md:text-xl px-5 py-2.5 rounded-xl transform md:-rotate-2 mb-4 shadow-xl border-2 border-yellow-400 inline-block animate-pulse",
+                                            children: "UP TO 81% DISCOUNT"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/components/Banner.tsx",
+                                            lineNumber: 110,
+                                            columnNumber: 33
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-gray-100 text-xs sm:text-sm md:text-base mb-6 max-w-xl font-semibold drop-shadow-[0_5px_15px_rgba(0,0,0,0.9)] bg-black/40 p-3 sm:p-4 rounded-2xl border border-white/20 backdrop-blur-sm",
+                                            children: [
+                                                "📍 Office: 3/1362/3, BharathiNagar 2,",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                    fileName: "[project]/app/components/Banner.tsx",
+                                                    lineNumber: 115,
+                                                    columnNumber: 74
+                                                }, this),
+                                                "Sattur Road, Sivakamipuram, SIVAKASI - 626189."
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/components/Banner.tsx",
+                                            lineNumber: 114,
+                                            columnNumber: 33
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/components/Banner.tsx",
-                                    lineNumber: 96,
-                                    columnNumber: 29
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "text-lg sm:text-xl md:text-2xl font-black mb-4 md:mb-5 text-white drop-shadow-[0_4px_10px_rgba(0,0,0,0.8)] tracking-wide",
-                                    children: "SIVAKASI."
-                                }, void 0, false, {
-                                    fileName: "[project]/app/components/Banner.tsx",
-                                    lineNumber: 99,
+                                    lineNumber: 94,
                                     columnNumber: 29
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "bg-red-600 text-white font-black text-xl md:text-3xl px-5 py-2.5 rounded-xl transform md:-rotate-2 mb-4 shadow-xl border-2 border-yellow-400 inline-block animate-pulse",
-                                    children: "UP TO 81% DISCOUNT"
-                                }, void 0, false, {
-                                    fileName: "[project]/app/components/Banner.tsx",
-                                    lineNumber: 103,
-                                    columnNumber: 29
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-gray-100 text-xs sm:text-sm md:text-base mb-6 max-w-xl font-semibold drop-shadow-[0_5px_15px_rgba(0,0,0,0.9)] bg-black/40 p-3 sm:p-4 rounded-2xl border border-white/20 backdrop-blur-sm",
+                                    className: "hidden md:flex flex-col sm:flex-row flex-wrap justify-center md:justify-end gap-3 sm:gap-4 w-full sm:w-auto",
                                     children: [
-                                        "📍 Office: 3/1362/3, BharathiNagar 2,",
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            onClick: ()=>{
+                                                if (priceListUrl) {
+                                                    window.open(priceListUrl, '_blank');
+                                                } else {
+                                                    const el = document.getElementById('pricelist');
+                                                    if (el) el.scrollIntoView({
+                                                        behavior: 'smooth'
+                                                    });
+                                                }
+                                            },
+                                            className: "w-full sm:w-auto px-8 py-3.5 rounded-full bg-festive-gold text-slate-900 font-semibold text-sm sm:text-base uppercase tracking-wider hover:scale-105 transition-all shadow-[0_0_25px_rgba(255,215,0,0.4)] cursor-pointer",
+                                            children: "View Price List"
+                                        }, void 0, false, {
                                             fileName: "[project]/app/components/Banner.tsx",
-                                            lineNumber: 108,
-                                            columnNumber: 70
+                                            lineNumber: 121,
+                                            columnNumber: 33
                                         }, this),
-                                        "Sattur Road, Sivakamipuram, SIVAKASI - 626189."
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            onClick: ()=>{
+                                                const el = document.getElementById('contact');
+                                                if (el) el.scrollIntoView({
+                                                    behavior: 'smooth'
+                                                });
+                                            },
+                                            className: "w-full sm:w-auto px-8 py-3.5 rounded-full border-2 border-white text-white hover:bg-white hover:text-slate-900 font-semibold text-sm sm:text-base uppercase tracking-wider transition-all cursor-pointer",
+                                            children: "Contact Us"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/components/Banner.tsx",
+                                            lineNumber: 134,
+                                            columnNumber: 33
+                                        }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/components/Banner.tsx",
-                                    lineNumber: 107,
+                                    lineNumber: 120,
                                     columnNumber: 29
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/components/Banner.tsx",
-                            lineNumber: 87,
+                            lineNumber: 93,
+                            columnNumber: 25
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/components/Banner.tsx",
+                        lineNumber: 92,
+                        columnNumber: 21
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/app/components/Banner.tsx",
+                lineNumber: 63,
+                columnNumber: 13
+            }, this),
+            isDynamic && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "w-full bg-[#0a192f] py-4 sm:py-6 relative z-10 border-b-4 border-festive-gold shadow-lg",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "container mx-auto px-4 flex flex-col sm:flex-row justify-center items-center gap-4",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            onClick: ()=>{
+                                if (priceListUrl) {
+                                    window.open(priceListUrl, '_blank');
+                                } else {
+                                    const el = document.getElementById('pricelist');
+                                    if (el) el.scrollIntoView({
+                                        behavior: 'smooth'
+                                    });
+                                }
+                            },
+                            className: "w-full sm:w-auto px-10 py-3.5 rounded-full bg-festive-gold text-slate-900 font-semibold text-sm sm:text-base uppercase tracking-wider hover:scale-105 hover:bg-yellow-400 transition-all shadow-[0_0_20px_rgba(255,215,0,0.3)] cursor-pointer",
+                            children: "View Price List"
+                        }, void 0, false, {
+                            fileName: "[project]/app/components/Banner.tsx",
+                            lineNumber: 153,
                             columnNumber: 25
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: `hidden md:flex flex-col sm:flex-row flex-wrap justify-center ${("TURBOPACK compile-time truthy", 1) ? 'md:justify-end' : "TURBOPACK unreachable"} gap-3 sm:gap-4 w-full sm:w-auto ${("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" : ''}`,
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    onClick: ()=>{
-                                        if (priceListUrl) {
-                                            window.open(priceListUrl, '_blank');
-                                        } else {
-                                            const el = document.getElementById('pricelist');
-                                            if (el) el.scrollIntoView({
-                                                behavior: 'smooth'
-                                            });
-                                        }
-                                    },
-                                    className: "w-full sm:w-auto px-8 py-3.5 rounded-full bg-festive-gold text-festive-green font-black text-sm sm:text-base uppercase tracking-wider hover:scale-105 transition-all shadow-[0_0_25px_rgba(255,215,0,0.4)] cursor-pointer",
-                                    children: "View Price List"
-                                }, void 0, false, {
-                                    fileName: "[project]/app/components/Banner.tsx",
-                                    lineNumber: 115,
-                                    columnNumber: 25
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    onClick: ()=>{
-                                        const el = document.getElementById('contact');
-                                        if (el) el.scrollIntoView({
-                                            behavior: 'smooth'
-                                        });
-                                    },
-                                    className: `w-full sm:w-auto px-8 py-3.5 rounded-full border-2 border-white text-white font-black text-sm sm:text-base uppercase tracking-wider transition-all cursor-pointer ${("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" : 'hover:bg-white hover:text-festive-green'}`,
-                                    children: "Contact Us"
-                                }, void 0, false, {
-                                    fileName: "[project]/app/components/Banner.tsx",
-                                    lineNumber: 128,
-                                    columnNumber: 25
-                                }, this)
-                            ]
-                        }, void 0, true, {
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            onClick: ()=>{
+                                const el = document.getElementById('contact');
+                                if (el) el.scrollIntoView({
+                                    behavior: 'smooth'
+                                });
+                            },
+                            className: "w-full sm:w-auto px-10 py-3.5 rounded-full border-2 border-festive-gold text-festive-gold hover:bg-festive-gold hover:text-slate-900 font-semibold text-sm sm:text-base uppercase tracking-wider transition-all cursor-pointer shadow-sm",
+                            children: "Contact Us"
+                        }, void 0, false, {
                             fileName: "[project]/app/components/Banner.tsx",
-                            lineNumber: 114,
-                            columnNumber: 21
+                            lineNumber: 166,
+                            columnNumber: 25
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/Banner.tsx",
-                    lineNumber: 84,
-                    columnNumber: 17
+                    lineNumber: 152,
+                    columnNumber: 21
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/components/Banner.tsx",
-                lineNumber: 83,
-                columnNumber: 13
+                lineNumber: 151,
+                columnNumber: 17
             }, this)
         ]
     }, void 0, true, {
@@ -1019,7 +1076,7 @@ const galleryImages = [
 ];
 function FireworkGallery() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "bg-gradient-to-b from-white via-slate-50 to-white py-24 relative overflow-hidden",
+        className: "bg-gradient-to-b from-white via-slate-50 to-white pt-8 pb-24 relative overflow-hidden",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute top-0 right-1/4 w-96 h-96 bg-emerald-100/30 rounded-full blur-3xl opacity-60"
@@ -1042,7 +1099,7 @@ function FireworkGallery() {
                         className: "text-center mb-16 relative",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-emerald-600 text-sm font-black tracking-[0.4em] uppercase mb-4 block drop-shadow-sm",
+                                className: "text-emerald-600 text-sm font-semibold tracking-[0.4em] uppercase mb-4 block drop-shadow-sm",
                                 children: "Visual Experience"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/FireworkGallery.tsx",
@@ -1050,7 +1107,7 @@ function FireworkGallery() {
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-4xl md:text-6xl font-black text-slate-900 mb-6 uppercase tracking-tighter",
+                                className: "text-xl md:text-xl font-semibold text-slate-900 mb-6 uppercase tracking-tighter",
                                 children: [
                                     "The ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1117,7 +1174,7 @@ function FireworkGallery() {
                                         className: "px-2 flex flex-col items-center text-center pb-2",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "inline-block px-3 py-1 rounded-full bg-emerald-50 text-emerald-600 border border-emerald-100 text-[10px] font-black uppercase tracking-widest mb-3",
+                                                className: "inline-block px-3 py-1 rounded-full bg-emerald-50 text-emerald-600 border border-emerald-100 text-[10px] font-semibold uppercase tracking-wider mb-3",
                                                 children: img.tag
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/FireworkGallery.tsx",
@@ -1125,7 +1182,7 @@ function FireworkGallery() {
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                className: "text-xl font-black text-slate-800 uppercase tracking-tight group-hover:text-emerald-600 transition-colors duration-300",
+                                                className: "text-xl font-semibold text-slate-800 uppercase tracking-tight group-hover:text-emerald-600 transition-colors duration-300",
                                                 children: img.title
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/FireworkGallery.tsx",
@@ -1154,7 +1211,7 @@ function FireworkGallery() {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "bg-white py-4 px-8 md:px-12 text-center rounded-full",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-slate-700 text-xs md:text-sm font-black uppercase tracking-[0.3em] md:tracking-[0.5em]",
+                                className: "text-slate-700 text-xs md:text-sm font-semibold uppercase tracking-[0.3em] md:tracking-[0.5em]",
                                 children: [
                                     "Captured live at ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1351,7 +1408,7 @@ function Footer() {
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                        className: "text-xl font-black tracking-tight text-white leading-none mb-1",
+                                                        className: "text-xl font-semibold tracking-tight text-white leading-none mb-1",
                                                         children: [
                                                             "GURUPRIYA ",
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
@@ -1374,7 +1431,7 @@ function Footer() {
                                                         columnNumber: 33
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-[10px] text-emerald-300 font-bold tracking-[0.2em] uppercase",
+                                                        className: "text-[10px] text-emerald-300 font-bold tracking-wider uppercase",
                                                         children: "Sivakasi"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/Footer.tsx",
@@ -1405,7 +1462,7 @@ function Footer() {
                                         className: "flex items-center gap-2",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "px-3 py-1 bg-emerald-900 border border-emerald-800 rounded-full text-[10px] font-bold text-amber-400 uppercase tracking-widest shadow-inner",
+                                                className: "px-3 py-1 bg-emerald-900 border border-emerald-800 rounded-full text-[10px] font-bold text-amber-400 uppercase tracking-wider shadow-inner",
                                                 children: "Factory Direct"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/Footer.tsx",
@@ -1413,7 +1470,7 @@ function Footer() {
                                                 columnNumber: 29
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "px-3 py-1 bg-emerald-900 border border-emerald-800 rounded-full text-[10px] font-bold text-emerald-300 uppercase tracking-widest shadow-inner",
+                                                className: "px-3 py-1 bg-emerald-900 border border-emerald-800 rounded-full text-[10px] font-bold text-emerald-300 uppercase tracking-wider shadow-inner",
                                                 children: "Certified"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/Footer.tsx",
@@ -1436,7 +1493,7 @@ function Footer() {
                                 className: "flex flex-col lg:pl-8",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-sm font-bold text-white uppercase tracking-[0.2em] mb-6 flex items-center gap-2",
+                                        className: "text-sm font-bold text-white uppercase tracking-wider mb-6 flex items-center gap-2",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "w-1.5 h-1.5 rounded-full bg-amber-400"
@@ -1510,7 +1567,7 @@ function Footer() {
                                 className: "flex flex-col",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-sm font-bold text-white uppercase tracking-[0.2em] mb-6 flex items-center gap-2",
+                                        className: "text-sm font-bold text-white uppercase tracking-wider mb-6 flex items-center gap-2",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "w-1.5 h-1.5 rounded-full bg-amber-400"
@@ -1745,7 +1802,7 @@ function Footer() {
                                 className: "flex flex-col",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-sm font-bold text-white uppercase tracking-[0.2em] mb-6 flex items-center gap-2",
+                                        className: "text-sm font-bold text-white uppercase tracking-wider mb-6 flex items-center gap-2",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "w-1.5 h-1.5 rounded-full bg-amber-400"
@@ -1791,7 +1848,7 @@ function Footer() {
                                                         columnNumber: 33
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-[10px] font-bold text-green-400 uppercase tracking-widest",
+                                                        className: "text-[10px] font-bold text-green-400 uppercase tracking-wider",
                                                         children: "Season Open"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/Footer.tsx",
@@ -2145,7 +2202,7 @@ function ProductCatalog({ priceListUrl = "" }) {
     }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "pricelist",
-        className: "bg-white py-24 relative overflow-hidden scroll-mt-24",
+        className: "bg-white pt-24 pb-12 relative overflow-hidden scroll-mt-24",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute top-0 left-0 w-32 h-32 opacity-10 bg-festive-red rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"
@@ -2168,7 +2225,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                         className: "text-center mb-16",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-festive-red text-base font-black tracking-[0.3em] uppercase mb-3 block",
+                                className: "text-festive-red text-base font-semibold tracking-[0.3em] uppercase mb-3 block",
                                 children: "Our Products"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/ProductCatalog.tsx",
@@ -2176,7 +2233,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-4xl md:text-6xl font-black text-festive-green mb-4",
+                                className: "text-xl md:text-xl font-semibold text-festive-green mb-4",
                                 children: [
                                     "Explore Our ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2206,7 +2263,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                                     href: priceListUrl,
                                     target: "_blank",
                                     rel: "noreferrer",
-                                    className: "inline-flex items-center gap-2 px-6 py-3 rounded-full bg-festive-gold text-festive-green font-black text-base uppercase tracking-widest hover:scale-105 transition-all shadow-[0_0_20px_rgba(255,215,0,0.3)]",
+                                    className: "inline-flex items-center gap-2 px-6 py-3 rounded-full bg-festive-gold text-festive-green font-semibold text-base uppercase tracking-wider hover:scale-105 transition-all shadow-[0_0_20px_rgba(255,215,0,0.3)]",
                                     children: "📥 Download Full Price List (PDF)"
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/ProductCatalog.tsx",
@@ -2235,7 +2292,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
                                             value: activeFilter,
                                             onChange: (e)=>setActiveFilter(e.target.value),
-                                            className: "w-full appearance-none bg-white border-2 border-festive-green/20 text-festive-green font-black uppercase tracking-widest text-sm rounded-2xl px-6 py-4 shadow-lg shadow-festive-green/5 focus:outline-none focus:border-festive-green focus:ring-4 focus:ring-festive-green/10 transition-all",
+                                            className: "w-full appearance-none bg-white border-2 border-festive-green/20 text-festive-green font-semibold uppercase tracking-wider text-sm rounded-2xl px-6 py-4 shadow-lg shadow-festive-green/5 focus:outline-none focus:border-festive-green focus:ring-4 focus:ring-festive-green/10 transition-all",
                                             children: filters.map((filter)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                     value: filter,
                                                     children: filter
@@ -2292,7 +2349,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                                 className: "hidden md:flex flex-wrap justify-center gap-4 px-4",
                                 children: filters.map((filter)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: ()=>setActiveFilter(filter),
-                                        className: `px-8 py-3 rounded-xl text-sm font-black uppercase tracking-widest transition-all duration-300 border-2 cursor-pointer ${activeFilter === filter ? "bg-festive-green text-white border-festive-green shadow-[0_10px_20px_-10px_rgba(45,13,84,0.6)] scale-105" : "bg-white text-festive-green border-festive-green/10 hover:border-festive-gold hover:shadow-sm"}`,
+                                        className: `px-8 py-3 rounded-xl text-sm font-semibold uppercase tracking-wider transition-all duration-300 border-2 cursor-pointer ${activeFilter === filter ? "bg-festive-green text-white border-festive-green shadow-[0_10px_20px_-10px_rgba(45,13,84,0.6)] scale-105" : "bg-white text-festive-green border-festive-green/10 hover:border-festive-gold hover:shadow-sm"}`,
                                         children: filter
                                     }, filter, false, {
                                         fileName: "[project]/app/components/ProductCatalog.tsx",
@@ -2329,7 +2386,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                 className: "relative z-10 flex items-center gap-3",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-lg md:text-xl opacity-80 group-hover:animate-ping",
+                                                        className: "text-lg md:text-xl text-yellow-300 opacity-80 group-hover:animate-ping",
                                                         children: "✨"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/ProductCatalog.tsx",
@@ -2337,7 +2394,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                        className: "text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-festive-gold to-yellow-400 font-black text-[18px] md:text-[22px] uppercase tracking-[0.2em] drop-shadow-lg text-center",
+                                                        className: "text-white font-semibold text-[18px] md:text-[20px] uppercase tracking-wider drop-shadow-md text-center",
                                                         children: group.category
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/ProductCatalog.tsx",
@@ -2345,7 +2402,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-lg md:text-xl opacity-80 group-hover:animate-ping",
+                                                        className: "text-lg md:text-xl text-yellow-300 opacity-80 group-hover:animate-ping",
                                                         children: "✨"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/ProductCatalog.tsx",
@@ -2365,7 +2422,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "hidden md:grid md:grid-cols-[80px_1fr_140px_120px_130px] lg:grid-cols-[90px_1fr_150px_130px_150px] items-center gap-4 px-6 lg:px-8 py-3.5 bg-gradient-to-r from-emerald-600 via-emerald-500 to-emerald-600 text-[10.5px] font-black text-festive-gold uppercase tracking-[0.2em] shadow-sm border-b-2 border-festive-gold/30",
+                                        className: "hidden md:grid md:grid-cols-[80px_1fr_140px_120px_130px] lg:grid-cols-[90px_1fr_150px_130px_150px] items-center gap-4 px-6 lg:px-8 py-3.5 bg-gradient-to-r from-emerald-600 via-emerald-500 to-emerald-600 text-xs font-semibold text-white uppercase tracking-wider shadow-sm border-b-2 border-festive-gold/30",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "text-center drop-shadow-sm",
@@ -2429,7 +2486,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                             prod.originalPrice > prod.price && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "absolute top-2 left-2 z-10 scale-75 origin-top-left",
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "bg-gradient-to-r from-festive-red to-red-500 text-white font-black px-2 py-0.5 rounded-md text-[10px] tracking-wider shadow-sm",
+                                                                    className: "bg-gradient-to-r from-festive-red to-red-500 text-white font-semibold px-2 py-0.5 rounded-md text-[10px] tracking-wider shadow-sm",
                                                                     children: [
                                                                         prodDiscount,
                                                                         "% OFF"
@@ -2470,7 +2527,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                                 className: "flex items-start gap-1",
                                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                                                    className: "font-black text-slate-800 text-[14px] leading-tight line-clamp-2",
+                                                                                    className: "font-semibold text-slate-800 text-[14px] leading-tight line-clamp-2",
                                                                                     children: cleanName
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ProductCatalog.tsx",
@@ -2483,7 +2540,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                                                 columnNumber: 36
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                className: "text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1 block truncate max-w-full",
+                                                                                className: "text-[10px] font-bold text-slate-400 uppercase tracking-wider mt-1 block truncate max-w-full",
                                                                                 children: prod.category
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/components/ProductCatalog.tsx",
@@ -2514,7 +2571,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                                                         columnNumber: 41
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                        className: "text-[14px] font-black text-festive-green",
+                                                                                        className: "text-[14px] font-semibold text-festive-green",
                                                                                         children: [
                                                                                             "₹",
                                                                                             prod.price.toLocaleString('en-IN')
@@ -2537,7 +2594,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                                                     children: [
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                                                             onClick: ()=>updateQuantity(prod.id, qty - 1),
-                                                                                            className: "flex-1 h-full text-slate-600 active:scale-95 font-black text-sm flex items-center justify-center",
+                                                                                            className: "flex-1 h-full text-slate-600 active:scale-95 font-semibold text-sm flex items-center justify-center",
                                                                                             children: "−"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/components/ProductCatalog.tsx",
@@ -2551,7 +2608,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                                                                 const val = e.target.value === '' ? 0 : parseInt(e.target.value);
                                                                                                 if (!isNaN(val) && val >= 0) updateQuantity(prod.id, val);
                                                                                             },
-                                                                                            className: "w-9 h-full font-black text-slate-900 text-[12px] bg-gray-50 text-center border-x border-gray-200 outline-none focus:bg-white [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                                                                                            className: "w-9 h-full font-semibold text-slate-900 text-[12px] bg-gray-50 text-center border-x border-gray-200 outline-none focus:bg-white [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/components/ProductCatalog.tsx",
                                                                                             lineNumber: 266,
@@ -2559,7 +2616,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                                                         }, this),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                                                             onClick: ()=>updateQuantity(prod.id, qty + 1),
-                                                                                            className: "flex-1 h-full text-slate-600 active:scale-95 font-black text-sm flex items-center justify-center",
+                                                                                            className: "flex-1 h-full text-slate-600 active:scale-95 font-semibold text-sm flex items-center justify-center",
                                                                                             children: "+"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/components/ProductCatalog.tsx",
@@ -2580,7 +2637,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                                                             image: prod.image,
                                                                                             category: prod.category
                                                                                         }),
-                                                                                    className: "h-8 px-5 rounded-md bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-black uppercase text-[11px] tracking-wider active:scale-95 shadow-sm flex items-center justify-center gap-1.5",
+                                                                                    className: "h-8 px-5 rounded-md bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-semibold uppercase text-[11px] tracking-wider active:scale-95 shadow-sm flex items-center justify-center gap-1.5",
                                                                                     children: [
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                             className: "text-[15px] leading-none mb-[1px]",
@@ -2645,7 +2702,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                                 className: "flex flex-col items-start justify-center gap-0.5",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                                        className: "font-black text-slate-800 text-[15px] leading-tight group-hover:text-festive-green transition-colors line-clamp-2",
+                                                                        className: "font-semibold text-slate-800 text-[15px] leading-tight group-hover:text-festive-green transition-colors line-clamp-2",
                                                                         children: cleanName
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/ProductCatalog.tsx",
@@ -2653,7 +2710,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                                         columnNumber: 31
                                                                     }, this),
                                                                     prod.originalPrice > prod.price && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        className: "inline-flex items-center gap-1 bg-festive-red/10 text-festive-red text-[9px] font-black px-2 py-0.5 rounded-md uppercase tracking-wider mt-0.5",
+                                                                        className: "inline-flex items-center gap-1 bg-festive-red/10 text-festive-red text-[9px] font-semibold px-2 py-0.5 rounded-md uppercase tracking-wider mt-0.5",
                                                                         children: [
                                                                             "🔥 ",
                                                                             prodDiscount,
@@ -2698,7 +2755,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "flex flex-col items-end justify-center",
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "text-xl font-black text-festive-green text-right",
+                                                                    className: "text-xl font-semibold text-festive-green text-right",
                                                                     children: [
                                                                         "₹",
                                                                         prod.price.toLocaleString('en-IN')
@@ -2722,7 +2779,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                                             children: [
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                                                     onClick: ()=>updateQuantity(prod.id, qty - 1),
-                                                                                    className: "flex-1 w-8 h-full text-slate-600 hover:bg-red-50 hover:text-festive-red transition-all cursor-pointer font-black text-lg flex items-center justify-center",
+                                                                                    className: "flex-1 w-8 h-full text-slate-600 hover:bg-red-50 hover:text-festive-red transition-all cursor-pointer font-semibold text-lg flex items-center justify-center",
                                                                                     children: "−"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ProductCatalog.tsx",
@@ -2736,7 +2793,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                                                         const val = e.target.value === '' ? 0 : parseInt(e.target.value);
                                                                                         if (!isNaN(val) && val >= 0) updateQuantity(prod.id, val);
                                                                                     },
-                                                                                    className: "w-10 h-full font-black text-slate-900 text-base bg-gray-50 text-center border-x border-gray-200 outline-none focus:bg-white [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                                                                                    className: "w-10 h-full font-semibold text-slate-900 text-base bg-gray-50 text-center border-x border-gray-200 outline-none focus:bg-white [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ProductCatalog.tsx",
                                                                                     lineNumber: 324,
@@ -2744,7 +2801,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                                                     onClick: ()=>updateQuantity(prod.id, qty + 1),
-                                                                                    className: "flex-1 w-8 h-full text-slate-600 hover:bg-purple-50 hover:text-festive-green transition-all cursor-pointer font-black text-lg flex items-center justify-center",
+                                                                                    className: "flex-1 w-8 h-full text-slate-600 hover:bg-purple-50 hover:text-festive-green transition-all cursor-pointer font-semibold text-lg flex items-center justify-center",
                                                                                     children: "+"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ProductCatalog.tsx",
@@ -2797,7 +2854,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                                             image: prod.image,
                                                                             category: prod.category
                                                                         }),
-                                                                    className: "w-[130px] lg:w-[140px] h-9 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-amber-400 hover:to-orange-500 text-white hover:text-white font-black uppercase text-[11px] tracking-wider hover:scale-[1.03] transition-all cursor-pointer shadow-[0_4px_15px_rgba(4,120,87,0.3)] hover:shadow-[0_4px_15px_rgba(255,215,0,0.4)] flex items-center justify-center gap-1 border border-transparent",
+                                                                    className: "w-[130px] lg:w-[140px] h-9 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-amber-400 hover:to-orange-500 text-white hover:text-white font-semibold uppercase text-[11px] tracking-wider hover:scale-[1.03] transition-all cursor-pointer shadow-[0_4px_15px_rgba(4,120,87,0.3)] hover:shadow-[0_4px_15px_rgba(255,215,0,0.4)] flex items-center justify-center gap-1 border border-transparent",
                                                                     children: [
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                                                             xmlns: "http://www.w3.org/2000/svg",
@@ -2870,7 +2927,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                         className: "text-center text-gray-400 py-32",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-6xl animate-bounce inline-block drop-shadow-sm mb-4",
+                                className: "text-xl animate-bounce inline-block drop-shadow-sm mb-4",
                                 children: "🎆"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/ProductCatalog.tsx",
@@ -2974,7 +3031,7 @@ const safetyTips = [
 function SafetyTips() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "safety-tips",
-        className: "bg-slate-50 py-24 md:py-36 scroll-mt-24 relative overflow-hidden",
+        className: "bg-slate-50 pt-8 pb-12 md:pt-12 md:pb-16 scroll-mt-24 relative overflow-hidden",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute top-0 right-0 w-[800px] h-[800px] bg-emerald-500/10 rounded-full blur-[150px] pointer-events-none"
@@ -2998,7 +3055,7 @@ function SafetyTips() {
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute top-20 left-[10%] text-amber-500/40 text-3xl animate-[pulse_3s_infinite]",
+                className: "absolute top-20 left-[10%] text-amber-500/40 text-xl animate-[pulse_3s_infinite]",
                 children: "✨"
             }, void 0, false, {
                 fileName: "[project]/app/components/SafetyTips.tsx",
@@ -3006,7 +3063,7 @@ function SafetyTips() {
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute top-40 right-[20%] text-emerald-500/40 text-2xl animate-[pulse_2s_infinite]",
+                className: "absolute top-40 right-[20%] text-emerald-500/40 text-xl animate-[pulse_2s_infinite]",
                 children: "✨"
             }, void 0, false, {
                 fileName: "[project]/app/components/SafetyTips.tsx",
@@ -3014,7 +3071,7 @@ function SafetyTips() {
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute bottom-40 left-[20%] text-amber-500/30 text-4xl animate-[pulse_4s_infinite]",
+                className: "absolute bottom-40 left-[20%] text-amber-500/30 text-xl animate-[pulse_4s_infinite]",
                 children: "✨"
             }, void 0, false, {
                 fileName: "[project]/app/components/SafetyTips.tsx",
@@ -3036,7 +3093,7 @@ function SafetyTips() {
                         className: "text-center mb-16 md:mb-28",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "inline-flex items-center gap-2 px-6 py-2 rounded-full bg-white border border-emerald-200 text-emerald-600 font-black uppercase tracking-[0.3em] text-xs md:text-sm mb-6 shadow-sm",
+                                className: "inline-flex items-center gap-2 px-6 py-2 rounded-full bg-white border border-emerald-200 text-emerald-600 font-semibold uppercase tracking-[0.3em] text-xs md:text-sm mb-6 shadow-sm",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "w-2 h-2 rounded-full bg-emerald-500 animate-ping"
@@ -3053,7 +3110,7 @@ function SafetyTips() {
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 mb-6 tracking-tighter drop-shadow-sm leading-[1.2]",
+                                className: "text-xl md:text-xl lg:text-xl font-semibold text-slate-900 mb-6 tracking-tighter drop-shadow-sm leading-[1.2]",
                                 children: [
                                     "Celebrate With ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {
@@ -3123,7 +3180,7 @@ function SafetyTips() {
                                         className: "relative z-10 flex flex-col items-center text-center",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "w-20 h-20 rounded-2xl bg-slate-50 border border-slate-100 flex items-center justify-center text-4xl mb-6 shadow-sm group-hover:scale-110 group-hover:border-emerald-200 group-hover:bg-white transition-all duration-500",
+                                                className: "w-20 h-20 rounded-2xl bg-slate-50 border border-slate-100 flex items-center justify-center text-xl mb-6 shadow-sm group-hover:scale-110 group-hover:border-emerald-200 group-hover:bg-white transition-all duration-500",
                                                 children: tip.icon
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/SafetyTips.tsx",
@@ -3131,7 +3188,7 @@ function SafetyTips() {
                                                 columnNumber: 37
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                className: "text-2xl font-black text-slate-900 mb-4 tracking-wide group-hover:text-emerald-700 transition-colors duration-300",
+                                                className: "text-xl font-semibold text-slate-900 mb-4 tracking-wide group-hover:text-emerald-700 transition-colors duration-300",
                                                 children: tip.title
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/SafetyTips.tsx",
@@ -3187,7 +3244,7 @@ function SafetyTips() {
                                     className: "flex flex-col md:flex-row items-center gap-6 relative z-10 text-center md:text-left w-full",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "shrink-0 w-20 h-20 rounded-full bg-red-100 border-[2px] border-red-200 flex items-center justify-center text-4xl shadow-sm animate-pulse",
+                                            className: "shrink-0 w-20 h-20 rounded-full bg-red-100 border-[2px] border-red-200 flex items-center justify-center text-xl shadow-sm animate-pulse",
                                             children: "🚨"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/SafetyTips.tsx",
@@ -3197,7 +3254,7 @@ function SafetyTips() {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                    className: "text-2xl md:text-3xl font-black text-red-950 mb-2 uppercase tracking-widest",
+                                                    className: "text-xl md:text-xl font-semibold text-red-950 mb-2 uppercase tracking-wider",
                                                     children: "Emergency Protocol"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/components/SafetyTips.tsx",
@@ -3226,7 +3283,7 @@ function SafetyTips() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                     href: "tel:108",
-                                    className: "w-full md:w-auto shrink-0 px-12 py-5 rounded-full bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 text-white font-black text-xl uppercase tracking-[0.2em] transition-all shadow-[0_15px_30px_rgba(239,68,68,0.2)] text-center relative z-10 hover:scale-105",
+                                    className: "w-full md:w-auto shrink-0 px-12 py-5 rounded-full bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 text-white font-semibold text-xl uppercase tracking-wider transition-all shadow-[0_15px_30px_rgba(239,68,68,0.2)] text-center relative z-10 hover:scale-105",
                                     children: "Call 108"
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/SafetyTips.tsx",
@@ -3351,7 +3408,7 @@ function ContactSection() {
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "contact",
-        className: "w-full py-20 md:py-32 bg-slate-50 scroll-mt-24",
+        className: "w-full pt-8 pb-20 md:pt-12 md:pb-32 bg-slate-50 scroll-mt-24",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "container mx-auto px-4 xl:px-0 max-w-6xl",
             children: [
@@ -3359,7 +3416,7 @@ function ContactSection() {
                     className: "text-center mb-12",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-3xl md:text-4xl font-black text-slate-900 tracking-tight mb-4",
+                            className: "text-xl md:text-xl font-semibold text-slate-900 tracking-tight mb-4",
                             children: [
                                 "Get in ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3417,7 +3474,7 @@ function ContactSection() {
                                             className: "mb-12",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "text-2xl md:text-3xl font-bold text-white tracking-tight mb-8",
+                                                    className: "text-xl md:text-xl font-bold text-white tracking-tight mb-8",
                                                     children: "Contact Information"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/components/ContactSection.tsx",
@@ -3428,7 +3485,7 @@ function ContactSection() {
                                                     className: "flex items-center gap-4 bg-emerald-800/50 p-4 rounded-2xl border border-emerald-700/50 backdrop-blur-sm",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "w-12 h-12 rounded-xl bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-white font-black text-xl shadow-inner shrink-0",
+                                                            className: "w-12 h-12 rounded-xl bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-white font-semibold text-xl shadow-inner shrink-0",
                                                             children: "G"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/ContactSection.tsx",
@@ -3438,7 +3495,7 @@ function ContactSection() {
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "text-[10px] font-bold text-emerald-300 uppercase tracking-widest block mb-0.5",
+                                                                    className: "text-[10px] font-bold text-emerald-300 uppercase tracking-wider block mb-0.5",
                                                                     children: "Proprietor"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ContactSection.tsx",
@@ -3446,7 +3503,7 @@ function ContactSection() {
                                                                     columnNumber: 41
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                    className: "text-lg font-black text-white leading-none",
+                                                                    className: "text-lg font-semibold text-white leading-none",
                                                                     children: "G.Mookaiya"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ContactSection.tsx",
@@ -3470,7 +3527,7 @@ function ContactSection() {
                                                                     columnNumber: 41
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "text-[9px] font-bold text-emerald-200 uppercase tracking-widest",
+                                                                    className: "text-[9px] font-bold text-emerald-200 uppercase tracking-wider",
                                                                     children: "Online"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ContactSection.tsx",
@@ -3530,7 +3587,7 @@ function ContactSection() {
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "text-[10px] font-bold text-emerald-400 uppercase tracking-widest block mb-1",
+                                                                    className: "text-[10px] font-bold text-emerald-400 uppercase tracking-wider block mb-1",
                                                                     children: "Direct Line"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ContactSection.tsx",
@@ -3539,7 +3596,7 @@ function ContactSection() {
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                                     href: "tel:+916382650924",
-                                                                    className: "text-xl md:text-2xl font-black text-white hover:text-amber-400 transition-colors tracking-tight",
+                                                                    className: "text-xl md:text-xl font-semibold text-white hover:text-amber-400 transition-colors tracking-tight",
                                                                     children: "+91 63826 50924"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ContactSection.tsx",
@@ -3597,7 +3654,7 @@ function ContactSection() {
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "text-[10px] font-bold text-emerald-400 uppercase tracking-widest block mb-1",
+                                                                    className: "text-[10px] font-bold text-emerald-400 uppercase tracking-wider block mb-1",
                                                                     children: "Email Address"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ContactSection.tsx",
@@ -3657,7 +3714,7 @@ function ContactSection() {
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "text-[10px] font-bold text-emerald-400 uppercase tracking-widest block mb-1.5",
+                                                                    className: "text-[10px] font-bold text-emerald-400 uppercase tracking-wider block mb-1.5",
                                                                     children: "Official Showroom"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ContactSection.tsx",
@@ -3924,7 +3981,7 @@ function ContactFloatingButtons() {
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "absolute right-full mr-4 bg-white text-black text-sm font-black px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity shadow-lg whitespace-nowrap",
+                        className: "absolute right-full mr-4 bg-white text-black text-sm font-semibold px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity shadow-lg whitespace-nowrap",
                         children: "Chat on WhatsApp"
                     }, void 0, false, {
                         fileName: "[project]/app/components/ContactFloatingButtons.tsx",
@@ -3963,7 +4020,7 @@ function ContactFloatingButtons() {
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "absolute right-full mr-4 bg-white text-black text-sm font-black px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity shadow-lg whitespace-nowrap",
+                        className: "absolute right-full mr-4 bg-white text-black text-sm font-semibold px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity shadow-lg whitespace-nowrap",
                         children: "Call Now"
                     }, void 0, false, {
                         fileName: "[project]/app/components/ContactFloatingButtons.tsx",
@@ -4136,7 +4193,7 @@ function Home() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
-                className: "flex-grow",
+                className: "flex-grow pt-[100px] sm:pt-[110px] lg:pt-[125px] xl:pt-[135px]",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Banner$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                         priceListUrl: priceListUrl
@@ -4173,7 +4230,7 @@ function Home() {
                                 className: "container mx-auto px-1 flex flex-row items-center justify-center gap-1 sm:gap-4 relative z-10 text-center flex-wrap",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-lg sm:text-3xl animate-bounce shadow-festive-gold drop-shadow-lg",
+                                        className: "text-lg sm:text-xl animate-bounce shadow-festive-gold drop-shadow-lg",
                                         children: "🎉"
                                     }, void 0, false, {
                                         fileName: "[project]/app/page.tsx",
@@ -4181,7 +4238,7 @@ function Home() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-white font-black text-[12px] sm:text-xl md:text-2xl tracking-wide uppercase drop-shadow-sm",
+                                        className: "text-white font-semibold text-[12px] sm:text-xl md:text-xl tracking-wide uppercase drop-shadow-sm",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "hidden sm:inline",
@@ -4200,7 +4257,7 @@ function Home() {
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-festive-gold to-yellow-500 font-extrabold ml-1 text-[14px] sm:text-xl md:text-2xl",
+                                                className: "text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-festive-gold to-yellow-500 font-semibold ml-1 text-[14px] sm:text-xl md:text-xl",
                                                 children: [
                                                     "₹",
                                                     Number(minOrderValue).toLocaleString('en-IN')
@@ -4217,7 +4274,7 @@ function Home() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-lg sm:text-3xl animate-bounce shadow-festive-gold drop-shadow-lg",
+                                        className: "text-lg sm:text-xl animate-bounce shadow-festive-gold drop-shadow-lg",
                                         style: {
                                             animationDelay: '0.2s'
                                         },
@@ -4282,7 +4339,7 @@ function Home() {
                                         className: "text-center mb-10 md:mb-14",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                className: "text-2xl md:text-3xl font-black text-slate-800 tracking-tight mb-3",
+                                                className: "text-xl md:text-xl font-semibold text-slate-800 tracking-tight mb-3",
                                                 children: "Why Choose Us?"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/page.tsx",
@@ -4424,7 +4481,7 @@ function Home() {
                                                         columnNumber: 27
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-slate-800 font-black text-sm sm:text-base tracking-wide text-center leading-tight mb-2",
+                                                        className: "text-slate-800 font-semibold text-sm sm:text-base tracking-wide text-center leading-tight mb-2",
                                                         children: item.label
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/page.tsx",
@@ -4464,7 +4521,7 @@ function Home() {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                         id: "about-us",
-                        className: "relative py-24 md:py-36 overflow-hidden scroll-mt-24 min-h-[800px] flex items-center justify-center",
+                        className: "relative pt-24 pb-8 md:pt-36 md:pb-12 overflow-hidden scroll-mt-24 min-h-[800px] flex items-center justify-center",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "absolute inset-0 z-0",
@@ -4568,7 +4625,7 @@ function Home() {
                                                             columnNumber: 29
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "absolute -top-4 right-2 text-2xl animate-bounce",
+                                                            className: "absolute -top-4 right-2 text-xl animate-bounce",
                                                             children: "✨"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/page.tsx",
@@ -4590,7 +4647,7 @@ function Home() {
                                                     columnNumber: 25
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                    className: "text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-white mb-6 leading-[1.2] uppercase tracking-tighter drop-shadow-2xl",
+                                                    className: "text-xl md:text-xl lg:text-xl xl:text-xl font-semibold text-white mb-6 leading-[1.2] uppercase tracking-tighter drop-shadow-2xl",
                                                     children: [
                                                         "Bringing The ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {
@@ -4696,7 +4753,7 @@ function Home() {
                                                     className: "bg-white/5 hover:bg-white/10 backdrop-blur-md border border-white/10 rounded-[2rem] p-5 md:p-6 flex items-center gap-6 transition-all duration-300 hover:-translate-x-2 shadow-[0_10px_30px_rgba(0,0,0,0.1)] group/metric",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "w-14 h-14 md:w-16 md:h-16 shrink-0 rounded-2xl bg-white/10 flex items-center justify-center text-2xl md:text-3xl border border-white/20 group-hover/metric:scale-110 group-hover/metric:rotate-3 transition-all duration-300",
+                                                            className: "w-14 h-14 md:w-16 md:h-16 shrink-0 rounded-2xl bg-white/10 flex items-center justify-center text-xl md:text-xl border border-white/20 group-hover/metric:scale-110 group-hover/metric:rotate-3 transition-all duration-300",
                                                             children: "🏭"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/page.tsx",
@@ -4707,7 +4764,7 @@ function Home() {
                                                             className: "text-left",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                                    className: "text-white font-black text-base md:text-lg uppercase tracking-wider mb-1",
+                                                                    className: "text-white font-semibold text-base md:text-lg uppercase tracking-wider mb-1",
                                                                     children: "Sivakasi Direct"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/page.tsx",
@@ -4715,7 +4772,7 @@ function Home() {
                                                                     columnNumber: 33
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                    className: "text-slate-400 text-[10px] md:text-xs uppercase tracking-widest",
+                                                                    className: "text-slate-400 text-[10px] md:text-xs uppercase tracking-wider",
                                                                     children: "Authentic Quality"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/page.tsx",
@@ -4738,7 +4795,7 @@ function Home() {
                                                     className: "bg-white/5 hover:bg-emerald-900/40 backdrop-blur-md border border-white/10 hover:border-emerald-500/30 rounded-[2rem] p-5 md:p-6 flex items-center gap-6 transition-all duration-300 hover:-translate-x-2 shadow-[0_10px_30px_rgba(0,0,0,0.1)] group/metric",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "w-14 h-14 md:w-16 md:h-16 shrink-0 rounded-2xl bg-emerald-500/10 flex items-center justify-center text-2xl md:text-3xl border border-emerald-500/30 group-hover/metric:scale-110 group-hover/metric:-rotate-3 transition-all duration-300 shadow-[0_0_20px_rgba(16,185,129,0.2)]",
+                                                            className: "w-14 h-14 md:w-16 md:h-16 shrink-0 rounded-2xl bg-emerald-500/10 flex items-center justify-center text-xl md:text-xl border border-emerald-500/30 group-hover/metric:scale-110 group-hover/metric:-rotate-3 transition-all duration-300 shadow-[0_0_20px_rgba(16,185,129,0.2)]",
                                                             children: "✅"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/page.tsx",
@@ -4749,7 +4806,7 @@ function Home() {
                                                             className: "text-left",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                                    className: "text-emerald-50 font-black text-base md:text-lg uppercase tracking-wider mb-1",
+                                                                    className: "text-emerald-50 font-semibold text-base md:text-lg uppercase tracking-wider mb-1",
                                                                     children: "100% Safe"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/page.tsx",
@@ -4757,7 +4814,7 @@ function Home() {
                                                                     columnNumber: 33
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                    className: "text-emerald-400/80 text-[10px] md:text-xs uppercase tracking-widest",
+                                                                    className: "text-emerald-400/80 text-[10px] md:text-xs uppercase tracking-wider",
                                                                     children: "Tested & Certified"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/page.tsx",
@@ -4787,7 +4844,7 @@ function Home() {
                                                             columnNumber: 29
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "w-14 h-14 md:w-16 md:h-16 shrink-0 rounded-2xl bg-amber-500/20 flex items-center justify-center text-2xl md:text-3xl border border-amber-500/40 group-hover/metric:scale-110 group-hover/metric:rotate-12 transition-all duration-300 shadow-[0_0_20px_rgba(245,158,11,0.3)] relative z-10",
+                                                            className: "w-14 h-14 md:w-16 md:h-16 shrink-0 rounded-2xl bg-amber-500/20 flex items-center justify-center text-xl md:text-xl border border-amber-500/40 group-hover/metric:scale-110 group-hover/metric:rotate-12 transition-all duration-300 shadow-[0_0_20px_rgba(245,158,11,0.3)] relative z-10",
                                                             children: "💰"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/page.tsx",
@@ -4798,7 +4855,7 @@ function Home() {
                                                             className: "text-left relative z-10",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                                    className: "text-white font-black text-base md:text-lg uppercase tracking-wider mb-1",
+                                                                    className: "text-white font-semibold text-base md:text-lg uppercase tracking-wider mb-1",
                                                                     children: "Wholesale Price"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/page.tsx",
@@ -4806,7 +4863,7 @@ function Home() {
                                                                     columnNumber: 33
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                    className: "text-amber-300 text-[10px] md:text-xs uppercase tracking-widest",
+                                                                    className: "text-amber-300 text-[10px] md:text-xs uppercase tracking-wider",
                                                                     children: "Best Market Price"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/page.tsx",

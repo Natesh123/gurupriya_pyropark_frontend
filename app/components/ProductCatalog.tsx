@@ -123,7 +123,7 @@ export default function ProductCatalog({ priceListUrl = "" }: ProductCatalogProp
   }
 
   return (
-    <section id="pricelist" className="bg-white py-24 relative overflow-hidden scroll-mt-24">
+    <section id="pricelist" className="bg-white pt-24 pb-12 relative overflow-hidden scroll-mt-24">
       {/* Decorative Side Elements */}
       <div className="absolute top-0 left-0 w-32 h-32 opacity-10 bg-festive-red rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute bottom-0 right-0 w-64 h-64 opacity-10 bg-festive-green rounded-full blur-3xl translate-x-1/3 translate-y-1/3"></div>
@@ -131,8 +131,8 @@ export default function ProductCatalog({ priceListUrl = "" }: ProductCatalogProp
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="text-festive-red text-base font-black tracking-[0.3em] uppercase mb-3 block">Our Products</span>
-          <h2 className="text-4xl md:text-6xl font-black text-festive-green mb-4">
+          <span className="text-festive-red text-base font-semibold tracking-[0.3em] uppercase mb-3 block">Our Products</span>
+          <h2 className="text-xl md:text-xl font-semibold text-festive-green mb-4">
             Explore Our <span className="text-festive-red">Crackers</span>
           </h2>
           <div className="w-24 h-1.5 bg-festive-gold mx-auto rounded-full mb-6"></div>
@@ -142,7 +142,7 @@ export default function ProductCatalog({ priceListUrl = "" }: ProductCatalogProp
                 href={priceListUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-festive-gold text-festive-green font-black text-base uppercase tracking-widest hover:scale-105 transition-all shadow-[0_0_20px_rgba(255,215,0,0.3)]"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-festive-gold text-festive-green font-semibold text-base uppercase tracking-wider hover:scale-105 transition-all shadow-[0_0_20px_rgba(255,215,0,0.3)]"
               >
                 📥 Download Full Price List (PDF)
               </a>
@@ -158,7 +158,7 @@ export default function ProductCatalog({ priceListUrl = "" }: ProductCatalogProp
                 <select 
                    value={activeFilter}
                    onChange={(e) => setActiveFilter(e.target.value)}
-                   className="w-full appearance-none bg-white border-2 border-festive-green/20 text-festive-green font-black uppercase tracking-widest text-sm rounded-2xl px-6 py-4 shadow-lg shadow-festive-green/5 focus:outline-none focus:border-festive-green focus:ring-4 focus:ring-festive-green/10 transition-all"
+                   className="w-full appearance-none bg-white border-2 border-festive-green/20 text-festive-green font-semibold uppercase tracking-wider text-sm rounded-2xl px-6 py-4 shadow-lg shadow-festive-green/5 focus:outline-none focus:border-festive-green focus:ring-4 focus:ring-festive-green/10 transition-all"
                 >
                    {filters.map((filter) => (
                      <option key={filter} value={filter}>{filter}</option>
@@ -178,7 +178,7 @@ export default function ProductCatalog({ priceListUrl = "" }: ProductCatalogProp
               <button
                 key={filter}
                 onClick={() => setActiveFilter(filter)}
-                className={`px-8 py-3 rounded-xl text-sm font-black uppercase tracking-widest transition-all duration-300 border-2 cursor-pointer ${
+                className={`px-8 py-3 rounded-xl text-sm font-semibold uppercase tracking-wider transition-all duration-300 border-2 cursor-pointer ${
                   activeFilter === filter
                     ? "bg-festive-green text-white border-festive-green shadow-[0_10px_20px_-10px_rgba(45,13,84,0.6)] scale-105"
                     : "bg-white text-festive-green border-festive-green/10 hover:border-festive-gold hover:shadow-sm"
@@ -200,16 +200,16 @@ export default function ProductCatalog({ priceListUrl = "" }: ProductCatalogProp
                   <div className="absolute inset-0 opacity-20 bg-[url('/assets/images/pattern.png')] bg-repeat mix-blend-overlay pointer-events-none" />
                   
                   <div className="relative z-10 flex items-center gap-3">
-                    <span className="text-lg md:text-xl opacity-80 group-hover:animate-ping">✨</span>
-                    <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-festive-gold to-yellow-400 font-black text-[18px] md:text-[22px] uppercase tracking-[0.2em] drop-shadow-lg text-center">
+                    <span className="text-lg md:text-xl text-yellow-300 opacity-80 group-hover:animate-ping">✨</span>
+                    <h2 className="text-white font-semibold text-[18px] md:text-[20px] uppercase tracking-wider drop-shadow-md text-center">
                       {group.category}
                     </h2>
-                    <span className="text-lg md:text-xl opacity-80 group-hover:animate-ping">✨</span>
+                    <span className="text-lg md:text-xl text-yellow-300 opacity-80 group-hover:animate-ping">✨</span>
                   </div>
                 </div>
 
                 {/* ═══ Table Header (Desktop Only) ═══ */}
-                <div className="hidden md:grid md:grid-cols-[80px_1fr_140px_120px_130px] lg:grid-cols-[90px_1fr_150px_130px_150px] items-center gap-4 px-6 lg:px-8 py-3.5 bg-gradient-to-r from-emerald-600 via-emerald-500 to-emerald-600 text-[10.5px] font-black text-festive-gold uppercase tracking-[0.2em] shadow-sm border-b-2 border-festive-gold/30">
+                <div className="hidden md:grid md:grid-cols-[80px_1fr_140px_120px_130px] lg:grid-cols-[90px_1fr_150px_130px_150px] items-center gap-4 px-6 lg:px-8 py-3.5 bg-gradient-to-r from-emerald-600 via-emerald-500 to-emerald-600 text-xs font-semibold text-white uppercase tracking-wider shadow-sm border-b-2 border-festive-gold/30">
                   <span className="text-center drop-shadow-sm">Image</span>
                   <span className="drop-shadow-sm">Product Name</span>
                   <span className="text-right drop-shadow-sm">MRP</span>
@@ -233,7 +233,7 @@ export default function ProductCatalog({ priceListUrl = "" }: ProductCatalogProp
                              {/* Discount Badge */}
                              {prod.originalPrice > prod.price && (
                                <div className="absolute top-2 left-2 z-10 scale-75 origin-top-left">
-                                 <span className="bg-gradient-to-r from-festive-red to-red-500 text-white font-black px-2 py-0.5 rounded-md text-[10px] tracking-wider shadow-sm">
+                                 <span className="bg-gradient-to-r from-festive-red to-red-500 text-white font-semibold px-2 py-0.5 rounded-md text-[10px] tracking-wider shadow-sm">
                                    {prodDiscount}% OFF
                                  </span>
                                </div>
@@ -248,21 +248,21 @@ export default function ProductCatalog({ priceListUrl = "" }: ProductCatalogProp
                              <div className="flex-1 flex flex-col justify-between py-0.5">
                                 <div>
                                    <div className="flex items-start gap-1">
-                                   <h4 className="font-black text-slate-800 text-[14px] leading-tight line-clamp-2">{cleanName}</h4>
+                                   <h4 className="font-semibold text-slate-800 text-[14px] leading-tight line-clamp-2">{cleanName}</h4>
                                  </div>
-                                   <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1 block truncate max-w-full">{prod.category}</span>
+                                   <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider mt-1 block truncate max-w-full">{prod.category}</span>
                                 </div>
                                 <div className="flex items-end justify-between mt-2">
                                    <div className="flex flex-col">
                                       {prod.originalPrice > prod.price && (
                                         <span className="text-[10px] text-slate-400 line-through font-bold">₹{prod.originalPrice.toLocaleString('en-IN')}</span>
                                       )}
-                                      <span className="text-[14px] font-black text-festive-green">₹{prod.price.toLocaleString('en-IN')}</span>
+                                      <span className="text-[14px] font-semibold text-festive-green">₹{prod.price.toLocaleString('en-IN')}</span>
                                    </div>
                                    <div className="shrink-0 mr-1">
                                       {qty > 0 ? (
                                         <div className="flex items-center border-2 border-festive-green/20 rounded-md overflow-hidden bg-white h-8 w-[85px]">
-                                          <button onClick={() => updateQuantity(prod.id, qty - 1)} className="flex-1 h-full text-slate-600 active:scale-95 font-black text-sm flex items-center justify-center">−</button>
+                                          <button onClick={() => updateQuantity(prod.id, qty - 1)} className="flex-1 h-full text-slate-600 active:scale-95 font-semibold text-sm flex items-center justify-center">−</button>
                                           <input 
                                             type="number" 
                                             value={qty} 
@@ -270,12 +270,12 @@ export default function ProductCatalog({ priceListUrl = "" }: ProductCatalogProp
                                               const val = e.target.value === '' ? 0 : parseInt(e.target.value);
                                               if (!isNaN(val) && val >= 0) updateQuantity(prod.id, val);
                                             }}
-                                            className="w-9 h-full font-black text-slate-900 text-[12px] bg-gray-50 text-center border-x border-gray-200 outline-none focus:bg-white [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                                            className="w-9 h-full font-semibold text-slate-900 text-[12px] bg-gray-50 text-center border-x border-gray-200 outline-none focus:bg-white [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                                           />
-                                          <button onClick={() => updateQuantity(prod.id, qty + 1)} className="flex-1 h-full text-slate-600 active:scale-95 font-black text-sm flex items-center justify-center">+</button>
+                                          <button onClick={() => updateQuantity(prod.id, qty + 1)} className="flex-1 h-full text-slate-600 active:scale-95 font-semibold text-sm flex items-center justify-center">+</button>
                                         </div>
                                       ) : (
-                                        <button onClick={() => addToCart({ id: prod.id, name: cleanName, price: prod.price, originalPrice: prod.originalPrice, image: prod.image, category: prod.category })} className="h-8 px-5 rounded-md bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-black uppercase text-[11px] tracking-wider active:scale-95 shadow-sm flex items-center justify-center gap-1.5">
+                                        <button onClick={() => addToCart({ id: prod.id, name: cleanName, price: prod.price, originalPrice: prod.originalPrice, image: prod.image, category: prod.category })} className="h-8 px-5 rounded-md bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-semibold uppercase text-[11px] tracking-wider active:scale-95 shadow-sm flex items-center justify-center gap-1.5">
                                           <span className="text-[15px] leading-none mb-[1px]">+</span> Add
                                         </button>
                                       )}
@@ -293,9 +293,9 @@ export default function ProductCatalog({ priceListUrl = "" }: ProductCatalogProp
 
                             {/* Product Info */}
                             <div className="flex flex-col items-start justify-center gap-0.5">
-                              <h4 className="font-black text-slate-800 text-[15px] leading-tight group-hover:text-festive-green transition-colors line-clamp-2">{cleanName}</h4>
+                              <h4 className="font-semibold text-slate-800 text-[15px] leading-tight group-hover:text-festive-green transition-colors line-clamp-2">{cleanName}</h4>
                               {prod.originalPrice > prod.price && (
-                                <span className="inline-flex items-center gap-1 bg-festive-red/10 text-festive-red text-[9px] font-black px-2 py-0.5 rounded-md uppercase tracking-wider mt-0.5">
+                                <span className="inline-flex items-center gap-1 bg-festive-red/10 text-festive-red text-[9px] font-semibold px-2 py-0.5 rounded-md uppercase tracking-wider mt-0.5">
                                   🔥 {prodDiscount}% OFF
                                 </span>
                               )}
@@ -312,7 +312,7 @@ export default function ProductCatalog({ priceListUrl = "" }: ProductCatalogProp
 
                             {/* Sale Price */}
                             <div className="flex flex-col items-end justify-center">
-                              <span className="text-xl font-black text-festive-green text-right">₹{prod.price.toLocaleString('en-IN')}</span>
+                              <span className="text-xl font-semibold text-festive-green text-right">₹{prod.price.toLocaleString('en-IN')}</span>
                             </div>
 
                             {/* Cart Actions */}
@@ -320,7 +320,7 @@ export default function ProductCatalog({ priceListUrl = "" }: ProductCatalogProp
                               {qty > 0 ? (
                                 <>
                                   <div className="flex items-center border-2 border-festive-green/20 rounded-xl overflow-hidden bg-white shadow-sm flex-1 w-[110px] lg:w-[120px] h-9">
-                                    <button onClick={() => updateQuantity(prod.id, qty - 1)} className="flex-1 w-8 h-full text-slate-600 hover:bg-red-50 hover:text-festive-red transition-all cursor-pointer font-black text-lg flex items-center justify-center">−</button>
+                                    <button onClick={() => updateQuantity(prod.id, qty - 1)} className="flex-1 w-8 h-full text-slate-600 hover:bg-red-50 hover:text-festive-red transition-all cursor-pointer font-semibold text-lg flex items-center justify-center">−</button>
                                     <input 
                                       type="number" 
                                       value={qty} 
@@ -328,16 +328,16 @@ export default function ProductCatalog({ priceListUrl = "" }: ProductCatalogProp
                                         const val = e.target.value === '' ? 0 : parseInt(e.target.value);
                                         if (!isNaN(val) && val >= 0) updateQuantity(prod.id, val);
                                       }}
-                                      className="w-10 h-full font-black text-slate-900 text-base bg-gray-50 text-center border-x border-gray-200 outline-none focus:bg-white [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                                      className="w-10 h-full font-semibold text-slate-900 text-base bg-gray-50 text-center border-x border-gray-200 outline-none focus:bg-white [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                                     />
-                                    <button onClick={() => updateQuantity(prod.id, qty + 1)} className="flex-1 w-8 h-full text-slate-600 hover:bg-purple-50 hover:text-festive-green transition-all cursor-pointer font-black text-lg flex items-center justify-center">+</button>
+                                    <button onClick={() => updateQuantity(prod.id, qty + 1)} className="flex-1 w-8 h-full text-slate-600 hover:bg-purple-50 hover:text-festive-green transition-all cursor-pointer font-semibold text-lg flex items-center justify-center">+</button>
                                   </div>
                                   <button onClick={() => removeFromCart(prod.id)} title="Remove from cart" className="w-9 h-9 rounded-xl bg-festive-red border border-festive-red text-white flex items-center justify-center transition-all duration-300 cursor-pointer hover:scale-105 active:scale-95 flex-shrink-0 shadow-sm">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-4 h-4"><path strokeLinecap="round" strokeLinejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" /></svg>
                                   </button>
                                 </>
                               ) : (
-                                <button onClick={() => addToCart({ id: prod.id, name: cleanName, price: prod.price, originalPrice: prod.originalPrice, image: prod.image, category: prod.category })} className="w-[130px] lg:w-[140px] h-9 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-amber-400 hover:to-orange-500 text-white hover:text-white font-black uppercase text-[11px] tracking-wider hover:scale-[1.03] transition-all cursor-pointer shadow-[0_4px_15px_rgba(4,120,87,0.3)] hover:shadow-[0_4px_15px_rgba(255,215,0,0.4)] flex items-center justify-center gap-1 border border-transparent">
+                                <button onClick={() => addToCart({ id: prod.id, name: cleanName, price: prod.price, originalPrice: prod.originalPrice, image: prod.image, category: prod.category })} className="w-[130px] lg:w-[140px] h-9 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-amber-400 hover:to-orange-500 text-white hover:text-white font-semibold uppercase text-[11px] tracking-wider hover:scale-[1.03] transition-all cursor-pointer shadow-[0_4px_15px_rgba(4,120,87,0.3)] hover:shadow-[0_4px_15px_rgba(255,215,0,0.4)] flex items-center justify-center gap-1 border border-transparent">
                                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-3.5 h-3.5"><path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
                                   <span>Add</span>
                                 </button>
@@ -354,7 +354,7 @@ export default function ProductCatalog({ priceListUrl = "" }: ProductCatalogProp
             </div>
         ) : (
           <div className="text-center text-gray-400 py-32">
-            <span className="text-6xl animate-bounce inline-block drop-shadow-sm mb-4">🎆</span>
+            <span className="text-xl animate-bounce inline-block drop-shadow-sm mb-4">🎆</span>
             <p className="text-xl italic font-medium">Wait for it... more sparkles coming soon!</p>
           </div>
         )}

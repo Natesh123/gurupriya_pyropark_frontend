@@ -38,14 +38,14 @@ export default function ProductCard({ id, name, price, originalPrice, image, cat
                 
                 {/* Sale Badge */}
                 {originalPrice > price && (
-                    <div className="absolute top-4 left-4 bg-festive-red text-white text-xs font-black px-3 py-1.5 rounded-lg uppercase tracking-wider shadow-sm">
+                    <div className="absolute top-4 left-4 bg-festive-red text-white text-xs font-semibold px-3 py-1.5 rounded-lg uppercase tracking-wider shadow-sm">
                         Save ₹{originalPrice - price}
                     </div>
                 )}
 
                 {/* Offer % */}
                 {originalPrice > price && (
-                    <div className="absolute top-4 right-4 bg-festive-gold text-festive-green text-xs font-black px-3 py-1.5 rounded-lg uppercase tracking-wider shadow-sm">
+                    <div className="absolute top-4 right-4 bg-festive-gold text-festive-green text-xs font-semibold px-3 py-1.5 rounded-lg uppercase tracking-wider shadow-sm">
                         {discountPct}% OFF
                     </div>
                 )}
@@ -53,13 +53,13 @@ export default function ProductCard({ id, name, price, originalPrice, image, cat
 
             {/* Content */}
             <div className="p-6 flex flex-col flex-grow">
-                <span className="text-xs font-black text-festive-red uppercase tracking-[0.2em] mb-2">{category}</span>
-                <h3 className="text-festive-green font-black text-xl mb-2 line-clamp-2 min-h-[3.5rem]">
+                <span className="text-xs font-semibold text-festive-red uppercase tracking-wider mb-2">{category}</span>
+                <h3 className="text-festive-green font-semibold text-xl mb-2 line-clamp-2 min-h-[3.5rem]">
                     {name}
                 </h3>
 
                 <div className="flex items-center gap-3 mb-6 mt-auto">
-                    <span className="text-3xl font-black text-festive-green">₹{price}</span>
+                    <span className="text-xl font-semibold text-festive-green">₹{price}</span>
                     {originalPrice > price && (
                         <span className="text-base text-gray-400 line-through font-bold">₹{originalPrice}</span>
                     )}
@@ -68,7 +68,7 @@ export default function ProductCard({ id, name, price, originalPrice, image, cat
                 {/* Action Button — adds to cart & goes to /products */}
                 <button
                     onClick={handleAddAndGo}
-                    className="w-full py-4 rounded-xl bg-festive-green border-2 border-festive-green text-white font-black text-sm tracking-widest uppercase transition-all duration-300 hover:bg-festive-red hover:border-festive-red hover:shadow-lg shadow-sm active:scale-95 cursor-pointer"
+                    className="w-full py-4 rounded-xl bg-festive-green border-2 border-festive-green text-white font-semibold text-sm tracking-wider uppercase transition-all duration-300 hover:bg-festive-red hover:border-festive-red hover:shadow-lg shadow-sm active:scale-95 cursor-pointer"
                 >
                     ➕ Add to Cart
                 </button>

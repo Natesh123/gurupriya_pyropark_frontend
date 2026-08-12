@@ -251,8 +251,6 @@
     --text-5xl--line-height: 1;
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
-    --text-7xl: 4.5rem;
-    --text-7xl--line-height: 1;
     --font-weight-light: 300;
     --font-weight-normal: 400;
     --font-weight-medium: 500;
@@ -1901,10 +1899,6 @@
     scale: 1.05;
   }
 
-  .-rotate-2 {
-    rotate: -2deg;
-  }
-
   .rotate-180 {
     rotate: 180deg;
   }
@@ -2355,6 +2349,11 @@
   .border-b-2 {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 2px;
+  }
+
+  .border-b-4 {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 4px;
   }
 
   .border-b-\[3px\] {
@@ -2881,6 +2880,10 @@
 
   .border-l-white {
     border-left-color: var(--color-white);
+  }
+
+  .bg-\[\#0a192f\] {
+    background-color: #0a192f;
   }
 
   .bg-\[\#0a0514\] {
@@ -4897,6 +4900,10 @@
     padding-top: calc(var(--spacing) * 24);
   }
 
+  .pt-\[100px\] {
+    padding-top: 100px;
+  }
+
   .pt-\[120px\] {
     padding-top: 120px;
   }
@@ -5145,10 +5152,6 @@
 
   .text-\[18px\] {
     font-size: 18px;
-  }
-
-  .text-\[28px\] {
-    font-size: 28px;
   }
 
   .leading-\[1\.1\] {
@@ -8000,6 +8003,12 @@
   }
 
   @media (hover: hover) {
+    .hover\:bg-yellow-400:hover {
+      background-color: var(--color-yellow-400);
+    }
+  }
+
+  @media (hover: hover) {
     .hover\:bg-yellow-500:hover {
       background-color: var(--color-yellow-500);
     }
@@ -8935,12 +8944,6 @@
   }
 
   @media (min-width: 40rem) {
-    .sm\:gap-5 {
-      gap: calc(var(--spacing) * 5);
-    }
-  }
-
-  @media (min-width: 40rem) {
     .sm\:gap-6 {
       gap: calc(var(--spacing) * 6);
     }
@@ -8949,12 +8952,6 @@
   @media (min-width: 40rem) {
     .sm\:p-4 {
       padding: calc(var(--spacing) * 4);
-    }
-  }
-
-  @media (min-width: 40rem) {
-    .sm\:p-5 {
-      padding: calc(var(--spacing) * 5);
     }
   }
 
@@ -9019,6 +9016,18 @@
   }
 
   @media (min-width: 40rem) {
+    .sm\:py-6 {
+      padding-block: calc(var(--spacing) * 6);
+    }
+  }
+
+  @media (min-width: 40rem) {
+    .sm\:pt-\[110px\] {
+      padding-top: 110px;
+    }
+  }
+
+  @media (min-width: 40rem) {
     .sm\:text-2xl {
       font-size: var(--text-2xl);
       line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -9029,13 +9038,6 @@
     .sm\:text-3xl {
       font-size: var(--text-3xl);
       line-height: var(--tw-leading, var(--text-3xl--line-height));
-    }
-  }
-
-  @media (min-width: 40rem) {
-    .sm\:text-4xl {
-      font-size: var(--text-4xl);
-      line-height: var(--tw-leading, var(--text-4xl--line-height));
     }
   }
 
@@ -9104,12 +9106,6 @@
   }
 
   @media (min-width: 48rem) {
-    .md\:mt-0 {
-      margin-top: calc(var(--spacing) * 0);
-    }
-  }
-
-  @media (min-width: 48rem) {
     .md\:mt-24 {
       margin-top: calc(var(--spacing) * 24);
     }
@@ -9124,12 +9120,6 @@
   @media (min-width: 48rem) {
     .md\:mb-3 {
       margin-bottom: calc(var(--spacing) * 3);
-    }
-  }
-
-  @media (min-width: 48rem) {
-    .md\:mb-4 {
-      margin-bottom: calc(var(--spacing) * 4);
     }
   }
 
@@ -9374,12 +9364,6 @@
   }
 
   @media (min-width: 48rem) {
-    .md\:items-start {
-      align-items: flex-start;
-    }
-  }
-
-  @media (min-width: 48rem) {
     .md\:justify-center {
       justify-content: center;
     }
@@ -9388,12 +9372,6 @@
   @media (min-width: 48rem) {
     .md\:justify-end {
       justify-content: flex-end;
-    }
-  }
-
-  @media (min-width: 48rem) {
-    .md\:justify-start {
-      justify-content: flex-start;
     }
   }
 
@@ -9667,13 +9645,6 @@
   @media (min-width: 48rem) {
     .md\:text-\[22px\] {
       font-size: 22px;
-    }
-  }
-
-  @media (min-width: 48rem) {
-    .md\:leading-\[1\.8\] {
-      --tw-leading: 1.8;
-      line-height: 1.8;
     }
   }
 
@@ -9986,6 +9957,12 @@
   }
 
   @media (min-width: 64rem) {
+    .lg\:pt-\[125px\] {
+      padding-top: 125px;
+    }
+  }
+
+  @media (min-width: 64rem) {
     .lg\:pb-32 {
       padding-bottom: calc(var(--spacing) * 32);
     }
@@ -10034,13 +10011,6 @@
     .lg\:text-6xl {
       font-size: var(--text-6xl);
       line-height: var(--tw-leading, var(--text-6xl--line-height));
-    }
-  }
-
-  @media (min-width: 64rem) {
-    .lg\:text-7xl {
-      font-size: var(--text-7xl);
-      line-height: var(--tw-leading, var(--text-7xl--line-height));
     }
   }
 
@@ -10174,6 +10144,12 @@
   @media (min-width: 80rem) {
     .xl\:py-2\.5 {
       padding-block: calc(var(--spacing) * 2.5);
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .xl\:pt-\[135px\] {
+      padding-top: 135px;
     }
   }
 

@@ -69,7 +69,7 @@ function Loader() {
                         columnNumber: 9
                     }, this),
                     !showButton && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex gap-1 items-center text-amber-400 font-black tracking-[0.3em] uppercase text-sm mt-4 animate-pulse",
+                        className: "flex gap-1 items-center text-amber-400 font-semibold tracking-[0.3em] uppercase text-sm mt-4 animate-pulse",
                         children: "LOADING PLEASE WAIT..."
                     }, void 0, false, {
                         fileName: "[project]/app/components/Loader.tsx",
@@ -84,7 +84,7 @@ function Loader() {
             }, this),
             showButton && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 onClick: handleEnterSite,
-                className: "mt-6 bg-gradient-to-r from-amber-400 to-yellow-500 text-slate-900 px-10 py-4 rounded-full font-black text-lg uppercase tracking-widest shadow-[0_0_25px_rgba(255,215,0,0.5)] hover:scale-110 active:scale-95 transition-transform",
+                className: "mt-6 bg-gradient-to-r from-amber-400 to-yellow-500 text-slate-900 px-10 py-4 rounded-full font-semibold text-lg uppercase tracking-wider shadow-[0_0_25px_rgba(255,215,0,0.5)] hover:scale-110 active:scale-95 transition-transform",
                 children: "🚀 ENTER WEBSITE"
             }, void 0, false, {
                 fileName: "[project]/app/components/Loader.tsx",
@@ -419,7 +419,7 @@ function CartDrawer() {
                                 className: "flex items-center gap-2 sm:gap-3",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-xl sm:text-2xl drop-shadow-sm",
+                                        className: "text-xl sm:text-xl drop-shadow-sm",
                                         children: "🛒"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/CartDrawer.tsx",
@@ -427,7 +427,7 @@ function CartDrawer() {
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                        className: "text-lg sm:text-xl font-black uppercase tracking-widest text-festive-green flex items-center flex-wrap gap-2 sm:gap-3",
+                                        className: "text-lg sm:text-xl font-semibold uppercase tracking-wider text-festive-green flex items-center flex-wrap gap-2 sm:gap-3",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 children: [
@@ -476,7 +476,7 @@ function CartDrawer() {
                                     cartItems.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: clearCart,
                                         title: "Clear all cart items",
-                                        className: "w-8 h-8 sm:w-auto sm:h-auto sm:px-3 sm:py-1.5 rounded-full font-black uppercase tracking-widest text-red-500 hover:text-red-700 bg-red-50 hover:bg-red-100 border border-red-200 transition-colors flex items-center justify-center sm:gap-1.5 cursor-pointer shadow-sm flex-shrink-0",
+                                        className: "w-8 h-8 sm:w-auto sm:h-auto sm:px-3 sm:py-1.5 rounded-full font-semibold uppercase tracking-wider text-red-500 hover:text-red-700 bg-red-50 hover:bg-red-100 border border-red-200 transition-colors flex items-center justify-center sm:gap-1.5 cursor-pointer shadow-sm flex-shrink-0",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                                 xmlns: "http://www.w3.org/2000/svg",
@@ -542,7 +542,7 @@ function CartDrawer() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "w-28 h-28 bg-gray-50 rounded-full flex items-center justify-center border border-gray-100 shadow-sm",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-6xl animate-pulse drop-shadow-sm",
+                                        className: "text-xl animate-pulse drop-shadow-sm",
                                         children: "✨"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/CartDrawer.tsx",
@@ -557,7 +557,7 @@ function CartDrawer() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "text-slate-800 font-black uppercase tracking-widest text-lg mb-2",
+                                            className: "text-slate-800 font-semibold uppercase tracking-wider text-lg mb-2",
                                             children: "Your cart is empty"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/CartDrawer.tsx",
@@ -580,7 +580,7 @@ function CartDrawer() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>setCartOpen(false),
-                                    className: "px-10 py-3.5 rounded-full bg-gradient-to-r from-festive-gold to-yellow-400 text-festive-green font-black text-base uppercase tracking-widest hover:scale-105 transition-all shadow-[0_8px_20px_rgba(255,215,0,0.4)] mt-4",
+                                    className: "px-10 py-3.5 rounded-full bg-gradient-to-r from-festive-gold to-yellow-400 text-festive-green font-semibold text-base uppercase tracking-wider hover:scale-105 transition-all shadow-[0_8px_20px_rgba(255,215,0,0.4)] mt-4",
                                     children: "Start Shopping"
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/CartDrawer.tsx",
@@ -632,7 +632,7 @@ function CartDrawer() {
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                                    className: "text-base sm:text-base font-black text-slate-800 tracking-wide leading-tight group-hover:text-festive-green transition-colors line-clamp-2",
+                                                                    className: "text-base sm:text-base font-semibold text-slate-800 tracking-wide leading-tight group-hover:text-festive-green transition-colors line-clamp-2",
                                                                     children: item.name
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/CartDrawer.tsx",
@@ -643,7 +643,7 @@ function CartDrawer() {
                                                                     className: "flex items-center gap-3 mt-2",
                                                                     children: [
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "text-base font-black text-festive-green drop-shadow-sm",
+                                                                            className: "text-base font-semibold text-festive-green drop-shadow-sm",
                                                                             children: [
                                                                                 "₹",
                                                                                 item.price
@@ -684,7 +684,7 @@ function CartDrawer() {
                                                                     children: [
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                                             onClick: ()=>updateQuantity(item.id, item.quantity - 1),
-                                                                            className: "px-3.5 py-2 text-base font-black text-slate-500 hover:bg-gray-100 hover:text-festive-red transition-colors cursor-pointer",
+                                                                            className: "px-3.5 py-2 text-base font-semibold text-slate-500 hover:bg-gray-100 hover:text-festive-red transition-colors cursor-pointer",
                                                                             children: "−"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/components/CartDrawer.tsx",
@@ -698,7 +698,7 @@ function CartDrawer() {
                                                                                 const val = e.target.value === '' ? 0 : parseInt(e.target.value);
                                                                                 if (!isNaN(val) && val >= 0) updateQuantity(item.id, val);
                                                                             },
-                                                                            className: "px-2 py-2 w-12 text-base font-black text-center bg-white border-x border-gray-200 text-slate-900 shadow-inner outline-none focus:bg-white [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                                                                            className: "px-2 py-2 w-12 text-base font-semibold text-center bg-white border-x border-gray-200 text-slate-900 shadow-inner outline-none focus:bg-white [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/components/CartDrawer.tsx",
                                                                             lineNumber: 245,
@@ -706,7 +706,7 @@ function CartDrawer() {
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                                             onClick: ()=>updateQuantity(item.id, item.quantity + 1),
-                                                                            className: "px-3.5 py-2 text-base font-black text-slate-500 hover:bg-gray-100 hover:text-festive-green transition-colors cursor-pointer",
+                                                                            className: "px-3.5 py-2 text-base font-semibold text-slate-500 hover:bg-gray-100 hover:text-festive-green transition-colors cursor-pointer",
                                                                             children: "+"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/components/CartDrawer.tsx",
@@ -723,7 +723,7 @@ function CartDrawer() {
                                                                     className: "flex items-center gap-3",
                                                                     children: [
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "text-base font-black text-slate-900 hidden sm:block drop-shadow-sm",
+                                                                            className: "text-base font-semibold text-slate-900 hidden sm:block drop-shadow-sm",
                                                                             children: [
                                                                                 "₹",
                                                                                 item.price * item.quantity
@@ -777,7 +777,7 @@ function CartDrawer() {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             onClick: ()=>setShowCheckoutForm(!showCheckoutForm),
-                                            className: `w-full flex items-center justify-between text-sm sm:text-sm font-black uppercase tracking-wider p-4 rounded-xl transition-all border cursor-pointer ${showCheckoutForm ? 'bg-festive-gold/10 border-festive-gold/30 text-festive-green shadow-sm' : 'bg-gray-50 border-gray-200 text-slate-600 hover:bg-gray-100 hover:border-gray-300'}`,
+                                            className: `w-full flex items-center justify-between text-sm sm:text-sm font-semibold uppercase tracking-wider p-4 rounded-xl transition-all border cursor-pointer ${showCheckoutForm ? 'bg-festive-gold/10 border-festive-gold/30 text-festive-green shadow-sm' : 'bg-gray-50 border-gray-200 text-slate-600 hover:bg-gray-100 hover:border-gray-300'}`,
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "flex items-center gap-2",
@@ -818,7 +818,7 @@ function CartDrawer() {
                                                     className: "space-y-1.5",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                            className: "block text-xs font-black uppercase tracking-widest text-slate-500",
+                                                            className: "block text-xs font-semibold uppercase tracking-wider text-slate-500",
                                                             children: "Full Name"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/CartDrawer.tsx",
@@ -860,7 +860,7 @@ function CartDrawer() {
                                                     className: "space-y-1.5",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                            className: "block text-xs font-black uppercase tracking-widest text-slate-500",
+                                                            className: "block text-xs font-semibold uppercase tracking-wider text-slate-500",
                                                             children: "Contact Number"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/CartDrawer.tsx",
@@ -902,7 +902,7 @@ function CartDrawer() {
                                                     className: "space-y-1.5 sm:col-span-2",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                            className: "block text-xs font-black uppercase tracking-widest text-slate-500",
+                                                            className: "block text-xs font-semibold uppercase tracking-wider text-slate-500",
                                                             children: "Email Address"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/CartDrawer.tsx",
@@ -944,7 +944,7 @@ function CartDrawer() {
                                                     className: "space-y-1.5 sm:col-span-2",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                            className: "block text-xs font-black uppercase tracking-widest text-slate-500",
+                                                            className: "block text-xs font-semibold uppercase tracking-wider text-slate-500",
                                                             children: "Full Delivery Address"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/CartDrawer.tsx",
@@ -986,7 +986,7 @@ function CartDrawer() {
                                                     className: "space-y-1.5 sm:col-span-2",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                            className: "block text-xs font-black uppercase tracking-widest text-slate-500",
+                                                            className: "block text-xs font-semibold uppercase tracking-wider text-slate-500",
                                                             children: "Delivery City/Town"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/CartDrawer.tsx",
@@ -1053,7 +1053,7 @@ function CartDrawer() {
                                         className: "flex items-end gap-4 mb-2",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-base font-black text-slate-500 uppercase tracking-wider pb-1",
+                                                className: "text-base font-semibold text-slate-500 uppercase tracking-wider pb-1",
                                                 children: "Total:"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/CartDrawer.tsx",
@@ -1061,7 +1061,7 @@ function CartDrawer() {
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-3xl font-black text-festive-green drop-shadow-sm leading-none",
+                                                className: "text-xl font-semibold text-festive-green drop-shadow-sm leading-none",
                                                 children: [
                                                     "₹",
                                                     cartTotal
@@ -1091,7 +1091,7 @@ function CartDrawer() {
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200 font-black shadow-sm",
+                                                className: "bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200 font-semibold shadow-sm",
                                                 children: [
                                                     cartDiscountableOriginalTotal > 0 ? Math.round(cartSavings / cartDiscountableOriginalTotal * 100) : 0,
                                                     "% OFF"
@@ -1118,7 +1118,7 @@ function CartDrawer() {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: ()=>setCartOpen(false),
-                                        className: "w-full sm:flex-1 h-12 sm:h-14 rounded-xl bg-white text-emerald-700 font-black text-sm sm:text-base uppercase tracking-[0.1em] transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(5,150,105,0.1)] hover:shadow-[0_8px_25px_rgba(5,150,105,0.25)] active:scale-95 group overflow-hidden border-[2.5px] border-emerald-600 relative",
+                                        className: "w-full sm:flex-1 h-12 sm:h-14 rounded-xl bg-white text-emerald-700 font-semibold text-sm sm:text-base uppercase tracking-wide transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(5,150,105,0.1)] hover:shadow-[0_8px_25px_rgba(5,150,105,0.25)] active:scale-95 group overflow-hidden border-[2.5px] border-emerald-600 relative",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "absolute inset-0 bg-gradient-to-r from-emerald-500 to-emerald-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -1181,7 +1181,7 @@ function CartDrawer() {
                                         columnNumber: 17
                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: handleConfirmOrder,
-                                        className: "flex-1 sm:px-8 h-14 rounded-xl bg-festive-red hover:bg-festive-gold text-white hover:text-festive-green font-black text-base uppercase tracking-widest hover:scale-[1.03] active:scale-95 transition-all shadow-[0_8px_20px_rgba(220,38,38,0.25)] hover:shadow-[0_10px_25px_rgba(255,215,0,0.4)] border border-transparent hover:border-festive-gold cursor-pointer flex items-center justify-center gap-2",
+                                        className: "flex-1 sm:px-8 h-14 rounded-xl bg-festive-red hover:bg-festive-gold text-white hover:text-festive-green font-semibold text-base uppercase tracking-wider hover:scale-[1.03] active:scale-95 transition-all shadow-[0_8px_20px_rgba(220,38,38,0.25)] hover:shadow-[0_10px_25px_rgba(255,215,0,0.4)] border border-transparent hover:border-festive-gold cursor-pointer flex items-center justify-center gap-2",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "text-xl",
@@ -1226,7 +1226,7 @@ function CartDrawer() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "w-24 h-24 bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6 border border-emerald-200 shadow-sm",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "text-5xl",
+                                            className: "text-xl",
                                             children: "✅"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/CartDrawer.tsx",
@@ -1239,7 +1239,7 @@ function CartDrawer() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-2xl font-black text-slate-900 uppercase tracking-widest mb-3",
+                                        className: "text-xl font-semibold text-slate-900 uppercase tracking-wider mb-3",
                                         children: "Order Confirmed"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/CartDrawer.tsx",
@@ -1271,7 +1271,7 @@ function CartDrawer() {
                                             clearCart();
                                             setCartOpen(false);
                                         },
-                                        className: "w-full py-4 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-black text-base uppercase tracking-widest hover:scale-[1.02] active:scale-95 transition-all shadow-[0_8px_20px_rgba(16,185,129,0.25)]",
+                                        className: "w-full py-4 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-semibold text-base uppercase tracking-wider hover:scale-[1.02] active:scale-95 transition-all shadow-[0_8px_20px_rgba(16,185,129,0.25)]",
                                         children: "Done"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/CartDrawer.tsx",
@@ -1353,7 +1353,7 @@ function FloatingCart() {
                     className: "flex flex-col ml-1",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "text-white/80 text-[10px] font-bold uppercase tracking-widest mb-0.5",
+                            className: "text-white/80 text-[10px] font-bold uppercase tracking-wider mb-0.5",
                             children: [
                                 cartCount,
                                 " ",
@@ -1369,7 +1369,7 @@ function FloatingCart() {
                             className: "flex items-end gap-1",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "text-xl font-black tracking-wider leading-none text-festive-gold",
+                                    className: "text-xl font-semibold tracking-wider leading-none text-festive-gold",
                                     children: [
                                         "₹",
                                         cartTotal
@@ -1401,7 +1401,7 @@ function FloatingCart() {
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                     onClick: ()=>setCartOpen(true),
-                    className: "bg-white text-emerald-700 px-5 py-2.5 rounded-xl font-black text-sm uppercase tracking-[0.1em] shadow-[0_4px_15px_rgba(255,255,255,0.2)] flex items-center gap-1.5 active:scale-95 transition-all",
+                    className: "bg-white text-emerald-700 px-5 py-2.5 rounded-xl font-semibold text-sm uppercase tracking-wide shadow-[0_4px_15px_rgba(255,255,255,0.2)] flex items-center gap-1.5 active:scale-95 transition-all",
                     children: [
                         "View Cart",
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {

@@ -75,10 +75,10 @@ export default function Footer() {
                                 />
                             </div>
                             <div>
-                                <h2 className="text-xl font-black tracking-tight text-white leading-none mb-1">
+                                <h2 className="text-xl font-semibold tracking-tight text-white leading-none mb-1">
                                     GURUPRIYA <br/><span className="text-amber-400">PYRO PARK</span>
                                 </h2>
-                                <span className="text-[10px] text-emerald-300 font-bold tracking-[0.2em] uppercase">
+                                <span className="text-[10px] text-emerald-300 font-bold tracking-wider uppercase">
                                     Sivakasi
                                 </span>
                             </div>
@@ -87,10 +87,10 @@ export default function Footer() {
                             Bringing the magic of fireworks directly from the heart of Sivakasi to your doorstep. Premium quality, unbeatable prices, and the highest safety standards.
                         </p>
                         <div className="flex items-center gap-2">
-                            <span className="px-3 py-1 bg-emerald-900 border border-emerald-800 rounded-full text-[10px] font-bold text-amber-400 uppercase tracking-widest shadow-inner">
+                            <span className="px-3 py-1 bg-emerald-900 border border-emerald-800 rounded-full text-[10px] font-bold text-amber-400 uppercase tracking-wider shadow-inner">
                                 Factory Direct
                             </span>
-                            <span className="px-3 py-1 bg-emerald-900 border border-emerald-800 rounded-full text-[10px] font-bold text-emerald-300 uppercase tracking-widest shadow-inner">
+                            <span className="px-3 py-1 bg-emerald-900 border border-emerald-800 rounded-full text-[10px] font-bold text-emerald-300 uppercase tracking-wider shadow-inner">
                                 Certified
                             </span>
                         </div>
@@ -98,7 +98,7 @@ export default function Footer() {
 
                     {/* Column 2: Quick Links */}
                     <div className="flex flex-col lg:pl-8">
-                        <h3 className="text-sm font-bold text-white uppercase tracking-[0.2em] mb-6 flex items-center gap-2">
+                        <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-6 flex items-center gap-2">
                             <span className="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
                             Quick Links
                         </h3>
@@ -123,7 +123,7 @@ export default function Footer() {
 
                     {/* Column 3: Contact Info */}
                     <div className="flex flex-col">
-                        <h3 className="text-sm font-bold text-white uppercase tracking-[0.2em] mb-6 flex items-center gap-2">
+                        <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-6 flex items-center gap-2">
                             <span className="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
                             Contact Us
                         </h3>
@@ -164,7 +164,7 @@ export default function Footer() {
 
                     {/* Column 4: Timings & Socials */}
                     <div className="flex flex-col">
-                        <h3 className="text-sm font-bold text-white uppercase tracking-[0.2em] mb-6 flex items-center gap-2">
+                        <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-6 flex items-center gap-2">
                             <span className="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
                             Timings & Socials
                         </h3>
@@ -175,7 +175,7 @@ export default function Footer() {
                                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                                     <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
                                 </span>
-                                <span className="text-[10px] font-bold text-green-400 uppercase tracking-widest">Season Open</span>
+                                <span className="text-[10px] font-bold text-green-400 uppercase tracking-wider">Season Open</span>
                             </div>
                             <p className="text-sm font-medium text-white">Mon - Sun: 9:00 AM – 10:00 PM</p>
                         </div>

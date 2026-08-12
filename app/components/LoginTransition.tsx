@@ -216,10 +216,10 @@ export default function LoginTransition() {
       <div className="relative z-10 text-center select-none pointer-events-none px-4">
         {/* Animated Key Unlock Spark */}
         <div className="w-24 h-24 mx-auto mb-6 bg-gradient-to-tr from-festive-gold/60 to-pink-500/60 rounded-full flex items-center justify-center border-2 border-festive-gold shadow-[0_0_50px_rgba(253,185,49,0.5)] animate-bounce">
-          <span className="text-5xl animate-pulse">🔑</span>
+          <span className="text-xl animate-pulse">🔑</span>
         </div>
         
-        <h2 className="text-3xl md:text-5xl font-black uppercase tracking-[0.2em] bg-gradient-to-r from-festive-gold via-pink-500 to-festive-gold bg-clip-text text-transparent drop-shadow-[0_0_20px_rgba(253,185,49,0.4)] animate-pulse">
+        <h2 className="text-xl md:text-xl font-semibold uppercase tracking-wider bg-gradient-to-r from-festive-gold via-pink-500 to-festive-gold bg-clip-text text-transparent drop-shadow-[0_0_20px_rgba(253,185,49,0.4)] animate-pulse">
           Access Granted
         </h2>
         
