@@ -84,7 +84,7 @@ const overviewContent = `
                       <div className="mt-auto grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <button
                           onClick={() => { setEditingProduct(null); setProductName(""); setProductPrice(""); setProductOriginalPrice(""); setProductDiscount(""); setProductCategoryId(""); setProductImage(""); setProductTamilTranslation(""); setIsProductModalOpen(true); }}
-                          className="py-3 rounded-xl bg-slate-900 text-white font-bold text-base hover:-translate-y-0.5 hover:shadow-lg transition-all text-center shadow-md flex items-center justify-center gap-2"
+                          className="py-3 rounded-xl bg-slate-900 text-white font-bold text-base hover:-translate-y-0.5 hover:shadow-lg transition-all text-center shadow-sm flex items-center justify-center gap-2"
                         >
                           <span className="opacity-80">➕</span> Add Product
                         </button>
@@ -110,7 +110,7 @@ const overviewContent = `
                     </div>
                     <button
                       onClick={() => { setEditingCategory(null); setNewCategoryName(""); setNewCatTamilTranslation(""); document.getElementById("add-category-modal")?.classList.remove("hidden"); }}
-                      className="px-6 py-3 rounded-xl bg-slate-900 text-white font-bold text-base hover:-translate-y-0.5 hover:shadow-lg transition-all shadow-md flex items-center gap-2"
+                      className="px-6 py-3 rounded-xl bg-slate-900 text-white font-bold text-base hover:-translate-y-0.5 hover:shadow-lg transition-all shadow-sm flex items-center gap-2"
                     >
                       <span className="opacity-80">➕</span> Add Category
                     </button>
@@ -122,7 +122,7 @@ const overviewContent = `
                        </div>
                     ) : (
                       categories.map(cat => (
-                        <div key={cat.id} className="bg-white border border-slate-200 rounded-2xl p-6 flex justify-between items-center shadow-sm hover:shadow-md transition-shadow">
+                        <div key={cat.id} className="bg-white border border-slate-200 rounded-2xl p-6 flex justify-between items-center shadow-sm hover:shadow-sm transition-shadow">
                           <div className="flex items-center gap-4">
                             <div className="w-12 h-12 rounded-xl bg-slate-50 flex items-center justify-center text-2xl shadow-sm border border-slate-100">🏷️</div>
                             <div>
@@ -159,7 +159,7 @@ const overviewContent = `
                       </button>
                       <button
                         onClick={() => { setEditingProduct(null); setProductName(""); setProductPrice(""); setProductOriginalPrice(""); setProductDiscount(""); setProductCategoryId(""); setProductImage(""); setProductTamilTranslation(""); setIsProductModalOpen(true); }}
-                        className="flex-1 lg:flex-none px-6 py-3 rounded-xl bg-slate-900 text-white font-bold text-base hover:-translate-y-0.5 hover:shadow-lg transition-all shadow-md flex items-center justify-center gap-2"
+                        className="flex-1 lg:flex-none px-6 py-3 rounded-xl bg-slate-900 text-white font-bold text-base hover:-translate-y-0.5 hover:shadow-lg transition-all shadow-sm flex items-center justify-center gap-2"
                       >
                         <span className="opacity-80">➕</span> Add Product
                       </button>

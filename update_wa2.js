@@ -82,7 +82,7 @@ ${htmlString}
           await navigator.share({
             files: [file],
             title: \`Estimate \${order.id}\`,
-            text: \`Hi \${order.customer_name}, here is your estimate quotation from Vamsi Crackers.\`
+            text: \`Hi \${order.customer_name}, here is your estimate quotation from Gurupriya Pyro Park.\`
           });
           shared = true;
         } catch (err) {
@@ -103,7 +103,7 @@ ${htmlString}
         
         let phone = order.customer_phone.replace(/\\D/g,'');
         if (phone.length === 10) phone = '91' + phone;
-        const text = \`Hi \${order.customer_name}, here is your estimate quotation (PDF) from Vamsi Crackers. I am sending the document now.\`;
+        const text = \`Hi \${order.customer_name}, here is your estimate quotation (PDF) from Gurupriya Pyro Park. I am sending the document now.\`;
         window.open(\`https://wa.me/\${phone}?text=\${encodeURIComponent(text)}\`, '_blank');
       }
     } catch(err: any) {

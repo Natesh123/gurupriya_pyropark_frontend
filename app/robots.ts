@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/private/'],
     },
-    sitemap: 'https://vamsicrackers.in/sitemap.xml',
+    sitemap: 'https://gurupriyapyropark.in/sitemap.xml',
   };
 }

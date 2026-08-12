@@ -7,7 +7,7 @@ let content = fs.readFileSync(filePath, 'utf8');
 // Refine Sidebar Active State
 content = content.replace(
     /activeTab === tab.id\s*\?\s*"bg-slate-800 text-white"/g,
-    'activeTab === tab.id\n                    ? "bg-blue-600 text-white shadow-md shadow-blue-500/20"'
+    'activeTab === tab.id\n                    ? "bg-blue-600 text-white shadow-sm shadow-blue-500/20"'
 );
 
 // Refine Stats Cards to look extremely clean and modern
@@ -23,7 +23,7 @@ content = content.replace(
 );
 // Completely rewrite the stat card interior for a super premium look
 content = content.replace(
-    /<div className="relative z-10">\s*<span className="text-slate-500 font-black uppercase tracking-widest text-\[10px\] mb-2 block drop-shadow-md">\s*\{stat\.label\}\s*<\/span>\s*<h3 className="text-3xl font-black text-slate-900 drop-shadow-lg">\{stat\.value\}<\/h3>\s*\{"sub" in stat && \(\s*<p className="text-slate-500 text-xs mt-2 line-clamp-1 font-medium">\{stat\.sub\}<\/p>\s*\)\}\s*<\/div>/g,
+    /<div className="relative z-10">\s*<span className="text-slate-500 font-black uppercase tracking-widest text-\[10px\] mb-2 block drop-shadow-sm">\s*\{stat\.label\}\s*<\/span>\s*<h3 className="text-3xl font-black text-slate-900 drop-shadow-lg">\{stat\.value\}<\/h3>\s*\{"sub" in stat && \(\s*<p className="text-slate-500 text-xs mt-2 line-clamp-1 font-medium">\{stat\.sub\}<\/p>\s*\)\}\s*<\/div>/g,
     `<div className="flex justify-between items-start mb-4">
                             <span className="text-slate-500 font-bold uppercase tracking-wider text-[11px]">
                               {stat.label}
@@ -40,8 +40,8 @@ content = content.replace(
 
 // Fix the Drop shadow text in other places (drop-shadow makes text look messy in a clean theme)
 content = content.replace(/drop-shadow-lg/g, '');
-content = content.replace(/drop-shadow-md/g, '');
-content = content.replace(/drop-shadow-2xl/g, '');
+content = content.replace(/drop-shadow-sm/g, '');
+content = content.replace(/drop-shadow-xl/g, '');
 content = content.replace(/drop-shadow-sm/g, '');
 
 // Enhance panels (Quick Management, Category Share) to use tracking-tight on headers for that premium SaaS feel

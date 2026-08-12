@@ -79,7 +79,7 @@ const categoryModal = `      {/* CATEGORY CREATION/EDIT MODAL */}
               </button>
               <button
                 type="submit"
-                className="flex-[2] py-3.5 rounded-xl bg-slate-900 hover:bg-black text-white text-sm font-black tracking-tight shadow-lg shadow-slate-900/20 hover:shadow-xl hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2"
+                className="flex-[2] py-3.5 rounded-xl bg-slate-900 hover:bg-black text-white text-sm font-black tracking-tight shadow-lg shadow-slate-900/20 hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2"
               >
                 {editingCategory ? "Save Changes" : "Create Category"}
               </button>

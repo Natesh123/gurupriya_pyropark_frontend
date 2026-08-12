@@ -12,70 +12,60 @@ const galleryImages = [
 
 export default function FireworkGallery() {
     return (
-        <section className="bg-black py-24 relative overflow-hidden">
-            {/* Sparkle Particles Background */}
-            <div className="absolute inset-0 opacity-20 pointer-events-none">
-                <div className="absolute top-10 left-1/4 w-1 h-1 bg-white rounded-full animate-ping"></div>
-                <div className="absolute top-1/2 left-1/2 w-1 h-1 bg-festive-gold rounded-full animate-ping delay-700"></div>
-                <div className="absolute bottom-20 right-1/4 w-1 h-1 bg-white rounded-full animate-ping delay-1000"></div>
-            </div>
+        <section className="bg-gradient-to-b from-white via-slate-50 to-white py-24 relative overflow-hidden">
+            {/* Elegant Background Accents */}
+            <div className="absolute top-0 right-1/4 w-96 h-96 bg-emerald-100/30 rounded-full blur-3xl opacity-60"></div>
+            <div className="absolute bottom-10 left-1/4 w-96 h-96 bg-amber-100/30 rounded-full blur-3xl opacity-60"></div>
 
             <div className="container mx-auto px-4 relative z-10">
                 {/* Header */}
-                <div className="text-center mb-16">
-                    <span className="text-festive-gold text-base font-black tracking-[0.4em] uppercase mb-3 block">Visual Experience</span>
-                    <h2 className="text-4xl md:text-6xl font-black text-white mb-6 uppercase tracking-tighter">
-                        The <span className="text-festive-gold">Art</span> of Fire
+                <div className="text-center mb-16 relative">
+                    <span className="text-emerald-600 text-sm font-black tracking-[0.4em] uppercase mb-4 block drop-shadow-sm">Visual Experience</span>
+                    <h2 className="text-4xl md:text-6xl font-black text-slate-900 mb-6 uppercase tracking-tighter">
+                        The <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500 drop-shadow-sm">Art</span> of Fire
                     </h2>
-                    <p className="text-gray-400 max-w-2xl mx-auto font-medium">
+                    <p className="text-slate-500 max-w-2xl mx-auto font-medium text-lg">
                         Witness the breathtaking beauty of our premium fireworks captured in high definition.
                     </p>
                 </div>
 
-                {/* Gallery Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {/* Gallery Grid - Framed Art Style */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
                     {galleryImages.map((img) => (
                         <div 
                             key={img.id} 
-                            className="group relative rounded-[2rem] overflow-hidden aspect-[4/5] bg-gray-900 shadow-2xl transition-all duration-700 hover:scale-[1.02]"
+                            className="group bg-white p-4 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgb(5,150,105,0.15)] border border-gray-100 transition-all duration-500 hover:-translate-y-2 cursor-pointer flex flex-col"
                         >
-                            <Image 
-                                src={img.src} 
-                                alt={img.title} 
-                                fill 
-                                className="object-cover transition-transform duration-1000 group-hover:scale-110 opacity-80 group-hover:opacity-100"
-                            />
-                            
-                            {/* Animated Glow Overlay */}
-                            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
-                            
-                            {/* Explosion Pulse Effect (CSS) */}
-                            <div className="absolute inset-0 border-2 border-festive-gold/0 group-hover:border-festive-gold/40 rounded-[2rem] transition-all duration-500 scale-95 group-hover:scale-100"></div>
-
-                            {/* Content */}
-                            <div className="absolute bottom-0 left-0 w-full p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                                <span className="inline-block px-3 py-1 rounded-full bg-festive-red text-white text-xs font-black uppercase tracking-widest mb-3">
-                                    {img.tag}
-                                </span>
-                                <h3 className="text-2xl font-black text-white uppercase tracking-tight leading-none group-hover:text-festive-gold transition-colors">
-                                    {img.title}
-                                </h3>
-                                <div className="w-0 group-hover:w-12 h-1 bg-festive-gold mt-4 transition-all duration-500"></div>
+                            {/* Framed Image */}
+                            <div className="relative rounded-2xl overflow-hidden aspect-[4/5] mb-5 w-full bg-gray-100 border border-gray-50">
+                                <Image 
+                                    src={img.src} 
+                                    alt={img.title} 
+                                    fill 
+                                    className="object-cover transition-transform duration-1000 group-hover:scale-110"
+                                />
+                                {/* Subtle vignette */}
+                                <div className="absolute inset-0 bg-radial-gradient from-transparent to-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                             </div>
 
-                            {/* Floating Sparkles (Emoji) */}
-                            <div className="absolute top-6 right-6 text-2xl animate-bounce opacity-0 group-hover:opacity-100 transition-opacity">
-                                ✨
+                            {/* Content Below Image */}
+                            <div className="px-2 flex flex-col items-center text-center pb-2">
+                                <span className="inline-block px-3 py-1 rounded-full bg-emerald-50 text-emerald-600 border border-emerald-100 text-[10px] font-black uppercase tracking-widest mb-3">
+                                    {img.tag}
+                                </span>
+                                <h3 className="text-xl font-black text-slate-800 uppercase tracking-tight group-hover:text-emerald-600 transition-colors duration-300">
+                                    {img.title}
+                                </h3>
                             </div>
                         </div>
                     ))}
                 </div>
 
                 {/* Experience Banner */}
-                <div className="mt-20 p-1 bg-gradient-to-r from-transparent via-festive-gold/30 to-transparent rounded-full">
-                     <div className="bg-black py-4 px-10 text-center rounded-full">
-                        <p className="text-festive-gold text-sm md:text-sm font-black uppercase tracking-[0.5em] animate-pulse">
-                            Captured live at Sivakasi manufacturing yards
+                <div className="mt-20 max-w-fit mx-auto p-[2px] bg-gradient-to-r from-emerald-200 via-amber-300 to-emerald-200 rounded-full shadow-lg">
+                     <div className="bg-white py-4 px-8 md:px-12 text-center rounded-full">
+                        <p className="text-slate-700 text-xs md:text-sm font-black uppercase tracking-[0.3em] md:tracking-[0.5em]">
+                            Captured live at <span className="text-emerald-600">Sivakasi</span> manufacturing yards
                         </p>
                      </div>
                 </div>

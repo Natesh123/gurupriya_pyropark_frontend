@@ -1234,7 +1234,7 @@ export default function AdminDashboard() {
     ]);
     const wb = xlsx.utils.book_new();
     xlsx.utils.book_append_sheet(wb, ws, "Template");
-    xlsx.writeFile(wb, "Vamsi_Crackers_Bulk_Template.xlsx");
+    xlsx.writeFile(wb, "Gurupriya_Pyro_Park_Bulk_Template.xlsx");
   };
 
   const handleBulkUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -1397,21 +1397,21 @@ export default function AdminDashboard() {
         </head>
         <body>
           <!-- Application Theme Header -->
-          <div style="display: flex; align-items: center; justify-content: space-between; background: linear-gradient(135deg, #2a0845 0%, #4a1c6a 100%); padding: 25px 30px; margin-bottom: 25px; border-bottom: 4px solid #f59e0b; border-radius: 12px 12px 0 0; -webkit-print-color-adjust: exact; print-color-adjust: exact;">
+          <div style="display: flex; align-items: center; justify-content: space-between; background: linear-gradient(135deg, #047857 0%, #10b981 100%); padding: 25px 30px; margin-bottom: 25px; border-bottom: 4px solid #f59e0b; border-radius: 12px 12px 0 0; -webkit-print-color-adjust: exact; print-color-adjust: exact;">
             
             <!-- Left: Logo & Core Info -->
             <div style="display: flex; align-items: center; z-index: 1;">
-              <div style="margin-right: 25px; display: flex; align-items: center; justify-content: center; width: 100px; height: 100px; border-radius: 50%; overflow: hidden;">
-                <img src="${window.location.origin}/assets/images/vamsi_crackers_logo_v2.png" alt="Vamsi Crackers" style="width: 100%; height: 100%; object-fit: cover; filter: drop-shadow(0px 2px 8px rgba(255,255,255,0.2)); transform: scale(1.15);" />
+              <div style="margin-right: 25px; display: flex; align-items: center; justify-content: center; width: 100px; height: 100px; border-radius: 12px; overflow: hidden; background: white; padding: 4px;">
+                <img src="${window.location.origin}/assets/images/gurupriya_pyropark_logo_primary.png" alt="Gurupriya Pyro Park" style="width: 100%; height: 100%; object-fit: contain;" />
               </div>
               
               <div>
-                <h1 style="margin: 0 0 6px 0; font-size: 28px; text-transform: uppercase; font-weight: 900; letter-spacing: 2px; text-shadow: 1px 1px 3px rgba(0,0,0,0.6);">
-                  <span style="color: #ffffff;">VAMSI</span> <span style="color: #fbbf24;">CRACKERS</span>
+                <h1 style="margin: 0 0 6px 0; font-size: 22px; text-transform: uppercase; font-weight: 900; letter-spacing: 1px; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); white-space: nowrap;">
+                  <span style="color: #ffffff;">GURUPRIYA</span> <span style="color: #fbbf24;">PYRO PARK</span>
                 </h1>
-                <div style="font-size: 15px; font-weight: 800; color: #fbbf24; margin-bottom: 6px; letter-spacing: 0.5px;">PROPRIETOR: <span style="color: #ffffff;">SWETHA</span></div>
+                <div style="font-size: 15px; font-weight: 800; color: #fbbf24; margin-bottom: 6px; letter-spacing: 0.5px;">PROPRIETOR: <span style="color: #ffffff;">G.MOOKAIYA</span></div>
                 <div style="font-size: 13px; color: #e2e8f0; max-width: 350px; line-height: 1.5; font-weight: 500;">
-                  D.NO. 177/5/18, Pernaickenpatti,<br/>Sithurajapuram, Virudhunagar, Tamil Nadu 626 189, India
+                  BHARATHINAGAR, 2nd St, Viswanatham,<br/>Tamil Nadu 626189, India
                 </div>
               </div>
             </div>
@@ -1419,13 +1419,13 @@ export default function AdminDashboard() {
             <!-- Right: Contact Info -->
             <div style="display: flex; flex-direction: column; gap: 6px; z-index: 1; align-items: flex-end; font-size: 13px; font-weight: 600; color: #f8fafc;">
               <div style="display: flex; align-items: center; gap: 8px;">
-                <span style="font-size: 16px; line-height: 1;">📱</span> +91 90800 19031
+                <span style="font-size: 16px; line-height: 1;">📱</span> +91 63826 50924
               </div>
               <div style="display: flex; align-items: center; gap: 8px;">
-                <span style="font-size: 16px; line-height: 1;">✉️</span> vamsidharuncrackers@gmail.com
+                <span style="font-size: 16px; line-height: 1;">✉️</span> moorthyguru1995@gmail.com
               </div>
               <div style="display: flex; align-items: center; gap: 8px;">
-                <span style="font-size: 16px; line-height: 1;">🌐</span> <a href="https://www.vamsicrackers.in" target="_blank" style="color: #fbbf24; text-decoration: underline; font-weight: bold;">www.vamsicrackers.in</a>
+                <span style="font-size: 16px; line-height: 1;">🌐</span> <a href="https://www.gurupriyapyropark.in" target="_blank" style="color: #fbbf24; text-decoration: underline; font-weight: bold;">www.gurupriyapyropark.in</a>
               </div>
             </div>
           </div>
@@ -1664,11 +1664,12 @@ export default function AdminDashboard() {
           <div style="display: flex; border: 1px solid #94a3b8; border-top: none;">
             <div style="width: 65%; border-right: 1px solid #94a3b8; padding: 10px; display: flex; align-items: center;">
               <div style="margin-right: 15px;">
-                <img src="${window.location.origin}/assets/images/vamsi_crackers_logo_v2.png" alt="Logo" style="width: 80px; height: 80px; object-fit: contain; background: #2a0845; border-radius: 50%; padding: 5px;" />
+                <img src="${window.location.origin}/assets/images/gurupriya_pyropark_logo_primary.png" alt="Logo" style="width: 80px; height: 80px; object-fit: contain; border-radius: 12px;" />
               </div>
               <div>
-                <h1 style="margin: 0 0 5px 0; font-size: 18px; color: #1e3a8a;">Vamsi Crackers</h1>
-                <p style="margin: 0; font-size: 11px; color: #4b5563;">D.NO. 177/5/18, Pernaickenpatti, Sithurajapuram,<br/>Virudhunagar, Tamil Nadu 626 189, India<br/>Mobile: +91 90800 19031 | Web: www.vamsicrackers.in</p>
+                <h1 style="margin: 0 0 5px 0; font-size: 15px; text-transform: uppercase; font-weight: 900; white-space: nowrap;"><span style="color: #047857;">GURUPRIYA</span> <span style="color: #d97706;">PYRO PARK</span></h1>
+                <div style="font-size: 11px; font-weight: 800; color: #047857; margin-bottom: 2px;">PROPRIETOR: G.MOOKAIYA</div>
+                <p style="margin: 0; font-size: 11px; color: #4b5563;">BHARATHINAGAR, 2nd St, Viswanatham,<br/>Tamil Nadu 626189, India<br/>Mobile: +91 63826 50924 | Web: www.gurupriyapyropark.in</p>
               </div>
             </div>
             <div style="width: 35%; padding: 10px;">
@@ -1763,8 +1764,8 @@ export default function AdminDashboard() {
           </div>
           
           <div style="border: 1px solid #94a3b8; border-top: none; padding: 8px; text-align: center; background-color: #fef08a; color: #854d0e; font-weight: bold; -webkit-print-color-adjust: exact; print-color-adjust: exact;">
-            <div style="margin-bottom: 2px;">Thank You for your business with Vamsi Crackers</div>
-            <div style="font-weight: normal;">For any queries, please contact +91 90800 19031</div>
+            <div style="margin-bottom: 2px;">Thank You for your business with Gurupriya Pyro Park</div>
+            <div style="font-weight: normal;">For any queries, please contact +91 63826 50924</div>
           </div>
         </body>
       </html>
@@ -1826,7 +1827,7 @@ export default function AdminDashboard() {
           await navigator.share({
             files: [file],
             title: `Estimate ${order.id}`,
-            text: `Hi ${order.customer_name}, here is your estimate quotation from Vamsi Crackers.`
+            text: `Hi ${order.customer_name}, here is your estimate quotation from Gurupriya Pyro Park.`
           });
           shared = true;
         } catch (err) {
@@ -1847,7 +1848,7 @@ export default function AdminDashboard() {
         
         let phone = order.customer_phone.replace(/\D/g,'');
         if (phone.length === 10) phone = '91' + phone;
-        const text = `Hi ${order.customer_name}, here is your estimate quotation (PDF) from Vamsi Crackers. I am sending the document now.`;
+        const text = `Hi ${order.customer_name}, here is your estimate quotation (PDF) from Gurupriya Pyro Park. I am sending the document now.`;
         window.open(`https://wa.me/${phone}?text=${encodeURIComponent(text)}`, '_blank');
       }
     } catch(err: any) {
@@ -1910,7 +1911,7 @@ export default function AdminDashboard() {
             const delay = Math.random() * 10;
             const duration = Math.random() * 8 + 6;
             const colorClass = i % 3 === 0 
-              ? "bg-slate-900 shadow-[0_0_8px_#fdb931]" 
+              ? "bg-emerald-950 shadow-[0_0_8px_#fdb931]" 
               : i % 3 === 1 
                 ? "bg-purple-500 shadow-[0_0_8px_#a855f7]" 
                 : "bg-amber-500 shadow-[0_0_8px_#f59e0b]";
@@ -1951,7 +1952,7 @@ export default function AdminDashboard() {
 
         <div className="relative z-10 w-full max-w-4xl p-4 md:p-6">
           {/* Background Ambient Glows */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] md:w-[80%] h-full md:h-[120%] bg-gradient-to-tr from-amber-400/10 via-purple-500/10 to-blue-500/10 blur-3xl pointer-events-none rounded-full"></div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] md:w-[80%] h-full md:h-[120%] bg-gradient-to-tr from-amber-400/10 via-purple-500/10 to-emerald-500/10 blur-3xl pointer-events-none rounded-full"></div>
           
           <div className="relative flex flex-col md:flex-row backdrop-blur-[40px] bg-white/[0.03] border border-white/10 rounded-[2rem] shadow-[0_8px_32px_rgba(0,0,0,0.5)] overflow-hidden group">
             
@@ -1961,12 +1962,12 @@ export default function AdminDashboard() {
             {/* Left Column: Branding */}
             <div className="w-full md:w-5/12 p-8 md:p-12 flex flex-col items-center justify-center text-center relative z-10 border-b md:border-b-0 md:border-r border-white/10 bg-black/20">
               <div className="w-28 h-28 md:w-40 md:h-40 mb-6 md:mb-8 rounded-3xl bg-gradient-to-b from-white/10 to-white/5 p-1.5 backdrop-blur-md shadow-2xl shadow-amber-400/20 border border-white/20">
-                <img src="/assets/images/vamsi_crackers_logo.png" alt="Logo" className="w-full h-full object-cover rounded-[1.25rem]" />
+                <img src="/assets/images/gurupriya_pyropark_logo_primary.png" alt="Logo" className="w-full h-full object-cover rounded-[1.25rem]" />
               </div>
               <h1 className="text-2xl md:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-amber-200 to-white tracking-tight leading-tight mb-2 drop-shadow-lg uppercase">
                 Admin Panel
               </h1>
-              <p className="text-[9px] md:text-[11px] font-black text-amber-400/80 tracking-[0.3em] uppercase mt-2">Vamsi Crackers</p>
+              <p className="text-[9px] md:text-[11px] font-black text-amber-400/80 tracking-[0.3em] uppercase mt-2">Gurupriya Pyro Park</p>
             </div>
 
             {/* Right Column: Form */}
@@ -2049,7 +2050,7 @@ export default function AdminDashboard() {
               {/* Demo access */}
               <div className="mt-8 pt-6 border-t border-white/10 flex items-center justify-between">
                 <p className="text-[9px] text-white/40 font-black tracking-widest uppercase">Demo Access</p>
-                <p className="text-[11px] text-indigo-300 font-mono font-bold bg-black/20 px-4 py-1.5 rounded-lg border border-white/5">admin / admin123</p>
+                <p className="text-[11px] text-emerald-300 font-mono font-bold bg-black/20 px-4 py-1.5 rounded-lg border border-white/5">admin / admin123</p>
               </div>
             </div>
           </div>
@@ -2064,22 +2065,22 @@ export default function AdminDashboard() {
       {isLoggingIn && <LoginTransition />}
       <div className="flex h-screen bg-[#f8fafc] text-slate-900 font-['Outfit'] antialiased overflow-hidden relative">
         {/* Left Sidebar (Full Height, Responsive Drawer) */}
-        <aside className={`fixed inset-y-0 left-0 w-64 bg-[#0a0514] text-white flex flex-col h-full shrink-0 border-r border-white/5 overflow-hidden z-40 print:hidden transform transition-transform duration-300 lg:relative lg:translate-x-0 lg:z-20 ${
+        <aside className={`fixed inset-y-0 left-0 w-64 bg-emerald-950 text-white flex flex-col h-full shrink-0 border-r border-white/5 overflow-hidden z-40 print:hidden transform transition-transform duration-300 lg:relative lg:translate-x-0 lg:z-20 ${
           isMobileSidebarOpen ? "translate-x-0" : "-translate-x-full"
         }`}>
           <div className="p-5 flex items-center gap-3 border-b border-white/5 mb-4 bg-gradient-to-r from-white/[0.02] to-transparent">
             <div className="relative w-11 h-11 rounded-lg bg-white p-0.5 overflow-hidden shrink-0 border border-amber-400/40 shadow-[0_0_15px_rgba(245,158,11,0.15)]">
-              <img src="/assets/images/vamsi_crackers_logo.png" alt="Logo" className="w-full h-full object-contain rounded-md" />
+              <img src="/assets/images/gurupriya_pyropark_logo_primary.png" alt="Logo" className="w-full h-full object-contain rounded-md" />
             </div>
             <div className="flex flex-col">
-              <h1 className="text-base font-black text-white tracking-tight uppercase leading-tight flex items-center">
-                Vamsi
-                <span className="text-amber-400 text-sm ml-1">Crackers</span>
+              <h1 className="flex flex-col leading-none">
+                <span className="text-base font-black text-white tracking-tight uppercase">Gurupriya</span>
+                <span className="text-amber-400 text-sm font-black uppercase tracking-tight">Pyro Park</span>
               </h1>
-              <p className="text-[10.5px] font-black text-indigo-400 tracking-widest uppercase mt-0.5">Admin Portal</p>
+              <p className="text-[9px] font-black text-amber-400/80 tracking-widest uppercase mt-1.5">Admin Portal</p>
             </div>
           </div>
-          <div className="px-6 py-2 text-sm font-bold tracking-widest uppercase text-slate-500 mb-2 mt-2">
+          <div className="px-6 py-2 text-sm font-bold tracking-widest uppercase text-emerald-300/80 mb-2 mt-2">
             Dashboards
           </div>
           <nav className="flex-1 px-4 space-y-4 overflow-y-auto custom-scrollbar">
@@ -2098,8 +2099,8 @@ export default function AdminDashboard() {
                 key={tab.id}
                 onClick={() => { setActiveTab(tab.id as any); setIsMobileSidebarOpen(false); }}
                 className={`w-full flex items-center gap-4 px-4 py-3.5 rounded-xl text-[17px] font-bold transition-all duration-200 ${
-                  activeTab === tab.id ? "bg-slate-800 text-white shadow-md shadow-slate-900/50" 
-                    : "text-slate-400 hover:text-white hover:bg-slate-800/50"
+                  activeTab === tab.id ? "bg-amber-400 text-emerald-950 shadow-md shadow-amber-400/20" 
+                    : "text-emerald-100/70 hover:text-white hover:bg-emerald-800/50"
                 }`}
               >
                 <span className="text-xl opacity-80">{tab.icon}</span>
@@ -2107,7 +2108,7 @@ export default function AdminDashboard() {
               </button>
             ))}
           </nav>
-          <div className="p-4 mt-auto border-t border-slate-800 pb-8">
+          <div className="p-4 mt-auto border-t border-white/10 pb-8">
             <button
               onClick={() => { handleLogout(); setIsMobileSidebarOpen(false); }}
               className="w-full flex items-center gap-4 px-4 py-3.5 rounded-xl text-[17px] font-bold transition-all duration-200 text-red-400 hover:text-red-300 hover:bg-red-500/10 group"
@@ -2129,19 +2130,19 @@ export default function AdminDashboard() {
         )}
 
         {/* Main Content Area */}
-        <div className="flex-1 flex flex-col h-full overflow-hidden relative bg-slate-900">
+        <div className="flex-1 flex flex-col h-full overflow-hidden relative bg-emerald-950">
           {/* Mobile Header Banner */}
           <div className="lg:hidden flex items-center justify-between px-6 py-4 bg-[#0a0514] border-b border-white/5 shrink-0 relative z-30 print:hidden">
-            <button onClick={() => setIsMobileSidebarOpen(true)} className="p-2 -ml-2 text-white hover:text-indigo-400 focus:outline-none transition-colors">
+            <button onClick={() => setIsMobileSidebarOpen(true)} className="p-2 -ml-2 text-white hover:text-amber-400/80 focus:outline-none transition-colors">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
             </button>
             <div className="flex items-center gap-2">
               <div className="w-7 h-7 rounded-md bg-white p-0.5 overflow-hidden border border-amber-400/40">
-                <img src="/assets/images/vamsi_crackers_logo.png" alt="Logo" className="w-full h-full object-contain rounded-sm" />
+                <img src="/assets/images/gurupriya_pyropark_logo_primary.png" alt="Logo" className="w-full h-full object-contain rounded-sm" />
               </div>
-              <span className="font-black text-white text-xs uppercase tracking-wider">Vamsi</span>
+              <span className="font-black text-white text-xs uppercase tracking-wider">Gurupriya</span>
             </div>
             <div className="w-8 h-8"></div> {/* spacer */}
           </div>
@@ -2164,7 +2165,7 @@ export default function AdminDashboard() {
           )}
 
           {/* Header */}
-          <header className="bg-slate-900 border-b border-slate-800 h-20 flex-shrink-0 flex justify-between items-center px-4 lg:px-8 z-10 print:hidden shadow-sm relative">
+          <header className="bg-emerald-950 border-b border-emerald-800 h-20 flex-shrink-0 flex justify-between items-center px-4 lg:px-8 z-10 print:hidden shadow-sm relative">
             <div className="flex items-center gap-3">
               <span className="text-3xl">👋</span>
               <span className="text-xl font-bold text-white hidden sm:inline-block tracking-wide">Welcome back, Admin</span>
@@ -2174,7 +2175,7 @@ export default function AdminDashboard() {
               <div className="relative">
                 <button 
                   onClick={() => setIsNotificationOpen(!isNotificationOpen)}
-                  className="relative p-2 text-slate-300 hover:text-white hover:bg-slate-800 rounded-full transition-colors focus:outline-none"
+                  className="relative p-2 text-slate-600 hover:text-white hover:bg-emerald-900 rounded-full transition-colors focus:outline-none"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
@@ -2194,7 +2195,7 @@ export default function AdminDashboard() {
                     <div className="p-4 bg-slate-50 border-b border-slate-100 flex justify-between items-center">
                       <h3 className="font-bold text-slate-900">Notifications</h3>
                       {unreadOrders.length > 0 && (
-                        <button onClick={handleMarkNotificationsAsRead} className="text-xs font-bold text-indigo-600 hover:text-indigo-800">
+                        <button onClick={handleMarkNotificationsAsRead} className="text-xs font-bold text-emerald-600 hover:text-emerald-800">
                           Mark all read
                         </button>
                       )}
@@ -2213,14 +2214,14 @@ export default function AdminDashboard() {
                             className="p-4 border-b border-slate-50 hover:bg-slate-50 transition-colors cursor-pointer group"
                           >
                             <div className="flex items-center gap-3">
-                              <div className="w-10 h-10 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center flex-shrink-0 text-xl group-hover:bg-indigo-200 transition-colors">
+                              <div className="w-10 h-10 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center flex-shrink-0 text-xl group-hover:bg-emerald-200 transition-colors">
                                 🛍️
                               </div>
                               <div className="flex-1">
-                                <p className="text-sm font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">New Order #{String(order.id).padStart(4, '0')}</p>
+                                <p className="text-sm font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">New Order #{String(order.id).padStart(4, '0')}</p>
                                 <p className="text-xs text-slate-500 line-clamp-1">{order.customer_name || 'Customer'} • ₹{order.total_amount}</p>
                               </div>
-                              <div className="w-2 h-2 rounded-full bg-indigo-500"></div>
+                              <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
                             </div>
                           </div>
                         ))
@@ -2235,7 +2236,7 @@ export default function AdminDashboard() {
           <main className="flex-1 bg-slate-50 h-full overflow-y-auto p-4 lg:p-8 relative print:p-0 print:bg-white rounded-tl-3xl shadow-inner border-t border-l border-slate-200/50">
             {loading ? (
               <div className="h-full flex flex-col justify-center items-center gap-4 text-slate-500">
-                <div className="w-10 h-10 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+                <div className="w-10 h-10 border-4 border-emerald-600 border-t-transparent rounded-full animate-spin"></div>
                 <p className="font-bold text-base tracking-tight ">Loading Dashboard Data...</p>
               </div>
             ) : (
@@ -2244,9 +2245,9 @@ export default function AdminDashboard() {
               {activeTab === "overview" && (
                 <div className="space-y-8 animate-slideDown">
                   {/* Premium Welcome Banner */}
-                  <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 rounded-3xl p-8 lg:p-10 text-white relative overflow-hidden shadow-2xl shadow-indigo-900/20 border border-indigo-500/20">
-                    <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
-                    <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+                  <div className="bg-gradient-to-r from-slate-900 via-emerald-950 to-slate-900 rounded-3xl p-8 lg:p-10 text-white relative overflow-hidden shadow-2xl shadow-emerald-900/20 border border-emerald-500/20">
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+                    <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-emerald-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
                     
                     <div className="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
                       <div>
@@ -2257,7 +2258,7 @@ export default function AdminDashboard() {
                         <h2 className="text-3xl lg:text-4xl font-black tracking-tight mb-2">
                           Welcome back, Admin
                         </h2>
-                        <p className="text-indigo-200 text-base max-w-xl leading-relaxed">
+                        <p className="text-emerald-200 text-base max-w-xl leading-relaxed">
                           Here's what's happening with your store today. You have {orders.length} active orders and {products.length} products in your catalog.
                         </p>
                       </div>
@@ -2268,14 +2269,14 @@ export default function AdminDashboard() {
                         
                         <div className="text-right relative z-10">
                           <p className="text-[10px] font-black text-emerald-200/80 uppercase tracking-widest mb-0.5 group-hover:text-emerald-100 transition-colors duration-300">Total Revenue</p>
-                          <p className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-br from-emerald-400 to-emerald-200 drop-shadow-md">₹{orders.filter(c => c.payment_status === "Paid").reduce((a,c) => a + (parseFloat(c.totalAmount || c.total_amount) || 0), 0).toFixed(2)}</p>
+                          <p className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-br from-emerald-400 to-emerald-200 drop-shadow-sm">₹{orders.filter(c => c.payment_status === "Paid").reduce((a,c) => a + (parseFloat(c.totalAmount || c.total_amount) || 0), 0).toFixed(2)}</p>
                         </div>
                         
                         <div className="w-px h-10 bg-white/20 relative z-10"></div>
                         
                         <div className="text-right relative z-10">
-                          <p className="text-[10px] font-black text-indigo-200/80 uppercase tracking-widest mb-0.5 group-hover:text-indigo-100 transition-colors duration-300">Total Orders</p>
-                          <p className="text-2xl font-black text-white drop-shadow-md">{orders.length}</p>
+                          <p className="text-[10px] font-black text-emerald-200/80 uppercase tracking-widest mb-0.5 group-hover:text-emerald-100 transition-colors duration-300">Total Orders</p>
+                          <p className="text-2xl font-black text-white drop-shadow-sm">{orders.length}</p>
                         </div>
                       </div>
                     </div>
@@ -2288,8 +2289,8 @@ export default function AdminDashboard() {
                         label: "Total Products",
                         value: products.length,
                         icon: "📦",
-                        color: "bg-indigo-500",
-                        bg: "bg-indigo-50",
+                        color: "bg-emerald-500",
+                        bg: "bg-emerald-50",
                         tab: "products"
                       },
                       {
@@ -2335,13 +2336,13 @@ export default function AdminDashboard() {
                   {/* Quick Activity & Overview Details */}
                   <div className="grid grid-cols-1 gap-6 mt-8">
                     {/* Quick Management */}
-                    <div className="bg-white border border-slate-100 rounded-3xl shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden">
-                      <div className="flex items-center justify-between p-6 bg-indigo-50 border-b border-indigo-100">
+                    <div className="bg-white border border-slate-100 rounded-3xl shadow-sm hover:shadow-sm transition-shadow flex flex-col overflow-hidden">
+                      <div className="flex items-center justify-between p-6 bg-emerald-50 border-b border-emerald-100">
                         <div>
-                          <h3 className="text-lg font-black text-indigo-950 tracking-tight">Quick Actions</h3>
-                          <p className="text-sm text-indigo-700/70 mt-1 font-medium">Frequently used tools</p>
+                          <h3 className="text-lg font-black text-emerald-950 tracking-tight">Quick Actions</h3>
+                          <p className="text-sm text-emerald-700/70 mt-1 font-medium">Frequently used tools</p>
                         </div>
-                        <div className="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center border border-indigo-100">
+                        <div className="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center border border-emerald-100">
                           ⚡
                         </div>
                       </div>
@@ -2351,7 +2352,7 @@ export default function AdminDashboard() {
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
                         <button
                           onClick={() => { setEditingProduct(null); setProductName(""); setProductPrice(""); setProductOriginalPrice(""); setProductDiscount(""); setProductCategoryId(""); setProductImage(""); setProductTamilTranslation(""); setProductSortOrder(""); setIsProductModalOpen(true); }}
-                          className="flex flex-col items-center justify-center p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-indigo-200 hover:bg-indigo-50/50 hover:-translate-y-1 transition-all group cursor-pointer"
+                          className="flex flex-col items-center justify-center p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-emerald-200 hover:bg-emerald-50/50 hover:-translate-y-1 transition-all group cursor-pointer"
                         >
                           <div className="w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
                             📦
@@ -2362,7 +2363,7 @@ export default function AdminDashboard() {
                         
                         <button
                           onClick={() => { setEditingCategory(null); setNewCategoryName(""); setNewCatTamilTranslation(""); document.getElementById("add-category-modal")?.classList.remove("hidden"); }}
-                          className="flex flex-col items-center justify-center p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-emerald-200 hover:bg-slate-900/5 hover:-translate-y-1 transition-all group cursor-pointer"
+                          className="flex flex-col items-center justify-center p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-emerald-200 hover:bg-emerald-950/5 hover:-translate-y-1 transition-all group cursor-pointer"
                         >
                           <div className="w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
                             🏷️
@@ -2395,7 +2396,7 @@ export default function AdminDashboard() {
                         </div>
                       </div>
 
-                      <div className="mt-auto bg-slate-900 rounded-2xl p-6 flex items-center justify-between shadow-lg shadow-slate-900/10">
+                      <div className="mt-auto bg-emerald-950 rounded-2xl p-6 flex items-center justify-between shadow-lg shadow-slate-900/10">
                         <div className="flex items-center gap-4">
                           <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-2xl border border-white/10">
                             📄
@@ -2425,7 +2426,7 @@ export default function AdminDashboard() {
                               className="absolute inset-0 w-full h-full opacity-0 cursor-pointer disabled:cursor-not-allowed"
                               disabled={uploadingPdf}
                             />
-                            <button className={`px-5 py-2.5 ${uploadingPdf ? 'bg-slate-700 text-slate-400' : 'bg-indigo-500 hover:bg-indigo-600 text-white'} font-bold text-sm rounded-full transition-colors shadow-sm flex items-center gap-2`}>
+                            <button className={`px-5 py-2.5 ${uploadingPdf ? 'bg-emerald-800 text-slate-400' : 'bg-emerald-500 hover:bg-emerald-600 text-white'} font-bold text-sm rounded-full transition-colors shadow-sm flex items-center gap-2`}>
                               {uploadingPdf ? 'Uploading...' : (
                                 <>
                                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -2447,15 +2448,15 @@ export default function AdminDashboard() {
                             {/* TAB: CATEGORIES */}
               {activeTab === "categories" && (
                 <div className="space-y-6 animate-slideDown">
-                  <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 rounded-3xl p-8 lg:p-10 text-white relative overflow-hidden shadow-2xl shadow-indigo-900/20 border border-indigo-500/20 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                  <div className="bg-gradient-to-r from-slate-900 via-emerald-950 to-slate-900 rounded-3xl p-8 lg:p-10 text-white relative overflow-hidden shadow-2xl shadow-emerald-900/20 border border-emerald-500/20 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                     <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
                     <div className="relative z-10">
                       <h2 className="text-3xl font-black text-white tracking-tight">Category List</h2>
-                      <p className="text-indigo-200 text-base mt-2 font-medium">Organize and manage your product groupings</p>
+                      <p className="text-emerald-200 text-base mt-2 font-medium">Organize and manage your product groupings</p>
                     </div>
                     <button
                       onClick={() => { setEditingCategory(null); setNewCategoryName(""); setNewCatTamilTranslation(""); document.getElementById("add-category-modal")?.classList.remove("hidden"); }}
-                      className="mt-4 sm:mt-0 px-8 py-4 rounded-2xl bg-white text-slate-900 font-bold text-base hover:-translate-y-1 hover:shadow-xl transition-all flex items-center gap-3 relative z-10 shadow-[0_0_20px_rgba(255,255,255,0.2)]"
+                      className="mt-4 sm:mt-0 px-8 py-4 rounded-2xl bg-white text-slate-900 font-bold text-base hover:-translate-y-1 hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] transition-all flex items-center gap-3 relative z-10 shadow-[0_0_20px_rgba(255,255,255,0.2)]"
                     >
                       <span className="text-emerald-500 font-black text-xl leading-none">➕</span> Add New Category
                     </button>
@@ -2470,13 +2471,13 @@ export default function AdminDashboard() {
                        </div>
                     ) : (
                       categories.slice((categoriesPage - 1) * 6, categoriesPage * 6).map(cat => (
-                        <div key={cat.id} className="bg-white border border-slate-100 rounded-3xl p-6 flex flex-col shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-emerald-100 transition-all duration-300 group">
+                        <div key={cat.id} className="bg-white border border-slate-100 rounded-3xl p-6 flex flex-col shadow-sm hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] hover:-translate-y-1 hover:border-emerald-100 transition-all duration-300 group">
                           <div className="flex justify-between items-start mb-6">
                             <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center text-2xl shadow-lg shadow-emerald-500/20 text-white transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
                               🏷️
                             </div>
                             <div className="flex gap-1 bg-slate-50 p-1 rounded-xl border border-slate-100">
-                               <button onClick={() => { setEditingCategory(cat); setEditCategoryName(cat.name.replace(/\s*\(.*\)\s*/g, "").trim()); const m = cat.name.match(/\((.*?)\)/); setEditCatTamilTranslation(m ? m[1] : ""); document.getElementById("add-category-modal")?.classList.remove("hidden"); }} className="w-8 h-8 rounded-lg flex items-center justify-center text-blue-500 hover:text-blue-700 hover:bg-blue-100 transition-colors" title="Edit">
+                               <button onClick={() => { setEditingCategory(cat); setEditCategoryName(cat.name.replace(/\s*\(.*\)\s*/g, "").trim()); const m = cat.name.match(/\((.*?)\)/); setEditCatTamilTranslation(m ? m[1] : ""); document.getElementById("add-category-modal")?.classList.remove("hidden"); }} className="w-8 h-8 rounded-lg flex items-center justify-center text-emerald-500 hover:text-emerald-700 hover:bg-emerald-100 transition-colors" title="Edit">
                                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4"><path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" /></svg>
                                </button>
                                <button onClick={() => setCategoryToDelete({id: cat.id, name: cat.name})} className="w-8 h-8 rounded-lg flex items-center justify-center text-red-500 hover:text-red-700 hover:bg-red-100 transition-colors" title="Delete">
@@ -2516,11 +2517,11 @@ export default function AdminDashboard() {
                             {/* TAB: PRODUCTS */}
               {activeTab === "products" && (
                 <div className="space-y-6 animate-slideDown">
-                  <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 rounded-3xl p-8 lg:p-10 text-white relative overflow-hidden shadow-2xl shadow-indigo-900/20 border border-indigo-500/20 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
-                    <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+                  <div className="bg-gradient-to-r from-slate-900 via-emerald-950 to-slate-900 rounded-3xl p-8 lg:p-10 text-white relative overflow-hidden shadow-2xl shadow-emerald-900/20 border border-emerald-500/20 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
                     <div className="relative z-10">
                       <h2 className="text-3xl font-black text-white tracking-tight">Products List</h2>
-                      <p className="text-indigo-200 text-base mt-2 font-medium">Browse and manage {products.length} products</p>
+                      <p className="text-emerald-200 text-base mt-2 font-medium">Browse and manage {products.length} products</p>
                     </div>
                     <div className="flex flex-wrap items-center gap-3 w-full lg:w-auto relative z-10">
                       <button
@@ -2564,9 +2565,9 @@ export default function AdminDashboard() {
                       )}
                       <button
                         onClick={() => { setEditingProduct(null); setProductName(""); setProductPrice(""); setProductOriginalPrice(""); setProductDiscount(""); setProductCategoryId(""); setProductImage(""); setProductTamilTranslation(""); setProductSortOrder(""); setIsProductModalOpen(true); }}
-                        className="flex-1 lg:flex-none px-8 py-4 rounded-2xl bg-white text-slate-900 font-bold text-base hover:-translate-y-1 hover:shadow-xl transition-all flex items-center justify-center gap-3 shadow-[0_0_20px_rgba(255,255,255,0.2)]"
+                        className="flex-1 lg:flex-none px-8 py-4 rounded-2xl bg-white text-slate-900 font-bold text-base hover:-translate-y-1 hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] transition-all flex items-center justify-center gap-3 shadow-[0_0_20px_rgba(255,255,255,0.2)]"
                       >
-                        <span className="text-blue-600">➕</span> Add Product
+                        <span className="text-emerald-600">➕</span> Add Product
                       </button>
                     </div>
                   </div>
@@ -2581,7 +2582,7 @@ export default function AdminDashboard() {
                             <label className="flex items-center gap-2 cursor-pointer bg-slate-50 hover:bg-slate-100 px-4 py-3.5 rounded-xl transition-colors border border-slate-100">
                               <input 
                                 type="checkbox" 
-                                className="w-5 h-5 rounded border-slate-300 text-blue-600 focus:ring-blue-500"
+                                className="w-5 h-5 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500"
                                 checked={filteredProducts.length > 0 && selectedProductIds.length === filteredProducts.length}
                                 onChange={(e) => {
                                   if (e.target.checked) {
@@ -2596,11 +2597,11 @@ export default function AdminDashboard() {
                           </div>
                           <div className="flex-1 relative">
                             <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">🔍</span>
-                            <input type="text" placeholder="Search by product name..." value={productSearch} onChange={e => setProductSearch(e.target.value)} className="w-full bg-slate-50 border-none rounded-xl pl-12 pr-4 py-3.5 text-base font-medium focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:bg-white transition-all" />
+                            <input type="text" placeholder="Search by product name..." value={productSearch} onChange={e => setProductSearch(e.target.value)} className="w-full bg-slate-50 border-none rounded-xl pl-12 pr-4 py-3.5 text-base font-medium focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:bg-white transition-all" />
                           </div>
                           <div className="sm:w-64 relative">
                             <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">📁</span>
-                            <select value={productFilter} onChange={e => setProductFilter(e.target.value)} className="w-full bg-slate-50 border-none rounded-xl pl-12 pr-4 py-3.5 text-base font-medium focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:bg-white transition-all appearance-none">
+                            <select value={productFilter} onChange={e => setProductFilter(e.target.value)} className="w-full bg-slate-50 border-none rounded-xl pl-12 pr-4 py-3.5 text-base font-medium focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:bg-white transition-all appearance-none">
                               <option value="All">All Categories</option>
                               {categories.map(c => <option key={c.id} value={c.id}>{c.name}</option>)}
                             </select>
@@ -2608,8 +2609,8 @@ export default function AdminDashboard() {
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                           {filteredProducts.slice((productsPage - 1) * itemsPerPage, productsPage * itemsPerPage).map(product => (
-                            <div key={product.id} className={`bg-white border ${selectedProductIds.includes(product.id) ? 'border-blue-500 shadow-md ring-2 ring-blue-500/20' : 'border-slate-100 shadow-sm'} rounded-3xl overflow-hidden hover:shadow-xl hover:-translate-y-1 hover:border-blue-100 transition-all duration-300 group flex flex-col`}>
-                              <div className="relative h-56 bg-gradient-to-b from-slate-50 to-white w-full p-6 flex items-center justify-center border-b border-slate-50 group-hover:bg-blue-50/30 transition-colors">
+                            <div key={product.id} className={`bg-white border ${selectedProductIds.includes(product.id) ? 'border-emerald-500 shadow-sm ring-2 ring-emerald-500/20' : 'border-slate-100 shadow-sm'} rounded-3xl overflow-hidden hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] hover:-translate-y-1 hover:border-emerald-100 transition-all duration-300 group flex flex-col`}>
+                              <div className="relative h-56 bg-gradient-to-b from-slate-50 to-white w-full p-6 flex items-center justify-center border-b border-slate-50 group-hover:bg-emerald-50/30 transition-colors">
                                 <label className="absolute top-4 right-4 z-20 cursor-pointer">
                                   <input 
                                     type="checkbox" 
@@ -2621,11 +2622,11 @@ export default function AdminDashboard() {
                                         setSelectedProductIds(prev => prev.filter(id => id !== product.id));
                                       }
                                     }}
-                                    className="w-5 h-5 rounded border-slate-300 text-blue-600 focus:ring-blue-500"
+                                    className="w-5 h-5 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500"
                                   />
                                 </label>
                                 {product.image ? (
-                                  <img src={product.image} alt={product.name} loading="lazy" decoding="async" className="max-h-full object-contain group-hover:scale-110 drop-shadow-md transition-transform duration-500 ease-out" />
+                                  <img src={product.image} alt={product.name} loading="lazy" decoding="async" className="max-h-full object-contain group-hover:scale-110 drop-shadow-sm transition-transform duration-500 ease-out" />
                                 ) : (
                                   <span className="text-6xl opacity-30 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all">📦</span>
                                 )}
@@ -2636,12 +2637,12 @@ export default function AdminDashboard() {
                                 )}
                               </div>
                               <div className="p-6 flex flex-col flex-1 relative">
-                                 <div className="absolute top-0 right-6 -translate-y-1/2 bg-slate-900 text-white font-black text-base px-4 py-2 rounded-xl shadow-lg border border-slate-700">
+                                 <div className="absolute top-0 right-6 -translate-y-1/2 bg-emerald-950 text-white font-black text-base px-4 py-2 rounded-xl shadow-lg border border-emerald-700">
                                    ₹{product.price}
                                  </div>
                                  
                                  <div className="flex items-center justify-between mb-2">
-                                   <p className="text-sm font-bold text-blue-500 uppercase tracking-wider">{categories.find(c => c.id === product.categoryId)?.name || "Uncategorized"}</p>
+                                   <p className="text-sm font-bold text-emerald-500 uppercase tracking-wider">{categories.find(c => c.id === product.categoryId)?.name || "Uncategorized"}</p>
                                    <span className={`px-2 py-1 text-[10px] font-black uppercase tracking-wider rounded-md border ${(product.is_active === 1 || product.is_active === true || product.is_active === undefined) ? 'bg-emerald-50 text-emerald-600 border-emerald-200' : 'bg-red-50 text-red-600 border-red-200'}`}>
                                      {(product.is_active === 1 || product.is_active === true || product.is_active === undefined) ? 'ACTIVE' : 'INACTIVE'}
                                    </span>
@@ -2673,7 +2674,7 @@ export default function AdminDashboard() {
                                  </div>
                                  
                                  <div className="mt-auto flex gap-2 border-t border-slate-100 pt-5">
-                                   <button onClick={() => openEditProductModal(product)} className="flex-1 py-2.5 bg-blue-50 text-blue-600 border border-blue-100 rounded-xl text-sm font-bold hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all flex items-center justify-center gap-2">
+                                   <button onClick={() => openEditProductModal(product)} className="flex-1 py-2.5 bg-emerald-50 text-emerald-600 border border-emerald-100 rounded-xl text-sm font-bold hover:bg-emerald-600 hover:text-white hover:border-emerald-600 transition-all flex items-center justify-center gap-2">
                                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4"><path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" /></svg>
                                       Edit Details
                                    </button>
@@ -2707,11 +2708,11 @@ export default function AdminDashboard() {
                             {/* TAB: ORDERS */}
               {activeTab === "orders" && (
                 <div className="space-y-6 animate-slideDown">
-                  <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 rounded-3xl p-8 lg:p-10 text-white relative overflow-hidden shadow-2xl shadow-indigo-900/20 border border-indigo-500/20 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                  <div className="bg-gradient-to-r from-slate-900 via-emerald-950 to-slate-900 rounded-3xl p-8 lg:p-10 text-white relative overflow-hidden shadow-2xl shadow-emerald-900/20 border border-emerald-500/20 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                     <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
                     <div className="relative z-10">
                       <h2 className="text-3xl font-black text-white tracking-tight">Order Management</h2>
-                      <p className="text-indigo-200 text-base mt-2 font-medium">Review and process recent customer purchases</p>
+                      <p className="text-emerald-200 text-base mt-2 font-medium">Review and process recent customer purchases</p>
                     </div>
                     <div className="relative z-10 group flex items-center gap-4 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-2xl border border-white/20 rounded-2xl p-3 pr-5 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] hover:shadow-[0_8px_32px_0_rgba(245,158,11,0.3)] hover:-translate-y-0.5 transition-all duration-500 cursor-default overflow-hidden">
                       {/* Shine effect on hover */}
@@ -2728,7 +2729,7 @@ export default function AdminDashboard() {
                       <div className="flex flex-col relative z-10">
                         <span className="text-[10px] font-black text-amber-200/80 uppercase tracking-widest mb-0.5 group-hover:text-amber-100 transition-colors duration-300">Total Volume</span>
                         <div className="flex items-baseline gap-1.5">
-                          <span className="text-2xl font-black text-white drop-shadow-md leading-none tracking-tight">{orders.length}</span>
+                          <span className="text-2xl font-black text-white drop-shadow-sm leading-none tracking-tight">{orders.length}</span>
                           <span className="text-sm font-bold text-amber-200/90">Orders</span>
                         </div>
                       </div>
@@ -2740,9 +2741,9 @@ export default function AdminDashboard() {
                       
                       {/* Tabs */}
                       <div className="flex bg-slate-100/80 p-1.5 rounded-2xl border border-slate-200/60 backdrop-blur-sm shrink-0 w-full lg:w-auto overflow-x-auto">
-                        <button onClick={() => setOrderFilterSource("All")} className={`whitespace-nowrap flex-1 lg:flex-none py-2 px-5 rounded-xl font-bold text-sm transition-all duration-300 ${orderFilterSource === "All" ? "bg-white text-indigo-900 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.1)]" : "text-slate-500 hover:text-slate-700 hover:bg-slate-200/50"}`}>All Orders</button>
-                        <button onClick={() => setOrderFilterSource("Website")} className={`whitespace-nowrap flex-1 lg:flex-none py-2 px-5 rounded-xl font-bold text-sm transition-all duration-300 ${orderFilterSource === "Website" ? "bg-white text-indigo-900 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.1)]" : "text-slate-500 hover:text-slate-700 hover:bg-slate-200/50"}`}>🌐 Website</button>
-                        <button onClick={() => setOrderFilterSource("POS")} className={`whitespace-nowrap flex-1 lg:flex-none py-2 px-5 rounded-xl font-bold text-sm transition-all duration-300 ${orderFilterSource === "POS" ? "bg-white text-indigo-900 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.1)]" : "text-slate-500 hover:text-slate-700 hover:bg-slate-200/50"}`}>🖥️ POS</button>
+                        <button onClick={() => setOrderFilterSource("All")} className={`whitespace-nowrap flex-1 lg:flex-none py-2 px-5 rounded-xl font-bold text-sm transition-all duration-300 ${orderFilterSource === "All" ? "bg-white text-emerald-900 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.1)]" : "text-slate-500 hover:text-slate-700 hover:bg-slate-200/50"}`}>All Orders</button>
+                        <button onClick={() => setOrderFilterSource("Website")} className={`whitespace-nowrap flex-1 lg:flex-none py-2 px-5 rounded-xl font-bold text-sm transition-all duration-300 ${orderFilterSource === "Website" ? "bg-white text-emerald-900 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.1)]" : "text-slate-500 hover:text-slate-700 hover:bg-slate-200/50"}`}>🌐 Website</button>
+                        <button onClick={() => setOrderFilterSource("POS")} className={`whitespace-nowrap flex-1 lg:flex-none py-2 px-5 rounded-xl font-bold text-sm transition-all duration-300 ${orderFilterSource === "POS" ? "bg-white text-emerald-900 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.1)]" : "text-slate-500 hover:text-slate-700 hover:bg-slate-200/50"}`}>🖥️ POS</button>
                       </div>
 
                       {/* Filters */}
@@ -2750,7 +2751,7 @@ export default function AdminDashboard() {
                         
                         {/* Search Bar */}
                         <div className="relative w-full sm:w-64 group">
-                          <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400 group-focus-within:text-indigo-500 transition-colors">
+                          <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400 group-focus-within:text-emerald-400 transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-4 h-4">
                               <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                             </svg>
@@ -2760,7 +2761,7 @@ export default function AdminDashboard() {
                             value={orderSearchQuery}
                             onChange={(e) => setOrderSearchQuery(e.target.value)}
                             placeholder="Search ID, Name..."
-                            className="w-full bg-slate-50 hover:bg-slate-100 focus:bg-white border border-slate-200 focus:border-indigo-500 rounded-xl pl-10 pr-4 py-2.5 text-sm font-semibold text-slate-800 focus:outline-none focus:ring-4 focus:ring-indigo-500/10 transition-all placeholder:text-slate-400"
+                            className="w-full bg-slate-50 hover:bg-slate-100 focus:bg-white border border-slate-200 focus:border-emerald-500 rounded-xl pl-10 pr-4 py-2.5 text-sm font-semibold text-slate-800 focus:outline-none focus:ring-4 focus:ring-emerald-500/10 transition-all placeholder:text-slate-400"
                           />
                         </div>
 
@@ -2783,13 +2784,13 @@ export default function AdminDashboard() {
 
                         {/* Status Filter */}
                         <div className="relative w-full sm:w-auto">
-                          <span className="absolute inset-y-0 left-0 pl-3 flex items-center text-blue-500 pointer-events-none">
+                          <span className="absolute inset-y-0 left-0 pl-3 flex items-center text-emerald-500 pointer-events-none">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4"><path fillRule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clipRule="evenodd" /></svg>
                           </span>
                           <select
                             value={orderStatusFilter}
                             onChange={(e) => setOrderStatusFilter(e.target.value)}
-                            className="w-full sm:w-auto bg-slate-50 hover:bg-slate-100 focus:bg-white border border-slate-200 focus:border-blue-500 rounded-xl pl-9 pr-8 py-2.5 text-sm font-semibold text-slate-700 focus:outline-none focus:ring-4 focus:ring-blue-500/10 transition-all cursor-pointer appearance-none"
+                            className="w-full sm:w-auto bg-slate-50 hover:bg-slate-100 focus:bg-white border border-slate-200 focus:border-emerald-500 rounded-xl pl-9 pr-8 py-2.5 text-sm font-semibold text-slate-700 focus:outline-none focus:ring-4 focus:ring-emerald-500/10 transition-all cursor-pointer appearance-none"
                           >
                             <option value="All">Status: All</option>
                             <option value="Pending">Pending</option>
@@ -2842,11 +2843,11 @@ export default function AdminDashboard() {
                                         </div>
                                         <div className="mt-2">
                                           {(order.source || 'Website') === 'POS' ? (
-                                            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-indigo-100 text-indigo-600 border border-indigo-200">
+                                            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-emerald-100 text-emerald-600 border border-emerald-200">
                                               🖥️ POS
                                             </span>
                                           ) : (
-                                            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-blue-100 text-blue-600 border border-blue-200">
+                                            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-emerald-100 text-emerald-600 border border-emerald-200">
                                               🌐 Website
                                             </span>
                                           )}
@@ -2881,7 +2882,7 @@ export default function AdminDashboard() {
                                           </select>
                                           {updatingStatusForId === order.id && (
                                             <div className="flex justify-center">
-                                              <svg className="animate-spin h-5 w-5 text-indigo-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                              <svg className="animate-spin h-5 w-5 text-emerald-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                                                 <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                                                 <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                                               </svg>
@@ -2898,7 +2899,7 @@ export default function AdminDashboard() {
                                             className={`text-sm font-bold px-3 py-1.5 rounded-lg border focus:outline-none focus:ring-2 cursor-pointer transition-colors shadow-sm
                                               ${(!order.status || order.status === 'Pending') ? 'bg-amber-50 text-amber-600 border-amber-200 focus:ring-amber-500/20' : 
                                                 order.status === 'Completed' ? 'bg-emerald-50 text-emerald-600 border-emerald-200 focus:ring-emerald-500/20' :
-                                                order.status === 'Processing' ? 'bg-blue-50 text-blue-600 border-blue-200 focus:ring-blue-500/20' :
+                                                order.status === 'Processing' ? 'bg-emerald-50 text-emerald-600 border-emerald-200 focus:ring-emerald-500/20' :
                                                 order.status === 'Shipped' ? 'bg-purple-50 text-purple-600 border-purple-200 focus:ring-purple-500/20' :
                                                 order.status === 'Cancelled' ? 'bg-red-50 text-red-600 border-red-200 focus:ring-red-500/20' :
                                                 'bg-slate-50 text-slate-600 border-slate-200 focus:ring-slate-500/20'
@@ -2935,7 +2936,7 @@ export default function AdminDashboard() {
                                           </select>
                                           {updatingStatusForId === order.id && (
                                             <div className="flex justify-center">
-                                              <svg className="animate-spin h-5 w-5 text-indigo-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                              <svg className="animate-spin h-5 w-5 text-emerald-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                                                 <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                                                 <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                                               </svg>
@@ -2945,7 +2946,7 @@ export default function AdminDashboard() {
                                       </td>
                                       <td className="px-6 py-5 text-right">
                                         <div className="flex justify-end gap-2 transition-opacity">
-                                          <button onClick={() => setViewingOrder(order)} className="w-9 h-9 bg-white text-indigo-600 border border-slate-200 rounded-lg flex items-center justify-center hover:bg-indigo-50 hover:border-indigo-200 shadow-sm transition-all" title="View Details">
+                                          <button onClick={() => setViewingOrder(order)} className="w-9 h-9 bg-white text-emerald-600 border border-slate-200 rounded-lg flex items-center justify-center hover:bg-emerald-50 hover:border-emerald-200 shadow-sm transition-all" title="View Details">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
                                               <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
                                               <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
@@ -2987,11 +2988,11 @@ export default function AdminDashboard() {
               {/* TAB: CUSTOMERS */}
               {activeTab === "customers" && (
                 <div className="space-y-6 animate-slideDown">
-                  <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 rounded-3xl p-8 lg:p-10 text-white relative overflow-hidden shadow-2xl shadow-indigo-900/20 border border-indigo-500/20 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                  <div className="bg-gradient-to-r from-slate-900 via-emerald-950 to-slate-900 rounded-3xl p-8 lg:p-10 text-white relative overflow-hidden shadow-2xl shadow-emerald-900/20 border border-emerald-500/20 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                     <div className="absolute top-0 right-0 w-64 h-64 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
                     <div className="relative z-10">
                       <h2 className="text-3xl font-black text-white tracking-tight">Customers</h2>
-                      <p className="text-indigo-200 text-base mt-2 font-medium">Directory of customers from orders</p>
+                      <p className="text-emerald-200 text-base mt-2 font-medium">Directory of customers from orders</p>
                     </div>
                     <div className="relative z-10 group flex items-center gap-4 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-2xl border border-white/20 rounded-2xl p-3 pr-5 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] hover:shadow-[0_8px_32px_0_rgba(236,72,153,0.3)] hover:-translate-y-0.5 transition-all duration-500 cursor-default overflow-hidden">
                       {/* Shine effect on hover */}
@@ -3008,7 +3009,7 @@ export default function AdminDashboard() {
                       <div className="flex flex-col relative z-10">
                         <span className="text-[10px] font-black text-pink-200/80 uppercase tracking-widest mb-0.5 group-hover:text-pink-100 transition-colors duration-300">Total Customers</span>
                         <div className="flex items-baseline gap-1.5">
-                          <span className="text-2xl font-black text-white drop-shadow-md leading-none tracking-tight">{uniqueCustomers.length}</span>
+                          <span className="text-2xl font-black text-white drop-shadow-sm leading-none tracking-tight">{uniqueCustomers.length}</span>
                           <span className="text-sm font-bold text-pink-200/90">Users</span>
                         </div>
                       </div>
@@ -3030,7 +3031,7 @@ export default function AdminDashboard() {
                           setCustomerSearchTerm(e.target.value);
                           setCustomersPage(1);
                         }}
-                        className="w-full bg-white border border-slate-200 rounded-xl py-3 pl-12 pr-4 text-sm font-bold text-slate-700 placeholder-slate-400 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all outline-none shadow-sm"
+                        className="w-full bg-white border border-slate-200 rounded-xl py-3 pl-12 pr-4 text-sm font-bold text-slate-700 placeholder-slate-400 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all outline-none shadow-sm"
                       />
                     </div>
                     
@@ -3145,11 +3146,11 @@ export default function AdminDashboard() {
               {activeTab === "reports" && (
                 <div className="space-y-6 animate-slideDown print:space-y-0">
                   {/* Header - Hidden on Print */}
-                  <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 rounded-3xl p-8 lg:p-10 text-white relative overflow-hidden shadow-2xl shadow-indigo-900/20 border border-indigo-500/20 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 print:hidden">
+                  <div className="bg-gradient-to-r from-slate-900 via-emerald-950 to-slate-900 rounded-3xl p-8 lg:p-10 text-white relative overflow-hidden shadow-2xl shadow-emerald-900/20 border border-emerald-500/20 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 print:hidden">
                     <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
                     <div className="relative z-10">
                       <h2 className="text-3xl font-black text-white tracking-tight">Sales Reports</h2>
-                      <p className="text-indigo-200 text-base mt-2 font-medium">Analyze revenue by date, month, or year.</p>
+                      <p className="text-emerald-200 text-base mt-2 font-medium">Analyze revenue by date, month, or year.</p>
                     </div>
                     
                     <button
@@ -3165,19 +3166,19 @@ export default function AdminDashboard() {
                     <div className="flex bg-slate-50 p-1.5 rounded-2xl border border-slate-200 gap-1 w-full xl:w-auto">
                       <button
                         onClick={() => setReportType("date")}
-                        className={`flex-1 xl:flex-none py-3 px-6 rounded-xl font-bold text-sm transition-all ${reportType === "date" ? "bg-slate-900 text-white shadow-md" : "text-slate-500 hover:bg-slate-100"}`}
+                        className={`flex-1 xl:flex-none py-3 px-6 rounded-xl font-bold text-sm transition-all ${reportType === "date" ? "bg-emerald-950 text-white shadow-sm" : "text-slate-500 hover:bg-slate-100"}`}
                       >
                         Day
                       </button>
                       <button
                         onClick={() => setReportType("month")}
-                        className={`flex-1 xl:flex-none py-3 px-6 rounded-xl font-bold text-sm transition-all ${reportType === "month" ? "bg-slate-900 text-white shadow-md" : "text-slate-500 hover:bg-slate-100"}`}
+                        className={`flex-1 xl:flex-none py-3 px-6 rounded-xl font-bold text-sm transition-all ${reportType === "month" ? "bg-emerald-950 text-white shadow-sm" : "text-slate-500 hover:bg-slate-100"}`}
                       >
                         Month
                       </button>
                       <button
                         onClick={() => setReportType("year")}
-                        className={`flex-1 xl:flex-none py-3 px-6 rounded-xl font-bold text-sm transition-all ${reportType === "year" ? "bg-slate-900 text-white shadow-md" : "text-slate-500 hover:bg-slate-100"}`}
+                        className={`flex-1 xl:flex-none py-3 px-6 rounded-xl font-bold text-sm transition-all ${reportType === "year" ? "bg-emerald-950 text-white shadow-sm" : "text-slate-500 hover:bg-slate-100"}`}
                       >
                         Year
                       </button>
@@ -3186,11 +3187,11 @@ export default function AdminDashboard() {
                     <div className="flex items-end gap-3 w-full xl:w-auto">
                       <div className="flex-1 xl:flex-none flex flex-col relative">
                         <label className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-1.5 ml-1">From Date</label>
-                        <input type="date" value={reportFromDate} onChange={e => setReportFromDate(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm font-semibold focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 outline-none w-full xl:w-44 transition-all text-slate-700" />
+                        <input type="date" value={reportFromDate} onChange={e => setReportFromDate(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm font-semibold focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none w-full xl:w-44 transition-all text-slate-700" />
                       </div>
                       <div className="flex-1 xl:flex-none flex flex-col relative">
                         <label className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-1.5 ml-1">To Date</label>
-                        <input type="date" value={reportToDate} onChange={e => setReportToDate(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm font-semibold focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 outline-none w-full xl:w-44 transition-all text-slate-700" />
+                        <input type="date" value={reportToDate} onChange={e => setReportToDate(e.target.value)} className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm font-semibold focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none w-full xl:w-44 transition-all text-slate-700" />
                       </div>
                       <div className="h-[46px] flex items-center">
                         <button 
@@ -3216,19 +3217,19 @@ export default function AdminDashboard() {
                         
                         {/* Left: Logo & Core Info */}
                         <div style={{ display: 'flex', alignItems: 'center', zIndex: 1 }}>
-                          <div style={{ marginRight: '25px', display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100px', height: '100px', borderRadius: '50%', overflow: 'hidden' }}>
-                            <img src="/assets/images/vamsi_crackers_logo_v2.png" alt="Vamsi Crackers" style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'drop-shadow(0px 2px 8px rgba(255,255,255,0.2))', transform: 'scale(1.15)' }} />
+                          <div style={{ marginRight: '25px', display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100px', height: '100px', borderRadius: '12px', overflow: 'hidden', backgroundColor: 'white', padding: '4px' }}>
+                            <img src="/assets/images/gurupriya_pyropark_logo_primary.png" alt="Gurupriya Pyro Park" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                           </div>
                           
                           <div>
-                            <h1 style={{ margin: '0 0 6px 0', fontSize: '28px', textTransform: 'uppercase', fontWeight: 900, letterSpacing: '2px', textShadow: '1px 1px 3px rgba(0,0,0,0.6)' }}>
-                              <span style={{ color: '#ffffff' }}>VAMSI</span> <span style={{ color: '#fbbf24' }}>CRACKERS</span>
+                            <h1 style={{ margin: '0 0 6px 0', fontSize: '22px', textTransform: 'uppercase', fontWeight: 900, letterSpacing: '1px', textShadow: '1px 1px 3px rgba(0,0,0,0.6)', whiteSpace: 'nowrap' }}>
+                              <span style={{ color: '#ffffff' }}>GURUPRIYA</span> <span style={{ color: '#fbbf24' }}>PYRO PARK</span>
                             </h1>
                             <div style={{ fontSize: '15px', fontWeight: 800, color: '#fbbf24', marginBottom: '6px', letterSpacing: '0.5px' }}>
-                              PROPRIETOR: <span style={{ color: '#ffffff' }}>SWETHA</span>
+                              PROPRIETOR: <span style={{ color: '#ffffff' }}>G.MOOKAIYA</span>
                             </div>
                             <div style={{ fontSize: '13px', color: '#e2e8f0', maxWidth: '350px', lineHeight: 1.5, fontWeight: 500 }}>
-                              D.NO. 177/5/18, Pernaickenpatti,<br/>Sithurajapuram, Virudhunagar, Tamil Nadu 626 189, India
+                              BHARATHINAGAR, 2nd St, Viswanatham,<br/>Tamil Nadu 626189, India
                             </div>
                           </div>
                         </div>
@@ -3236,13 +3237,13 @@ export default function AdminDashboard() {
                         {/* Right: Contact Info */}
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', zIndex: 1, alignItems: 'flex-end', fontSize: '13px', fontWeight: 600, color: '#f8fafc' }}>
                           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                            <span style={{ fontSize: '16px', lineHeight: 1 }}>📱</span> +91 90800 19031
+                            <span style={{ fontSize: '16px', lineHeight: 1 }}>📱</span> +91 63826 50924
                           </div>
                           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                            <span style={{ fontSize: '16px', lineHeight: 1 }}>✉️</span> vamsidharuncrackers@gmail.com
+                            <span style={{ fontSize: '16px', lineHeight: 1 }}>✉️</span> moorthyguru1995@gmail.com
                           </div>
                           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                            <span style={{ fontSize: '16px', lineHeight: 1 }}>🌐</span> <span style={{ color: '#fbbf24', textDecoration: 'underline', fontWeight: 'bold' }}>www.vamsicrackers.in</span>
+                            <span style={{ fontSize: '16px', lineHeight: 1 }}>🌐</span> <span style={{ color: '#fbbf24', textDecoration: 'underline', fontWeight: 'bold' }}>www.gurupriyapyropark.in</span>
                           </div>
                         </div>
                       </div>
@@ -3258,7 +3259,7 @@ export default function AdminDashboard() {
                     <div className="overflow-x-auto">
                       <table className="w-full text-left border-collapse">
                         <thead>
-                          <tr className="bg-slate-50 border-b border-slate-200 print:bg-transparent print:border-b-2 print:border-slate-800">
+                          <tr className="bg-slate-50 border-b border-slate-200 print:bg-transparent print:border-b-2 print:border-emerald-800">
                             <th className="px-8 py-5 text-sm font-black text-slate-500 uppercase tracking-widest text-center w-24 print:text-slate-900">
                               S.No
                             </th>
@@ -3299,7 +3300,7 @@ export default function AdminDashboard() {
                           )}
                         </tbody>
                         {salesReports[reportType].length > 0 && (
-                          <tfoot className="bg-slate-50 border-t-2 border-slate-200 print:bg-transparent print:border-t-4 print:border-slate-800">
+                          <tfoot className="bg-slate-50 border-t-2 border-slate-200 print:bg-transparent print:border-t-4 print:border-emerald-800">
                             <tr>
                               <td colSpan={2} className="px-8 py-6 font-black text-slate-900 uppercase tracking-widest text-sm print:text-slate-900 text-right">
                                 Grand Total
@@ -3327,21 +3328,21 @@ export default function AdminDashboard() {
                     <h2 className="text-2xl font-black text-slate-900 tracking-tight mb-4 flex-shrink-0">POS Terminal</h2>
                     <div className="flex flex-col sm:flex-row gap-3 mb-6 flex-shrink-0">
                       <div className="relative flex-1 group">
-                        <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400 group-focus-within:text-indigo-500 transition-colors">
+                        <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400 group-focus-within:text-emerald-400 transition-colors">
                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-5 h-5">
                             <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                           </svg>
                         </span>
-                        <input type="text" placeholder="Search product to bill..." value={billingSearch} onChange={e => setBillingSearch(e.target.value)} className="w-full bg-slate-50 border border-slate-200 hover:bg-slate-100 focus:bg-white rounded-xl pl-11 pr-4 py-3 text-sm font-semibold text-slate-800 focus:outline-none focus:ring-4 focus:ring-indigo-500/10 focus:border-indigo-500 transition-all placeholder:text-slate-400" />
+                        <input type="text" placeholder="Search product to bill..." value={billingSearch} onChange={e => setBillingSearch(e.target.value)} className="w-full bg-slate-50 border border-slate-200 hover:bg-slate-100 focus:bg-white rounded-xl pl-11 pr-4 py-3 text-sm font-semibold text-slate-800 focus:outline-none focus:ring-4 focus:ring-emerald-500/10 focus:border-emerald-500 transition-all placeholder:text-slate-400" />
                       </div>
                       
                       <div className="relative w-full sm:w-56 group">
-                         <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400 pointer-events-none group-focus-within:text-indigo-500 transition-colors">
+                         <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400 pointer-events-none group-focus-within:text-emerald-400 transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-5 h-5">
                               <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
                             </svg>
                          </span>
-                        <select value={billingCategoryFilter} onChange={e => setBillingCategoryFilter(e.target.value)} className="w-full bg-slate-50 border border-slate-200 hover:bg-slate-100 focus:bg-white rounded-xl pl-11 pr-8 py-3 text-sm font-semibold text-slate-800 focus:outline-none focus:ring-4 focus:ring-indigo-500/10 focus:border-indigo-500 transition-all appearance-none cursor-pointer">
+                        <select value={billingCategoryFilter} onChange={e => setBillingCategoryFilter(e.target.value)} className="w-full bg-slate-50 border border-slate-200 hover:bg-slate-100 focus:bg-white rounded-xl pl-11 pr-8 py-3 text-sm font-semibold text-slate-800 focus:outline-none focus:ring-4 focus:ring-emerald-500/10 focus:border-emerald-500 transition-all appearance-none cursor-pointer">
                           <option value="All">All Categories</option>
                           {categories.map(c => <option key={c.id} value={c.id}>{c.name}</option>)}
                         </select>
@@ -3359,7 +3360,7 @@ export default function AdminDashboard() {
                                  } else {
                                    setBillingCart([...billingCart, {...product, quantity: 1}]);
                                  }
-                              }} className={`border rounded-2xl p-4 transition-all flex flex-col items-center text-center group relative overflow-hidden ${isAdded ? 'bg-slate-50 border-slate-200 opacity-60 cursor-not-allowed' : 'bg-white border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-indigo-500/30 cursor-pointer'}`}>
+                              }} className={`border rounded-2xl p-4 transition-all flex flex-col items-center text-center group relative overflow-hidden ${isAdded ? 'bg-slate-50 border-slate-200 opacity-60 cursor-not-allowed' : 'bg-white border-slate-200 shadow-sm hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] hover:-translate-y-1 hover:border-emerald-500/30 cursor-pointer'}`}>
                                  {isAdded && <div className="absolute top-3 right-3 bg-emerald-500 text-white text-[9px] font-black px-2 py-1 rounded-md shadow-sm tracking-widest uppercase flex items-center gap-1 z-10"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-3 h-3"><path fillRule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clipRule="evenodd" /></svg> IN CART</div>}
                                  {product.originalPrice > product.price && (
                                    <div className={`absolute top-3 left-3 text-[9px] font-black px-2 py-1 rounded-md shadow-sm tracking-widest z-10 ${isAdded ? 'bg-slate-300 text-slate-600' : 'bg-rose-500 text-white'}`}>
@@ -3371,7 +3372,7 @@ export default function AdminDashboard() {
                                  <h4 className={`text-sm font-bold line-clamp-2 leading-snug mb-3 ${isAdded ? 'text-slate-500' : 'text-slate-800'}`}>{product.name}</h4>
                                  
                                  <div className="mt-auto flex items-center justify-center gap-2">
-                                   <span className={`text-lg font-black px-3 py-1 rounded-lg ${isAdded ? 'text-slate-400 bg-slate-200/50' : 'text-indigo-600 bg-indigo-50'}`}>₹{product.price}</span>
+                                   <span className={`text-lg font-black px-3 py-1 rounded-lg ${isAdded ? 'text-slate-400 bg-slate-200/50' : 'text-emerald-600 bg-emerald-50'}`}>₹{product.price}</span>
                                  </div>
                               </div>
                             );
@@ -3381,11 +3382,11 @@ export default function AdminDashboard() {
                   </div>
                   
                   {/* Right: Cart & Billing */}
-                    <div className="w-full lg:w-[450px] flex flex-col bg-slate-900 border border-slate-700 rounded-[2rem] p-6 shadow-2xl relative overflow-hidden min-h-0 shrink-0">
-                      <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-500/10 rounded-full blur-[80px] pointer-events-none"></div>
+                    <div className="w-full lg:w-[450px] flex flex-col bg-emerald-950 border border-emerald-700 rounded-[2rem] p-6 shadow-2xl relative overflow-hidden min-h-0 shrink-0">
+                      <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/10 rounded-full blur-[80px] pointer-events-none"></div>
                       <div className="absolute bottom-0 left-0 w-64 h-64 bg-amber-500/10 rounded-full blur-[80px] pointer-events-none"></div>
 
-                      <h3 className="text-xl font-black text-white tracking-tight mb-5 flex items-center justify-between border-b border-slate-700/50 pb-4 shrink-0 relative z-10">
+                      <h3 className="text-xl font-black text-white tracking-tight mb-5 flex items-center justify-between border-b border-emerald-700/50 pb-4 shrink-0 relative z-10">
                         <span>Current Bill</span>
                         <div className="flex items-center gap-4">
                           {billingCart.length > 0 && (
@@ -3404,7 +3405,7 @@ export default function AdminDashboard() {
                               Clear
                             </button>
                           )}
-                          <span className="bg-indigo-500/20 border border-indigo-500/30 text-indigo-300 px-3 py-1.5 rounded-full text-xs font-bold shadow-inner">{billingCart.reduce((a, c) => a + c.quantity, 0)} Items</span>
+                          <span className="bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 px-3 py-1.5 rounded-full text-xs font-bold shadow-inner">{billingCart.reduce((a, c) => a + c.quantity, 0)} Items</span>
                         </div>
                       </h3>
 
@@ -3417,12 +3418,12 @@ export default function AdminDashboard() {
                           </div>
                         ) : (
                           billingCart.map((item) => (
-                            <div key={item.id} className="flex items-center justify-between bg-slate-800/40 rounded-xl p-3 border border-slate-700/50 hover:border-slate-500 transition-colors backdrop-blur-sm gap-3">
+                            <div key={item.id} className="flex items-center justify-between bg-emerald-900/40 rounded-xl p-3 border border-emerald-700/50 hover:border-slate-500 transition-colors backdrop-blur-sm gap-3">
                               <div className="flex-1 min-w-0">
                                 <span className="text-sm font-bold text-slate-200 block truncate" title={item.name}>{item.name}</span>
-                                <span className="text-xs text-indigo-400 font-bold mt-0.5 block">₹{(item.price * item.quantity).toFixed(2)}</span>
+                                <span className="text-xs text-amber-400/80 font-bold mt-0.5 block">₹{(item.price * item.quantity).toFixed(2)}</span>
                               </div>
-                              <div className="flex items-center bg-slate-900 rounded-lg border border-slate-700 shrink-0">
+                              <div className="flex items-center bg-emerald-950 rounded-lg border border-emerald-700 shrink-0">
                                 <button onClick={() => {
                                   if(item.quantity > 1) {
                                     setBillingCart(billingCart.map(i => i.id === item.id ? { ...i, quantity: i.quantity - 1 } : i));
@@ -3440,7 +3441,7 @@ export default function AdminDashboard() {
                                       setBillingCart(billingCart.map(i => i.id === item.id ? { ...i, quantity: val } : i));
                                     }
                                   }}
-                                  className="w-10 bg-transparent text-xs font-black text-white text-center outline-none focus:bg-slate-800 rounded px-0 py-1 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                                  className="w-10 bg-transparent text-xs font-black text-white text-center outline-none focus:bg-emerald-900 rounded px-0 py-1 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                                 />
                                 <button onClick={() => setBillingCart(billingCart.map(i => i.id === item.id ? { ...i, quantity: i.quantity + 1 } : i))} className="px-2 py-1 text-slate-400 hover:text-white font-black cursor-pointer text-xs">+</button>
                               </div>
@@ -3453,13 +3454,13 @@ export default function AdminDashboard() {
                         )}
                         </div>
 
-                        <div className="mt-4 pt-4 border-t border-slate-700/50 shrink-0 relative z-10">
+                        <div className="mt-4 pt-4 border-t border-emerald-700/50 shrink-0 relative z-10">
                           <div className="mb-3">
                             <div className="grid grid-cols-2 gap-2">
-                              <input type="text" placeholder="Name *" value={billingCustomer.name} onChange={(e) => setBillingCustomer({...billingCustomer, name: e.target.value})} className="bg-slate-800/80 border border-slate-700 rounded-lg px-3 py-2 text-xs font-semibold text-white outline-none focus:ring-1 focus:ring-indigo-500/50 transition-all placeholder:text-slate-500" />
-                              <input type="text" placeholder="Phone *" value={billingCustomer.phone} onChange={(e) => setBillingCustomer({...billingCustomer, phone: e.target.value})} className="bg-slate-800/80 border border-slate-700 rounded-lg px-3 py-2 text-xs font-semibold text-white outline-none focus:ring-1 focus:ring-indigo-500/50 transition-all placeholder:text-slate-500" />
-                              <input type="text" placeholder="City *" value={billingCustomer.city} onChange={(e) => setBillingCustomer({...billingCustomer, city: e.target.value})} className="bg-slate-800/80 border border-slate-700 rounded-lg px-3 py-2 text-xs font-semibold text-white outline-none focus:ring-1 focus:ring-indigo-500/50 transition-all placeholder:text-slate-500" />
-                              <input type="text" placeholder="Address" value={billingCustomer.address} onChange={(e) => setBillingCustomer({...billingCustomer, address: e.target.value})} className="bg-slate-800/80 border border-slate-700 rounded-lg px-3 py-2 text-xs font-semibold text-white outline-none focus:ring-1 focus:ring-indigo-500/50 transition-all placeholder:text-slate-500" />
+                              <input type="text" placeholder="Name *" value={billingCustomer.name} onChange={(e) => setBillingCustomer({...billingCustomer, name: e.target.value})} className="bg-emerald-900/80 border border-emerald-700 rounded-lg px-3 py-2 text-xs font-semibold text-white outline-none focus:ring-1 focus:ring-emerald-500/50 transition-all placeholder:text-slate-500" />
+                              <input type="text" placeholder="Phone *" value={billingCustomer.phone} onChange={(e) => setBillingCustomer({...billingCustomer, phone: e.target.value})} className="bg-emerald-900/80 border border-emerald-700 rounded-lg px-3 py-2 text-xs font-semibold text-white outline-none focus:ring-1 focus:ring-emerald-500/50 transition-all placeholder:text-slate-500" />
+                              <input type="text" placeholder="City *" value={billingCustomer.city} onChange={(e) => setBillingCustomer({...billingCustomer, city: e.target.value})} className="bg-emerald-900/80 border border-emerald-700 rounded-lg px-3 py-2 text-xs font-semibold text-white outline-none focus:ring-1 focus:ring-emerald-500/50 transition-all placeholder:text-slate-500" />
+                              <input type="text" placeholder="Address" value={billingCustomer.address} onChange={(e) => setBillingCustomer({...billingCustomer, address: e.target.value})} className="bg-emerald-900/80 border border-emerald-700 rounded-lg px-3 py-2 text-xs font-semibold text-white outline-none focus:ring-1 focus:ring-emerald-500/50 transition-all placeholder:text-slate-500" />
                             </div>
                           </div>
 
@@ -3476,15 +3477,15 @@ export default function AdminDashboard() {
                             
                             return (
                               <>
-                                <div className="grid grid-cols-2 gap-2 mb-3 border-b border-slate-700/50 pb-3">
+                                <div className="grid grid-cols-2 gap-2 mb-3 border-b border-emerald-700/50 pb-3">
                                   {/* Addl. Discount */}
-                                  <div className="flex bg-slate-800/80 border border-slate-700 rounded-lg focus-within:ring-1 focus-within:ring-indigo-500/50 transition-all items-center pl-2.5">
+                                  <div className="flex bg-emerald-900/80 border border-emerald-700 rounded-lg focus-within:ring-1 focus-within:ring-emerald-500/50 transition-all items-center pl-2.5">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-3.5 h-3.5 text-amber-500 flex-shrink-0"><path d="M10.75 4.75a.75.75 0 0 0-1.5 0v4.5h-4.5a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 0 0 1.5 0v-4.5h4.5a.75.75 0 0 0 0-1.5h-4.5v-4.5Z" /></svg>
                                     <div className="relative flex items-center ml-1">
                                       <select 
                                         value={additionalDiscountType} 
                                         onChange={(e) => setAdditionalDiscountType(e.target.value as "amount"|"percentage")}
-                                        className="bg-transparent hover:bg-slate-700/50 text-slate-300 font-bold text-[11px] rounded pl-2 pr-4 py-1 outline-none cursor-pointer appearance-none transition-colors"
+                                        className="bg-transparent hover:bg-emerald-800/50 text-slate-600 font-bold text-[11px] rounded pl-2 pr-4 py-1 outline-none cursor-pointer appearance-none transition-colors"
                                       >
                                         <option value="amount">₹ Amt</option>
                                         <option value="percentage">% Pct</option>
@@ -3493,7 +3494,7 @@ export default function AdminDashboard() {
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-3 h-3"><path fillRule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" /></svg>
                                       </div>
                                     </div>
-                                    <div className="w-px h-3.5 bg-slate-700 mx-1"></div>
+                                    <div className="w-px h-3.5 bg-emerald-800 mx-1"></div>
                                     <input 
                                       type="number" 
                                       min="0"
@@ -3505,10 +3506,10 @@ export default function AdminDashboard() {
                                   </div>
                                   
                                   {/* Packing Charges */}
-                                  <div className="flex bg-slate-800/80 border border-slate-700 rounded-lg focus-within:ring-1 focus-within:ring-indigo-500/50 transition-all items-center pl-2.5">
+                                  <div className="flex bg-emerald-900/80 border border-emerald-700 rounded-lg focus-within:ring-1 focus-within:ring-emerald-500/50 transition-all items-center pl-2.5">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-3.5 h-3.5 text-emerald-500 flex-shrink-0"><path fillRule="evenodd" d="M11.986 3H12a2 2 0 0 1 2 2v6a2 2 0 0 1-1.5 1.937V7A2.5 2.5 0 0 0 10 4.5H4.063A2 2 0 0 1 6 3h.014A2.25 2.25 0 0 1 8.25 1h3.5a2.25 2.25 0 0 1 2.236 2ZM10.5 4v-.75a.75.75 0 0 0-.75-.75h-3.5a.75.75 0 0 0-.75.75V4h5Z" clipRule="evenodd" /><path fillRule="evenodd" d="M3 6a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H3Zm6 8.5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3Z" clipRule="evenodd" /></svg>
                                     <span className="text-slate-400 font-bold text-xs pl-1.5 pr-1 py-1.5">₹</span>
-                                    <div className="w-px h-3.5 bg-slate-700 mx-1"></div>
+                                    <div className="w-px h-3.5 bg-emerald-800 mx-1"></div>
                                     <input 
                                       type="number" 
                                       min="0"
@@ -3520,7 +3521,7 @@ export default function AdminDashboard() {
                                   </div>
                                 </div>
                               
-                              <div className="flex justify-between items-end mb-3 bg-slate-800/40 p-3 rounded-xl border border-slate-700/60">
+                              <div className="flex justify-between items-end mb-3 bg-emerald-900/40 p-3 rounded-xl border border-emerald-700/60">
                                 <div>
                                   <div className="text-[10px] text-slate-400 tracking-widest font-black uppercase mb-1">Total Amount</div>
                                   <div className="text-[10px] text-emerald-400 font-bold bg-emerald-400/10 px-2 py-0.5 rounded-md inline-block">
@@ -3596,8 +3597,8 @@ export default function AdminDashboard() {
                                 }}
                                 className={`w-full py-4 rounded-xl font-black text-sm tracking-tight transition-all flex items-center justify-center gap-2 ${
                                   billingCart.length === 0 || isGeneratingBill
-                                  ? 'bg-slate-800 text-slate-500 cursor-not-allowed border border-slate-700'
-                                  : 'bg-gradient-to-r from-indigo-500 to-indigo-600 text-white hover:-translate-y-0.5 hover:shadow-[0_10px_40px_-10px_rgba(79,70,229,0.5)] active:scale-[0.98] shadow-lg shadow-indigo-500/20 cursor-pointer border border-indigo-500/50'
+                                  ? 'bg-emerald-900 text-slate-500 cursor-not-allowed border border-emerald-700'
+                                  : 'bg-gradient-to-r from-emerald-500 to-emerald-600 text-white hover:-translate-y-0.5 hover:shadow-[0_10px_40px_-10px_rgba(79,70,229,0.5)] active:scale-[0.98] shadow-lg shadow-emerald-500/20 cursor-pointer border border-emerald-500/50'
                                 }`}
                               >
                                 {isGeneratingBill ? "Processing..." : (
@@ -3615,11 +3616,11 @@ export default function AdminDashboard() {
               {/* TAB: CONTACTS */}
               {activeTab === "contacts" && (
                 <div className="space-y-6 animate-slideDown">
-                  <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 rounded-3xl p-8 lg:p-10 text-white relative overflow-hidden shadow-2xl shadow-indigo-900/20 border border-indigo-500/20 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-                    <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+                  <div className="bg-gradient-to-r from-slate-900 via-emerald-950 to-slate-900 rounded-3xl p-8 lg:p-10 text-white relative overflow-hidden shadow-2xl shadow-emerald-900/20 border border-emerald-500/20 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
                     <div className="relative z-10">
                       <h2 className="text-3xl font-black text-white tracking-tight">Contact Messages</h2>
-                      <p className="text-indigo-200 text-base mt-2 font-medium">Manage inquiries submitted from the website contact form</p>
+                      <p className="text-emerald-200 text-base mt-2 font-medium">Manage inquiries submitted from the website contact form</p>
                     </div>
                   </div>
 
@@ -3677,14 +3678,14 @@ export default function AdminDashboard() {
                               </thead>
                               <tbody className="divide-y divide-slate-100">
                                 {paginated.map((contact, index) => (
-                                  <tr key={contact.id || index} className={`hover:bg-slate-50/50 transition-colors group ${contact.is_read ? 'opacity-80' : 'font-semibold bg-indigo-50/10'}`}>
+                                  <tr key={contact.id || index} className={`hover:bg-slate-50/50 transition-colors group ${contact.is_read ? 'opacity-80' : 'font-semibold bg-emerald-50/10'}`}>
                                     <td className="px-6 py-5 text-center text-sm font-bold text-slate-400">
                                       {(contactsPage - 1) * itemsPerPage + index + 1}
                                     </td>
                                     <td className="px-6 py-5 text-center">
                                       <div className="flex items-center justify-center gap-3">
                                         <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg border shrink-0 ${
-                                          contact.is_read ? 'bg-slate-100 border-slate-200 text-slate-500' : 'bg-indigo-50 border-indigo-100 text-indigo-600'
+                                          contact.is_read ? 'bg-slate-100 border-slate-200 text-slate-500' : 'bg-emerald-50 border-emerald-100 text-emerald-600'
                                         }`}>
                                           {contact.name.charAt(0).toUpperCase()}
                                         </div>
@@ -3692,7 +3693,7 @@ export default function AdminDashboard() {
                                       </div>
                                     </td>
                                     <td className="px-6 py-5 text-center">
-                                      <a href={`tel:${contact.phone}`} className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 text-slate-700 font-bold text-sm hover:bg-indigo-50 hover:text-indigo-600 transition-all border border-slate-200/60 shadow-sm">
+                                      <a href={`tel:${contact.phone}`} className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 text-slate-700 font-bold text-sm hover:bg-emerald-50 hover:text-emerald-600 transition-all border border-slate-200/60 shadow-sm">
                                         <span>📞</span> {contact.phone}
                                       </a>
                                     </td>
@@ -3741,13 +3742,13 @@ export default function AdminDashboard() {
 
               {activeTab === "banner" && (
                 <div className="p-4 md:p-8 space-y-6 md:space-y-8 animate-fadeIn overflow-y-auto h-full pb-32">
-                  <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 rounded-3xl p-8 lg:p-10 text-white relative overflow-hidden shadow-2xl shadow-indigo-900/20 border border-indigo-500/20 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-                    <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+                  <div className="bg-gradient-to-r from-slate-900 via-emerald-950 to-slate-900 rounded-3xl p-8 lg:p-10 text-white relative overflow-hidden shadow-2xl shadow-emerald-900/20 border border-emerald-500/20 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
                     <div className="relative z-10">
                       <h2 className="text-3xl font-black text-white tracking-tight flex items-center gap-3">
                         <span className="text-3xl">🖼️</span> Scrolling Banner
                       </h2>
-                      <p className="text-indigo-200 text-base mt-2 font-medium max-w-xl">
+                      <p className="text-emerald-200 text-base mt-2 font-medium max-w-xl">
                         Update the scrolling banner images that appear on the customer website.
                       </p>
                     </div>
@@ -3755,7 +3756,7 @@ export default function AdminDashboard() {
 
                   <div className="space-y-6">
                     {/* Image Banners */}
-                    <div className="bg-slate-800/50 backdrop-blur-xl border border-white/10 rounded-3xl p-6 md:p-8 shadow-2xl">
+                    <div className="bg-emerald-900/50 backdrop-blur-xl border border-white/10 rounded-3xl p-6 md:p-8 shadow-2xl">
                       <div className="flex justify-between items-center mb-6">
                         <h3 className="text-xl font-bold text-white">Scrolling Image Banners</h3>
                         <div>
@@ -3769,7 +3770,7 @@ export default function AdminDashboard() {
                           />
                           <label
                             htmlFor="bannerImageUpload"
-                            className="cursor-pointer px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl transition-colors shadow-lg flex items-center gap-2"
+                            className="cursor-pointer px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl transition-colors shadow-lg flex items-center gap-2"
                           >
                             {isUploadingBanner ? (
                               <span className="animate-spin text-xl">⏳</span>
@@ -3782,15 +3783,15 @@ export default function AdminDashboard() {
                       </div>
 
                       {bannerImages.length === 0 ? (
-                        <div className="text-center py-12 bg-slate-900/30 rounded-2xl border border-dashed border-slate-700/50">
+                        <div className="text-center py-12 bg-emerald-950/30 rounded-2xl border border-dashed border-emerald-700/50">
                           <span className="text-4xl block mb-3 opacity-50">🖼️</span>
-                          <p className="text-slate-300 font-semibold text-lg">No banner images uploaded yet.</p>
+                          <p className="text-slate-600 font-semibold text-lg">No banner images uploaded yet.</p>
                           <p className="text-slate-500 text-sm mt-1">Upload images to display on the customer portal carousel.</p>
                         </div>
                       ) : (
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                           {bannerImages.map((imgUrl, idx) => (
-                            <div key={idx} className="relative group rounded-2xl overflow-hidden border border-white/10 shadow-xl bg-slate-900 aspect-video md:aspect-[21/9]">
+                            <div key={idx} className="relative group rounded-2xl overflow-hidden border border-white/10 shadow-[0_20px_50px_rgb(0,0,0,0.08)] bg-emerald-950 aspect-video md:aspect-[21/9]">
                               {/* Image */}
                               <img 
                                 src={imgUrl} 
@@ -3833,7 +3834,7 @@ export default function AdminDashboard() {
 
               {/* FALLBACK FOR NEW DYNAMIC MODULES */}
               {!["overview", "categories", "products", "orders", "customers", "reports", "billing", "contacts", "banner"].includes(activeTab) && (
-                <div className="flex flex-col items-center justify-center h-[60vh] bg-[#180a27]/40 backdrop-blur-sm border border-slate-200 rounded-3xl p-10 text-center animate-slideDown shadow-xl shadow-black/20">
+                <div className="flex flex-col items-center justify-center h-[60vh] bg-[#180a27]/40 backdrop-blur-sm border border-slate-200 rounded-3xl p-10 text-center animate-slideDown shadow-[0_20px_50px_rgb(0,0,0,0.08)] shadow-black/20">
                   <div className="text-6xl mb-6 opacity-80">
                     {activeTab === "inventory" ? "📦" : activeTab === "customers" ? "👥" : activeTab === "offers" ? "🎁" : activeTab === "reports" ? "📈" : activeTab === "settings" ? "⚙️" : "✨"}
                   </div>
@@ -3854,18 +3855,18 @@ export default function AdminDashboard() {
       </div>
 
       {/* CATEGORY CREATION/EDIT MODAL */}
-      <div id="add-category-modal" className="fixed inset-0 z-[60] bg-slate-900/80 backdrop-blur-xl hidden overflow-y-auto">
+      <div id="add-category-modal" className="fixed inset-0 z-[60] bg-emerald-950/80 backdrop-blur-xl hidden overflow-y-auto">
         <div className="min-h-[100dvh] w-full flex items-center justify-center p-4">
-          <div className="bg-slate-800 border border-blue-500/30 rounded-[2rem] w-full max-w-md shadow-[0_0_60px_rgba(59,130,246,0.15)] overflow-hidden animate-slideDown relative">
+          <div className="bg-emerald-900 border border-emerald-500/30 rounded-[2rem] w-full max-w-md shadow-[0_0_60px_rgba(59,130,246,0.15)] overflow-hidden animate-slideDown relative">
             
             {/* Ambient Background Glows */}
-            <div className="absolute top-0 right-0 w-48 h-48 bg-blue-500/10 rounded-full blur-[60px] pointer-events-none"></div>
-            <div className="absolute bottom-0 left-0 w-48 h-48 bg-indigo-500/10 rounded-full blur-[60px] pointer-events-none"></div>
+            <div className="absolute top-0 right-0 w-48 h-48 bg-emerald-500/10 rounded-full blur-[60px] pointer-events-none"></div>
+            <div className="absolute bottom-0 left-0 w-48 h-48 bg-emerald-500/10 rounded-full blur-[60px] pointer-events-none"></div>
 
             {/* Modal Header */}
-            <div className="bg-gradient-to-r from-blue-900/40 to-transparent px-8 py-6 border-b border-slate-700 flex justify-between items-center relative z-10">
+            <div className="bg-gradient-to-r from-emerald-900/40 to-transparent px-8 py-6 border-b border-emerald-700 flex justify-between items-center relative z-10">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-blue-500/20 to-indigo-500/20 border border-blue-500/30 text-blue-400 flex items-center justify-center text-lg shadow-inner">
+                <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-emerald-500/20 to-emerald-500/20 border border-emerald-500/30 text-emerald-400 flex items-center justify-center text-lg shadow-inner">
                   {editingCategory ? "✏️" : "✨"}
                 </div>
                 <h3 className="text-xl font-black text-white tracking-tight">
@@ -3880,7 +3881,7 @@ export default function AdminDashboard() {
                   setNewCategoryName("");
                   setEditCategoryName("");
                 }}
-                className="w-10 h-10 rounded-full bg-slate-700/50 border border-slate-600 text-slate-300 hover:bg-red-500/20 hover:text-red-400 hover:border-red-500/30 transition-all flex items-center justify-center text-lg backdrop-blur-sm"
+                className="w-10 h-10 rounded-full bg-emerald-800/50 border border-emerald-600 text-slate-600 hover:bg-red-500/20 hover:text-red-400 hover:border-red-500/30 transition-all flex items-center justify-center text-lg backdrop-blur-sm"
               >
                 ✕
               </button>
@@ -3889,7 +3890,7 @@ export default function AdminDashboard() {
             {/* Modal Body / Form */}
             <form onSubmit={editingCategory ? handleUpdateCategory : handleAddCategory} className="p-8 space-y-6 relative z-10">
               <div className="space-y-2">
-                <label className="flex items-center gap-2 text-xs font-black uppercase tracking-widest text-blue-300">
+                <label className="flex items-center gap-2 text-xs font-black uppercase tracking-widest text-emerald-300">
                   Category Name (English)
                 </label>
                 <input
@@ -3897,14 +3898,14 @@ export default function AdminDashboard() {
                   required
                   value={editingCategory ? editCategoryName : newCategoryName}
                   onChange={(e) => editingCategory ? setEditCategoryName(e.target.value) : setNewCategoryName(e.target.value)}
-                  className="w-full bg-slate-700/50 border border-slate-600 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 rounded-xl px-5 py-3.5 text-base text-white font-semibold outline-none transition-all placeholder-slate-400 shadow-inner"
+                  className="w-full bg-emerald-800/50 border border-emerald-600 focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/20 rounded-xl px-5 py-3.5 text-base text-white font-semibold outline-none transition-all placeholder-slate-400 shadow-inner"
                   placeholder="e.g. Flower Pots"
                 />
-                <p className="text-xs text-blue-300/60 mt-2 font-medium">✨ Tamil translation will be automatically generated</p>
+                <p className="text-xs text-emerald-300/60 mt-2 font-medium">✨ Tamil translation will be automatically generated</p>
               </div>
               
               <div className="space-y-2">
-                <label className="flex items-center gap-2 text-xs font-black uppercase tracking-widest text-blue-300">
+                <label className="flex items-center gap-2 text-xs font-black uppercase tracking-widest text-emerald-300">
                   Tamil Translation (Auto)
                 </label>
                 <div className="relative">
@@ -3912,18 +3913,18 @@ export default function AdminDashboard() {
                     type="text"
                     value={editingCategory ? editCatTamilTranslation : newCatTamilTranslation}
                     onChange={(e) => editingCategory ? setEditCatTamilTranslation(e.target.value) : setNewCatTamilTranslation(e.target.value)}
-                    className="w-full bg-slate-700/50 border border-slate-600 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 rounded-xl px-5 py-3.5 text-base text-white font-semibold outline-none transition-all placeholder-slate-400 shadow-inner"
+                    className="w-full bg-emerald-800/50 border border-emerald-600 focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/20 rounded-xl px-5 py-3.5 text-base text-white font-semibold outline-none transition-all placeholder-slate-400 shadow-inner"
                     placeholder="e.g. மலர் பானைகள்"
                   />
                   {(isTranslatingNewCat || isTranslatingEditCat) && (
-                    <div className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center gap-2 text-blue-400">
+                    <div className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center gap-2 text-emerald-400">
                       <span className="animate-spin text-lg">↻</span>
                     </div>
                   )}
                 </div>
               </div>
 
-              <div className="pt-6 border-t border-slate-700 flex gap-3">
+              <div className="pt-6 border-t border-emerald-700 flex gap-3">
                 <button
                   type="button"
                   onClick={() => {
@@ -3932,13 +3933,13 @@ export default function AdminDashboard() {
                     setNewCategoryName("");
                     setEditCategoryName("");
                   }}
-                  className="flex-[1] py-3.5 rounded-xl border-2 border-slate-600 hover:border-slate-500 hover:bg-slate-700/50 text-base font-bold text-slate-300 transition-all"
+                  className="flex-[1] py-3.5 rounded-xl border-2 border-emerald-600 hover:border-slate-500 hover:bg-emerald-800/50 text-base font-bold text-slate-600 transition-all"
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
-                  className="flex-[2] py-3.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold text-base tracking-wide shadow-[0_0_20px_rgba(59,130,246,0.4)] hover:-translate-y-0.5 active:scale-95 transition-all flex items-center justify-center gap-2"
+                  className="flex-[2] py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-500 hover:to-emerald-500 text-white font-bold text-base tracking-wide shadow-[0_0_20px_rgba(59,130,246,0.4)] hover:-translate-y-0.5 active:scale-95 transition-all flex items-center justify-center gap-2"
                 >
                   {editingCategory ? (
                     <><span>💾</span> Save Changes</>
@@ -3955,17 +3956,17 @@ export default function AdminDashboard() {
 
       {/* PRODUCT CREATION/EDIT MODAL */}
       {isProductModalOpen && (
-        <div className="fixed inset-0 z-[100] bg-slate-900/80 backdrop-blur-xl flex items-center justify-center p-4 overflow-y-auto">
-          <div className="bg-slate-800 border border-blue-500/30 rounded-[2rem] w-full max-w-5xl shadow-[0_0_60px_rgba(59,130,246,0.15)] overflow-hidden animate-slideDown my-8 relative flex flex-col max-h-[95vh]">
+        <div className="fixed inset-0 z-[100] bg-emerald-950/80 backdrop-blur-xl flex items-center justify-center p-4 overflow-y-auto">
+          <div className="bg-emerald-900 border border-emerald-500/30 rounded-[2rem] w-full max-w-5xl shadow-[0_0_60px_rgba(59,130,246,0.15)] overflow-hidden animate-slideDown my-8 relative flex flex-col max-h-[95vh]">
             
             {/* Ambient Background Glows */}
-            <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 rounded-full blur-[80px] pointer-events-none"></div>
-            <div className="absolute bottom-0 left-0 w-64 h-64 bg-indigo-500/10 rounded-full blur-[80px] pointer-events-none"></div>
+            <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/10 rounded-full blur-[80px] pointer-events-none"></div>
+            <div className="absolute bottom-0 left-0 w-64 h-64 bg-emerald-500/10 rounded-full blur-[80px] pointer-events-none"></div>
 
             {/* Modal Header */}
-            <div className="bg-gradient-to-r from-blue-900/40 to-transparent px-8 py-6 border-b border-slate-700 flex justify-between items-center relative z-10 shrink-0">
+            <div className="bg-gradient-to-r from-emerald-900/40 to-transparent px-8 py-6 border-b border-emerald-700 flex justify-between items-center relative z-10 shrink-0">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500/20 to-indigo-500/20 border border-blue-500/30 text-blue-400 flex items-center justify-center text-xl shadow-inner">
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-500/20 to-emerald-500/20 border border-emerald-500/30 text-emerald-400 flex items-center justify-center text-xl shadow-inner">
                   {editingProduct ? "✏️" : "✨"}
                 </div>
                 <h3 className="text-2xl font-black text-white tracking-tight">
@@ -3974,7 +3975,7 @@ export default function AdminDashboard() {
               </div>
               <button
                 onClick={() => setIsProductModalOpen(false)}
-                className="w-10 h-10 rounded-full bg-slate-700/50 border border-slate-600 text-slate-300 hover:bg-red-500/20 hover:text-red-400 hover:border-red-500/30 transition-all flex items-center justify-center text-lg backdrop-blur-sm"
+                className="w-10 h-10 rounded-full bg-emerald-800/50 border border-emerald-600 text-slate-600 hover:bg-red-500/20 hover:text-red-400 hover:border-red-500/30 transition-all flex items-center justify-center text-lg backdrop-blur-sm"
               >
                 ✕
               </button>
@@ -3987,7 +3988,7 @@ export default function AdminDashboard() {
                 <div className="flex-[3] space-y-8">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="space-y-2">
-                  <label className="flex items-center gap-2 text-xs font-black uppercase tracking-widest text-blue-300">
+                  <label className="flex items-center gap-2 text-xs font-black uppercase tracking-widest text-emerald-300">
                     Product Name
                   </label>
                   <input
@@ -3997,22 +3998,22 @@ export default function AdminDashboard() {
                     onChange={(e) => setProductName(e.target.value)}
                     onBlur={() => appendTamilTranslation(productName, productTamilTranslation, setProductName)}
                     placeholder="e.g. 1000 Wala Giant"
-                    className="w-full bg-slate-700/50 border border-slate-600 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 rounded-xl py-3.5 px-5 text-base font-semibold outline-none transition-all text-white placeholder-slate-400 shadow-inner"
+                    className="w-full bg-emerald-800/50 border border-emerald-600 focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/20 rounded-xl py-3.5 px-5 text-base font-semibold outline-none transition-all text-white placeholder-slate-400 shadow-inner"
                   />
                   {productTamilTranslation && (
-                    <p className="mt-2 text-sm font-semibold text-blue-300 bg-blue-500/10 px-3 py-1.5 rounded-lg inline-block border border-blue-500/20 animate-pulse">
+                    <p className="mt-2 text-sm font-semibold text-emerald-300 bg-emerald-500/10 px-3 py-1.5 rounded-lg inline-block border border-emerald-500/20 animate-pulse">
                       ✨ Tamil: {productTamilTranslation}
                     </p>
                   )}
                   {isTranslatingProduct && (
-                    <p className="mt-2 text-sm italic text-blue-400/60 font-medium">
+                    <p className="mt-2 text-sm italic text-emerald-400/60 font-medium">
                       ⌛ Translating...
                     </p>
                   )}
                 </div>
 
                 <div className="space-y-2">
-                  <label className="flex items-center gap-2 text-xs font-black uppercase tracking-widest text-blue-300">
+                  <label className="flex items-center gap-2 text-xs font-black uppercase tracking-widest text-emerald-300">
                     Category Link
                   </label>
                   {categories.length === 0 ? (
@@ -4024,10 +4025,10 @@ export default function AdminDashboard() {
                       <select
                         value={productCategoryId}
                         onChange={(e) => setProductCategoryId(e.target.value)}
-                        className="w-full bg-slate-700/50 border border-slate-600 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 rounded-xl py-3.5 px-5 text-base font-semibold text-white outline-none transition-all appearance-none cursor-pointer shadow-inner"
+                        className="w-full bg-emerald-800/50 border border-emerald-600 focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/20 rounded-xl py-3.5 px-5 text-base font-semibold text-white outline-none transition-all appearance-none cursor-pointer shadow-inner"
                       >
                         {categories.map((cat) => (
-                          <option key={cat.id} value={cat.id} className="bg-slate-800 text-white">
+                          <option key={cat.id} value={cat.id} className="bg-emerald-900 text-white">
                             {cat.name}
                           </option>
                         ))}
@@ -4040,7 +4041,7 @@ export default function AdminDashboard() {
                 </div>
 
                 <div className="space-y-2">
-                  <label className="flex items-center gap-2 text-xs font-black uppercase tracking-widest text-blue-300">
+                  <label className="flex items-center gap-2 text-xs font-black uppercase tracking-widest text-emerald-300">
                     Sort Order
                   </label>
                   <input
@@ -4048,13 +4049,13 @@ export default function AdminDashboard() {
                     value={productSortOrder}
                     onChange={(e) => setProductSortOrder(e.target.value)}
                     placeholder="e.g. 1 (Default is 0)"
-                    className="w-full bg-slate-700/50 border border-slate-600 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 rounded-xl py-3.5 px-5 text-base font-semibold text-white outline-none transition-all placeholder-slate-500 shadow-inner"
+                    className="w-full bg-emerald-800/50 border border-emerald-600 focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/20 rounded-xl py-3.5 px-5 text-base font-semibold text-white outline-none transition-all placeholder-slate-500 shadow-inner"
                   />
                 </div>
 
-                <div className="grid grid-cols-3 gap-5 col-span-1 md:col-span-2 bg-slate-700/30 p-5 rounded-2xl border border-slate-600/50">
+                <div className="grid grid-cols-3 gap-5 col-span-1 md:col-span-2 bg-emerald-800/30 p-5 rounded-2xl border border-emerald-600/50">
                   <div className="space-y-2">
-                    <label className="block text-xs font-black uppercase tracking-widest text-blue-300">
+                    <label className="block text-xs font-black uppercase tracking-widest text-emerald-300">
                       Original Price
                     </label>
                     <div className="relative">
@@ -4066,14 +4067,14 @@ export default function AdminDashboard() {
                         value={productOriginalPrice}
                         onChange={(e) => handleOriginalPriceChange(e.target.value)}
                         placeholder="250"
-                        className="w-full bg-slate-800 border border-slate-600 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 rounded-xl py-3 px-4 pl-8 text-base font-bold outline-none transition-all text-white shadow-inner"
+                        className="w-full bg-emerald-900 border border-emerald-600 focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/20 rounded-xl py-3 px-4 pl-8 text-base font-bold outline-none transition-all text-white shadow-inner"
                       />
                     </div>
                   </div>
 
                   <div className="space-y-2 flex flex-col justify-between">
                     <div className="flex items-center justify-between h-5">
-                      <label className="block text-xs font-black uppercase tracking-widest text-blue-300 mt-1">
+                      <label className="block text-xs font-black uppercase tracking-widest text-emerald-300 mt-1">
                         Discount (Auto-calculated)
                       </label>
                     </div>
@@ -4087,7 +4088,7 @@ export default function AdminDashboard() {
                         value={productDiscount || "0"}
                         placeholder="0"
                         title="Discount is calculated automatically from Original and Offer prices"
-                        className="w-full bg-slate-800/40 border border-slate-700/80 text-slate-400 cursor-not-allowed rounded-xl py-3 px-4 pr-8 text-base font-bold outline-none transition-all shadow-inner"
+                        className="w-full bg-emerald-900/40 border border-emerald-700/80 text-slate-400 cursor-not-allowed rounded-xl py-3 px-4 pr-8 text-base font-bold outline-none transition-all shadow-inner"
                       />
                       <span className="absolute inset-y-0 right-4 flex items-center font-bold text-slate-500">%</span>
                     </div>
@@ -4106,13 +4107,13 @@ export default function AdminDashboard() {
                         value={productPrice}
                         onChange={(e) => handleOfferPriceChange(e.target.value)}
                         placeholder="120"
-                        className="w-full bg-slate-800 border border-amber-500/50 focus:border-amber-400 focus:ring-4 focus:ring-amber-500/20 rounded-xl py-3 px-4 pl-8 text-base font-black outline-none transition-all text-amber-400 shadow-inner"
+                        className="w-full bg-emerald-900 border border-amber-500/50 focus:border-amber-400 focus:ring-4 focus:ring-amber-500/20 rounded-xl py-3 px-4 pl-8 text-base font-black outline-none transition-all text-amber-400 shadow-inner"
                       />
                     </div>
                   </div>
                 </div>
 
-                <div className="flex items-center justify-between col-span-1 md:col-span-2 bg-slate-700/30 p-5 rounded-2xl border border-slate-600/50">
+                <div className="flex items-center justify-between col-span-1 md:col-span-2 bg-emerald-800/30 p-5 rounded-2xl border border-emerald-600/50">
                   <div className="flex flex-col">
                     <span className="text-sm font-bold text-amber-300 uppercase tracking-wide">Opt-in to Global Discount</span>
                     <span className="text-xs text-slate-400 mt-1 font-medium">When enabled, any Global Discount will automatically update this product&apos;s Offer Price.</span>
@@ -4128,7 +4129,7 @@ export default function AdminDashboard() {
                   </label>
                 </div>
 
-                <div className="flex items-center justify-between col-span-1 md:col-span-2 bg-slate-700/30 p-5 rounded-2xl border border-slate-600/50">
+                <div className="flex items-center justify-between col-span-1 md:col-span-2 bg-emerald-800/30 p-5 rounded-2xl border border-emerald-600/50">
                   <div className="flex flex-col">
                     <span className="text-sm font-bold text-emerald-400 uppercase tracking-wide">Product Status: {productIsActive ? "ACTIVE" : "INACTIVE"}</span>
                     <span className="text-xs text-slate-400 mt-1 font-medium">When inactive, this product will be hidden from the customer portal.</span>
@@ -4146,29 +4147,29 @@ export default function AdminDashboard() {
               </div>
 
               {/* Image Upload (Moved to Left Column) */}
-              <div className="space-y-4 pt-6 border-t border-slate-700/50 mt-2">
-                <label className="flex items-center gap-2 text-xs font-black uppercase tracking-widest text-blue-300">
-                  <span className="w-5 h-5 rounded border border-blue-500/30 bg-blue-500/10 text-blue-400 flex items-center justify-center text-xs">🖼️</span>
+              <div className="space-y-4 pt-6 border-t border-emerald-700/50 mt-2">
+                <label className="flex items-center gap-2 text-xs font-black uppercase tracking-widest text-emerald-300">
+                  <span className="w-5 h-5 rounded border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xs">🖼️</span>
                   Product Image Upload
                 </label>
                 <div className="flex flex-col sm:flex-row gap-6">
-                  <div className="flex-1 bg-slate-700/30 rounded-2xl p-4 border border-slate-600 flex flex-col justify-center items-center text-center gap-3 relative overflow-hidden group min-h-[160px]">
+                  <div className="flex-1 bg-emerald-800/30 rounded-2xl p-4 border border-emerald-600 flex flex-col justify-center items-center text-center gap-3 relative overflow-hidden group min-h-[160px]">
                     {productImage ? (
                       <>
-                        <div className="absolute inset-0 bg-slate-800/50"></div>
+                        <div className="absolute inset-0 bg-emerald-900/50"></div>
                         <img
                           src={productImage}
                           alt="Product Preview"
-                          className="w-32 h-32 object-contain relative z-10 drop-shadow-2xl group-hover:scale-105 transition-transform duration-300"
+                          className="w-32 h-32 object-contain relative z-10 drop-shadow-xl group-hover:scale-105 transition-transform duration-300"
                         />
                         <div className="relative z-10 w-full mt-2">
-                          <p className="text-xs text-slate-300 font-mono break-all bg-slate-900/60 px-2 py-1 rounded-md">{productImage}</p>
+                          <p className="text-xs text-slate-600 font-mono break-all bg-emerald-950/60 px-2 py-1 rounded-md">{productImage}</p>
                         </div>
                       </>
                     ) : (
                       <div className="flex flex-col items-center justify-center h-32 opacity-40">
                         <span className="text-4xl mb-2">📸</span>
-                        <span className="text-slate-300 text-xs font-bold uppercase tracking-wide">No Image</span>
+                        <span className="text-slate-600 text-xs font-bold uppercase tracking-wide">No Image</span>
                       </div>
                     )}
                   </div>
@@ -4185,7 +4186,7 @@ export default function AdminDashboard() {
                       type="button"
                       disabled={uploadingImage}
                       onClick={() => fileInputRef.current?.click()}
-                      className="w-full py-4 rounded-xl bg-blue-500/10 hover:bg-blue-500/20 text-blue-300 border border-blue-500/30 text-base font-bold tracking-tight transition-all disabled:opacity-50 flex items-center justify-center gap-2 shadow-inner"
+                      className="w-full py-4 rounded-xl bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-base font-bold tracking-tight transition-all disabled:opacity-50 flex items-center justify-center gap-2 shadow-inner"
                     >
                       {uploadingImage ? (
                         <>
@@ -4203,8 +4204,8 @@ export default function AdminDashboard() {
             </div>
             
             {/* Right Column: Image Selection (Presets) */}
-            <div className="flex-[2] border-t lg:border-t-0 lg:border-l border-slate-700/50 pt-8 lg:pt-0 lg:pl-10">
-              <div className="bg-slate-700/30 rounded-2xl p-5 border border-slate-600 h-full flex flex-col">
+            <div className="flex-[2] border-t lg:border-t-0 lg:border-l border-emerald-700/50 pt-8 lg:pt-0 lg:pl-10">
+              <div className="bg-emerald-800/30 rounded-2xl p-5 border border-emerald-600 h-full flex flex-col">
                 <span className="text-xs font-black tracking-widest uppercase text-slate-400 mb-6 block flex items-center gap-2">
                   <span>✨</span> Choose from Presets
                 </span>
@@ -4216,8 +4217,8 @@ export default function AdminDashboard() {
                       onClick={() => setProductImage(img.path)}
                       className={`p-3 rounded-xl border flex flex-col items-center justify-center gap-2 transition-all group ${
                         productImage === img.path
-                          ? "border-blue-500 bg-blue-500/20 text-blue-200 shadow-[0_0_15px_rgba(59,130,246,0.3)] ring-1 ring-blue-500"
-                          : "border-slate-600 bg-slate-800 hover:border-blue-500/50 hover:bg-slate-700 text-slate-300"
+                          ? "border-emerald-500 bg-emerald-500/20 text-emerald-200 shadow-[0_0_15px_rgba(59,130,246,0.3)] ring-1 ring-emerald-500"
+                          : "border-emerald-600 bg-emerald-900 hover:border-emerald-500/50 hover:bg-emerald-800 text-slate-600"
                       }`}
                     >
                       <div className="w-10 h-10 relative">
@@ -4233,17 +4234,17 @@ export default function AdminDashboard() {
           </div>
 
               {/* Modal Actions */}
-              <div className="flex justify-end gap-3 px-8 py-5 border-t border-slate-700 bg-slate-800/80 shrink-0">
+              <div className="flex justify-end gap-3 px-8 py-5 border-t border-emerald-700 bg-emerald-900/80 shrink-0">
                 <button
                   type="button"
                   onClick={() => setIsProductModalOpen(false)}
-                  className="px-6 py-3 rounded-xl border-2 border-slate-600 hover:border-slate-500 hover:bg-slate-700/50 text-base font-bold text-slate-300 transition-all"
+                  className="px-6 py-3 rounded-xl border-2 border-emerald-600 hover:border-slate-500 hover:bg-emerald-800/50 text-base font-bold text-slate-600 transition-all"
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
-                  className="px-8 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold text-base tracking-wide shadow-[0_0_20px_rgba(59,130,246,0.4)] hover:-translate-y-0.5 active:scale-95 transition-all flex items-center gap-2"
+                  className="px-8 py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-500 hover:to-emerald-500 text-white font-bold text-base tracking-wide shadow-[0_0_20px_rgba(59,130,246,0.4)] hover:-translate-y-0.5 active:scale-95 transition-all flex items-center gap-2"
                 >
                   {editingProduct ? (
                     <><span>💾</span> Save Changes</>
@@ -4259,13 +4260,13 @@ export default function AdminDashboard() {
 
       {/* GLOBAL DISCOUNT MODAL */}
       {showGlobalDiscountModal && (
-        <div className="fixed inset-0 z-[70] bg-slate-900/80 backdrop-blur-xl flex items-center justify-center p-4 overflow-y-auto font-['Outfit']">
+        <div className="fixed inset-0 z-[70] bg-emerald-950/80 backdrop-blur-xl flex items-center justify-center p-4 overflow-y-auto font-['Outfit']">
           <div className="min-h-full w-full flex items-center justify-center">
             
-            <div className="bg-slate-800 border border-amber-500/30 rounded-[2rem] w-full max-w-4xl shadow-[0_0_60px_rgba(245,158,11,0.15)] overflow-hidden animate-slideDown relative flex flex-col md:flex-row">
+            <div className="bg-emerald-900 border border-amber-500/30 rounded-[2rem] w-full max-w-4xl shadow-[0_0_60px_rgba(245,158,11,0.15)] overflow-hidden animate-slideDown relative flex flex-col md:flex-row">
               
               {/* Left Side: Information */}
-              <div className="md:w-5/12 bg-gradient-to-br from-amber-900/40 to-slate-900 p-8 border-r border-slate-700/50 flex flex-col relative overflow-hidden">
+              <div className="md:w-5/12 bg-gradient-to-br from-amber-900/40 to-slate-900 p-8 border-r border-emerald-700/50 flex flex-col relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/10 rounded-full blur-[60px] pointer-events-none"></div>
                 
                 <div className="relative z-10 flex-1 flex flex-col">
@@ -4275,7 +4276,7 @@ export default function AdminDashboard() {
                   <h3 className="text-3xl font-black text-white tracking-tight mb-4">
                     Global Discount
                   </h3>
-                  <p className="text-slate-300 text-sm leading-relaxed font-medium mb-6">
+                  <p className="text-slate-600 text-sm leading-relaxed font-medium mb-6">
                     Set a flat discount percentage for your entire catalog. This will recalculate the offer price for <strong className="text-amber-400">all eligible products</strong> based on their original price instantly.
                   </p>
                   
@@ -4291,11 +4292,11 @@ export default function AdminDashboard() {
               </div>
 
               {/* Right Side: Controls */}
-              <div className="md:w-7/12 p-8 relative flex flex-col justify-between bg-slate-800">
+              <div className="md:w-7/12 p-8 relative flex flex-col justify-between bg-emerald-900">
                 <button
                   type="button"
                   onClick={() => setShowGlobalDiscountModal(false)}
-                  className="absolute top-6 right-6 w-10 h-10 rounded-full bg-slate-700/50 border border-slate-600 text-slate-300 hover:bg-red-500/20 hover:text-red-400 hover:border-red-500/30 transition-all flex items-center justify-center text-lg backdrop-blur-sm z-20"
+                  className="absolute top-6 right-6 w-10 h-10 rounded-full bg-emerald-800/50 border border-emerald-600 text-slate-600 hover:bg-red-500/20 hover:text-red-400 hover:border-red-500/30 transition-all flex items-center justify-center text-lg backdrop-blur-sm z-20"
                 >
                   ✕
                 </button>
@@ -4311,11 +4312,11 @@ export default function AdminDashboard() {
                         const val = parseInt(globalDiscountValue) || 0;
                         if (val > 0) setGlobalDiscountValue(String(val - 5));
                       }}
-                      className="w-14 h-14 rounded-full bg-slate-900 border border-slate-700 text-slate-300 font-black text-2xl hover:bg-slate-700 hover:text-amber-400 hover:border-amber-400/50 transition-all flex items-center justify-center cursor-pointer active:scale-95 shadow-sm"
+                      className="w-14 h-14 rounded-full bg-emerald-950 border border-emerald-700 text-slate-600 font-black text-2xl hover:bg-emerald-800 hover:text-amber-400 hover:border-amber-400/50 transition-all flex items-center justify-center cursor-pointer active:scale-95 shadow-sm"
                     >−</button>
                     
                     <div className="relative group">
-                      <div className="relative flex items-center justify-center bg-slate-950 border-2 border-amber-500/50 rounded-2xl w-36 h-24 shadow-[0_0_30px_rgba(245,158,11,0.2)]">
+                      <div className="relative flex items-center justify-center bg-emerald-950 border-2 border-amber-500/50 rounded-2xl w-36 h-24 shadow-[0_0_30px_rgba(245,158,11,0.2)]">
                         <input
                           type="number"
                           min="0"
@@ -4334,13 +4335,13 @@ export default function AdminDashboard() {
                         const val = parseInt(globalDiscountValue) || 0;
                         if (val < 100) setGlobalDiscountValue(String(val + 5));
                       }}
-                      className="w-14 h-14 rounded-full bg-slate-900 border border-slate-700 text-slate-300 font-black text-2xl hover:bg-slate-700 hover:text-amber-400 hover:border-amber-400/50 transition-all flex items-center justify-center cursor-pointer active:scale-95 shadow-sm"
+                      className="w-14 h-14 rounded-full bg-emerald-950 border border-emerald-700 text-slate-600 font-black text-2xl hover:bg-emerald-800 hover:text-amber-400 hover:border-amber-400/50 transition-all flex items-center justify-center cursor-pointer active:scale-95 shadow-sm"
                     >+</button>
                   </div>
                   
                   {/* Visualizer text */}
                   <div className="mt-10 text-center">
-                    <span className="inline-flex items-center gap-3 bg-slate-900/50 border border-slate-700 px-5 py-3 rounded-xl text-sm text-slate-400 font-medium tracking-wide shadow-inner">
+                    <span className="inline-flex items-center gap-3 bg-emerald-950/50 border border-emerald-700 px-5 py-3 rounded-xl text-sm text-slate-400 font-medium tracking-wide shadow-inner">
                       <span>A ₹1000 product will become</span>
                       <span className="text-amber-400 font-black text-base bg-amber-400/10 px-3 py-1 rounded-lg">₹{1000 - (1000 * (parseInt(globalDiscountValue) || 0) / 100)}</span>
                     </span>
@@ -4348,12 +4349,12 @@ export default function AdminDashboard() {
                 </div>
 
               {/* Modal Footer (now part of right side) */}
-              <div className="mt-8 pt-6 border-t border-slate-700 flex gap-4 w-full">
+              <div className="mt-8 pt-6 border-t border-emerald-700 flex gap-4 w-full">
                 <button
                   type="button"
                   onClick={() => setShowGlobalDiscountModal(false)}
                   disabled={isApplyingDiscount}
-                  className="flex-1 py-4 rounded-xl bg-slate-700/50 border border-slate-600 hover:bg-slate-700 text-sm font-bold tracking-tight text-slate-300 transition-all disabled:opacity-50"
+                  className="flex-1 py-4 rounded-xl bg-emerald-800/50 border border-emerald-600 hover:bg-emerald-800 text-sm font-bold tracking-tight text-slate-600 transition-all disabled:opacity-50"
                 >
                   Cancel
                 </button>
@@ -4386,20 +4387,20 @@ export default function AdminDashboard() {
 
       {/* ORDER ITEMS VIEW MODAL */}
       {viewingOrder && (
-        <div className="fixed inset-0 z-[60] bg-slate-900/40 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+        <div className="fixed inset-0 z-[60] bg-emerald-950/40 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
           <div className="bg-white border border-slate-200 rounded-3xl w-[95vw] max-w-7xl overflow-hidden shadow-2xl animate-slideDown my-8 flex flex-col max-h-[90vh]">
             {/* Modal Header */}
-            <div className="bg-indigo-50/50 px-8 py-6 border-b border-indigo-100 flex justify-between items-center shrink-0">
+            <div className="bg-emerald-50/50 px-8 py-6 border-b border-emerald-100 flex justify-between items-center shrink-0">
               <div>
-                <h3 className="text-2xl font-black text-indigo-950 tracking-tight flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center border border-indigo-100 shadow-sm text-indigo-500 text-xl">🛍️</div>
+                <h3 className="text-2xl font-black text-emerald-950 tracking-tight flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center border border-emerald-100 shadow-sm text-emerald-400 text-xl">🛍️</div>
                   Order #{String(viewingOrder.id).padStart(4, '0')} Details
                 </h3>
                 <p className="text-slate-500 text-base font-medium mt-2 tracking-tight flex items-center gap-2">
-                  <span>Customer: <span className="text-indigo-700 font-black">{viewingOrder.customer_name}</span></span>
+                  <span>Customer: <span className="text-slate-800 font-black">{viewingOrder.customer_name}</span></span>
                   <span className="text-slate-300">|</span>
-                  <span>Total Items: <span className="text-indigo-700 font-black">{viewingOrder.items.length}</span></span>
-                  <span className="text-slate-300">|</span>
+                  <span>Total Items: <span className="text-slate-800 font-black">{viewingOrder.items.length}</span></span>
+                  <span className="text-slate-600">|</span>
                   <span className="flex items-center gap-2">
                     Payment: 
                     <span className={`px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider ${(!viewingOrder.payment_status || viewingOrder.payment_status === 'Unpaid') ? 'bg-red-100 text-red-600 border border-red-200' : 'bg-emerald-100 text-emerald-600 border border-emerald-200'}`}>
@@ -4423,10 +4424,10 @@ export default function AdminDashboard() {
               <div className="flex justify-end mb-1">
                 <button
                   onClick={() => setIsAddProductModalOpen(true)}
-                  className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white text-sm font-black tracking-tight transition-all shadow-md shadow-indigo-500/30 hover:shadow-lg hover:shadow-indigo-500/40 flex items-center gap-2 active:scale-[0.98]"
+                  className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-500 hover:to-amber-600 text-emerald-950 text-sm font-black tracking-tight transition-all shadow-sm shadow-amber-500/30 hover:shadow-lg hover:shadow-amber-500/40 flex items-center gap-2 active:scale-[0.98]"
                 >
-                  <div className="bg-white/20 p-1 rounded-lg">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-4 h-4 text-white">
+                  <div className="bg-white/30 p-1 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-4 h-4 text-emerald-950">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                     </svg>
                   </div>
@@ -4447,10 +4448,10 @@ export default function AdminDashboard() {
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-lg">
                     {viewingOrder.items.map((item: any, idx: number) => (
-                      <tr key={idx} className="hover:bg-indigo-50/30 transition-colors group">
+                      <tr key={idx} className="hover:bg-emerald-50/30 transition-colors group">
                         <td className="py-5 px-6 text-slate-800 font-bold">{item.name}</td>
                         <td className="py-5 px-6 text-center">
-                          <span className="bg-indigo-50 px-4 py-2 rounded-xl text-indigo-700 border border-indigo-100 shadow-sm font-black inline-block min-w-[3rem] text-center">{item.quantity}</span>
+                          <span className="bg-emerald-50 px-4 py-2 rounded-xl text-emerald-700 border border-emerald-100 shadow-sm font-black inline-block min-w-[3rem] text-center">{item.quantity}</span>
                         </td>
                         <td className="py-5 px-6 text-right text-slate-500 font-medium">
                           ₹{item.originalPrice}
@@ -4492,7 +4493,7 @@ export default function AdminDashboard() {
                             <select 
                               value={additionalDiscountType} 
                               onChange={(e) => setAdditionalDiscountType(e.target.value as "amount"|"percentage")}
-                              className="bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 font-bold text-sm rounded-xl pl-4 pr-9 py-2 focus:outline-none focus:ring-4 focus:ring-indigo-500/10 focus:border-indigo-500 shadow-sm transition-all cursor-pointer appearance-none"
+                              className="bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 font-bold text-sm rounded-xl pl-4 pr-9 py-2 focus:outline-none focus:ring-4 focus:ring-emerald-500/10 focus:border-emerald-500 shadow-sm transition-all cursor-pointer appearance-none"
                             >
                               <option value="amount">Amount (₹)</option>
                               <option value="percentage">Percentage (%)</option>
@@ -4508,7 +4509,7 @@ export default function AdminDashboard() {
                               placeholder="Value"
                               value={additionalDiscountValue}
                               onChange={(e) => setAdditionalDiscountValue(e.target.value)}
-                              className="w-28 bg-white hover:bg-slate-50 border border-slate-200 text-slate-800 font-bold text-sm rounded-xl px-4 py-2 focus:outline-none focus:ring-4 focus:ring-indigo-500/10 focus:border-indigo-500 shadow-sm transition-all placeholder:text-slate-400 placeholder:font-medium"
+                              className="w-28 bg-white hover:bg-slate-50 border border-slate-200 text-slate-800 font-bold text-sm rounded-xl px-4 py-2 focus:outline-none focus:ring-4 focus:ring-emerald-500/10 focus:border-emerald-500 shadow-sm transition-all placeholder:text-slate-400 placeholder:font-medium"
                             />
                           </div>
                         </div>
@@ -4536,7 +4537,7 @@ export default function AdminDashboard() {
                               placeholder="0.00"
                               value={packingCharge}
                               onChange={(e) => setPackingCharge(e.target.value)}
-                              className="w-32 bg-white hover:bg-slate-50 border border-slate-200 text-slate-800 font-bold text-sm rounded-xl pl-8 pr-4 py-2 focus:outline-none focus:ring-4 focus:ring-indigo-500/10 focus:border-indigo-500 shadow-sm transition-all placeholder:text-slate-400 placeholder:font-medium"
+                              className="w-32 bg-white hover:bg-slate-50 border border-slate-200 text-slate-800 font-bold text-sm rounded-xl pl-8 pr-4 py-2 focus:outline-none focus:ring-4 focus:ring-emerald-500/10 focus:border-emerald-500 shadow-sm transition-all placeholder:text-slate-400 placeholder:font-medium"
                             />
                           </div>
                         </div>
@@ -4546,9 +4547,9 @@ export default function AdminDashboard() {
                         +₹{Number(packingCharge || 0).toFixed(2)}
                       </td>
                     </tr>
-                    <tr className="border-t border-indigo-200 bg-indigo-50">
-                      <td colSpan={4} className="py-6 px-6 text-right text-lg font-black tracking-tight text-indigo-900">Final Amount To Pay:</td>
-                      <td className="py-6 px-6 text-right text-3xl font-black text-indigo-700">
+                    <tr className="border-t border-emerald-200 bg-emerald-50">
+                      <td colSpan={4} className="py-6 px-6 text-right text-lg font-black tracking-tight text-emerald-900">Final Amount To Pay:</td>
+                      <td className="py-6 px-6 text-right text-3xl font-black text-emerald-700">
                         ₹{(() => {
                            const extraVal = Number(additionalDiscountValue || 0);
                            const extraAmt = additionalDiscountType === "percentage" 
@@ -4576,7 +4577,7 @@ export default function AdminDashboard() {
               </button>
               <button
                 onClick={() => handlePrintOrder(viewingOrder, additionalDiscountType, additionalDiscountValue, packingCharge)}
-                className="px-8 py-3.5 rounded-xl bg-gradient-to-r from-indigo-500 to-blue-600 hover:from-indigo-600 hover:to-blue-700 text-white text-base font-black tracking-tight transition-all shadow-lg shadow-indigo-500/20 flex items-center gap-2 border border-indigo-400/20"
+                className="px-8 py-3.5 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white text-base font-black tracking-tight transition-all shadow-lg shadow-emerald-600/20 flex items-center gap-2 border border-emerald-500/20"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-5 h-5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0 1 10.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0 .229 2.523a1.125 1.125 0 0 1-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0 0 21 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 0 0-1.913-.247M6.34 18H5.25A2.25 2.25 0 0 1 3 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 0 1 1.913-.247m10.5 0a48.536 48.536 0 0 0-10.5 0v-2.94a2.25 2.25 0 0 1 2.25-2.25h6a2.25 2.25 0 0 1 2.25 2.25v2.94ZM15 10.125a1.125 1.125 0 1 1-2.25 0 1.125 1.125 0 0 1 2.25 0Z" />
@@ -4596,12 +4597,12 @@ export default function AdminDashboard() {
 
       {/* ADD EXTRA PRODUCTS MODAL */}
       {isAddProductModalOpen && (
-        <div className="fixed inset-0 z-[70] flex items-center justify-center p-4 sm:p-6 bg-slate-900/40 backdrop-blur-sm">
+        <div className="fixed inset-0 z-[70] flex items-center justify-center p-4 sm:p-6 bg-emerald-950/40 backdrop-blur-sm">
           <div className="absolute inset-0" onClick={() => setIsAddProductModalOpen(false)}></div>
           <div className="relative w-full max-w-3xl bg-white rounded-3xl border border-slate-200 shadow-2xl overflow-hidden animate-slideDown flex flex-col max-h-[85vh]">
             <div className="px-8 py-6 border-b border-slate-200 flex justify-between items-center bg-slate-50 shrink-0">
               <h3 className="text-xl font-black text-slate-800 flex items-center gap-2 tracking-tight">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6 text-indigo-500">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6 text-emerald-400">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                 </svg>
                 Add Extra Products to Order
@@ -4633,7 +4634,7 @@ export default function AdminDashboard() {
                         newStaged[index].productId = e.target.value;
                         setStagedProducts(newStaged);
                       }}
-                      className="flex-1 bg-white border border-slate-200 text-slate-700 font-bold text-sm rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-sm transition-all"
+                      className="flex-1 bg-white border border-slate-200 text-slate-700 font-bold text-sm rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-emerald-500 shadow-sm transition-all"
                     >
                       <option value="">Select a product...</option>
                       {products.map(p => (
@@ -4651,7 +4652,7 @@ export default function AdminDashboard() {
                           newStaged[index].qty = e.target.value;
                           setStagedProducts(newStaged);
                         }}
-                        className="w-24 bg-white border border-slate-200 text-slate-700 font-bold text-sm rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-sm transition-all"
+                        className="w-24 bg-white border border-slate-200 text-slate-700 font-bold text-sm rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-emerald-500 shadow-sm transition-all"
                       />
                     </div>
                     {stagedProducts.length > 1 && (
@@ -4677,7 +4678,7 @@ export default function AdminDashboard() {
               </button>
               <button
                 onClick={handleAddProductToOrder}
-                className="px-6 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-black tracking-tight transition-all shadow-sm flex items-center gap-2"
+                className="px-6 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-black tracking-tight transition-all shadow-sm flex items-center gap-2"
               >
                 Add Selected to Order
               </button>

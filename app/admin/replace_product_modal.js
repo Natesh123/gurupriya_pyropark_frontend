@@ -170,7 +170,7 @@ const newModalCode = `{/* PRODUCT CREATION/EDIT MODAL */}
                           <img
                             src={productImage}
                             alt="Product Preview"
-                            className="max-w-full max-h-full object-contain drop-shadow-md"
+                            className="max-w-full max-h-full object-contain drop-shadow-sm"
                           />
                         ) : (
                           <span className="text-slate-400 text-sm font-bold">No Image</span>
@@ -247,7 +247,7 @@ const newModalCode = `{/* PRODUCT CREATION/EDIT MODAL */}
                 </button>
                 <button
                   type="submit"
-                  className="px-10 py-3.5 rounded-xl bg-blue-600 text-white font-black text-base tracking-tight hover:bg-blue-700 hover:shadow-xl hover:shadow-blue-600/20 active:scale-95 transition-all flex items-center justify-center gap-2"
+                  className="px-10 py-3.5 rounded-xl bg-blue-600 text-white font-black text-base tracking-tight hover:bg-blue-700 hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] hover:shadow-blue-600/20 active:scale-95 transition-all flex items-center justify-center gap-2"
                 >
                   {editingProduct ? "Save Changes" : "Create Product"}
                 </button>

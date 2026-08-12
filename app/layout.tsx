@@ -19,39 +19,39 @@ export const viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://vamsicrackers.in'),
-  title: "Vamsi Crackers | Premium Sivakasi Fireworks Online",
-  description: "Buy premium quality Sivakasi crackers online at wholesale prices. Safe, reliable, and authentic fireworks delivered across India from Vamsi Crackers.",
+  metadataBase: new URL('https://gurupriyapyropark.in'),
+  title: "Gurupriya Pyro Park | Premium Sivakasi Fireworks Online",
+  description: "Buy premium quality Sivakasi crackers online at wholesale prices. Safe, reliable, and authentic fireworks delivered across India from Gurupriya Pyro Park.",
   keywords: "Sivakasi crackers, buy fireworks online, wholesale crackers, Diwali fireworks, Vamsi crackers, safe firecrackers online, Sivakasi fireworks delivery, online crackers shopping",
-  authors: [{ name: "Vamsi Crackers", url: "https://vamsicrackers.in" }],
-  creator: "Vamsi Crackers",
-  publisher: "Vamsi Crackers",
+  authors: [{ name: "Gurupriya Pyro Park", url: "https://gurupriyapyropark.in" }],
+  creator: "Gurupriya Pyro Park",
+  publisher: "Gurupriya Pyro Park",
   robots: "index, follow",
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://vamsicrackers.in",
-    title: "Vamsi Crackers | Premium Sivakasi Fireworks Online",
+    url: "https://gurupriyapyropark.in",
+    title: "Gurupriya Pyro Park | Premium Sivakasi Fireworks Online",
     description: "Buy premium quality Sivakasi crackers online at wholesale prices. Safe, reliable, and authentic fireworks delivered across India.",
-    siteName: "Vamsi Crackers",
+    siteName: "Gurupriya Pyro Park",
     images: [
       {
-        url: "/assets/images/vamsi_crackers_logo_v2.png",
+        url: "/assets/images/gurupriya_pyropark_logo_primary.png",
         width: 1200,
         height: 630,
-        alt: "Vamsi Crackers - Premium Sivakasi Fireworks",
+        alt: "Gurupriya Pyro Park - Premium Sivakasi Fireworks",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vamsi Crackers | Premium Sivakasi Fireworks",
+    title: "Gurupriya Pyro Park | Premium Sivakasi Fireworks",
     description: "Buy premium quality Sivakasi crackers online at wholesale prices. Authentic fireworks delivered across India.",
-    images: ["/assets/images/vamsi_crackers_logo_v2.png"],
+    images: ["/assets/images/gurupriya_pyropark_logo_primary.png"],
   },
   icons: {
-    icon: "/assets/images/vamsi_crackers_logo_v2.png", // favicon
-    apple: "/assets/images/vamsi_crackers_logo_v2.png",
+    icon: "/assets/images/gurupriya_pyropark_logo_primary.png", // favicon
+    apple: "/assets/images/gurupriya_pyropark_logo_primary.png",
   },
 };
 
@@ -82,14 +82,14 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              "name": "Vamsi Crackers",
-              "image": "https://vamsicrackers.in/assets/images/vamsi_crackers_logo_v2.png",
-              "@id": "https://vamsicrackers.in",
-              "url": "https://vamsicrackers.in",
-              "telephone": "+919080019031",
+              "name": "Gurupriya Pyro Park",
+              "image": "https://gurupriyapyropark.in/assets/images/gurupriya_pyropark_logo_primary.png",
+              "@id": "https://gurupriyapyropark.in",
+              "url": "https://gurupriyapyropark.in",
+              "telephone": "+916382650924",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "D.NO. 177/5/18, Pernaickenpatti, Sithurajapuram",
+                "streetAddress": "BHARATHINAGAR, 2nd St, Viswanatham",
                 "addressLocality": "Virudhunagar",
                 "addressRegion": "TN",
                 "postalCode": "626189",

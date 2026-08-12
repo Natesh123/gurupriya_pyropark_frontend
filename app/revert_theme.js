@@ -16,7 +16,7 @@ let postAuth = content.substring(authStartIndex);
 // Reverse Replacements for the main layout
 const reverseReplacements = [
     // Nav tabs
-    ['bg-emerald-50 text-emerald-800 shadow-sm shadow-emerald-500/10 border border-emerald-100', 'bg-slate-800 text-white shadow-md shadow-slate-900/50'],
+    ['bg-emerald-50 text-emerald-800 shadow-sm shadow-emerald-500/10 border border-emerald-100', 'bg-slate-800 text-white shadow-sm shadow-slate-900/50'],
     ['text-slate-500 hover:text-emerald-700 hover:bg-emerald-50/50', 'text-slate-400 hover:text-white hover:bg-slate-800/50'],
     
     // Sidebar
@@ -56,7 +56,7 @@ const reverseReplacements = [
     [/\bbg-slate-900\/60\b/g, 'bg-[#07010e]/80'],
     
     // Some manual replacements that might have collided or weren't perfectly matched in regex
-    ['bg-emerald-50 text-emerald-700', 'bg-festive-purple text-slate-900'],
+    ['bg-emerald-50 text-emerald-700', 'bg-festive-green text-slate-900'],
     ['border-emerald-200 hover:border-emerald-300', 'border-festive-gold/30 hover:border-festive-gold'],
     ['bg-emerald-50 text-emerald-800', 'bg-slate-900/15 text-slate-900'],
     ['border-emerald-500', 'border-festive-gold'],

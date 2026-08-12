@@ -25,13 +25,13 @@ export default function OurBrands() {
     <section className="py-24 bg-gradient-to-b from-gray-50 to-white overflow-hidden relative">
       {/* Decorative background elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute -top-24 -left-24 w-96 h-96 bg-festive-purple/5 rounded-full blur-3xl"></div>
+        <div className="absolute -top-24 -left-24 w-96 h-96 bg-festive-green/5 rounded-full blur-3xl"></div>
         <div className="absolute top-1/2 -right-24 w-96 h-96 bg-festive-gold/10 rounded-full blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-4 md:px-12 mb-12 relative z-10">
         <div className="flex flex-col items-center justify-center text-center w-full">
-            <h2 className="text-4xl md:text-5xl font-black text-festive-purple tracking-tighter mb-4 uppercase">
+            <h2 className="text-4xl md:text-5xl font-black text-festive-green tracking-tighter mb-4 uppercase">
                 Our Top <span className="text-festive-red">Brands</span>
             </h2>
             <p className="text-gray-500 text-lg md:text-xl font-medium max-w-2xl">
@@ -45,7 +45,7 @@ export default function OurBrands() {
         {/* Navigation Arrows */}
         <button 
             onClick={() => scroll('left')}
-            className="absolute left-2 md:-left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 md:w-16 md:h-16 rounded-full bg-white text-festive-purple flex items-center justify-center hover:bg-festive-purple hover:text-white hover:scale-110 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.12)] opacity-90 md:opacity-0 group-hover:opacity-100"
+            className="absolute left-2 md:-left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 md:w-16 md:h-16 rounded-full bg-white text-festive-green flex items-center justify-center hover:bg-festive-green hover:text-white hover:scale-110 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.12)] opacity-90 md:opacity-0 group-hover:opacity-100"
         >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-5 h-5 md:w-7 md:h-7 -ml-1">
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
@@ -94,8 +94,8 @@ export default function OurBrands() {
         {/* Pagination Dots */}
         <div className="flex justify-center mt-6 gap-3">
             <div className="w-10 h-2.5 rounded-full bg-festive-gold shadow-sm"></div>
-            <div className="w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-festive-purple transition-colors cursor-pointer"></div>
-            <div className="w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-festive-purple transition-colors cursor-pointer"></div>
+            <div className="w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-festive-green transition-colors cursor-pointer"></div>
+            <div className="w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-festive-green transition-colors cursor-pointer"></div>
         </div>
       </div>
     </section>

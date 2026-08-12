@@ -16,8 +16,8 @@ function walk(dir) {
 }
 walk('./app').forEach(file => {
   let content = fs.readFileSync(file, 'utf8');
-  if (content.includes('vamsi_crackers_logo.png')) {
-    fs.writeFileSync(file, content.replaceAll('vamsi_crackers_logo.png', 'vamsi_crackers_logo_v2.png'));
+  if (content.includes('gurupriya_pyropark_logo_primary.png')) {
+    fs.writeFileSync(file, content.replaceAll('gurupriya_pyropark_logo_primary.png', 'gurupriya_pyropark_logo_primary.png'));
     console.log('Updated ' + file);
   }
 });

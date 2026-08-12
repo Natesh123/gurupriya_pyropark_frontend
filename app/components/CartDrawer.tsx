@@ -142,9 +142,9 @@ export default function CartDrawer() {
         <div className="px-4 sm:px-6 py-4 sm:py-5 border-b border-gray-100 flex items-center justify-between relative z-10 bg-gray-50/50">
           <div className="flex items-center gap-2 sm:gap-3">
             <span className="text-xl sm:text-2xl drop-shadow-sm">🛒</span>
-            <h2 className="text-lg sm:text-xl font-black uppercase tracking-widest text-festive-purple flex items-center flex-wrap gap-2 sm:gap-3">
+            <h2 className="text-lg sm:text-xl font-black uppercase tracking-widest text-festive-green flex items-center flex-wrap gap-2 sm:gap-3">
               <span>Your <span className="bg-clip-text text-transparent bg-gradient-to-r from-festive-red to-orange-500">Cart</span></span>
-              <span className="text-[10px] sm:text-xs bg-festive-gold/15 text-festive-purple border border-festive-gold/30 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full shadow-sm leading-none flex items-center mt-0.5 sm:mt-0">
+              <span className="text-[10px] sm:text-xs bg-festive-gold/15 text-festive-green border border-festive-gold/30 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full shadow-sm leading-none flex items-center mt-0.5 sm:mt-0">
                 {cartCount} {cartCount === 1 ? "ITEM" : "ITEMS"}
               </span>
             </h2>
@@ -188,7 +188,7 @@ export default function CartDrawer() {
               </div>
               <button
                 onClick={() => setCartOpen(false)}
-                className="px-10 py-3.5 rounded-full bg-gradient-to-r from-festive-gold to-yellow-400 text-festive-purple font-black text-base uppercase tracking-widest hover:scale-105 transition-all shadow-[0_8px_20px_rgba(255,215,0,0.4)] mt-4"
+                className="px-10 py-3.5 rounded-full bg-gradient-to-r from-festive-gold to-yellow-400 text-festive-green font-black text-base uppercase tracking-widest hover:scale-105 transition-all shadow-[0_8px_20px_rgba(255,215,0,0.4)] mt-4"
               >
                 Start Shopping
               </button>
@@ -202,7 +202,7 @@ export default function CartDrawer() {
                   return (
                     <div
                       key={item.id}
-                      className="flex gap-5 p-4 rounded-2xl border border-gray-100 bg-white shadow-sm hover:shadow-md hover:border-festive-gold/30 transition-all group relative overflow-hidden items-center"
+                      className="flex gap-5 p-4 rounded-2xl border border-gray-100 bg-white shadow-sm hover:shadow-sm hover:border-festive-gold/30 transition-all group relative overflow-hidden items-center"
                     >
                       {/* Image */}
                       <div className="relative w-24 h-24 rounded-xl overflow-hidden border border-gray-100 flex-shrink-0 bg-gray-50 flex items-center justify-center p-2 group-hover:bg-amber-50/50 transition-colors duration-300">
@@ -219,12 +219,12 @@ export default function CartDrawer() {
                           <span className="text-[9px] uppercase font-bold text-slate-500 bg-gray-50 px-2 py-0.5 rounded border border-gray-200 inline-block mb-1.5">
                             {item.category}
                           </span>
-                          <h4 className="text-base sm:text-base font-black text-slate-800 tracking-wide leading-tight group-hover:text-festive-purple transition-colors line-clamp-2">
+                          <h4 className="text-base sm:text-base font-black text-slate-800 tracking-wide leading-tight group-hover:text-festive-green transition-colors line-clamp-2">
                             {item.name}
                           </h4>
                           
                           <div className="flex items-center gap-3 mt-2">
-                            <span className="text-base font-black text-festive-purple drop-shadow-sm">
+                            <span className="text-base font-black text-festive-green drop-shadow-sm">
                               ₹{item.price}
                             </span>
                             <span className="text-xs text-slate-400 line-through font-bold">
@@ -253,7 +253,7 @@ export default function CartDrawer() {
                             />
                             <button
                               onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                              className="px-3.5 py-2 text-base font-black text-slate-500 hover:bg-gray-100 hover:text-festive-purple transition-colors cursor-pointer"
+                              className="px-3.5 py-2 text-base font-black text-slate-500 hover:bg-gray-100 hover:text-festive-green transition-colors cursor-pointer"
                             >
                               +
                             </button>
@@ -281,7 +281,7 @@ export default function CartDrawer() {
               <div className="pt-4 pb-2">
                 <button
                   onClick={() => setShowCheckoutForm(!showCheckoutForm)}
-                  className={`w-full flex items-center justify-between text-sm sm:text-sm font-black uppercase tracking-wider p-4 rounded-xl transition-all border cursor-pointer ${showCheckoutForm ? 'bg-festive-gold/10 border-festive-gold/30 text-festive-purple shadow-sm' : 'bg-gray-50 border-gray-200 text-slate-600 hover:bg-gray-100 hover:border-gray-300'}`}
+                  className={`w-full flex items-center justify-between text-sm sm:text-sm font-black uppercase tracking-wider p-4 rounded-xl transition-all border cursor-pointer ${showCheckoutForm ? 'bg-festive-gold/10 border-festive-gold/30 text-festive-green shadow-sm' : 'bg-gray-50 border-gray-200 text-slate-600 hover:bg-gray-100 hover:border-gray-300'}`}
                 >
                   <span className="flex items-center gap-2">
                     <span className="text-lg">📋</span> Customer & Delivery Details
@@ -369,7 +369,7 @@ export default function CartDrawer() {
             <div className="w-full sm:w-auto flex-1">
               <div className="flex items-end gap-4 mb-2">
                 <span className="text-base font-black text-slate-500 uppercase tracking-wider pb-1">Total:</span>
-                <span className="text-3xl font-black text-festive-purple drop-shadow-sm leading-none">
+                <span className="text-3xl font-black text-festive-green drop-shadow-sm leading-none">
                   ₹{cartTotal}
                 </span>
               </div>
@@ -384,10 +384,10 @@ export default function CartDrawer() {
             <div className="w-full sm:w-auto flex flex-col sm:flex-row gap-2.5 sm:gap-3">
               <button
                 onClick={() => setCartOpen(false)}
-                className="w-full sm:flex-1 h-12 sm:h-14 rounded-xl bg-white text-[#3d1166] font-black text-sm sm:text-base uppercase tracking-[0.1em] transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(61,17,102,0.1)] hover:shadow-[0_8px_25px_rgba(61,17,102,0.25)] active:scale-95 group overflow-hidden border-[2.5px] border-[#3d1166] relative"
+                className="w-full sm:flex-1 h-12 sm:h-14 rounded-xl bg-white text-emerald-700 font-black text-sm sm:text-base uppercase tracking-[0.1em] transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(5,150,105,0.1)] hover:shadow-[0_8px_25px_rgba(5,150,105,0.25)] active:scale-95 group overflow-hidden border-[2.5px] border-emerald-600 relative"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-[#2d0a4c] to-[#3d1166] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <span className="text-xl relative z-10 text-[#3d1166] group-hover:text-festive-gold transition-colors duration-300 group-hover:rotate-90">➕</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 to-emerald-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <span className="text-xl relative z-10 text-emerald-700 group-hover:text-festive-gold transition-colors duration-300 group-hover:rotate-90">➕</span>
                 <span className="relative z-10 group-hover:text-white transition-colors duration-300 drop-shadow-sm">Add More Items</span>
               </button>
               
@@ -399,7 +399,7 @@ export default function CartDrawer() {
               ) : (
                 <button
                   onClick={handleConfirmOrder}
-                  className="flex-1 sm:px-8 h-14 rounded-xl bg-festive-red hover:bg-festive-gold text-white hover:text-festive-purple font-black text-base uppercase tracking-widest hover:scale-[1.03] active:scale-95 transition-all shadow-[0_8px_20px_rgba(220,38,38,0.25)] hover:shadow-[0_10px_25px_rgba(255,215,0,0.4)] border border-transparent hover:border-festive-gold cursor-pointer flex items-center justify-center gap-2"
+                  className="flex-1 sm:px-8 h-14 rounded-xl bg-festive-red hover:bg-festive-gold text-white hover:text-festive-green font-black text-base uppercase tracking-widest hover:scale-[1.03] active:scale-95 transition-all shadow-[0_8px_20px_rgba(220,38,38,0.25)] hover:shadow-[0_10px_25px_rgba(255,215,0,0.4)] border border-transparent hover:border-festive-gold cursor-pointer flex items-center justify-center gap-2"
                 >
                   <span className="text-xl">✨</span> Confirm Order
                 </button>
@@ -418,7 +418,7 @@ export default function CartDrawer() {
               </div>
               <h3 className="text-2xl font-black text-slate-900 uppercase tracking-widest mb-3">Order Confirmed</h3>
               <p className="text-slate-600 leading-relaxed font-medium mb-8 text-base sm:text-base">
-                Your order no is <span className="font-bold text-festive-purple">{confirmedOrderId ? String(confirmedOrderId).padStart(4, '0') : ''}</span>. Thank you for placing your order! Our team will contact you shortly to confirm the details.
+                Your order no is <span className="font-bold text-festive-green">{confirmedOrderId ? String(confirmedOrderId).padStart(4, '0') : ''}</span>. Thank you for placing your order! Our team will contact you shortly to confirm the details.
               </p>
               <button
                 onClick={() => {

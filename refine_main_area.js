@@ -17,8 +17,8 @@ content = content.replace(
 
 // Let's accurately target the stat card map body
 content = content.replace(
-    /<div key=\{i\} className=\{`bg-white border border-slate-200 rounded-xl p-6 relative group transition-all duration-200 hover:shadow-md hover:border-blue-300 hover:-translate-y-0\.5`\}>[\s\S]*?\{"sub" in stat && \([\s\S]*?\}<\/div>/g,
-    `<div key={i} className="bg-white border border-slate-200 rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden flex flex-col justify-between">
+    /<div key=\{i\} className=\{`bg-white border border-slate-200 rounded-xl p-6 relative group transition-all duration-200 hover:shadow-sm hover:border-blue-300 hover:-translate-y-0\.5`\}>[\s\S]*?\{"sub" in stat && \([\s\S]*?\}<\/div>/g,
+    `<div key={i} className="bg-white border border-slate-200 rounded-xl p-5 shadow-sm hover:shadow-sm transition-shadow relative overflow-hidden flex flex-col justify-between">
                         <div className="absolute top-0 right-0 p-4 opacity-5 pointer-events-none">
                            <span className="text-6xl">{stat.icon}</span>
                         </div>
@@ -78,20 +78,20 @@ content = content.replace(
 // Change Add Product blue button to Apple/Vercel style black button
 content = content.replace(
     /bg-blue-600 text-white font-bold rounded-lg shadow-sm hover:bg-blue-700 transition-colors/g,
-    'bg-slate-900 text-white font-semibold rounded-lg shadow-md hover:bg-slate-800 transition-all hover:shadow-lg hover:-translate-y-0.5'
+    'bg-slate-900 text-white font-semibold rounded-lg shadow-sm hover:bg-slate-800 transition-all hover:shadow-lg hover:-translate-y-0.5'
 );
 // Fix the text styling inside the big blue buttons (they were uppercase, font-black, etc)
 content = content.replace(
     /className="py-3 rounded-xl bg-blue-600 text-slate-900 font-bold text-xs uppercase tracking-widest hover:-translate-y-0\.5 hover:shadow-lg transition-all text-center"/g,
-    'className="py-3 rounded-xl bg-slate-900 text-white font-bold text-sm hover:-translate-y-0.5 hover:shadow-lg transition-all text-center shadow-md"'
+    'className="py-3 rounded-xl bg-slate-900 text-white font-bold text-sm hover:-translate-y-0.5 hover:shadow-lg transition-all text-center shadow-sm"'
 );
 content = content.replace(
-    /className="flex-1 md:flex-none px-6 py-3 rounded-xl bg-blue-600 text-slate-900 font-bold text-xs uppercase tracking-widest hover:-translate-y-0\.5 hover:shadow-lg transition-all shadow-md"/g,
-    'className="flex-1 md:flex-none px-6 py-3 rounded-xl bg-slate-900 text-white font-bold text-sm hover:-translate-y-0.5 hover:shadow-lg transition-all shadow-md"'
+    /className="flex-1 md:flex-none px-6 py-3 rounded-xl bg-blue-600 text-slate-900 font-bold text-xs uppercase tracking-widest hover:-translate-y-0\.5 hover:shadow-lg transition-all shadow-sm"/g,
+    'className="flex-1 md:flex-none px-6 py-3 rounded-xl bg-slate-900 text-white font-bold text-sm hover:-translate-y-0.5 hover:shadow-lg transition-all shadow-sm"'
 );
 content = content.replace(
-    /className="flex-1 md:flex-none px-6 py-3 rounded-xl bg-blue-600 text-[#0d0415] font-bold text-xs uppercase tracking-widest hover:-translate-y-0\.5 hover:shadow-lg transition-all shadow-md shadow-orange-500\/30"/g,
-    'className="flex-1 md:flex-none px-6 py-3 rounded-xl bg-slate-900 text-white font-bold text-sm hover:-translate-y-0.5 hover:shadow-lg transition-all shadow-md"'
+    /className="flex-1 md:flex-none px-6 py-3 rounded-xl bg-blue-600 text-[#0d0415] font-bold text-xs uppercase tracking-widest hover:-translate-y-0\.5 hover:shadow-lg transition-all shadow-sm shadow-orange-500\/30"/g,
+    'className="flex-1 md:flex-none px-6 py-3 rounded-xl bg-slate-900 text-white font-bold text-sm hover:-translate-y-0.5 hover:shadow-lg transition-all shadow-sm"'
 );
 // General fallback for any remaining blue buttons in admin area
 content = content.replace(
@@ -117,7 +117,7 @@ content = content.replace(
 
 // Fix the active tab in sidebar which is currently blue
 content = content.replace(
-    /activeTab === tab.id\s*\?\s*"bg-slate-900 text-white shadow-md shadow-blue-500\/20"/g,
+    /activeTab === tab.id\s*\?\s*"bg-slate-900 text-white shadow-sm shadow-blue-500\/20"/g,
     'activeTab === tab.id ? "bg-slate-800 text-white shadow-sm" '
 );
 

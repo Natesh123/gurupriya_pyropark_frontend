@@ -55,168 +55,171 @@ export default function ContactSection() {
     };
 
     return (
-        <section id="contact" className="bg-[#f8f9fa] bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] bg-[size:24px_24px] py-24 relative overflow-hidden">
-            {/* Background dynamic ambient orbs */}
-            <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-festive-purple/10 rounded-full blur-[120px] pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
-            <div className="absolute bottom-0 left-0 w-[800px] h-[800px] bg-festive-gold/10 rounded-full blur-[120px] pointer-events-none translate-y-1/3 -translate-x-1/3"></div>
-            <div className="absolute top-[30%] left-[40%] w-[600px] h-[600px] bg-blue-400/5 rounded-full blur-[120px] pointer-events-none"></div>
-
-            <div className="w-full max-w-[1400px] mx-auto px-4 md:px-8 relative z-20">
+        <section id="contact" className="w-full py-20 md:py-32 bg-slate-50 scroll-mt-24">
+            
+            <div className="container mx-auto px-4 xl:px-0 max-w-6xl">
                 
-                {/* Section Header */}
-                <div className="text-center max-w-3xl mx-auto mb-16 relative z-10">
-                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 tracking-tight mb-4 md:mb-6">
-                        Contact <span className="text-transparent bg-clip-text bg-gradient-to-r from-festive-purple to-festive-red">Us</span>
+                {/* Header Title (Above the split screen) */}
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight mb-4">
+                        Get in <span className="text-emerald-600">Touch</span>
                     </h2>
-                    <p className="text-gray-500 font-medium text-lg lg:text-xl">
-                        We'd love to hear from you. Get in touch with us for any inquiries, bulk orders, or support.
+                    <p className="text-slate-500 font-medium text-sm md:text-base max-w-2xl mx-auto">
+                        Have questions about our premium fireworks or bulk orders? We're here to help you celebrate with joy.
                     </p>
                 </div>
 
-                {/* Premium Frosted Glass Bento Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-12 gap-6">
+                {/* The Majestic Split-Screen Container */}
+                <div className="flex flex-col lg:flex-row w-full bg-white rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.06)] border border-slate-100">
                     
-                    {/* 1. Header Area (Spans 4 cols on XL) */}
-                    <div className="xl:col-span-4 md:col-span-2 flex flex-col justify-center p-6 md:p-8 lg:p-10 rounded-3xl md:rounded-[2rem] bg-white/80 backdrop-blur-2xl border border-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:-translate-y-1 hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] transition-all duration-500 relative overflow-hidden group">
-                        <div className="absolute top-0 right-0 w-40 h-40 bg-festive-purple/5 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2 group-hover:scale-150 transition-transform duration-1000"></div>
+                    {/* LEFT PANEL: The Emerald Dashboard */}
+                    <div className="w-full lg:w-5/12 bg-emerald-900 p-10 md:p-12 lg:p-14 flex flex-col justify-between relative overflow-hidden">
                         
-                        <div className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-festive-purple/5 text-festive-purple font-bold uppercase tracking-widest text-[10px] md:text-xs mb-6 md:mb-8 w-max border border-festive-purple/10 shadow-sm backdrop-blur-md">
-                            <span className="w-1.5 h-1.5 rounded-full bg-festive-red animate-pulse"></span>
-                            Get in touch
-                        </div>
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight mb-4 md:mb-5 leading-[1.15]">
-                            Let's start a <br/>
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-festive-purple via-festive-red to-orange-500">conversation.</span>
-                        </h2>
-                        <p className="text-gray-500 font-medium text-lg leading-relaxed max-w-sm">
-                            Have questions about our premium crackers or bulk orders? Our team is ready to assist you immediately.
-                        </p>
-                    </div>
+                        {/* Decorative Background Elements */}
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/20 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2"></div>
+                        <div className="absolute bottom-0 left-0 w-64 h-64 bg-amber-500/20 rounded-full blur-[80px] translate-y-1/2 -translate-x-1/2"></div>
 
-                    {/* 2. Direct Support Line (Spans 4 cols on XL) */}
-                    <div className="xl:col-span-4 md:col-span-1 p-6 md:p-8 lg:p-10 rounded-3xl md:rounded-[2rem] bg-white/80 backdrop-blur-2xl border border-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:-translate-y-1 hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] flex flex-col group hover:border-festive-purple/40 transition-all duration-500 relative overflow-hidden">
-                        <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-gradient-to-br from-festive-purple/10 to-festive-red/5 rounded-full blur-3xl group-hover:scale-110 transition-transform duration-1000"></div>
-                        
-                        {/* Premium Header Profile */}
-                        <div className="flex items-center gap-3 md:gap-4 mb-6 md:mb-8 relative z-10 bg-gradient-to-r from-gray-50 to-white p-2.5 md:p-3 pr-5 md:pr-6 rounded-2xl border border-gray-100 shadow-sm w-max group-hover:shadow-md transition-shadow">
-                            <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br from-festive-purple to-festive-red flex items-center justify-center text-white font-black text-lg md:text-xl shadow-inner">
-                                S
-                            </div>
-                            <div>
-                                <span className="text-[9px] font-bold text-festive-purple uppercase tracking-[0.2em] block mb-0.5">Proprietor</span>
-                                <p className="text-lg font-black text-gray-900 leading-none">Swetha</p>
-                            </div>
-                        </div>
-
-                        <div className="mt-auto w-full relative z-10 flex flex-col items-center justify-center py-6">
-                             <span className="text-[10px] font-bold text-gray-500 uppercase tracking-[0.2em] mb-4 flex items-center gap-2 bg-gray-50 px-3 py-1.5 rounded-full border border-gray-100 shadow-sm">
-                                <span className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse"></span>
-                                Available Now
-                             </span>
-                             <div className="flex flex-col items-center gap-2">
-                                 <a href="tel:+919080019031" className="block text-2xl sm:text-3xl lg:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-700 hover:from-festive-purple hover:to-festive-red hover:scale-105 transition-all duration-300 drop-shadow-sm tracking-tight">
-                                    +91 90800 19031
-                                 </a>
-                                 <a href="mailto:vamsidharuncrackers@gmail.com" className="text-[13px] sm:text-sm font-bold text-gray-500 hover:text-festive-purple transition-colors flex items-center gap-1.5 mt-1">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4"><path d="M3 4a2 2 0 00-2 2v8a2 2 0 002 2h14a2 2 0 002-2V6a2 2 0 00-2-2H3zm14 2v.226l-6.103 4.237a1.5 1.5 0 01-1.794 0L3 6.226V6h14zm-14 2.502v5.498h14V8.502l-6.103 4.237a3.5 3.5 0 01-3.794 0L3 8.502z"/></svg>
-                                    vamsidharuncrackers@gmail.com
-                                 </a>
-                             </div>
-                        </div>
-                        
-                        <div className="w-full grid grid-cols-2 gap-3 mt-6 relative z-10">
-                            <a href="tel:+919080019031" className="col-span-1 py-3.5 rounded-xl bg-gray-900 text-white font-black text-center text-[10px] sm:text-xs uppercase tracking-[0.2em] hover:bg-festive-purple hover:shadow-[0_10px_20px_rgba(88,28,135,0.25)] transition-all duration-300 shadow-md flex items-center justify-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4"><path fillRule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clipRule="evenodd" /></svg>
-                                Call
-                            </a>
-                            <a href="https://wa.me/919080019031" target="_blank" rel="noreferrer" className="col-span-1 py-3.5 rounded-xl bg-[#25D366] text-white font-black text-center text-[10px] sm:text-xs uppercase tracking-[0.2em] hover:bg-[#1DA851] hover:shadow-[0_10px_20px_rgba(37,211,102,0.3)] transition-all duration-300 shadow-md flex items-center justify-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4"><path d="M11.99 2.01c-5.52 0-9.99 4.47-9.99 9.99 0 1.98.58 3.82 1.58 5.37l-1.57 4.6 4.77-1.22c1.51.91 3.28 1.44 5.17 1.44 5.52 0 9.99-4.47 9.99-9.99s-4.47-9.99-9.99-9.99zm0 18.27c-1.63 0-3.17-.42-4.51-1.16l-.32-.18-3.04.78 1.01-2.92-.2-.33c-.78-1.29-1.24-2.82-1.24-4.45 0-4.58 3.73-8.31 8.31-8.31s8.31 3.73 8.31 8.31-3.73 8.31-8.31 8.31zm4.56-6.19c-.25-.13-1.48-.73-1.71-.81-.23-.08-.4-.13-.57.13-.17.25-.65.81-.8.98-.15.17-.3.19-.55.06-1.5-.78-2.67-1.5-3.69-2.93-.11-.16.02-.24.14-.36.11-.11.25-.29.37-.44.08-.1.13-.17.21-.33.1-.21.05-.39-.02-.52-.16-.27-.57-1.38-.78-1.89-.21-.5-.42-.43-.57-.44H7.2c-.2 0-.52.08-.79.37s-1.04 1.02-1.04 2.48 1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.09 4.49 2.21.96 2.92 1.04 3.96.88.94-.15 2.53-1.04 2.89-2.04.36-1.01.36-1.87.25-2.04-.11-.18-.4-.28-.65-.4z"/></svg>
-                                WhatsApp
-                            </a>
-                            <a href="mailto:vamsidharuncrackers@gmail.com" className="col-span-2 py-3.5 rounded-xl bg-blue-600 text-white font-black text-center text-[10px] sm:text-xs uppercase tracking-[0.2em] hover:bg-blue-700 hover:shadow-[0_10px_20px_rgba(37,99,235,0.3)] transition-all duration-300 shadow-md flex items-center justify-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4"><path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" /><path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" /></svg>
-                                Send Email
-                            </a>
-                        </div>
-                    </div>
-
-                    {/* 3. Official Showroom (Spans 4 cols on XL) */}
-                    <div className="xl:col-span-4 md:col-span-1 p-6 md:p-8 lg:p-10 rounded-3xl md:rounded-[2rem] bg-white/80 backdrop-blur-2xl border border-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:-translate-y-1 hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] flex flex-col items-start group hover:border-festive-red/30 transition-all duration-500 relative overflow-hidden">
-                        <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-festive-red/5 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-1000"></div>
-                        
-                        <div className="w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-festive-red flex items-center justify-center text-white mb-6 md:mb-8 group-hover:scale-110 transition-all duration-500 shadow-md">
-                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-7 h-7 md:w-8 md:h-8">
-                               <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                               <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-                             </svg>
-                        </div>
-                        <h3 className="text-gray-400 font-bold uppercase tracking-widest text-[10px] md:text-xs mb-3 md:mb-4 relative z-10">Official Showroom</h3>
-                        <div className="mt-auto w-full relative z-10">
-                            <p className="text-xl md:text-2xl font-black text-gray-900 leading-tight mb-1">D.NO. 177/5/18, Pernaickenpatti,</p>
-                            <p className="text-xl md:text-2xl font-black text-gray-900 leading-tight mb-3 md:mb-4">Sithurajapuram, Virudhunagar</p>
-                            <p className="text-gray-500 font-medium text-sm md:text-base">Tamil Nadu, 626 189</p>
-                        </div>
-                        <div className="w-full mt-6 md:mt-8 relative z-10">
-                             <a href="#map" className="block w-full py-3 rounded-xl bg-festive-red text-white font-black text-center text-[10px] md:text-xs uppercase tracking-[0.2em] hover:bg-red-800 hover:shadow-lg transition-all duration-300 shadow-md">View Map Below</a>
-                        </div>
-                    </div>
-
-                    {/* 4. Form (Spans 5 cols on XL) */}
-                    <div className="xl:col-span-5 md:col-span-2 p-6 md:p-8 lg:p-10 rounded-3xl md:rounded-[2rem] bg-white/80 backdrop-blur-2xl border border-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:-translate-y-1 hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] transition-all duration-500 h-full flex flex-col">
-                        <div className="flex items-center gap-3 mb-8">
-                            <div className="w-10 h-10 rounded-full bg-festive-gold/10 flex items-center justify-center text-xl border border-festive-gold/20">✉️</div>
-                            <h3 className="text-2xl font-black text-gray-900">Send a Message</h3>
-                        </div>
-                        
-                        <form onSubmit={handleSubmit} className="space-y-5 flex-grow flex flex-col justify-between">
-                            <div className="space-y-5">
-                                <div className="group/input">
-                                    <label className="block text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2 ml-1 group-focus-within/input:text-festive-purple transition-colors">Full Name</label>
-                                    <input type="text" value={name} onChange={e => setName(e.target.value)} required className="w-full bg-white/50 border border-gray-200 text-gray-900 rounded-[1rem] px-5 py-4 focus:outline-none focus:ring-2 focus:ring-festive-purple/20 focus:border-festive-purple transition-all focus:bg-white shadow-sm" placeholder="John Doe" />
-                                </div>
-                                <div className="group/input">
-                                    <label className="block text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2 ml-1 group-focus-within/input:text-festive-purple transition-colors">Phone Number</label>
-                                    <input type="tel" value={phone} onChange={e => setPhone(e.target.value)} required className="w-full bg-white/50 border border-gray-200 text-gray-900 rounded-[1rem] px-5 py-4 focus:outline-none focus:ring-2 focus:ring-festive-purple/20 focus:border-festive-purple transition-all focus:bg-white shadow-sm" placeholder="+91 00000 00000" />
-                                </div>
-                                <div className="group/input">
-                                    <label className="block text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2 ml-1 group-focus-within/input:text-festive-purple transition-colors">Message</label>
-                                    <textarea rows={4} value={message} onChange={e => setMessage(e.target.value)} required className="w-full bg-white/50 border border-gray-200 text-gray-900 rounded-[1.5rem] px-5 py-4 focus:outline-none focus:ring-2 focus:ring-festive-purple/20 focus:border-festive-purple transition-all focus:bg-white shadow-sm resize-none" placeholder="How can we help you?"></textarea>
-                                </div>
-                            </div>
+                        <div className="relative z-10 flex flex-col h-full">
                             
+                            {/* Top: Header & Profile */}
+                            <div className="mb-12">
+                                <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight mb-8">Contact Information</h3>
+                                
+                                <div className="flex items-center gap-4 bg-emerald-800/50 p-4 rounded-2xl border border-emerald-700/50 backdrop-blur-sm">
+                                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-white font-black text-xl shadow-inner shrink-0">
+                                        G
+                                    </div>
+                                    <div>
+                                        <span className="text-[10px] font-bold text-emerald-300 uppercase tracking-widest block mb-0.5">Proprietor</span>
+                                        <p className="text-lg font-black text-white leading-none">G.Mookaiya</p>
+                                    </div>
+                                    <div className="ml-auto hidden sm:flex items-center gap-1.5 bg-emerald-900/50 px-3 py-1.5 rounded-full border border-emerald-700/50">
+                                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                                        <span className="text-[9px] font-bold text-emerald-200 uppercase tracking-widest">Online</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Middle: Details List */}
+                            <div className="flex flex-col gap-8 flex-grow">
+                                
+                                {/* Phone Section */}
+                                <div className="flex items-start gap-4 group">
+                                    <div className="w-10 h-10 rounded-full bg-emerald-800/50 flex items-center justify-center text-emerald-300 shrink-0 group-hover:bg-emerald-700 transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clipRule="evenodd" /></svg>
+                                    </div>
+                                    <div>
+                                        <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest block mb-1">Direct Line</span>
+                                        <a href="tel:+916382650924" className="text-xl md:text-2xl font-black text-white hover:text-amber-400 transition-colors tracking-tight">
+                                            +91 63826 50924
+                                        </a>
+                                    </div>
+                                </div>
+
+                                {/* Email Section */}
+                                <div className="flex items-start gap-4 group">
+                                    <div className="w-10 h-10 rounded-full bg-emerald-800/50 flex items-center justify-center text-emerald-300 shrink-0 group-hover:bg-emerald-700 transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5"><path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" /><path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" /></svg>
+                                    </div>
+                                    <div>
+                                        <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest block mb-1">Email Address</span>
+                                        <a href="mailto:moorthyguru1995@gmail.com" className="text-sm md:text-base font-medium text-emerald-50 hover:text-white transition-colors">
+                                            moorthyguru1995@gmail.com
+                                        </a>
+                                    </div>
+                                </div>
+
+                                {/* Address Section */}
+                                <div className="flex items-start gap-4 group">
+                                    <div className="w-10 h-10 rounded-full bg-emerald-800/50 flex items-center justify-center text-emerald-300 shrink-0 group-hover:bg-emerald-700 transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd" /></svg>
+                                    </div>
+                                    <div>
+                                        <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest block mb-1.5">Official Showroom</span>
+                                        <p className="text-base font-medium text-emerald-50 leading-relaxed">
+                                        BHARATHINAGAR, 2nd St,<br/>
+                                        Viswanatham<br/>
+                                        <span className="text-emerald-200">Tamil Nadu, 626189</span>
+                                    </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* RIGHT PANEL: The Pure Form */}
+                    <div className="w-full lg:w-7/12 bg-white p-10 md:p-12 lg:p-14 flex flex-col justify-center">
+                        <form onSubmit={handleSubmit} className="flex flex-col gap-5 w-full max-w-xl mx-auto">
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div className="group relative">
+                                    <label className="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-2 ml-1">Full Name</label>
+                                    <input 
+                                        type="text" 
+                                        value={name} 
+                                        onChange={e => setName(e.target.value)} 
+                                        required 
+                                        className="w-full bg-slate-50 border border-slate-200 text-slate-900 font-medium rounded-xl px-5 py-3.5 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 transition-all text-sm" 
+                                        placeholder="John Doe" 
+                                    />
+                                </div>
+
+                                <div className="group relative">
+                                    <label className="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-2 ml-1">Phone Number</label>
+                                    <input 
+                                        type="tel" 
+                                        value={phone} 
+                                        onChange={e => setPhone(e.target.value)} 
+                                        required 
+                                        className="w-full bg-slate-50 border border-slate-200 text-slate-900 font-medium rounded-xl px-5 py-3.5 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 transition-all text-sm" 
+                                        placeholder="+91 00000 00000" 
+                                    />
+                                </div>
+                            </div>
+
+                            <div className="group relative mt-2">
+                                <label className="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-2 ml-1">Message</label>
+                                <textarea 
+                                    rows={4} 
+                                    value={message} 
+                                    onChange={e => setMessage(e.target.value)} 
+                                    required 
+                                    className="w-full min-h-[120px] bg-slate-50 border border-slate-200 text-slate-900 font-medium rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 transition-all resize-none text-sm" 
+                                    placeholder="Write your inquiry here..."
+                                ></textarea>
+                            </div>
+
                             {toast && (
-                                <div className={`px-4 py-3.5 rounded-xl text-center text-sm font-bold border transition-all duration-300 ${
+                                <div className={`px-4 py-3 rounded-lg text-center text-sm font-bold border mt-2 transition-all duration-300 ${
                                     toast.type === 'success' 
-                                        ? 'bg-green-500/10 border-green-500/20 text-green-600' 
-                                        : 'bg-red-500/10 border-red-500/20 text-red-600'
+                                        ? 'bg-emerald-50 border-emerald-200 text-emerald-700' 
+                                        : 'bg-red-50 border-red-200 text-red-700'
                                 }`}>
                                     {toast.message}
                                 </div>
                             )}
 
-                            <button type="submit" disabled={submitting} className={`w-full py-4 md:py-5 rounded-2xl text-white font-black uppercase tracking-[0.2em] text-[10px] md:text-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 mt-6 md:mt-8 ${
-                                submitting ? 'bg-slate-400 cursor-not-allowed' : 'bg-festive-purple hover:bg-festive-red hover:shadow-[0_15px_30px_rgba(185,28,28,0.25)]'
-                            }`}>
-                                {submitting ? 'Sending...' : 'Submit Message'}
+                            <button 
+                                type="submit" 
+                                disabled={submitting} 
+                                className={`w-full py-4 rounded-xl text-white font-bold text-sm tracking-wide transition-all duration-300 mt-4 shadow-md hover:shadow-lg ${
+                                    submitting 
+                                        ? 'bg-slate-400 cursor-not-allowed shadow-none' 
+                                        : 'bg-emerald-600 hover:bg-emerald-700 hover:-translate-y-0.5'
+                                }`}
+                            >
+                                {submitting ? 'Sending Request...' : 'Send Message'}
                             </button>
+                            
+                            <p className="text-center text-xs text-slate-400 mt-4 font-medium">
+                                We will get back to you within 24 hours.
+                            </p>
                         </form>
-                    </div>
-
-                    {/* 5. Map (Spans 7 cols on XL) */}
-                    <div id="map" className="xl:col-span-7 md:col-span-2 h-[300px] md:h-[400px] xl:h-auto rounded-3xl md:rounded-[2.5rem] overflow-hidden border-[4px] md:border-[8px] border-white/80 backdrop-blur-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:-translate-y-1 hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] transition-all duration-500 relative group">
-                        <iframe 
-                            src="https://maps.google.com/maps?q=9.39969,77.78284&hl=en&z=15&output=embed" 
-                            className="absolute inset-0 w-full h-full border-0 grayscale-[40%] opacity-90 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-1000"
-                            allowFullScreen
-                            loading="lazy" 
-                            referrerPolicy="no-referrer-when-downgrade"
-                        ></iframe>
-                        {/* Interactive overlay that fades on hover to encourage interaction */}
-                        <div className="absolute inset-0 bg-festive-purple/5 pointer-events-none group-hover:opacity-0 transition-opacity duration-700 mix-blend-multiply"></div>
                     </div>
 
                 </div>
             </div>
         </section>
-    )
+    );
 }

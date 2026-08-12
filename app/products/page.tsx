@@ -166,11 +166,11 @@ function ProductsPageInner() {
           <div className="absolute -bottom-[100px] -right-[100px] w-96 h-96 bg-festive-red/5 rounded-full blur-3xl pointer-events-none"></div>
 
           <div className="container mx-auto px-4 lg:px-8 relative z-10 text-center space-y-6 max-w-3xl">
-            <span className="inline-flex items-center gap-1.5 px-5 py-2 rounded-full bg-white border border-festive-gold/30 text-festive-purple text-xs font-black uppercase tracking-[0.2em] shadow-lg shadow-festive-gold/10">
+            <span className="inline-flex items-center gap-1.5 px-5 py-2 rounded-full bg-white border border-festive-gold/30 text-festive-green text-xs font-black uppercase tracking-[0.2em] shadow-lg shadow-festive-gold/10">
               ✨ Sivakasi Direct Wholesale Shop ✨
             </span>
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight text-festive-purple leading-tight drop-shadow-sm">
-              Premium Crackers <span className="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-festive-red to-orange-500 drop-shadow-md">Price List</span>
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight text-festive-green leading-tight drop-shadow-sm">
+              Premium Crackers <span className="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-festive-red to-orange-500 drop-shadow-sm">Price List</span>
             </h1>
             <p className="text-slate-600 text-sm md:text-base max-w-2xl mx-auto font-medium leading-relaxed px-2">
               Purchase premium quality crackers directly from Sivakasi at factory wholesale rates. Simply select your items, adjust order quantities, and click checkout to securely submit your order.
@@ -221,14 +221,14 @@ function ProductsPageInner() {
                     <select 
                        value={activeFilter}
                        onChange={(e) => setActiveFilter(e.target.value)}
-                       className="w-full appearance-none bg-white border-2 border-festive-purple/20 text-festive-purple font-black uppercase tracking-widest text-sm rounded-2xl px-6 py-4 shadow-lg shadow-festive-purple/5 focus:outline-none focus:border-festive-purple focus:ring-4 focus:ring-festive-purple/10 transition-all"
+                       className="w-full appearance-none bg-white border-2 border-festive-green/20 text-festive-green font-black uppercase tracking-widest text-sm rounded-2xl px-6 py-4 shadow-lg shadow-festive-green/5 focus:outline-none focus:border-festive-green focus:ring-4 focus:ring-festive-green/10 transition-all"
                     >
                        <option value="All">All Categories</option>
                        {uniqueCategories.map((cat) => (
                          <option key={cat.id} value={cat.name}>{cat.name}</option>
                        ))}
                     </select>
-                    <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none text-festive-purple">
+                    <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none text-festive-green">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-5 h-5">
                         <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                       </svg>
@@ -242,8 +242,8 @@ function ProductsPageInner() {
                   onClick={() => setActiveFilter("All")}
                   className={`px-8 py-3 rounded-xl text-sm font-black uppercase tracking-widest transition-all duration-300 border-2 cursor-pointer ${
                     activeFilter === "All"
-                      ? "bg-festive-purple text-white border-festive-purple shadow-[0_10px_20px_-10px_rgba(45,13,84,0.6)] scale-105"
-                      : "bg-white text-festive-purple border-festive-purple/10 hover:border-festive-gold hover:shadow-md"
+                      ? "bg-festive-green text-white border-festive-green shadow-[0_10px_20px_-10px_rgba(45,13,84,0.6)] scale-105"
+                      : "bg-white text-festive-green border-festive-green/10 hover:border-festive-gold hover:shadow-sm"
                   }`}
                 >
                   ALL
@@ -254,8 +254,8 @@ function ProductsPageInner() {
                     onClick={() => setActiveFilter(cat.name)}
                     className={`px-8 py-3 rounded-xl text-sm font-black uppercase tracking-widest transition-all duration-300 border-2 cursor-pointer ${
                       activeFilter === cat.name
-                        ? "bg-festive-purple text-white border-festive-purple shadow-[0_10px_20px_-10px_rgba(45,13,84,0.6)] scale-105"
-                        : "bg-white text-festive-purple border-festive-purple/10 hover:border-festive-gold hover:shadow-md"
+                        ? "bg-festive-green text-white border-festive-green shadow-[0_10px_20px_-10px_rgba(45,13,84,0.6)] scale-105"
+                        : "bg-white text-festive-green border-festive-green/10 hover:border-festive-gold hover:shadow-sm"
                     }`}
                   >
                     {cat.name}
@@ -274,13 +274,13 @@ function ProductsPageInner() {
             </div>
           ) : groupedProducts.length === 0 ? (
             <div className="text-center py-28 space-y-5 bg-white rounded-3xl border border-gray-100 shadow-sm p-8 max-w-xl mx-auto">
-              <span className="text-6xl animate-bounce inline-block drop-shadow-md">🎆</span>
+              <span className="text-6xl animate-bounce inline-block drop-shadow-sm">🎆</span>
               <p className="text-base font-black uppercase tracking-widest text-slate-400">
                 No matching crackers found
               </p>
               <button
                 onClick={() => setSearchQuery("")}
-                className="px-6 py-3 rounded-full bg-gradient-to-r from-festive-gold to-yellow-400 text-festive-purple text-sm font-black uppercase tracking-widest hover:scale-105 active:scale-95 transition-all cursor-pointer shadow-[0_8px_20px_rgba(255,215,0,0.4)]"
+                className="px-6 py-3 rounded-full bg-gradient-to-r from-festive-gold to-yellow-400 text-festive-green text-sm font-black uppercase tracking-widest hover:scale-105 active:scale-95 transition-all cursor-pointer shadow-[0_8px_20px_rgba(255,215,0,0.4)]"
               >
                 Show All Products
               </button>
@@ -295,7 +295,7 @@ function ProductsPageInner() {
                   className="scroll-mt-48 md:scroll-mt-40"
                 >
                   {/* Category Header */}
-                  <div className="relative overflow-hidden bg-gradient-to-r from-[#1a0826] via-[#3d1166] to-[#1a0826] py-4 px-6 rounded-t-xl border-b-[3px] border-festive-gold shadow-[0_4px_20px_-5px_rgba(61,17,102,0.5)] flex items-center justify-center group">
+                  <div className="relative overflow-hidden bg-gradient-to-r from-emerald-700 via-emerald-600 to-emerald-700 py-4 px-6 rounded-t-xl border-b-[3px] border-festive-gold shadow-[0_8px_30px_rgb(0,0,0,0.08)] flex items-center justify-center group">
                     <div className="absolute inset-0 opacity-20 bg-[url('/assets/images/pattern.png')] bg-repeat mix-blend-overlay pointer-events-none" />
                     
                     <div className="relative z-10 flex items-center gap-3">
@@ -308,7 +308,7 @@ function ProductsPageInner() {
                   </div>
 
                   {/* ═══ Table Header (Desktop Only) ═══ */}
-                  <div className="hidden md:grid md:grid-cols-[80px_1fr_140px_120px_130px] lg:grid-cols-[90px_1fr_150px_130px_150px] items-center gap-4 px-6 lg:px-8 py-3.5 bg-gradient-to-r from-festive-purple via-[#3d1166] to-festive-purple text-[10.5px] font-black text-festive-gold uppercase tracking-[0.2em] shadow-md border-b-2 border-festive-gold/30">
+                  <div className="hidden md:grid md:grid-cols-[80px_1fr_140px_120px_130px] lg:grid-cols-[90px_1fr_150px_130px_150px] items-center gap-4 px-6 lg:px-8 py-3.5 bg-gradient-to-r from-emerald-600 via-emerald-500 to-emerald-600 text-[10.5px] font-black text-festive-gold uppercase tracking-[0.2em] shadow-sm border-b-2 border-festive-gold/30">
                     <span className="text-center drop-shadow-sm">Image</span>
                     <span className="drop-shadow-sm">Product Name</span>
                     <span className="text-right drop-shadow-sm">MRP</span>
@@ -356,11 +356,11 @@ function ProductsPageInner() {
                                         {prod.originalPrice > prod.price && (
                                           <span className="text-[10px] text-slate-400 line-through font-bold">₹{prod.originalPrice.toLocaleString('en-IN')}</span>
                                         )}
-                                        <span className="text-[14px] font-black text-festive-purple">₹{prod.price.toLocaleString('en-IN')}</span>
+                                        <span className="text-[14px] font-black text-festive-green">₹{prod.price.toLocaleString('en-IN')}</span>
                                      </div>
                                      <div className="shrink-0 mr-1">
                                         {qty > 0 ? (
-                                          <div className="flex items-center border-2 border-festive-purple/20 rounded-md overflow-hidden bg-white h-8 w-[85px]">
+                                          <div className="flex items-center border-2 border-festive-green/20 rounded-md overflow-hidden bg-white h-8 w-[85px]">
                                             <button onClick={() => updateQuantity(prod.id, qty - 1)} className="flex-1 h-full text-slate-600 active:scale-95 font-black text-sm flex items-center justify-center">−</button>
                                             <input 
                                               type="number" 
@@ -374,7 +374,7 @@ function ProductsPageInner() {
                                             <button onClick={() => updateQuantity(prod.id, qty + 1)} className="flex-1 h-full text-slate-600 active:scale-95 font-black text-sm flex items-center justify-center">+</button>
                                           </div>
                                         ) : (
-                                          <button onClick={() => addToCart({ id: prod.id, name: cleanName, price: prod.price, originalPrice: prod.originalPrice, image: prod.image, category: group.name })} className="h-8 px-5 rounded-md bg-gradient-to-r from-festive-purple to-[#3d1166] text-white font-black uppercase text-[11px] tracking-wider active:scale-95 shadow-md flex items-center justify-center gap-1.5">
+                                          <button onClick={() => addToCart({ id: prod.id, name: cleanName, price: prod.price, originalPrice: prod.originalPrice, image: prod.image, category: group.name })} className="h-8 px-5 rounded-md bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-black uppercase text-[11px] tracking-wider active:scale-95 shadow-sm flex items-center justify-center gap-1.5">
                                             <span className="text-[15px] leading-none mb-[1px]">+</span> Add
                                           </button>
                                         )}
@@ -392,7 +392,7 @@ function ProductsPageInner() {
 
                               {/* Product Info */}
                               <div className="flex flex-col items-start justify-center gap-0.5">
-                                <h4 className="font-black text-slate-800 text-[15px] leading-tight group-hover:text-festive-purple transition-colors line-clamp-2">{cleanName}</h4>
+                                <h4 className="font-black text-slate-800 text-[15px] leading-tight group-hover:text-festive-green transition-colors line-clamp-2">{cleanName}</h4>
                                 {prod.originalPrice > prod.price && (
                                   <span className="inline-flex items-center gap-1 bg-festive-red/10 text-festive-red text-[9px] font-black px-2 py-0.5 rounded-md uppercase tracking-wider mt-0.5">
                                     🔥 {prodDiscount}% OFF
@@ -411,14 +411,14 @@ function ProductsPageInner() {
 
                               {/* Sale Price */}
                               <div className="flex flex-col items-end justify-center">
-                                <span className="text-xl font-black text-festive-purple text-right">₹{prod.price.toLocaleString('en-IN')}</span>
+                                <span className="text-xl font-black text-festive-green text-right">₹{prod.price.toLocaleString('en-IN')}</span>
                               </div>
 
                               {/* Cart Actions */}
                               <div className="flex justify-center items-center gap-2">
                                 {qty > 0 ? (
                                   <>
-                                    <div className="flex items-center border-2 border-festive-purple/20 rounded-xl overflow-hidden bg-white shadow-sm flex-1 w-[110px] lg:w-[120px] h-9">
+                                    <div className="flex items-center border-2 border-festive-green/20 rounded-xl overflow-hidden bg-white shadow-sm flex-1 w-[110px] lg:w-[120px] h-9">
                                       <button onClick={() => updateQuantity(prod.id, qty - 1)} className="flex-1 w-8 h-full text-slate-600 hover:bg-red-50 hover:text-festive-red transition-all cursor-pointer font-black text-lg flex items-center justify-center">−</button>
                                       <input 
                                         type="number" 
@@ -429,14 +429,14 @@ function ProductsPageInner() {
                                         }}
                                         className="w-10 h-full font-black text-slate-900 text-base bg-gray-50 text-center border-x border-gray-200 outline-none focus:bg-white [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                                       />
-                                      <button onClick={() => updateQuantity(prod.id, qty + 1)} className="flex-1 w-8 h-full text-slate-600 hover:bg-purple-50 hover:text-festive-purple transition-all cursor-pointer font-black text-lg flex items-center justify-center">+</button>
+                                      <button onClick={() => updateQuantity(prod.id, qty + 1)} className="flex-1 w-8 h-full text-slate-600 hover:bg-purple-50 hover:text-festive-green transition-all cursor-pointer font-black text-lg flex items-center justify-center">+</button>
                                     </div>
                                     <button onClick={() => removeFromCart(prod.id)} title="Remove from cart" className="w-9 h-9 rounded-xl bg-festive-red border border-festive-red text-white flex items-center justify-center transition-all duration-300 cursor-pointer hover:scale-105 active:scale-95 flex-shrink-0 shadow-sm">
                                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-4 h-4"><path strokeLinecap="round" strokeLinejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" /></svg>
                                     </button>
                                   </>
                                 ) : (
-                                  <button onClick={() => addToCart({ id: prod.id, name: cleanName, price: prod.price, originalPrice: prod.originalPrice, image: prod.image, category: group.name })} className="w-[130px] lg:w-[140px] h-9 rounded-xl bg-gradient-to-r from-festive-purple to-[#3d1166] hover:from-festive-gold hover:to-yellow-500 text-white hover:text-festive-purple font-black uppercase text-[11px] tracking-wider hover:scale-[1.03] transition-all cursor-pointer shadow-[0_4px_15px_rgba(48,13,79,0.3)] hover:shadow-[0_4px_15px_rgba(255,215,0,0.4)] flex items-center justify-center gap-1 border border-transparent">
+                                  <button onClick={() => addToCart({ id: prod.id, name: cleanName, price: prod.price, originalPrice: prod.originalPrice, image: prod.image, category: group.name })} className="w-[130px] lg:w-[140px] h-9 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-amber-400 hover:to-orange-500 text-white hover:text-white font-black uppercase text-[11px] tracking-wider hover:scale-[1.03] transition-all cursor-pointer shadow-[0_4px_15px_rgba(4,120,87,0.3)] hover:shadow-[0_4px_15px_rgba(255,215,0,0.4)] flex items-center justify-center gap-1 border border-transparent">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-3.5 h-3.5"><path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
                                     <span>Add</span>
                                   </button>

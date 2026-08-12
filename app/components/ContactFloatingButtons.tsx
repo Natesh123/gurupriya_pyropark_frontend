@@ -10,7 +10,7 @@ export default function ContactFloatingButtons() {
         <div className={`fixed ${bottomClass} right-4 sm:right-6 z-[90] flex flex-col gap-3 sm:gap-4 transition-all duration-500 animate-slideDown`}>
             {/* WhatsApp Button */}
             <a 
-                href="https://wa.me/919080019031" 
+                href="https://wa.me/916382650924" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-[#25D366] rounded-full flex items-center justify-center shadow-[0_8px_20px_rgba(37,211,102,0.4)] hover:scale-110 transition-all group"
@@ -27,7 +27,7 @@ export default function ContactFloatingButtons() {
 
             {/* Call Button */}
             <a 
-                href="tel:+919080019031"
+                href="tel:+916382650924"
                 className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-festive-red rounded-full flex items-center justify-center shadow-[0_8px_20px_rgba(185,28,28,0.4)] hover:scale-110 transition-all group"
             >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="white" className="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10">

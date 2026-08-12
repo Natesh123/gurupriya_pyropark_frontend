@@ -48,7 +48,7 @@ replacements.forEach(([pattern, replacement]) => {
 });
 
 // A few precise targeted replacements for the menu items to ensure they look good
-postAuth = postAuth.replace(/text-amber-900 shadow-md shadow-amber-500\/20/g, "text-amber-950 shadow-sm shadow-amber-500/20");
+postAuth = postAuth.replace(/text-amber-900 shadow-sm shadow-amber-500\/20/g, "text-amber-950 shadow-sm shadow-amber-500/20");
 postAuth = postAuth.replace(/from-amber-300 via-amber-400 to-amber-500/g, "from-amber-400 to-amber-500");
 
 fs.writeFileSync(filePath, preAuth + postAuth);

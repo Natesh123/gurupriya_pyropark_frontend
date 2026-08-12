@@ -42,7 +42,7 @@ export default function VideoGallery() {
                 {/* Header */}
                 <div className="text-center mb-16">
                     <span className="text-festive-red text-base font-black tracking-[0.3em] uppercase mb-3 block">Live Demonstration</span>
-                    <h2 className="text-4xl md:text-6xl font-black text-festive-purple mb-4">
+                    <h2 className="text-4xl md:text-6xl font-black text-festive-green mb-4">
                         SEE THE <span className="text-festive-red">MAGIC</span> IN ACTION
                     </h2>
                     <p className="text-gray-500 max-w-2xl mx-auto font-medium">

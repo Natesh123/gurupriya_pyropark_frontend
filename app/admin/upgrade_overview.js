@@ -72,7 +72,7 @@ const newOverview = `              {/* TAB: OVERVIEW */}
                         bg: "bg-purple-50"
                       },
                     ].map((stat, i) => (
-                      <div key={i} className="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 hover:shadow-xl hover:border-slate-200 transition-all duration-300 group relative overflow-hidden flex flex-col justify-between">
+                      <div key={i} className="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] hover:border-slate-200 transition-all duration-300 group relative overflow-hidden flex flex-col justify-between">
                         <div className={\`absolute top-0 right-0 w-32 h-32 rounded-bl-full mix-blend-multiply opacity-50 filter blur-2xl \${stat.bg}\`}></div>
                         
                         <div className="flex justify-between items-start mb-6 relative z-10">
@@ -92,7 +92,7 @@ const newOverview = `              {/* TAB: OVERVIEW */}
                   {/* Quick Activity & Overview Details */}
                   <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-8">
                     {/* Category Share - Takes up 1 column */}
-                    <div className="bg-white border border-slate-100 rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow flex flex-col">
+                    <div className="bg-white border border-slate-100 rounded-3xl p-8 shadow-sm hover:shadow-sm transition-shadow flex flex-col">
                       <div className="flex items-center justify-between mb-8">
                         <div>
                           <h3 className="text-lg font-black text-slate-900 tracking-tight">Category Mix</h3>
@@ -136,7 +136,7 @@ const newOverview = `              {/* TAB: OVERVIEW */}
                     </div>
 
                     {/* Quick Management - Takes up 2 columns */}
-                    <div className="lg:col-span-2 bg-white border border-slate-100 rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow flex flex-col">
+                    <div className="lg:col-span-2 bg-white border border-slate-100 rounded-3xl p-8 shadow-sm hover:shadow-sm transition-shadow flex flex-col">
                       <div className="flex items-center justify-between mb-8">
                         <div>
                           <h3 className="text-lg font-black text-slate-900 tracking-tight">Quick Actions</h3>

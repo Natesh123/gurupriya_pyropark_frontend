@@ -15,7 +15,7 @@ const newCategories = `              {/* TAB: CATEGORIES */}
                     </div>
                     <button
                       onClick={() => { setEditingCategory(null); setNewCategoryName(""); setNewCatTamilTranslation(""); document.getElementById("add-category-modal")?.classList.remove("hidden"); }}
-                      className="mt-4 sm:mt-0 px-8 py-4 rounded-2xl bg-slate-900 text-white font-bold text-base hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-900/20 transition-all flex items-center gap-3 relative z-10"
+                      className="mt-4 sm:mt-0 px-8 py-4 rounded-2xl bg-slate-900 text-white font-bold text-base hover:-translate-y-1 hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] hover:shadow-slate-900/20 transition-all flex items-center gap-3 relative z-10"
                     >
                       <span className="text-emerald-400">➕</span> Add New Category
                     </button>
@@ -30,7 +30,7 @@ const newCategories = `              {/* TAB: CATEGORIES */}
                        </div>
                     ) : (
                       categories.map(cat => (
-                        <div key={cat.id} className="bg-white border border-slate-100 rounded-3xl p-6 flex flex-col shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-emerald-100 transition-all duration-300 group">
+                        <div key={cat.id} className="bg-white border border-slate-100 rounded-3xl p-6 flex flex-col shadow-sm hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] hover:-translate-y-1 hover:border-emerald-100 transition-all duration-300 group">
                           <div className="flex justify-between items-start mb-6">
                             <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center text-2xl shadow-lg shadow-emerald-500/20 text-white transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
                               🏷️
@@ -74,7 +74,7 @@ const newProducts = `              {/* TAB: PRODUCTS */}
                       </button>
                       <button
                         onClick={() => { setEditingProduct(null); setProductName(""); setProductPrice(""); setProductOriginalPrice(""); setProductDiscount(""); setProductCategoryId(""); setProductImage(""); setProductTamilTranslation(""); setIsProductModalOpen(true); }}
-                        className="flex-1 lg:flex-none px-8 py-4 rounded-2xl bg-slate-900 text-white font-bold text-base hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-900/20 transition-all flex items-center justify-center gap-3"
+                        className="flex-1 lg:flex-none px-8 py-4 rounded-2xl bg-slate-900 text-white font-bold text-base hover:-translate-y-1 hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] hover:shadow-slate-900/20 transition-all flex items-center justify-center gap-3"
                       >
                         <span className="text-blue-400">➕</span> Add Product
                       </button>
@@ -97,10 +97,10 @@ const newProducts = `              {/* TAB: PRODUCTS */}
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                     {products.filter(p => p.name.toLowerCase().includes(productSearch.toLowerCase()) && (productFilter === "All" || p.categoryId.toString() === productFilter)).map(product => (
-                      <div key={product.id} className="bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-blue-100 transition-all duration-300 group flex flex-col">
+                      <div key={product.id} className="bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] hover:-translate-y-1 hover:border-blue-100 transition-all duration-300 group flex flex-col">
                         <div className="relative h-56 bg-gradient-to-b from-slate-50 to-white w-full p-6 flex items-center justify-center border-b border-slate-50 group-hover:bg-blue-50/30 transition-colors">
                           {product.image ? (
-                            <img src={product.image} alt={product.name} className="max-h-full object-contain group-hover:scale-110 drop-shadow-md transition-transform duration-500 ease-out" />
+                            <img src={product.image} alt={product.name} className="max-h-full object-contain group-hover:scale-110 drop-shadow-sm transition-transform duration-500 ease-out" />
                           ) : (
                             <span className="text-6xl opacity-30 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all">📦</span>
                           )}
