@@ -158,6 +158,8 @@
     --color-pink-200: #fccee8;
     --color-pink-400: #fb64b6;
     --color-pink-500: #f6339a;
+    --color-rose-50: #fff1f2;
+    --color-rose-100: #ffe4e6;
     --color-rose-400: #ff667f;
     --color-rose-500: #ff2357;
     --color-rose-600: #e70044;
@@ -338,6 +340,8 @@
       --color-pink-200: lab(87.4504% 19.6 -6.46662);
       --color-pink-400: lab(64.5597% 64.3615 -12.7988);
       --color-pink-500: lab(56.9303% 76.8162 -8.07021);
+      --color-rose-50: lab(96.2369% 4.94155 1.28011);
+      --color-rose-100: lab(92.8221% 9.86832 2.60075);
       --color-rose-400: lab(64.4125% 63.0291 19.2068);
       --color-rose-500: lab(56.101% 79.4328 31.4532);
       --color-rose-600: lab(49.1882% 81.577 36.0311);
@@ -2230,8 +2234,18 @@
     border-top-right-radius: var(--radius-xl);
   }
 
+  .rounded-l-lg {
+    border-top-left-radius: var(--radius-lg);
+    border-bottom-left-radius: var(--radius-lg);
+  }
+
   .rounded-tl-3xl {
     border-top-left-radius: var(--radius-3xl);
+  }
+
+  .rounded-r-lg {
+    border-top-right-radius: var(--radius-lg);
+    border-bottom-right-radius: var(--radius-lg);
   }
 
   .rounded-b-xl {
@@ -3527,6 +3541,10 @@
 
   .bg-red-950 {
     background-color: var(--color-red-950);
+  }
+
+  .bg-rose-50 {
+    background-color: var(--color-rose-50);
   }
 
   .bg-rose-500 {
@@ -5716,6 +5734,10 @@
     color: var(--color-rose-500);
   }
 
+  .text-rose-600 {
+    color: var(--color-rose-600);
+  }
+
   .text-slate-200 {
     color: var(--color-slate-200);
   }
@@ -7317,9 +7339,28 @@
     border-color: var(--color-white);
   }
 
+  .focus-within\:border-emerald-500:focus-within {
+    border-color: var(--color-emerald-500);
+  }
+
   .focus-within\:ring-1:focus-within {
     --tw-ring-shadow: var(--tw-ring-inset, ) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+
+  .focus-within\:ring-2:focus-within {
+    --tw-ring-shadow: var(--tw-ring-inset, ) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+
+  .focus-within\:ring-emerald-500\/20:focus-within {
+    --tw-ring-color: #00bb7f33;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .focus-within\:ring-emerald-500\/20:focus-within {
+      --tw-ring-color: color-mix(in oklab, var(--color-emerald-500) 20%, transparent);
+    }
   }
 
   .focus-within\:ring-emerald-500\/50:focus-within {
@@ -7593,6 +7634,12 @@
   @media (hover: hover) {
     .hover\:border-slate-200:hover {
       border-color: var(--color-slate-200);
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:border-slate-300:hover {
+      border-color: var(--color-slate-300);
     }
   }
 
@@ -7917,6 +7964,12 @@
   @media (hover: hover) {
     .hover\:bg-red-600:hover {
       background-color: var(--color-red-600);
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:bg-rose-100:hover {
+      background-color: var(--color-rose-100);
     }
   }
 
@@ -8291,6 +8344,12 @@
   }
 
   @media (hover: hover) {
+    .hover\:text-red-500:hover {
+      color: var(--color-red-500);
+    }
+  }
+
+  @media (hover: hover) {
     .hover\:text-red-600:hover {
       color: var(--color-red-600);
     }
@@ -8305,6 +8364,12 @@
   @media (hover: hover) {
     .hover\:text-rose-400:hover {
       color: var(--color-rose-400);
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:text-rose-500:hover {
+      color: var(--color-rose-500);
     }
   }
 
@@ -8573,6 +8638,10 @@
 
   .focus\:bg-emerald-900:focus {
     background-color: var(--color-emerald-900);
+  }
+
+  .focus\:bg-slate-50:focus {
+    background-color: var(--color-slate-50);
   }
 
   .focus\:bg-white:focus {

@@ -7623,7 +7623,7 @@ function AdminDashboard() {
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "w-full lg:w-[450px] flex flex-col bg-emerald-950 border border-emerald-700 rounded-[2rem] p-6 shadow-2xl relative overflow-hidden min-h-0 shrink-0",
+                                                    className: "w-full lg:w-[450px] flex flex-col bg-white border border-slate-200 rounded-[2rem] p-6 shadow-2xl relative overflow-hidden min-h-0 shrink-0",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "absolute top-0 right-0 w-64 h-64 bg-emerald-500/10 rounded-full blur-[80px] pointer-events-none"
@@ -7640,7 +7640,7 @@ function AdminDashboard() {
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                            className: "text-xl font-semibold text-white tracking-tight mb-5 flex items-center justify-between border-b border-emerald-700/50 pb-4 shrink-0 relative z-10",
+                                                            className: "text-xl font-semibold text-slate-800 tracking-tight mb-5 flex items-center justify-between border-b border-slate-100 pb-4 shrink-0 relative z-10",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     children: "Current Bill"
@@ -7667,7 +7667,7 @@ function AdminDashboard() {
                                                                                 setAdditionalDiscountType('amount');
                                                                                 showToast("Bill cleared completely", "success");
                                                                             },
-                                                                            className: "text-[10px] text-rose-500 hover:text-rose-400 bg-rose-500/10 hover:bg-rose-500/20 px-2 py-1.5 rounded-lg uppercase tracking-wider font-semibold transition-colors flex items-center gap-1.5",
+                                                                            className: "text-[10px] text-rose-600 hover:text-rose-500 bg-rose-50 hover:bg-rose-100 px-2 py-1.5 rounded-lg uppercase tracking-wider font-semibold transition-colors flex items-center gap-1.5",
                                                                             children: [
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                                                                     xmlns: "http://www.w3.org/2000/svg",
@@ -7698,7 +7698,7 @@ function AdminDashboard() {
                                                                             columnNumber: 29
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 px-3 py-1.5 rounded-full text-xs font-bold shadow-inner",
+                                                                            className: "bg-emerald-50 border border-emerald-100 text-emerald-600 px-3 py-1.5 rounded-full text-xs font-bold shadow-inner",
                                                                             children: [
                                                                                 billingCart.reduce((a, c)=>a + c.quantity, 0),
                                                                                 " Items"
@@ -7723,7 +7723,7 @@ function AdminDashboard() {
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "flex-1 overflow-y-auto space-y-2 pr-2 min-h-0 relative z-10",
                                                             children: billingCart.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "h-full flex flex-col items-center justify-center text-slate-500 text-base font-bold tracking-tight italic opacity-60",
+                                                                className: "h-full flex flex-col items-center justify-center text-slate-400 text-base font-bold tracking-tight italic opacity-80",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                         className: "text-xl mb-4",
@@ -7740,13 +7740,13 @@ function AdminDashboard() {
                                                                 lineNumber: 3422,
                                                                 columnNumber: 27
                                                             }, this) : billingCart.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "flex items-center justify-between bg-emerald-900/40 rounded-xl p-3 border border-emerald-700/50 hover:border-slate-500 transition-colors backdrop-blur-sm gap-3",
+                                                                    className: "flex items-center justify-between bg-slate-50 rounded-xl p-3 border border-slate-100 hover:border-slate-300 transition-colors gap-3",
                                                                     children: [
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                             className: "flex-1 min-w-0",
                                                                             children: [
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                    className: "text-sm font-bold text-slate-200 block truncate",
+                                                                                    className: "text-sm font-bold text-slate-700 block truncate",
                                                                                     title: item.name,
                                                                                     children: item.name
                                                                                 }, void 0, false, {
@@ -7755,7 +7755,7 @@ function AdminDashboard() {
                                                                                     columnNumber: 33
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                    className: "text-xs text-amber-400/80 font-bold mt-0.5 block",
+                                                                                    className: "text-xs text-emerald-600 font-bold mt-0.5 block",
                                                                                     children: [
                                                                                         "₹",
                                                                                         (item.price * item.quantity).toFixed(2)
@@ -7772,7 +7772,7 @@ function AdminDashboard() {
                                                                             columnNumber: 31
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "flex items-center bg-emerald-950 rounded-lg border border-emerald-700 shrink-0",
+                                                                            className: "flex items-center bg-white rounded-lg border border-slate-200 shrink-0 shadow-sm",
                                                                             children: [
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                                                     onClick: ()=>{
@@ -7785,7 +7785,7 @@ function AdminDashboard() {
                                                                                             setBillingCart(billingCart.filter((i)=>i.id !== item.id));
                                                                                         }
                                                                                     },
-                                                                                    className: "px-2 py-1 text-slate-400 hover:text-white font-semibold cursor-pointer text-xs",
+                                                                                    className: "px-2 py-1 text-slate-400 hover:text-slate-600 hover:bg-slate-50 rounded-l-lg font-semibold cursor-pointer text-xs transition-colors",
                                                                                     children: "−"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/admin/page.tsx",
@@ -7805,7 +7805,7 @@ function AdminDashboard() {
                                                                                                 } : i));
                                                                                         }
                                                                                     },
-                                                                                    className: "w-10 bg-transparent text-xs font-semibold text-white text-center outline-none focus:bg-emerald-900 rounded px-0 py-1 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                                                                                    className: "w-10 bg-transparent text-xs font-bold text-slate-700 text-center outline-none focus:bg-slate-50 rounded px-0 py-1 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/admin/page.tsx",
                                                                                     lineNumber: 3441,
@@ -7816,7 +7816,7 @@ function AdminDashboard() {
                                                                                                 ...i,
                                                                                                 quantity: i.quantity + 1
                                                                                             } : i)),
-                                                                                    className: "px-2 py-1 text-slate-400 hover:text-white font-semibold cursor-pointer text-xs",
+                                                                                    className: "px-2 py-1 text-slate-400 hover:text-slate-600 hover:bg-slate-50 rounded-r-lg font-semibold cursor-pointer text-xs transition-colors",
                                                                                     children: "+"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/admin/page.tsx",
@@ -7831,7 +7831,7 @@ function AdminDashboard() {
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                                             onClick: ()=>setBillingCart(billingCart.filter((i)=>i.id !== item.id)),
-                                                                            className: "text-slate-400 hover:text-red-400 rounded-lg p-1.5 transition-colors cursor-pointer shrink-0 text-sm",
+                                                                            className: "text-slate-400 hover:text-red-500 hover:bg-red-50 rounded-lg p-1.5 transition-colors cursor-pointer shrink-0 text-sm",
                                                                             children: "✕"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/admin/page.tsx",
@@ -7850,7 +7850,7 @@ function AdminDashboard() {
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "mt-4 pt-4 border-t border-emerald-700/50 shrink-0 relative z-10",
+                                                            className: "mt-4 pt-4 border-t border-slate-100 shrink-0 relative z-10",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "mb-3",
@@ -7865,7 +7865,7 @@ function AdminDashboard() {
                                                                                         ...billingCustomer,
                                                                                         name: e.target.value
                                                                                     }),
-                                                                                className: "bg-emerald-900/80 border border-emerald-700 rounded-lg px-3 py-2 text-xs font-semibold text-white outline-none focus:ring-1 focus:ring-emerald-500/50 transition-all placeholder:text-slate-500"
+                                                                                className: "bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs font-semibold text-slate-700 outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 transition-all placeholder:text-slate-400 shadow-sm"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/admin/page.tsx",
                                                                                 lineNumber: 3467,
@@ -7879,7 +7879,7 @@ function AdminDashboard() {
                                                                                         ...billingCustomer,
                                                                                         phone: e.target.value
                                                                                     }),
-                                                                                className: "bg-emerald-900/80 border border-emerald-700 rounded-lg px-3 py-2 text-xs font-semibold text-white outline-none focus:ring-1 focus:ring-emerald-500/50 transition-all placeholder:text-slate-500"
+                                                                                className: "bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs font-semibold text-slate-700 outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 transition-all placeholder:text-slate-400 shadow-sm"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/admin/page.tsx",
                                                                                 lineNumber: 3468,
@@ -7893,7 +7893,7 @@ function AdminDashboard() {
                                                                                         ...billingCustomer,
                                                                                         city: e.target.value
                                                                                     }),
-                                                                                className: "bg-emerald-900/80 border border-emerald-700 rounded-lg px-3 py-2 text-xs font-semibold text-white outline-none focus:ring-1 focus:ring-emerald-500/50 transition-all placeholder:text-slate-500"
+                                                                                className: "bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs font-semibold text-slate-700 outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 transition-all placeholder:text-slate-400 shadow-sm"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/admin/page.tsx",
                                                                                 lineNumber: 3469,
@@ -7907,7 +7907,7 @@ function AdminDashboard() {
                                                                                         ...billingCustomer,
                                                                                         address: e.target.value
                                                                                     }),
-                                                                                className: "bg-emerald-900/80 border border-emerald-700 rounded-lg px-3 py-2 text-xs font-semibold text-white outline-none focus:ring-1 focus:ring-emerald-500/50 transition-all placeholder:text-slate-500"
+                                                                                className: "bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs font-semibold text-slate-700 outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 transition-all placeholder:text-slate-400 shadow-sm"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/admin/page.tsx",
                                                                                 lineNumber: 3470,
@@ -7935,10 +7935,10 @@ function AdminDashboard() {
                                                                     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                                                                         children: [
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                className: "grid grid-cols-2 gap-2 mb-3 border-b border-emerald-700/50 pb-3",
+                                                                                className: "grid grid-cols-2 gap-2 mb-3 border-b border-slate-100 pb-3",
                                                                                 children: [
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                        className: "flex bg-emerald-900/80 border border-emerald-700 rounded-lg focus-within:ring-1 focus-within:ring-emerald-500/50 transition-all items-center pl-2.5",
+                                                                                        className: "flex bg-white border border-slate-200 rounded-lg focus-within:ring-2 focus-within:ring-emerald-500/20 focus-within:border-emerald-500 transition-all items-center pl-2.5 shadow-sm",
                                                                                         children: [
                                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                                                                                 xmlns: "http://www.w3.org/2000/svg",
@@ -7963,7 +7963,7 @@ function AdminDashboard() {
                                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
                                                                                                         value: additionalDiscountType,
                                                                                                         onChange: (e)=>setAdditionalDiscountType(e.target.value),
-                                                                                                        className: "bg-transparent hover:bg-emerald-800/50 text-slate-600 font-bold text-[11px] rounded pl-2 pr-4 py-1 outline-none cursor-pointer appearance-none transition-colors",
+                                                                                                        className: "bg-transparent hover:bg-slate-50 text-slate-600 font-bold text-[11px] rounded pl-2 pr-4 py-1 outline-none cursor-pointer appearance-none transition-colors",
                                                                                                         children: [
                                                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                                                                                 value: "amount",
@@ -8020,7 +8020,7 @@ function AdminDashboard() {
                                                                                                 columnNumber: 37
                                                                                             }, this),
                                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                                className: "w-px h-3.5 bg-emerald-800 mx-1"
+                                                                                                className: "w-px h-3.5 bg-slate-200 mx-1"
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/app/admin/page.tsx",
                                                                                                 lineNumber: 3504,
@@ -8032,7 +8032,7 @@ function AdminDashboard() {
                                                                                                 placeholder: "Discount",
                                                                                                 value: additionalDiscountValue,
                                                                                                 onChange: (e)=>setAdditionalDiscountValue(e.target.value),
-                                                                                                className: "w-full bg-transparent text-white font-bold text-xs px-2 py-1.5 outline-none placeholder:text-slate-600 placeholder:font-medium"
+                                                                                                className: "w-full bg-transparent text-slate-700 font-bold text-xs px-2 py-1.5 outline-none placeholder:text-slate-400"
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/app/admin/page.tsx",
                                                                                                 lineNumber: 3505,
@@ -8045,7 +8045,7 @@ function AdminDashboard() {
                                                                                         columnNumber: 35
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                        className: "flex bg-emerald-900/80 border border-emerald-700 rounded-lg focus-within:ring-1 focus-within:ring-emerald-500/50 transition-all items-center pl-2.5",
+                                                                                        className: "flex bg-white border border-slate-200 rounded-lg focus-within:ring-2 focus-within:ring-emerald-500/20 focus-within:border-emerald-500 transition-all items-center pl-2.5 shadow-sm",
                                                                                         children: [
                                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                                                                                 xmlns: "http://www.w3.org/2000/svg",
@@ -8086,7 +8086,7 @@ function AdminDashboard() {
                                                                                                 columnNumber: 37
                                                                                             }, this),
                                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                                className: "w-px h-3.5 bg-emerald-800 mx-1"
+                                                                                                className: "w-px h-3.5 bg-slate-200 mx-1"
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/app/admin/page.tsx",
                                                                                                 lineNumber: 3519,
@@ -8098,7 +8098,7 @@ function AdminDashboard() {
                                                                                                 placeholder: "Packing",
                                                                                                 value: packingCharge,
                                                                                                 onChange: (e)=>setPackingCharge(e.target.value),
-                                                                                                className: "w-full bg-transparent text-white font-bold text-xs px-2 py-1.5 outline-none placeholder:text-slate-600 placeholder:font-medium"
+                                                                                                className: "w-full bg-transparent text-slate-700 font-bold text-xs px-2 py-1.5 outline-none placeholder:text-slate-400"
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/app/admin/page.tsx",
                                                                                                 lineNumber: 3520,
@@ -8117,12 +8117,12 @@ function AdminDashboard() {
                                                                                 columnNumber: 33
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                className: "flex justify-between items-end mb-3 bg-emerald-900/40 p-3 rounded-xl border border-emerald-700/60",
+                                                                                className: "flex justify-between items-end mb-3 bg-slate-50 p-4 rounded-xl border border-slate-200 shadow-sm",
                                                                                 children: [
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                                         children: [
                                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                                className: "text-[10px] text-slate-400 tracking-wider font-semibold uppercase mb-1",
+                                                                                                className: "text-[10px] text-slate-500 tracking-wider font-bold uppercase mb-1",
                                                                                                 children: "Total Amount"
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/app/admin/page.tsx",
@@ -8130,7 +8130,7 @@ function AdminDashboard() {
                                                                                                 columnNumber: 35
                                                                                             }, this),
                                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                                className: "text-[10px] text-emerald-400 font-bold bg-emerald-400/10 px-2 py-0.5 rounded-md inline-block",
+                                                                                                className: "text-[10px] text-emerald-600 font-bold bg-emerald-100 px-2.5 py-1 rounded-md inline-block",
                                                                                                 children: [
                                                                                                     "Save ₹",
                                                                                                     finalSavings.toFixed(0),
@@ -8150,7 +8150,7 @@ function AdminDashboard() {
                                                                                         columnNumber: 33
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                        className: "text-xl font-semibold text-white tracking-tight",
+                                                                                        className: "text-2xl font-bold text-slate-800 tracking-tight",
                                                                                         children: [
                                                                                             "₹",
                                                                                             finalTotal.toFixed(2)

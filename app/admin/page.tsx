@@ -3389,11 +3389,11 @@ export default function AdminDashboard() {
                   </div>
                   
                   {/* Right: Cart & Billing */}
-                    <div className="w-full lg:w-[450px] flex flex-col bg-emerald-950 border border-emerald-700 rounded-[2rem] p-6 shadow-2xl relative overflow-hidden min-h-0 shrink-0">
+                    <div className="w-full lg:w-[450px] flex flex-col bg-white border border-slate-200 rounded-[2rem] p-6 shadow-2xl relative overflow-hidden min-h-0 shrink-0">
                       <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/10 rounded-full blur-[80px] pointer-events-none"></div>
                       <div className="absolute bottom-0 left-0 w-64 h-64 bg-amber-500/10 rounded-full blur-[80px] pointer-events-none"></div>
 
-                      <h3 className="text-xl font-semibold text-white tracking-tight mb-5 flex items-center justify-between border-b border-emerald-700/50 pb-4 shrink-0 relative z-10">
+                      <h3 className="text-xl font-semibold text-slate-800 tracking-tight mb-5 flex items-center justify-between border-b border-slate-100 pb-4 shrink-0 relative z-10">
                         <span>Current Bill</span>
                         <div className="flex items-center gap-4">
                           {billingCart.length > 0 && (
@@ -3406,38 +3406,38 @@ export default function AdminDashboard() {
                                 setAdditionalDiscountType('amount');
                                 showToast("Bill cleared completely", "success");
                               }}
-                              className="text-[10px] text-rose-500 hover:text-rose-400 bg-rose-500/10 hover:bg-rose-500/20 px-2 py-1.5 rounded-lg uppercase tracking-wider font-semibold transition-colors flex items-center gap-1.5"
+                              className="text-[10px] text-rose-600 hover:text-rose-500 bg-rose-50 hover:bg-rose-100 px-2 py-1.5 rounded-lg uppercase tracking-wider font-semibold transition-colors flex items-center gap-1.5"
                             >
                               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-3.5 h-3.5"><path strokeLinecap="round" strokeLinejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" /></svg>
                               Clear
                             </button>
                           )}
-                          <span className="bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 px-3 py-1.5 rounded-full text-xs font-bold shadow-inner">{billingCart.reduce((a, c) => a + c.quantity, 0)} Items</span>
+                          <span className="bg-emerald-50 border border-emerald-100 text-emerald-600 px-3 py-1.5 rounded-full text-xs font-bold shadow-inner">{billingCart.reduce((a, c) => a + c.quantity, 0)} Items</span>
                         </div>
                       </h3>
 
                       {/* Cart Items List */}
                       <div className="flex-1 overflow-y-auto space-y-2 pr-2 min-h-0 relative z-10">
                         {billingCart.length === 0 ? (
-                          <div className="h-full flex flex-col items-center justify-center text-slate-500 text-base font-bold tracking-tight italic opacity-60">
+                          <div className="h-full flex flex-col items-center justify-center text-slate-400 text-base font-bold tracking-tight italic opacity-80">
                             <span className="text-xl mb-4">🛒</span>
                             Cart is empty
                           </div>
                         ) : (
                           billingCart.map((item) => (
-                            <div key={item.id} className="flex items-center justify-between bg-emerald-900/40 rounded-xl p-3 border border-emerald-700/50 hover:border-slate-500 transition-colors backdrop-blur-sm gap-3">
+                            <div key={item.id} className="flex items-center justify-between bg-slate-50 rounded-xl p-3 border border-slate-100 hover:border-slate-300 transition-colors gap-3">
                               <div className="flex-1 min-w-0">
-                                <span className="text-sm font-bold text-slate-200 block truncate" title={item.name}>{item.name}</span>
-                                <span className="text-xs text-amber-400/80 font-bold mt-0.5 block">₹{(item.price * item.quantity).toFixed(2)}</span>
+                                <span className="text-sm font-bold text-slate-700 block truncate" title={item.name}>{item.name}</span>
+                                <span className="text-xs text-emerald-600 font-bold mt-0.5 block">₹{(item.price * item.quantity).toFixed(2)}</span>
                               </div>
-                              <div className="flex items-center bg-emerald-950 rounded-lg border border-emerald-700 shrink-0">
+                              <div className="flex items-center bg-white rounded-lg border border-slate-200 shrink-0 shadow-sm">
                                 <button onClick={() => {
                                   if(item.quantity > 1) {
                                     setBillingCart(billingCart.map(i => i.id === item.id ? { ...i, quantity: i.quantity - 1 } : i));
                                   } else {
                                     setBillingCart(billingCart.filter(i => i.id !== item.id));
                                   }
-                                }} className="px-2 py-1 text-slate-400 hover:text-white font-semibold cursor-pointer text-xs">−</button>
+                                }} className="px-2 py-1 text-slate-400 hover:text-slate-600 hover:bg-slate-50 rounded-l-lg font-semibold cursor-pointer text-xs transition-colors">−</button>
                                 <input 
                                   type="number" 
                                   min="1" 
@@ -3448,26 +3448,26 @@ export default function AdminDashboard() {
                                       setBillingCart(billingCart.map(i => i.id === item.id ? { ...i, quantity: val } : i));
                                     }
                                   }}
-                                  className="w-10 bg-transparent text-xs font-semibold text-white text-center outline-none focus:bg-emerald-900 rounded px-0 py-1 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                                  className="w-10 bg-transparent text-xs font-bold text-slate-700 text-center outline-none focus:bg-slate-50 rounded px-0 py-1 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                                 />
-                                <button onClick={() => setBillingCart(billingCart.map(i => i.id === item.id ? { ...i, quantity: i.quantity + 1 } : i))} className="px-2 py-1 text-slate-400 hover:text-white font-semibold cursor-pointer text-xs">+</button>
+                                <button onClick={() => setBillingCart(billingCart.map(i => i.id === item.id ? { ...i, quantity: i.quantity + 1 } : i))} className="px-2 py-1 text-slate-400 hover:text-slate-600 hover:bg-slate-50 rounded-r-lg font-semibold cursor-pointer text-xs transition-colors">+</button>
                               </div>
                               <button 
                                 onClick={() => setBillingCart(billingCart.filter(i => i.id !== item.id))}
-                                className="text-slate-400 hover:text-red-400 rounded-lg p-1.5 transition-colors cursor-pointer shrink-0 text-sm"
+                                className="text-slate-400 hover:text-red-500 hover:bg-red-50 rounded-lg p-1.5 transition-colors cursor-pointer shrink-0 text-sm"
                               >✕</button>
                             </div>
                           ))
                         )}
                         </div>
 
-                        <div className="mt-4 pt-4 border-t border-emerald-700/50 shrink-0 relative z-10">
+                        <div className="mt-4 pt-4 border-t border-slate-100 shrink-0 relative z-10">
                           <div className="mb-3">
                             <div className="grid grid-cols-2 gap-2">
-                              <input type="text" placeholder="Name *" value={billingCustomer.name} onChange={(e) => setBillingCustomer({...billingCustomer, name: e.target.value})} className="bg-emerald-900/80 border border-emerald-700 rounded-lg px-3 py-2 text-xs font-semibold text-white outline-none focus:ring-1 focus:ring-emerald-500/50 transition-all placeholder:text-slate-500" />
-                              <input type="text" placeholder="Phone *" value={billingCustomer.phone} onChange={(e) => setBillingCustomer({...billingCustomer, phone: e.target.value})} className="bg-emerald-900/80 border border-emerald-700 rounded-lg px-3 py-2 text-xs font-semibold text-white outline-none focus:ring-1 focus:ring-emerald-500/50 transition-all placeholder:text-slate-500" />
-                              <input type="text" placeholder="City *" value={billingCustomer.city} onChange={(e) => setBillingCustomer({...billingCustomer, city: e.target.value})} className="bg-emerald-900/80 border border-emerald-700 rounded-lg px-3 py-2 text-xs font-semibold text-white outline-none focus:ring-1 focus:ring-emerald-500/50 transition-all placeholder:text-slate-500" />
-                              <input type="text" placeholder="Address" value={billingCustomer.address} onChange={(e) => setBillingCustomer({...billingCustomer, address: e.target.value})} className="bg-emerald-900/80 border border-emerald-700 rounded-lg px-3 py-2 text-xs font-semibold text-white outline-none focus:ring-1 focus:ring-emerald-500/50 transition-all placeholder:text-slate-500" />
+                              <input type="text" placeholder="Name *" value={billingCustomer.name} onChange={(e) => setBillingCustomer({...billingCustomer, name: e.target.value})} className="bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs font-semibold text-slate-700 outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 transition-all placeholder:text-slate-400 shadow-sm" />
+                              <input type="text" placeholder="Phone *" value={billingCustomer.phone} onChange={(e) => setBillingCustomer({...billingCustomer, phone: e.target.value})} className="bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs font-semibold text-slate-700 outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 transition-all placeholder:text-slate-400 shadow-sm" />
+                              <input type="text" placeholder="City *" value={billingCustomer.city} onChange={(e) => setBillingCustomer({...billingCustomer, city: e.target.value})} className="bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs font-semibold text-slate-700 outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 transition-all placeholder:text-slate-400 shadow-sm" />
+                              <input type="text" placeholder="Address" value={billingCustomer.address} onChange={(e) => setBillingCustomer({...billingCustomer, address: e.target.value})} className="bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs font-semibold text-slate-700 outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 transition-all placeholder:text-slate-400 shadow-sm" />
                             </div>
                           </div>
 
@@ -3484,15 +3484,15 @@ export default function AdminDashboard() {
                             
                             return (
                               <>
-                                <div className="grid grid-cols-2 gap-2 mb-3 border-b border-emerald-700/50 pb-3">
+                                <div className="grid grid-cols-2 gap-2 mb-3 border-b border-slate-100 pb-3">
                                   {/* Addl. Discount */}
-                                  <div className="flex bg-emerald-900/80 border border-emerald-700 rounded-lg focus-within:ring-1 focus-within:ring-emerald-500/50 transition-all items-center pl-2.5">
+                                  <div className="flex bg-white border border-slate-200 rounded-lg focus-within:ring-2 focus-within:ring-emerald-500/20 focus-within:border-emerald-500 transition-all items-center pl-2.5 shadow-sm">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-3.5 h-3.5 text-amber-500 flex-shrink-0"><path d="M10.75 4.75a.75.75 0 0 0-1.5 0v4.5h-4.5a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 0 0 1.5 0v-4.5h4.5a.75.75 0 0 0 0-1.5h-4.5v-4.5Z" /></svg>
                                     <div className="relative flex items-center ml-1">
                                       <select 
                                         value={additionalDiscountType} 
                                         onChange={(e) => setAdditionalDiscountType(e.target.value as "amount"|"percentage")}
-                                        className="bg-transparent hover:bg-emerald-800/50 text-slate-600 font-bold text-[11px] rounded pl-2 pr-4 py-1 outline-none cursor-pointer appearance-none transition-colors"
+                                        className="bg-transparent hover:bg-slate-50 text-slate-600 font-bold text-[11px] rounded pl-2 pr-4 py-1 outline-none cursor-pointer appearance-none transition-colors"
                                       >
                                         <option value="amount">₹ Amt</option>
                                         <option value="percentage">% Pct</option>
@@ -3501,41 +3501,41 @@ export default function AdminDashboard() {
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-3 h-3"><path fillRule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" /></svg>
                                       </div>
                                     </div>
-                                    <div className="w-px h-3.5 bg-emerald-800 mx-1"></div>
+                                    <div className="w-px h-3.5 bg-slate-200 mx-1"></div>
                                     <input 
                                       type="number" 
                                       min="0"
                                       placeholder="Discount"
                                       value={additionalDiscountValue}
                                       onChange={(e) => setAdditionalDiscountValue(e.target.value)}
-                                      className="w-full bg-transparent text-white font-bold text-xs px-2 py-1.5 outline-none placeholder:text-slate-600 placeholder:font-medium"
+                                      className="w-full bg-transparent text-slate-700 font-bold text-xs px-2 py-1.5 outline-none placeholder:text-slate-400"
                                     />
                                   </div>
                                   
                                   {/* Packing Charges */}
-                                  <div className="flex bg-emerald-900/80 border border-emerald-700 rounded-lg focus-within:ring-1 focus-within:ring-emerald-500/50 transition-all items-center pl-2.5">
+                                  <div className="flex bg-white border border-slate-200 rounded-lg focus-within:ring-2 focus-within:ring-emerald-500/20 focus-within:border-emerald-500 transition-all items-center pl-2.5 shadow-sm">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-3.5 h-3.5 text-emerald-500 flex-shrink-0"><path fillRule="evenodd" d="M11.986 3H12a2 2 0 0 1 2 2v6a2 2 0 0 1-1.5 1.937V7A2.5 2.5 0 0 0 10 4.5H4.063A2 2 0 0 1 6 3h.014A2.25 2.25 0 0 1 8.25 1h3.5a2.25 2.25 0 0 1 2.236 2ZM10.5 4v-.75a.75.75 0 0 0-.75-.75h-3.5a.75.75 0 0 0-.75.75V4h5Z" clipRule="evenodd" /><path fillRule="evenodd" d="M3 6a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H3Zm6 8.5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3Z" clipRule="evenodd" /></svg>
                                     <span className="text-slate-400 font-bold text-xs pl-1.5 pr-1 py-1.5">₹</span>
-                                    <div className="w-px h-3.5 bg-emerald-800 mx-1"></div>
+                                    <div className="w-px h-3.5 bg-slate-200 mx-1"></div>
                                     <input 
                                       type="number" 
                                       min="0"
                                       placeholder="Packing"
                                       value={packingCharge}
                                       onChange={(e) => setPackingCharge(e.target.value)}
-                                      className="w-full bg-transparent text-white font-bold text-xs px-2 py-1.5 outline-none placeholder:text-slate-600 placeholder:font-medium"
+                                      className="w-full bg-transparent text-slate-700 font-bold text-xs px-2 py-1.5 outline-none placeholder:text-slate-400"
                                     />
                                   </div>
                                 </div>
                               
-                              <div className="flex justify-between items-end mb-3 bg-emerald-900/40 p-3 rounded-xl border border-emerald-700/60">
+                              <div className="flex justify-between items-end mb-3 bg-slate-50 p-4 rounded-xl border border-slate-200 shadow-sm">
                                 <div>
-                                  <div className="text-[10px] text-slate-400 tracking-wider font-semibold uppercase mb-1">Total Amount</div>
-                                  <div className="text-[10px] text-emerald-400 font-bold bg-emerald-400/10 px-2 py-0.5 rounded-md inline-block">
+                                  <div className="text-[10px] text-slate-500 tracking-wider font-bold uppercase mb-1">Total Amount</div>
+                                  <div className="text-[10px] text-emerald-600 font-bold bg-emerald-100 px-2.5 py-1 rounded-md inline-block">
                                     Save ₹{finalSavings.toFixed(0)} ({subtotal > 0 ? Math.round((finalSavings / subtotal) * 100) : 0}% OFF)
                                   </div>
                                 </div>
-                                <div className="text-xl font-semibold text-white tracking-tight">₹{finalTotal.toFixed(2)}</div>
+                                <div className="text-2xl font-bold text-slate-800 tracking-tight">₹{finalTotal.toFixed(2)}</div>
                               </div>
 
                               <button
