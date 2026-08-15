@@ -1668,7 +1668,7 @@ function AdminDashboard() {
       <!DOCTYPE html>
       <html>
         <head>
-          <title>Order Invoice #{String(order.id).padStart(4, '0')}</title>
+          <title>Order Invoice #${String(order.id).padStart(4, '0')}</title>
           <style>
             @page { margin: 0; }
             body { font-family: 'Helvetica', 'Arial', sans-serif; color: #333; line-height: 1.4; max-width: 210mm; margin: 0 auto; font-size: 12px; padding: 10mm; }
@@ -1710,11 +1710,11 @@ function AdminDashboard() {
           <div style="display: flex; border: 1px solid #94a3b8; border-top: none; text-align: center;">
             <div style="width: 33.33%; padding: 5px; border-right: 1px solid #94a3b8;">
               <div style="color: #4b5563; margin-bottom: 3px;">Order No</div>
-              <div class="bold">{String(order.id).padStart(4, '0')}</div>
+              <div class="bold">${String(order.id).padStart(4, '0')}</div>
             </div>
             <div style="width: 33.33%; padding: 5px; border-right: 1px solid #94a3b8;">
               <div style="color: #4b5563; margin-bottom: 3px;">Receipt No</div>
-              <div class="bold">INV-{String(order.id).padStart(4, '0')}</div>
+              <div class="bold">INV-${String(order.id).padStart(4, '0')}</div>
             </div>
             <div style="width: 33.34%; padding: 5px;">
               <div style="color: #4b5563; margin-bottom: 3px;">Date</div>
