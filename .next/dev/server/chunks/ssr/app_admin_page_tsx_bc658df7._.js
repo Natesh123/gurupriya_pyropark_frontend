@@ -8091,8 +8091,8 @@ function AdminDashboard() {
                                                                                             total_amount: finalTotal,
                                                                                             total_savings: finalSavings,
                                                                                             source: "POS",
-                                                                                            status: "Completed",
-                                                                                            payment_status: "Paid",
+                                                                                            status: "Pending",
+                                                                                            payment_status: "Unpaid",
                                                                                             items: billingCart.map((item)=>({
                                                                                                     id: item.id,
                                                                                                     name: item.name,

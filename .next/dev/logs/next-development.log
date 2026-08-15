@@ -23,3 +23,17 @@
 [04:32:14.840] Server  LOG      ✓ Compiled in 363ms
 [04:35:05.388] Server  LOG      ✓ Compiled in 1070ms
 [04:35:22.905] Server  LOG      ✓ Compiled in 409ms
+[04:40:23.412] Browser LOG     Playing 5-minute recurring alarm...
+[04:40:28.924] Server  LOG      ✓ Compiled in 903ms
+[04:41:31.615] Browser LOG     Order Placed Successfully!
+[04:41:31.616] Browser LOG     %c⚠️ NOTE: Order saved, but Email was NOT sent (Check backend .env credentials) color: #f59e0b; font-weight: bold; font-size: 14px;
+[04:42:41.939] Server  LOG      ✓ Compiled in 676ms
+[04:47:42.753] Browser LOG     Playing 5-minute recurring alarm...
+[04:50:52.617] Browser LOG     Order Placed Successfully!
+[04:50:52.617] Browser LOG     %c⚠️ NOTE: Order saved, but Email was NOT sent (Check backend .env credentials) color: #f59e0b; font-weight: bold; font-size: 14px;
+[04:52:42.141] Browser LOG     Playing 5-minute recurring alarm...
+[04:55:47.615] Browser LOG     Order Placed Successfully!
+[04:55:47.615] Browser LOG     %c⚠️ NOTE: Order saved, but Email was NOT sent (Check backend .env credentials) color: #f59e0b; font-weight: bold; font-size: 14px;
+[04:56:20.538] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:56:32.616] Browser LOG     Order Placed Successfully!
+[04:56:32.617] Browser LOG     %c⚠️ NOTE: Order saved, but Email was NOT sent (Check backend .env credentials) color: #f59e0b; font-weight: bold; font-size: 14px;
