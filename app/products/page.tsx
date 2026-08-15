@@ -299,16 +299,16 @@ function ProductsPageInner() {
                     <div className="absolute inset-0 opacity-20 bg-[url('/assets/images/pattern.png')] bg-repeat mix-blend-overlay pointer-events-none" />
                     
                     <div className="relative z-10 flex items-center gap-3">
-                      <span className="text-lg md:text-xl opacity-80 group-hover:animate-ping">✨</span>
-                      <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-festive-gold to-yellow-400 font-semibold text-[18px] md:text-[22px] uppercase tracking-wider drop-shadow-lg text-center">
+                      <span className="text-lg md:text-xl text-yellow-300 opacity-80 group-hover:animate-ping">✨</span>
+                      <h2 className="text-white font-semibold text-[18px] md:text-[20px] uppercase tracking-wider drop-shadow-md text-center">
                         {group.name}
                       </h2>
-                      <span className="text-lg md:text-xl opacity-80 group-hover:animate-ping">✨</span>
+                      <span className="text-lg md:text-xl text-yellow-300 opacity-80 group-hover:animate-ping">✨</span>
                     </div>
                   </div>
 
                   {/* ═══ Table Header (Desktop Only) ═══ */}
-                  <div className="hidden md:grid md:grid-cols-[80px_1fr_140px_120px_130px] lg:grid-cols-[90px_1fr_150px_130px_150px] items-center gap-4 px-6 lg:px-8 py-3.5 bg-gradient-to-r from-emerald-600 via-emerald-500 to-emerald-600 text-[10.5px] font-semibold text-festive-gold uppercase tracking-wider shadow-sm border-b-2 border-festive-gold/30">
+                  <div className="hidden md:grid md:grid-cols-[80px_1fr_140px_120px_130px] lg:grid-cols-[90px_1fr_150px_130px_150px] items-center gap-4 px-6 lg:px-8 py-3.5 bg-gradient-to-r from-emerald-600 via-emerald-500 to-emerald-600 text-xs font-semibold text-white uppercase tracking-wider shadow-sm border-b-2 border-festive-gold/30">
                     <span className="text-center drop-shadow-sm">Image</span>
                     <span className="drop-shadow-sm">Product Name</span>
                     <span className="text-right drop-shadow-sm">MRP</span>

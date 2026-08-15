@@ -2111,11 +2111,11 @@ function AdminDashboard() {
                                             className: "w-full md:w-5/12 p-8 md:p-12 flex flex-col items-center justify-center text-center relative z-10 border-b md:border-b-0 md:border-r border-white/10 bg-black/20",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "w-28 h-28 md:w-40 md:h-40 mb-6 md:mb-8 rounded-3xl bg-gradient-to-b from-white/10 to-white/5 p-1.5 backdrop-blur-md shadow-2xl shadow-amber-400/20 border border-white/20",
+                                                    className: "w-32 h-32 md:w-48 md:h-48 mb-6 md:mb-8 rounded-[2rem] bg-white p-3 shadow-2xl shadow-amber-400/20 border border-white/20 flex items-center justify-center overflow-hidden",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                                         src: "/assets/images/gurupriya_pyropark_logo_primary.png",
                                                         alt: "Logo",
-                                                        className: "w-full h-full object-cover rounded-[1.25rem]"
+                                                        className: "w-full h-full object-contain"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/admin/page.tsx",
                                                         lineNumber: 1972,
@@ -4396,7 +4396,11 @@ function AdminDashboard() {
                                                                                         alt: product.name,
                                                                                         loading: "lazy",
                                                                                         decoding: "async",
-                                                                                        className: "max-h-full object-contain group-hover:scale-110 drop-shadow-sm transition-transform duration-500 ease-out"
+                                                                                        className: "max-h-full object-contain group-hover:scale-110 drop-shadow-sm transition-transform duration-500 ease-out",
+                                                                                        onError: (e)=>{
+                                                                                            e.currentTarget.src = '/assets/images/gurupriya_pyropark_logo_primary.png';
+                                                                                            e.currentTarget.classList.add('opacity-80');
+                                                                                        }
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/admin/page.tsx",
                                                                                         lineNumber: 2636,
@@ -7544,7 +7548,11 @@ function AdminDashboard() {
                                                                                 alt: product.name,
                                                                                 loading: "lazy",
                                                                                 decoding: "async",
-                                                                                className: `h-28 w-full object-contain mb-3 transition-transform relative z-0 ${isAdded ? 'grayscale' : 'group-hover:scale-105'}`
+                                                                                className: `h-28 w-full object-contain mb-3 transition-transform relative z-0 ${isAdded ? 'grayscale' : 'group-hover:scale-105'}`,
+                                                                                onError: (e)=>{
+                                                                                    e.currentTarget.src = '/assets/images/gurupriya_pyropark_logo_primary.png';
+                                                                                    e.currentTarget.classList.add('opacity-80');
+                                                                                }
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/admin/page.tsx",
                                                                                 lineNumber: 3377,
@@ -7555,7 +7563,7 @@ function AdminDashboard() {
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/admin/page.tsx",
                                                                                 lineNumber: 3377,
-                                                                                columnNumber: 263
+                                                                                columnNumber: 405
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                 className: "text-[10px] font-semibold uppercase tracking-wider text-slate-400 bg-slate-100 px-2 py-1 rounded-md mb-2",

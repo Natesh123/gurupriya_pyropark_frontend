@@ -1968,8 +1968,8 @@ export default function AdminDashboard() {
 
             {/* Left Column: Branding */}
             <div className="w-full md:w-5/12 p-8 md:p-12 flex flex-col items-center justify-center text-center relative z-10 border-b md:border-b-0 md:border-r border-white/10 bg-black/20">
-              <div className="w-28 h-28 md:w-40 md:h-40 mb-6 md:mb-8 rounded-3xl bg-gradient-to-b from-white/10 to-white/5 p-1.5 backdrop-blur-md shadow-2xl shadow-amber-400/20 border border-white/20">
-                <img src="/assets/images/gurupriya_pyropark_logo_primary.png" alt="Logo" className="w-full h-full object-cover rounded-[1.25rem]" />
+              <div className="w-32 h-32 md:w-48 md:h-48 mb-6 md:mb-8 rounded-[2rem] bg-white p-3 shadow-2xl shadow-amber-400/20 border border-white/20 flex items-center justify-center overflow-hidden">
+                <img src="/assets/images/gurupriya_pyropark_logo_primary.png" alt="Logo" className="w-full h-full object-contain" />
               </div>
               <h1 className="text-xl md:text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-white via-amber-200 to-white tracking-tight leading-tight mb-2 drop-shadow-lg uppercase">
                 Admin Panel
@@ -2633,7 +2633,7 @@ export default function AdminDashboard() {
                                   />
                                 </label>
                                 {product.image ? (
-                                  <img src={product.image} alt={product.name} loading="lazy" decoding="async" className="max-h-full object-contain group-hover:scale-110 drop-shadow-sm transition-transform duration-500 ease-out" />
+                                  <img src={product.image} alt={product.name} loading="lazy" decoding="async" className="max-h-full object-contain group-hover:scale-110 drop-shadow-sm transition-transform duration-500 ease-out" onError={(e) => { e.currentTarget.src = '/assets/images/gurupriya_pyropark_logo_primary.png'; e.currentTarget.classList.add('opacity-80'); }} />
                                 ) : (
                                   <span className="text-xl opacity-30 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all">📦</span>
                                 )}
@@ -3374,7 +3374,7 @@ export default function AdminDashboard() {
                                       {Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)}% OFF
                                    </div>
                                  )}
-                                 {product.image ? <img src={product.image} alt={product.name} loading="lazy" decoding="async" className={`h-28 w-full object-contain mb-3 transition-transform relative z-0 ${isAdded ? 'grayscale' : 'group-hover:scale-105'}`} /> : <div className={`h-28 text-xl flex items-center justify-center mb-3 transition-transform relative z-0 ${isAdded ? 'opacity-30 grayscale' : 'opacity-50 group-hover:scale-110'}`}>📦</div>}
+                                 {product.image ? <img src={product.image} alt={product.name} loading="lazy" decoding="async" className={`h-28 w-full object-contain mb-3 transition-transform relative z-0 ${isAdded ? 'grayscale' : 'group-hover:scale-105'}`} onError={(e) => { e.currentTarget.src = '/assets/images/gurupriya_pyropark_logo_primary.png'; e.currentTarget.classList.add('opacity-80'); }} /> : <div className={`h-28 text-xl flex items-center justify-center mb-3 transition-transform relative z-0 ${isAdded ? 'opacity-30 grayscale' : 'opacity-50 group-hover:scale-110'}`}>📦</div>}
                                  <span className="text-[10px] font-semibold uppercase tracking-wider text-slate-400 bg-slate-100 px-2 py-1 rounded-md mb-2">{categories.find(c => c.id === product.categoryId)?.name || 'Uncategorized'}</span>
                                  <h4 className={`text-sm font-bold line-clamp-2 leading-snug mb-3 ${isAdded ? 'text-slate-500' : 'text-slate-800'}`}>{product.name}</h4>
                                  

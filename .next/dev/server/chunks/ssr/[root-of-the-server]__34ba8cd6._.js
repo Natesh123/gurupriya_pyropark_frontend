@@ -54,7 +54,7 @@ function Navbar({ priceListUrl = "" }) {
         className: "fixed top-0 left-0 w-full max-w-[100vw] z-50 flex flex-col",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: `w-full bg-gradient-to-r from-red-600 via-red-500 to-red-600 text-white text-[10px] sm:text-xs font-bold tracking-widest uppercase relative overflow-hidden transition-all duration-500 shadow-md border-b border-red-700/50 ${scrolled ? 'h-0 py-0 opacity-0' : 'py-2.5 opacity-100'}`,
+                className: `w-full bg-gradient-to-r from-red-600 via-red-500 to-red-600 text-white text-[10px] sm:text-xs font-bold tracking-wider uppercase relative overflow-hidden transition-all duration-500 shadow-md border-b border-red-700/50 ${scrolled ? 'h-0 py-0 opacity-0' : 'py-2.5 opacity-100'}`,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "animate-marquee whitespace-nowrap flex items-center",
                     children: [
@@ -66,7 +66,7 @@ function Navbar({ priceListUrl = "" }) {
                             columnNumber: 21
                         }, this),
                         daysLeft > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "text-yellow-300 drop-shadow-[0_0_8px_rgba(253,224,71,0.6)] font-black mx-2 tracking-[0.2em]",
+                            className: "text-yellow-300 drop-shadow-[0_0_8px_rgba(253,224,71,0.6)] font-semibold mx-2 tracking-wider",
                             children: [
                                 "★ ONLY ",
                                 daysLeft,
@@ -77,15 +77,15 @@ function Navbar({ priceListUrl = "" }) {
                             lineNumber: 37,
                             columnNumber: 37
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "text-yellow-300 font-black mx-2",
+                            className: "text-yellow-300 font-semibold mx-2",
                             children: "HAPPY DIWALI!"
                         }, void 0, false, {
                             fileName: "[project]/app/components/Navbar.tsx",
                             lineNumber: 37,
-                            columnNumber: 198
+                            columnNumber: 199
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "font-black text-yellow-300 mr-8",
+                            className: "font-semibold text-yellow-300 mr-8",
                             children: "+91 63826 50924"
                         }, void 0, false, {
                             fileName: "[project]/app/components/Navbar.tsx",
@@ -100,7 +100,7 @@ function Navbar({ priceListUrl = "" }) {
                             columnNumber: 21
                         }, this),
                         daysLeft > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "text-yellow-300 drop-shadow-[0_0_8px_rgba(253,224,71,0.6)] font-black mx-2 tracking-[0.2em]",
+                            className: "text-yellow-300 drop-shadow-[0_0_8px_rgba(253,224,71,0.6)] font-semibold mx-2 tracking-wider",
                             children: [
                                 "★ ONLY ",
                                 daysLeft,
@@ -111,15 +111,15 @@ function Navbar({ priceListUrl = "" }) {
                             lineNumber: 41,
                             columnNumber: 37
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "text-yellow-300 font-black mx-2",
+                            className: "text-yellow-300 font-semibold mx-2",
                             children: "HAPPY DIWALI!"
                         }, void 0, false, {
                             fileName: "[project]/app/components/Navbar.tsx",
                             lineNumber: 41,
-                            columnNumber: 198
+                            columnNumber: 199
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "font-black text-yellow-300 mr-8",
+                            className: "font-semibold text-yellow-300 mr-8",
                             children: "+91 63826 50924"
                         }, void 0, false, {
                             fileName: "[project]/app/components/Navbar.tsx",
@@ -134,7 +134,7 @@ function Navbar({ priceListUrl = "" }) {
                             columnNumber: 21
                         }, this),
                         daysLeft > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "text-yellow-300 drop-shadow-[0_0_8px_rgba(253,224,71,0.6)] font-black mx-2 tracking-[0.2em]",
+                            className: "text-yellow-300 drop-shadow-[0_0_8px_rgba(253,224,71,0.6)] font-semibold mx-2 tracking-wider",
                             children: [
                                 "★ ONLY ",
                                 daysLeft,
@@ -145,15 +145,15 @@ function Navbar({ priceListUrl = "" }) {
                             lineNumber: 45,
                             columnNumber: 37
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "text-yellow-300 font-black mx-2",
+                            className: "text-yellow-300 font-semibold mx-2",
                             children: "HAPPY DIWALI!"
                         }, void 0, false, {
                             fileName: "[project]/app/components/Navbar.tsx",
                             lineNumber: 45,
-                            columnNumber: 198
+                            columnNumber: 199
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "font-black text-yellow-300",
+                            className: "font-semibold text-yellow-300",
                             children: "+91 63826 50924"
                         }, void 0, false, {
                             fileName: "[project]/app/components/Navbar.tsx",
@@ -215,7 +215,7 @@ function Navbar({ priceListUrl = "" }) {
                                         className: "flex flex-col -gap-1 xl:gap-0 mt-0.5 xl:mt-1",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                                className: "font-black text-[13px] sm:text-[15px] lg:text-[17px] xl:text-[22px] tracking-tighter xl:tracking-tight leading-none xl:leading-tight text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]",
+                                                className: "font-semibold text-[13px] sm:text-[15px] lg:text-[17px] xl:text-[22px] tracking-tighter xl:tracking-tight leading-none xl:leading-tight text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]",
                                                 children: [
                                                     "GURUPRIYA ",
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -233,7 +233,7 @@ function Navbar({ priceListUrl = "" }) {
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "hidden sm:block text-[8px] lg:text-[9px] xl:text-[11px] font-bold text-amber-200/90 tracking-[0.2em] uppercase mt-1 drop-shadow-sm",
+                                                className: "hidden sm:block text-[8px] lg:text-[9px] xl:text-[11px] font-bold text-amber-200/90 tracking-wider uppercase mt-1 drop-shadow-sm",
                                                 children: "Premium Sivakasi Fireworks"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/Navbar.tsx",
@@ -282,7 +282,7 @@ function Navbar({ priceListUrl = "" }) {
                                                 href: item.name === "Pricelist" && priceListUrl ? priceListUrl : item.link,
                                                 target: item.name === "Pricelist" && priceListUrl ? "_blank" : undefined,
                                                 rel: item.name === "Pricelist" && priceListUrl ? "noreferrer" : undefined,
-                                                className: "whitespace-nowrap text-[11px] xl:text-[13px] 2xl:text-[15px] font-black uppercase tracking-[0.05em] lg:tracking-[0.1em] transition-all duration-300 text-white hover:text-festive-gold drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] hover:drop-shadow-[0_0_12px_rgba(255,215,0,0.6)]",
+                                                className: "whitespace-nowrap text-[11px] xl:text-[13px] 2xl:text-[15px] font-semibold uppercase tracking-[0.05em] lg:tracking-wide transition-all duration-300 text-white hover:text-festive-gold drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] hover:drop-shadow-[0_0_12px_rgba(255,215,0,0.6)]",
                                                 children: item.name
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/Navbar.tsx",
@@ -343,7 +343,7 @@ function Navbar({ priceListUrl = "" }) {
                                                 columnNumber: 29
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "font-black text-[10px] xl:text-xs uppercase tracking-[0.15em] text-white drop-shadow-sm",
+                                                className: "font-semibold text-[10px] xl:text-xs uppercase tracking-wider text-white drop-shadow-sm",
                                                 children: "Cart"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/Navbar.tsx",
@@ -351,7 +351,7 @@ function Navbar({ priceListUrl = "" }) {
                                                 columnNumber: 29
                                             }, this),
                                             cartCount > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "absolute -top-1.5 -right-1.5 bg-yellow-400 text-slate-900 text-[9px] xl:text-[10px] font-black w-5 h-5 rounded-full flex items-center justify-center shadow-md border-2 border-orange-500 animate-bounce",
+                                                className: "absolute -top-1.5 -right-1.5 bg-yellow-400 text-slate-900 text-[9px] xl:text-[10px] font-semibold w-5 h-5 rounded-full flex items-center justify-center shadow-md border-2 border-orange-500 animate-bounce",
                                                 children: cartCount
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/Navbar.tsx",
@@ -397,7 +397,7 @@ function Navbar({ priceListUrl = "" }) {
                                                 className: "flex flex-col",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "whitespace-nowrap text-[9px] font-bold uppercase text-yellow-400 tracking-widest mb-0.5 drop-shadow-sm",
+                                                        className: "whitespace-nowrap text-[9px] font-bold uppercase text-yellow-400 tracking-wider mb-0.5 drop-shadow-sm",
                                                         children: "Enquiry & Bulk"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/Navbar.tsx",
@@ -405,7 +405,7 @@ function Navbar({ priceListUrl = "" }) {
                                                         columnNumber: 33
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "whitespace-nowrap text-[11px] font-black leading-tight text-white tracking-wider drop-shadow-md",
+                                                        className: "whitespace-nowrap text-[11px] font-semibold leading-tight text-white tracking-wider drop-shadow-md",
                                                         children: "+91 63826 50924"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/Navbar.tsx",
@@ -428,7 +428,7 @@ function Navbar({ priceListUrl = "" }) {
                                         href: priceListUrl || "#",
                                         target: priceListUrl ? "_blank" : undefined,
                                         rel: priceListUrl ? "noreferrer" : undefined,
-                                        className: "whitespace-nowrap relative group px-4 py-2 xl:px-5 xl:py-2.5 rounded-full font-black text-[10px] xl:text-xs uppercase tracking-widest text-emerald-700 bg-white hover:bg-slate-50 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-1.5 hover:-translate-y-0.5",
+                                        className: "whitespace-nowrap relative group px-4 py-2 xl:px-5 xl:py-2.5 rounded-full font-semibold text-[10px] xl:text-xs uppercase tracking-wider text-emerald-700 bg-white hover:bg-slate-50 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-1.5 hover:-translate-y-0.5",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "relative z-10 flex items-center gap-1.5",
                                             children: [
@@ -505,7 +505,7 @@ function Navbar({ priceListUrl = "" }) {
                                                 columnNumber: 29
                                             }, this),
                                             cartCount > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "absolute -top-1 -right-1 bg-yellow-400 border-2 border-orange-500 text-slate-900 text-[9px] font-black w-5 h-5 rounded-full flex items-center justify-center shadow-md animate-bounce",
+                                                className: "absolute -top-1 -right-1 bg-yellow-400 border-2 border-orange-500 text-slate-900 text-[9px] font-semibold w-5 h-5 rounded-full flex items-center justify-center shadow-md animate-bounce",
                                                 children: cartCount
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/Navbar.tsx",
@@ -601,7 +601,7 @@ function Navbar({ priceListUrl = "" }) {
                                     target: item.name === "Pricelist" && priceListUrl ? "_blank" : undefined,
                                     rel: item.name === "Pricelist" && priceListUrl ? "noreferrer" : undefined,
                                     onClick: ()=>setIsOpen(false),
-                                    className: "text-2xl sm:text-3xl font-black text-white/80 uppercase tracking-widest hover:text-festive-gold hover:scale-110 transition-all duration-300",
+                                    className: "text-xl sm:text-xl font-semibold text-white/80 uppercase tracking-wider hover:text-festive-gold hover:scale-110 transition-all duration-300",
                                     children: item.name
                                 }, item.name, false, {
                                     fileName: "[project]/app/components/Navbar.tsx",
@@ -615,7 +615,7 @@ function Navbar({ priceListUrl = "" }) {
                                         className: "flex flex-col items-center gap-1 bg-emerald-900/50 border border-emerald-500/30 p-5 rounded-3xl w-full",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-emerald-300 font-bold uppercase tracking-widest text-xs mb-2",
+                                                className: "text-emerald-300 font-bold uppercase tracking-wider text-xs mb-2",
                                                 children: "Direct Support"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/Navbar.tsx",
@@ -623,7 +623,7 @@ function Navbar({ priceListUrl = "" }) {
                                                 columnNumber: 30
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-white font-black text-xl tracking-wide",
+                                                className: "text-white font-semibold text-xl tracking-wide",
                                                 children: "+91 63826 50924"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/Navbar.tsx",
@@ -641,7 +641,7 @@ function Navbar({ priceListUrl = "" }) {
                                         target: priceListUrl ? "_blank" : undefined,
                                         rel: priceListUrl ? "noreferrer" : undefined,
                                         onClick: ()=>setIsOpen(false),
-                                        className: "w-full py-4 rounded-full font-black text-sm uppercase tracking-widest bg-gradient-to-r from-festive-gold to-yellow-400 text-festive-green flex items-center justify-center gap-3 shadow-[0_0_20px_rgba(255,215,0,0.3)] hover:scale-105 transition-transform duration-300",
+                                        className: "w-full py-4 rounded-full font-semibold text-sm uppercase tracking-wider bg-gradient-to-r from-festive-gold to-yellow-400 text-festive-green flex items-center justify-center gap-3 shadow-[0_0_20px_rgba(255,215,0,0.3)] hover:scale-105 transition-transform duration-300",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                                 xmlns: "http://www.w3.org/2000/svg",
@@ -746,7 +746,7 @@ function Footer() {
     const socialLinks = [
         {
             title: 'YouTube',
-            href: 'https://youtube.com/@gurupriyapyropark?si=Y3vpXD02Rlq4mS-B',
+            href: 'https://www.youtube.com/shorts/tpABtNPidAU',
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.546 12 3.546 12 3.546s-7.505 0-9.377.504A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.504 9.376.504 9.376.504s7.505 0 9.377-.504a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
             }, void 0, false, {
@@ -758,7 +758,7 @@ function Footer() {
         },
         {
             title: 'Instagram',
-            href: 'https://www.instagram.com/vamsi_crackers/profilecard/?igsh=bGo5NnZqeWN4OWFq',
+            href: 'https://www.instagram.com/gurupriya_pyropark/',
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
             }, void 0, false, {
@@ -844,7 +844,7 @@ function Footer() {
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                        className: "text-xl font-black tracking-tight text-white leading-none mb-1",
+                                                        className: "text-xl font-semibold tracking-tight text-white leading-none mb-1",
                                                         children: [
                                                             "GURUPRIYA ",
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
@@ -867,7 +867,7 @@ function Footer() {
                                                         columnNumber: 33
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-[10px] text-emerald-300 font-bold tracking-[0.2em] uppercase",
+                                                        className: "text-[10px] text-emerald-300 font-bold tracking-wider uppercase",
                                                         children: "Sivakasi"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/Footer.tsx",
@@ -898,7 +898,7 @@ function Footer() {
                                         className: "flex items-center gap-2",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "px-3 py-1 bg-emerald-900 border border-emerald-800 rounded-full text-[10px] font-bold text-amber-400 uppercase tracking-widest shadow-inner",
+                                                className: "px-3 py-1 bg-emerald-900 border border-emerald-800 rounded-full text-[10px] font-bold text-amber-400 uppercase tracking-wider shadow-inner",
                                                 children: "Factory Direct"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/Footer.tsx",
@@ -906,7 +906,7 @@ function Footer() {
                                                 columnNumber: 29
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "px-3 py-1 bg-emerald-900 border border-emerald-800 rounded-full text-[10px] font-bold text-emerald-300 uppercase tracking-widest shadow-inner",
+                                                className: "px-3 py-1 bg-emerald-900 border border-emerald-800 rounded-full text-[10px] font-bold text-emerald-300 uppercase tracking-wider shadow-inner",
                                                 children: "Certified"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/Footer.tsx",
@@ -929,7 +929,7 @@ function Footer() {
                                 className: "flex flex-col lg:pl-8",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-sm font-bold text-white uppercase tracking-[0.2em] mb-6 flex items-center gap-2",
+                                        className: "text-sm font-bold text-white uppercase tracking-wider mb-6 flex items-center gap-2",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "w-1.5 h-1.5 rounded-full bg-amber-400"
@@ -1003,7 +1003,7 @@ function Footer() {
                                 className: "flex flex-col",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-sm font-bold text-white uppercase tracking-[0.2em] mb-6 flex items-center gap-2",
+                                        className: "text-sm font-bold text-white uppercase tracking-wider mb-6 flex items-center gap-2",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "w-1.5 h-1.5 rounded-full bg-amber-400"
@@ -1129,9 +1129,9 @@ function Footer() {
                                                                 columnNumber: 37
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                                href: "mailto:vamsidharuncrackers@gmail.com",
+                                                                href: "mailto:moorthyguru1995@gmail.com",
                                                                 className: "text-sm font-medium text-emerald-50 hover:text-white transition-colors",
-                                                                children: "vamsidharuncrackers@gmail.com"
+                                                                children: "moorthyguru1995@gmail.com"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/Footer.tsx",
                                                                 lineNumber: 146,
@@ -1238,7 +1238,7 @@ function Footer() {
                                 className: "flex flex-col",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-sm font-bold text-white uppercase tracking-[0.2em] mb-6 flex items-center gap-2",
+                                        className: "text-sm font-bold text-white uppercase tracking-wider mb-6 flex items-center gap-2",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "w-1.5 h-1.5 rounded-full bg-amber-400"
@@ -1284,7 +1284,7 @@ function Footer() {
                                                         columnNumber: 33
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-[10px] font-bold text-green-400 uppercase tracking-widest",
+                                                        className: "text-[10px] font-bold text-green-400 uppercase tracking-wider",
                                                         children: "Season Open"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/Footer.tsx",
@@ -1476,7 +1476,7 @@ function ContactFloatingButtons() {
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "absolute right-full mr-4 bg-white text-black text-sm font-black px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity shadow-lg whitespace-nowrap",
+                        className: "absolute right-full mr-4 bg-white text-black text-sm font-semibold px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity shadow-lg whitespace-nowrap",
                         children: "Chat on WhatsApp"
                     }, void 0, false, {
                         fileName: "[project]/app/components/ContactFloatingButtons.tsx",
@@ -1515,7 +1515,7 @@ function ContactFloatingButtons() {
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "absolute right-full mr-4 bg-white text-black text-sm font-black px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity shadow-lg whitespace-nowrap",
+                        className: "absolute right-full mr-4 bg-white text-black text-sm font-semibold px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity shadow-lg whitespace-nowrap",
                         children: "Call Now"
                     }, void 0, false, {
                         fileName: "[project]/app/components/ContactFloatingButtons.tsx",
@@ -1733,7 +1733,7 @@ function ProductsPageInner() {
                                 className: "container mx-auto px-4 lg:px-8 relative z-10 text-center space-y-6 max-w-3xl",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "inline-flex items-center gap-1.5 px-5 py-2 rounded-full bg-white border border-festive-gold/30 text-festive-green text-xs font-black uppercase tracking-[0.2em] shadow-lg shadow-festive-gold/10",
+                                        className: "inline-flex items-center gap-1.5 px-5 py-2 rounded-full bg-white border border-festive-gold/30 text-festive-green text-xs font-semibold uppercase tracking-wider shadow-lg shadow-festive-gold/10",
                                         children: "✨ Sivakasi Direct Wholesale Shop ✨"
                                     }, void 0, false, {
                                         fileName: "[project]/app/products/page.tsx",
@@ -1741,7 +1741,7 @@ function ProductsPageInner() {
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                        className: "text-3xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight text-festive-green leading-tight drop-shadow-sm",
+                                        className: "text-xl md:text-xl lg:text-xl font-semibold uppercase tracking-tight text-festive-green leading-tight drop-shadow-sm",
                                         children: [
                                             "Premium Crackers ",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1767,7 +1767,7 @@ function ProductsPageInner() {
                                         columnNumber: 13
                                     }, this),
                                     products.length > 0 && Math.max(...products.map((p)=>p.discount || 0)) > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "inline-block px-5 py-2.5 bg-festive-red/5 border border-festive-red/20 rounded-xl text-xs md:text-sm font-black text-festive-red uppercase tracking-widest leading-normal shadow-sm",
+                                        className: "inline-block px-5 py-2.5 bg-festive-red/5 border border-festive-red/20 rounded-xl text-xs md:text-sm font-semibold text-festive-red uppercase tracking-wider leading-normal shadow-sm",
                                         children: [
                                             "🎇 FESTIVE BUMPER OFFER: UP TO ",
                                             Math.max(...products.map((p)=>p.discount || 0)),
@@ -1855,7 +1855,7 @@ function ProductsPageInner() {
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
                                                     value: activeFilter,
                                                     onChange: (e)=>setActiveFilter(e.target.value),
-                                                    className: "w-full appearance-none bg-white border-2 border-festive-green/20 text-festive-green font-black uppercase tracking-widest text-sm rounded-2xl px-6 py-4 shadow-lg shadow-festive-green/5 focus:outline-none focus:border-festive-green focus:ring-4 focus:ring-festive-green/10 transition-all",
+                                                    className: "w-full appearance-none bg-white border-2 border-festive-green/20 text-festive-green font-semibold uppercase tracking-wider text-sm rounded-2xl px-6 py-4 shadow-lg shadow-festive-green/5 focus:outline-none focus:border-festive-green focus:ring-4 focus:ring-festive-green/10 transition-all",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                             value: "All",
@@ -1923,7 +1923,7 @@ function ProductsPageInner() {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                 onClick: ()=>setActiveFilter("All"),
-                                                className: `px-8 py-3 rounded-xl text-sm font-black uppercase tracking-widest transition-all duration-300 border-2 cursor-pointer ${activeFilter === "All" ? "bg-festive-green text-white border-festive-green shadow-[0_10px_20px_-10px_rgba(45,13,84,0.6)] scale-105" : "bg-white text-festive-green border-festive-green/10 hover:border-festive-gold hover:shadow-sm"}`,
+                                                className: `px-8 py-3 rounded-xl text-sm font-semibold uppercase tracking-wider transition-all duration-300 border-2 cursor-pointer ${activeFilter === "All" ? "bg-festive-green text-white border-festive-green shadow-[0_10px_20px_-10px_rgba(45,13,84,0.6)] scale-105" : "bg-white text-festive-green border-festive-green/10 hover:border-festive-gold hover:shadow-sm"}`,
                                                 children: "ALL"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/products/page.tsx",
@@ -1932,7 +1932,7 @@ function ProductsPageInner() {
                                             }, this),
                                             uniqueCategories.map((cat)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     onClick: ()=>setActiveFilter(cat.name),
-                                                    className: `px-8 py-3 rounded-xl text-sm font-black uppercase tracking-widest transition-all duration-300 border-2 cursor-pointer ${activeFilter === cat.name ? "bg-festive-green text-white border-festive-green shadow-[0_10px_20px_-10px_rgba(45,13,84,0.6)] scale-105" : "bg-white text-festive-green border-festive-green/10 hover:border-festive-gold hover:shadow-sm"}`,
+                                                    className: `px-8 py-3 rounded-xl text-sm font-semibold uppercase tracking-wider transition-all duration-300 border-2 cursor-pointer ${activeFilter === cat.name ? "bg-festive-green text-white border-festive-green shadow-[0_10px_20px_-10px_rgba(45,13,84,0.6)] scale-105" : "bg-white text-festive-green border-festive-green/10 hover:border-festive-gold hover:shadow-sm"}`,
                                                     children: cat.name
                                                 }, cat.id, false, {
                                                     fileName: "[project]/app/products/page.tsx",
@@ -1962,7 +1962,7 @@ function ProductsPageInner() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-sm font-black uppercase tracking-widest text-festive-gold animate-pulse",
+                                        className: "text-sm font-semibold uppercase tracking-wider text-festive-gold animate-pulse",
                                         children: "Loading products database..."
                                     }, void 0, false, {
                                         fileName: "[project]/app/products/page.tsx",
@@ -1978,7 +1978,7 @@ function ProductsPageInner() {
                                 className: "text-center py-28 space-y-5 bg-white rounded-3xl border border-gray-100 shadow-sm p-8 max-w-xl mx-auto",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-6xl animate-bounce inline-block drop-shadow-sm",
+                                        className: "text-xl animate-bounce inline-block drop-shadow-sm",
                                         children: "🎆"
                                     }, void 0, false, {
                                         fileName: "[project]/app/products/page.tsx",
@@ -1986,7 +1986,7 @@ function ProductsPageInner() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-base font-black uppercase tracking-widest text-slate-400",
+                                        className: "text-base font-semibold uppercase tracking-wider text-slate-400",
                                         children: "No matching crackers found"
                                     }, void 0, false, {
                                         fileName: "[project]/app/products/page.tsx",
@@ -1995,7 +1995,7 @@ function ProductsPageInner() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: ()=>setSearchQuery(""),
-                                        className: "px-6 py-3 rounded-full bg-gradient-to-r from-festive-gold to-yellow-400 text-festive-green text-sm font-black uppercase tracking-widest hover:scale-105 active:scale-95 transition-all cursor-pointer shadow-[0_8px_20px_rgba(255,215,0,0.4)]",
+                                        className: "px-6 py-3 rounded-full bg-gradient-to-r from-festive-gold to-yellow-400 text-festive-green text-sm font-semibold uppercase tracking-wider hover:scale-105 active:scale-95 transition-all cursor-pointer shadow-[0_8px_20px_rgba(255,215,0,0.4)]",
                                         children: "Show All Products"
                                     }, void 0, false, {
                                         fileName: "[project]/app/products/page.tsx",
@@ -2028,7 +2028,7 @@ function ProductsPageInner() {
                                                         className: "relative z-10 flex items-center gap-3",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "text-lg md:text-xl opacity-80 group-hover:animate-ping",
+                                                                className: "text-lg md:text-xl text-yellow-300 opacity-80 group-hover:animate-ping",
                                                                 children: "✨"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/products/page.tsx",
@@ -2036,7 +2036,7 @@ function ProductsPageInner() {
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                                className: "text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-festive-gold to-yellow-400 font-black text-[18px] md:text-[22px] uppercase tracking-[0.2em] drop-shadow-lg text-center",
+                                                                className: "text-white font-semibold text-[18px] md:text-[20px] uppercase tracking-wider drop-shadow-md text-center",
                                                                 children: group.name
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/products/page.tsx",
@@ -2044,7 +2044,7 @@ function ProductsPageInner() {
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "text-lg md:text-xl opacity-80 group-hover:animate-ping",
+                                                                className: "text-lg md:text-xl text-yellow-300 opacity-80 group-hover:animate-ping",
                                                                 children: "✨"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/products/page.tsx",
@@ -2064,7 +2064,7 @@ function ProductsPageInner() {
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "hidden md:grid md:grid-cols-[80px_1fr_140px_120px_130px] lg:grid-cols-[90px_1fr_150px_130px_150px] items-center gap-4 px-6 lg:px-8 py-3.5 bg-gradient-to-r from-emerald-600 via-emerald-500 to-emerald-600 text-[10.5px] font-black text-festive-gold uppercase tracking-[0.2em] shadow-sm border-b-2 border-festive-gold/30",
+                                                className: "hidden md:grid md:grid-cols-[80px_1fr_140px_120px_130px] lg:grid-cols-[90px_1fr_150px_130px_150px] items-center gap-4 px-6 lg:px-8 py-3.5 bg-gradient-to-r from-emerald-600 via-emerald-500 to-emerald-600 text-xs font-semibold text-white uppercase tracking-wider shadow-sm border-b-2 border-festive-gold/30",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "text-center drop-shadow-sm",
@@ -2128,7 +2128,7 @@ function ProductsPageInner() {
                                                                     prod.originalPrice > prod.price && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         className: "absolute top-2 left-2 z-10 scale-75 origin-top-left",
                                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "bg-gradient-to-r from-festive-red to-red-500 text-white font-black px-2 py-0.5 rounded-md text-[10px] tracking-wider shadow-sm",
+                                                                            className: "bg-gradient-to-r from-festive-red to-red-500 text-white font-semibold px-2 py-0.5 rounded-md text-[10px] tracking-wider shadow-sm",
                                                                             children: [
                                                                                 prodDiscount,
                                                                                 "% OFF"
@@ -2169,7 +2169,7 @@ function ProductsPageInner() {
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                                         className: "flex items-start gap-1",
                                                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                                                            className: "font-black text-slate-800 text-[14px] leading-tight line-clamp-2",
+                                                                                            className: "font-semibold text-slate-800 text-[14px] leading-tight line-clamp-2",
                                                                                             children: cleanName
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/products/page.tsx",
@@ -2182,7 +2182,7 @@ function ProductsPageInner() {
                                                                                         columnNumber: 38
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                        className: "text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1 block truncate max-w-full",
+                                                                                        className: "text-[10px] font-bold text-slate-400 uppercase tracking-wider mt-1 block truncate max-w-full",
                                                                                         children: group.name
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/products/page.tsx",
@@ -2213,7 +2213,7 @@ function ProductsPageInner() {
                                                                                                 columnNumber: 43
                                                                                             }, this),
                                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                                className: "text-[14px] font-black text-festive-green",
+                                                                                                className: "text-[14px] font-semibold text-festive-green",
                                                                                                 children: [
                                                                                                     "₹",
                                                                                                     prod.price.toLocaleString('en-IN')
@@ -2236,7 +2236,7 @@ function ProductsPageInner() {
                                                                                             children: [
                                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                                                                     onClick: ()=>updateQuantity(prod.id, qty - 1),
-                                                                                                    className: "flex-1 h-full text-slate-600 active:scale-95 font-black text-sm flex items-center justify-center",
+                                                                                                    className: "flex-1 h-full text-slate-600 active:scale-95 font-semibold text-sm flex items-center justify-center",
                                                                                                     children: "−"
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/app/products/page.tsx",
@@ -2250,7 +2250,7 @@ function ProductsPageInner() {
                                                                                                         const val = e.target.value === '' ? 0 : parseInt(e.target.value);
                                                                                                         if (!isNaN(val) && val >= 0) updateQuantity(prod.id, val);
                                                                                                     },
-                                                                                                    className: "w-9 h-full font-black text-slate-900 text-[12px] bg-gray-50 text-center border-x border-gray-200 outline-none focus:bg-white [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                                                                                                    className: "w-9 h-full font-semibold text-slate-900 text-[12px] bg-gray-50 text-center border-x border-gray-200 outline-none focus:bg-white [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/app/products/page.tsx",
                                                                                                     lineNumber: 365,
@@ -2258,7 +2258,7 @@ function ProductsPageInner() {
                                                                                                 }, this),
                                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                                                                     onClick: ()=>updateQuantity(prod.id, qty + 1),
-                                                                                                    className: "flex-1 h-full text-slate-600 active:scale-95 font-black text-sm flex items-center justify-center",
+                                                                                                    className: "flex-1 h-full text-slate-600 active:scale-95 font-semibold text-sm flex items-center justify-center",
                                                                                                     children: "+"
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/app/products/page.tsx",
@@ -2279,7 +2279,7 @@ function ProductsPageInner() {
                                                                                                     image: prod.image,
                                                                                                     category: group.name
                                                                                                 }),
-                                                                                            className: "h-8 px-5 rounded-md bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-black uppercase text-[11px] tracking-wider active:scale-95 shadow-sm flex items-center justify-center gap-1.5",
+                                                                                            className: "h-8 px-5 rounded-md bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-semibold uppercase text-[11px] tracking-wider active:scale-95 shadow-sm flex items-center justify-center gap-1.5",
                                                                                             children: [
                                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                                     className: "text-[15px] leading-none mb-[1px]",
@@ -2344,7 +2344,7 @@ function ProductsPageInner() {
                                                                         className: "flex flex-col items-start justify-center gap-0.5",
                                                                         children: [
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                                                className: "font-black text-slate-800 text-[15px] leading-tight group-hover:text-festive-green transition-colors line-clamp-2",
+                                                                                className: "font-semibold text-slate-800 text-[15px] leading-tight group-hover:text-festive-green transition-colors line-clamp-2",
                                                                                 children: cleanName
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/products/page.tsx",
@@ -2352,7 +2352,7 @@ function ProductsPageInner() {
                                                                                 columnNumber: 33
                                                                             }, this),
                                                                             prod.originalPrice > prod.price && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                className: "inline-flex items-center gap-1 bg-festive-red/10 text-festive-red text-[9px] font-black px-2 py-0.5 rounded-md uppercase tracking-wider mt-0.5",
+                                                                                className: "inline-flex items-center gap-1 bg-festive-red/10 text-festive-red text-[9px] font-semibold px-2 py-0.5 rounded-md uppercase tracking-wider mt-0.5",
                                                                                 children: [
                                                                                     "🔥 ",
                                                                                     prodDiscount,
@@ -2397,7 +2397,7 @@ function ProductsPageInner() {
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         className: "flex flex-col items-end justify-center",
                                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "text-xl font-black text-festive-green text-right",
+                                                                            className: "text-xl font-semibold text-festive-green text-right",
                                                                             children: [
                                                                                 "₹",
                                                                                 prod.price.toLocaleString('en-IN')
@@ -2421,7 +2421,7 @@ function ProductsPageInner() {
                                                                                     children: [
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                                                             onClick: ()=>updateQuantity(prod.id, qty - 1),
-                                                                                            className: "flex-1 w-8 h-full text-slate-600 hover:bg-red-50 hover:text-festive-red transition-all cursor-pointer font-black text-lg flex items-center justify-center",
+                                                                                            className: "flex-1 w-8 h-full text-slate-600 hover:bg-red-50 hover:text-festive-red transition-all cursor-pointer font-semibold text-lg flex items-center justify-center",
                                                                                             children: "−"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/products/page.tsx",
@@ -2435,7 +2435,7 @@ function ProductsPageInner() {
                                                                                                 const val = e.target.value === '' ? 0 : parseInt(e.target.value);
                                                                                                 if (!isNaN(val) && val >= 0) updateQuantity(prod.id, val);
                                                                                             },
-                                                                                            className: "w-10 h-full font-black text-slate-900 text-base bg-gray-50 text-center border-x border-gray-200 outline-none focus:bg-white [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                                                                                            className: "w-10 h-full font-semibold text-slate-900 text-base bg-gray-50 text-center border-x border-gray-200 outline-none focus:bg-white [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/products/page.tsx",
                                                                                             lineNumber: 423,
@@ -2443,7 +2443,7 @@ function ProductsPageInner() {
                                                                                         }, this),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                                                             onClick: ()=>updateQuantity(prod.id, qty + 1),
-                                                                                            className: "flex-1 w-8 h-full text-slate-600 hover:bg-purple-50 hover:text-festive-green transition-all cursor-pointer font-black text-lg flex items-center justify-center",
+                                                                                            className: "flex-1 w-8 h-full text-slate-600 hover:bg-purple-50 hover:text-festive-green transition-all cursor-pointer font-semibold text-lg flex items-center justify-center",
                                                                                             children: "+"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/products/page.tsx",
@@ -2496,7 +2496,7 @@ function ProductsPageInner() {
                                                                                     image: prod.image,
                                                                                     category: group.name
                                                                                 }),
-                                                                            className: "w-[130px] lg:w-[140px] h-9 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-amber-400 hover:to-orange-500 text-white hover:text-white font-black uppercase text-[11px] tracking-wider hover:scale-[1.03] transition-all cursor-pointer shadow-[0_4px_15px_rgba(4,120,87,0.3)] hover:shadow-[0_4px_15px_rgba(255,215,0,0.4)] flex items-center justify-center gap-1 border border-transparent",
+                                                                            className: "w-[130px] lg:w-[140px] h-9 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-amber-400 hover:to-orange-500 text-white hover:text-white font-semibold uppercase text-[11px] tracking-wider hover:scale-[1.03] transition-all cursor-pointer shadow-[0_4px_15px_rgba(4,120,87,0.3)] hover:shadow-[0_4px_15px_rgba(255,215,0,0.4)] flex items-center justify-center gap-1 border border-transparent",
                                                                             children: [
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                                                                     xmlns: "http://www.w3.org/2000/svg",

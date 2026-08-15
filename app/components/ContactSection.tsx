@@ -110,9 +110,17 @@ export default function ContactSection() {
                                     </div>
                                     <div>
                                         <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block mb-1">Direct Line</span>
-                                        <a href="tel:+916382650924" className="text-xl md:text-xl font-semibold text-white hover:text-amber-400 transition-colors tracking-tight">
-                                            +91 63826 50924
-                                        </a>
+                                        <div className="flex flex-col gap-1">
+                                            <a href="tel:+916382650924" className="text-xl md:text-xl font-semibold text-white hover:text-amber-400 transition-colors tracking-tight">
+                                                +91 63826 50924
+                                            </a>
+                                            <a href="tel:+919787510054" className="text-xl md:text-xl font-semibold text-white hover:text-amber-400 transition-colors tracking-tight">
+                                                +91 97875 10054
+                                            </a>
+                                            <a href="tel:+919362882009" className="text-xl md:text-xl font-semibold text-white hover:text-amber-400 transition-colors tracking-tight">
+                                                +91 93628 82009
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
 
