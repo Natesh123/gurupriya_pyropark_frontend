@@ -722,7 +722,7 @@ function Banner({ priceListUrl = "" }) {
             const fetchBanners = {
                 "Banner.useEffect.fetchBanners": async ()=>{
                     try {
-                        const apiUrl = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5001";
+                        const apiUrl = ("TURBOPACK compile-time value", "https://api.gurupriyapyropark.com") || "http://localhost:5001";
                         const res = await fetch(`${apiUrl}/api/settings/banner-images/get`);
                         if (res.ok) {
                             const data = await res.json();
@@ -2063,7 +2063,7 @@ function ProductCatalog({ priceListUrl = "" }) {
         "ProductCatalog.useEffect": ()=>{
             async function loadData() {
                 try {
-                    const apiUrl = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5001";
+                    const apiUrl = ("TURBOPACK compile-time value", "https://api.gurupriyapyropark.com") || "http://localhost:5001";
                     const [catsRes, prodsRes] = await Promise.all([
                         fetch(`${apiUrl}/api/categories`),
                         fetch(`${apiUrl}/api/products`)
@@ -3397,7 +3397,7 @@ function ContactSection() {
         setSubmitting(true);
         setToast(null);
         try {
-            const apiUrl = ("TURBOPACK compile-time value", "http://localhost:5001") || 'http://localhost:5001';
+            const apiUrl = ("TURBOPACK compile-time value", "https://api.gurupriyapyropark.com") || 'http://localhost:5001';
             const res = await fetch(`${apiUrl}/api/contacts`, {
                 method: 'POST',
                 headers: {
@@ -4140,7 +4140,7 @@ function Home() {
             const fetchPriceList = {
                 "Home.useEffect.fetchPriceList": async ()=>{
                     try {
-                        const apiUrl = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5001";
+                        const apiUrl = ("TURBOPACK compile-time value", "https://api.gurupriyapyropark.com") || "http://localhost:5001";
                         const res = await fetch(`${apiUrl}/api/settings/price-list`);
                         if (res.ok) {
                             const data = await res.json();
@@ -4167,7 +4167,7 @@ function Home() {
             const fetchBannerText = {
                 "Home.useEffect.fetchBannerText": async ()=>{
                     try {
-                        const apiUrl = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5001";
+                        const apiUrl = ("TURBOPACK compile-time value", "https://api.gurupriyapyropark.com") || "http://localhost:5001";
                         const res = await fetch(`${apiUrl}/api/settings/banner-text/get`);
                         if (res.ok) {
                             const data = await res.json();
@@ -4181,7 +4181,7 @@ function Home() {
             const fetchMinOrderValue = {
                 "Home.useEffect.fetchMinOrderValue": async ()=>{
                     try {
-                        const apiUrl = ("TURBOPACK compile-time value", "http://localhost:5001") || "http://localhost:5001";
+                        const apiUrl = ("TURBOPACK compile-time value", "https://api.gurupriyapyropark.com") || "http://localhost:5001";
                         const res = await fetch(`${apiUrl}/api/settings/min-order-value/get`);
                         if (res.ok) {
                             const data = await res.json();

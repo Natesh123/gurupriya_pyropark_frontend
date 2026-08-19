@@ -1,16 +1,19 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { useCart } from "../context/CartContext";
+import { usePathname } from "next/navigation";
 
 export default function FloatingCart() {
   const { cartCount, cartTotal, setCartOpen, isCartOpen } = useCart();
   const [isVisible, setIsVisible] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     // Only show when there are items in the cart AND the cart drawer is closed
     setIsVisible(cartCount > 0 && !isCartOpen);
   }, [cartCount, isCartOpen]);
 
+  if (pathname?.startsWith("/admin")) return null;
   if (!isVisible) return null;
 
   return (
