@@ -1878,10 +1878,10 @@ function AdminDashboard() {
             <div style="width: 65%; padding: 5px; border-right: 1px solid #94a3b8;">
               <div class="bold" style="margin-bottom: 5px; color: #1e3a8a;">Bank Details</div>
               <table style="width: 100%; font-size: 11px; border: none; margin-top: 0;">
-                <tr><td style="border: none; padding: 2px;">Acc Holder</td><td style="border: none; padding: 2px;" class="bold">SWETHA S .</td></tr>
-                <tr><td style="border: none; padding: 2px;">Acc No</td><td style="border: none; padding: 2px;" class="bold">403100050600180</td></tr>
-                <tr><td style="border: none; padding: 2px;">Acc Type</td><td style="border: none; padding: 2px;">Savings Account</td></tr>
-                <tr><td style="border: none; padding: 2px;">Bank</td><td style="border: none; padding: 2px;">TMBL SITHURAJAPURAM</td></tr>
+                <tr><td style="border: none; padding: 2px;">Acc Holder</td><td style="border: none; padding: 2px;" class="bold">MR. M. Gurumoorthy</td></tr>
+                <tr><td style="border: none; padding: 2px;">Acc No</td><td style="border: none; padding: 2px;" class="bold">403100050303506</td></tr>
+                <tr><td style="border: none; padding: 2px;">Acc Type</td><td style="border: none; padding: 2px;">Savings</td></tr>
+                <tr><td style="border: none; padding: 2px;">Bank</td><td style="border: none; padding: 2px;">Tamilnad Mercantile Bank Ltd..</td></tr>
                 <tr><td style="border: none; padding: 2px;">IFSC</td><td style="border: none; padding: 2px;">TMBL0000403</td></tr>
               </table>
             </div>
