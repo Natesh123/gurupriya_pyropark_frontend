@@ -305,7 +305,7 @@ export default function AdminDashboard() {
       setBannerImages(newImages);
       await handleSaveBannerImages(newImages);
       showToast("Banner image uploaded successfully!");
-    } catch (error) {
+    } catch (error: any) {
       console.error("Upload error:", error);
       showToast(error.message || "Error uploading banner image.", "error");
     } finally {
