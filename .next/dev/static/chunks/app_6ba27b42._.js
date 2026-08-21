@@ -2497,15 +2497,15 @@ function ProductCatalog({ priceListUrl = "" }) {
                                             const qty = getCartQty(prod.id);
                                             const prodDiscount = prod.discount || Math.round((prod.originalPrice - prod.price) / prod.originalPrice * 100);
                                             const isLast = idx === group.products.length - 1;
-                                            const cleanName = prod.name.replace(/\s*\([^)]*[\u0B80-\u0BFF]+[^)]*\)/g, '').trim();
+                                            const cleanName = prod.name ? prod.name.replace(/\s*\([^)]*[\u0B80-\u0BFF]+[^)]*\)/g, '').trim() : '';
                                             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: `transition-all duration-300 hover:bg-amber-50/50 ${!isLast ? 'border-b border-gray-100' : ''}`,
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "md:hidden flex p-3 gap-3 relative",
+                                                        className: "md:hidden flex p-2.5 sm:p-3 gap-2.5 sm:gap-3 relative",
                                                         children: [
                                                             prod.originalPrice > prod.price && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "absolute top-2 left-2 z-10 scale-75 origin-top-left",
+                                                                className: "absolute top-1.5 left-1.5 z-10 scale-75 origin-top-left",
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     className: "bg-gradient-to-r from-festive-red to-red-500 text-white font-semibold px-2 py-0.5 rounded-md text-[10px] tracking-wider shadow-sm",
                                                                     children: [
@@ -2523,7 +2523,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                                 columnNumber: 32
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "w-[85px] h-[85px] rounded-lg bg-gray-50 border border-gray-100 flex items-center justify-center p-1.5 overflow-hidden shrink-0 relative",
+                                                                className: "w-[80px] h-[80px] sm:w-[85px] sm:h-[85px] rounded-lg bg-gray-50 border border-gray-100 flex items-center justify-center p-1.5 overflow-hidden shrink-0 relative",
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                                                     src: prod.image || "/assets/images/placeholder.png",
                                                                     alt: cleanName,
@@ -2541,35 +2541,25 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                                 columnNumber: 30
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "flex-1 flex flex-col justify-between py-0.5",
+                                                                className: "flex-1 min-w-0 flex flex-col justify-between py-0.5",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        children: [
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                className: "flex items-start gap-1",
-                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                                                    className: "font-semibold text-slate-800 text-[14px] leading-tight line-clamp-2",
-                                                                                    children: cleanName
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                                    lineNumber: 251,
-                                                                                    columnNumber: 36
-                                                                                }, this)
+                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "flex items-start gap-1",
+                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                                                className: "font-semibold text-slate-800 text-[13px] sm:text-[14px] leading-tight line-clamp-2",
+                                                                                children: cleanName
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                                lineNumber: 250,
-                                                                                columnNumber: 36
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                className: "text-[10px] font-bold text-slate-400 uppercase tracking-wider mt-1 block truncate max-w-full",
-                                                                                children: prod.category
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                                lineNumber: 253,
+                                                                                lineNumber: 251,
                                                                                 columnNumber: 36
                                                                             }, this)
-                                                                        ]
-                                                                    }, void 0, true, {
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/app/components/ProductCatalog.tsx",
+                                                                            lineNumber: 250,
+                                                                            columnNumber: 36
+                                                                        }, this)
+                                                                    }, void 0, false, {
                                                                         fileName: "[project]/app/components/ProductCatalog.tsx",
                                                                         lineNumber: 249,
                                                                         columnNumber: 33
@@ -2578,40 +2568,40 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                                         className: "flex items-end justify-between mt-2",
                                                                         children: [
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                className: "flex flex-col",
+                                                                                className: "flex flex-col min-w-0 pr-1",
                                                                                 children: [
                                                                                     prod.originalPrice > prod.price && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                        className: "text-[10px] text-slate-400 line-through font-bold",
+                                                                                        className: "text-[9px] sm:text-[10px] text-slate-400 line-through font-bold truncate",
                                                                                         children: [
                                                                                             "₹",
-                                                                                            prod.originalPrice.toLocaleString('en-IN')
+                                                                                            Number(prod.originalPrice || 0).toLocaleString('en-IN')
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                                        lineNumber: 258,
+                                                                                        lineNumber: 257,
                                                                                         columnNumber: 41
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                        className: "text-[14px] font-semibold text-festive-green",
+                                                                                        className: "text-[13px] sm:text-[14px] font-semibold text-festive-green truncate",
                                                                                         children: [
                                                                                             "₹",
-                                                                                            prod.price.toLocaleString('en-IN')
+                                                                                            Number(prod.price || 0).toLocaleString('en-IN')
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                                        lineNumber: 260,
+                                                                                        lineNumber: 259,
                                                                                         columnNumber: 39
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                                lineNumber: 256,
+                                                                                lineNumber: 255,
                                                                                 columnNumber: 36
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                className: "shrink-0 mr-1",
+                                                                                className: "shrink-0",
                                                                                 children: qty > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                    className: "flex items-center border-2 border-festive-green/20 rounded-md overflow-hidden bg-white h-8 w-[85px]",
+                                                                                    className: "flex items-center border-2 border-festive-green/20 rounded-md overflow-hidden bg-white h-7 sm:h-8 w-[75px] sm:w-[85px]",
                                                                                     children: [
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                                                             onClick: ()=>updateQuantity(prod.id, qty - 1),
@@ -2619,7 +2609,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                                                             children: "−"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                                            lineNumber: 265,
+                                                                                            lineNumber: 264,
                                                                                             columnNumber: 43
                                                                                         }, this),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -2629,10 +2619,10 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                                                                 const val = e.target.value === '' ? 0 : parseInt(e.target.value);
                                                                                                 if (!isNaN(val) && val >= 0) updateQuantity(prod.id, val);
                                                                                             },
-                                                                                            className: "w-9 h-full font-semibold text-slate-900 text-[12px] bg-gray-50 text-center border-x border-gray-200 outline-none focus:bg-white [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                                                                                            className: "w-8 sm:w-9 h-full font-semibold text-slate-900 text-[11px] sm:text-[12px] bg-gray-50 text-center border-x border-gray-200 outline-none focus:bg-white [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                                            lineNumber: 266,
+                                                                                            lineNumber: 265,
                                                                                             columnNumber: 43
                                                                                         }, this),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2641,13 +2631,13 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                                                             children: "+"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                                            lineNumber: 275,
+                                                                                            lineNumber: 274,
                                                                                             columnNumber: 43
                                                                                         }, this)
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                                    lineNumber: 264,
+                                                                                    lineNumber: 263,
                                                                                     columnNumber: 41
                                                                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                                                     onClick: ()=>addToCart({
@@ -2658,32 +2648,32 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                                                             image: prod.image,
                                                                                             category: prod.category
                                                                                         }),
-                                                                                    className: "h-8 px-5 rounded-md bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-semibold uppercase text-[11px] tracking-wider active:scale-95 shadow-sm flex items-center justify-center gap-1.5",
+                                                                                    className: "h-7 sm:h-8 px-3 sm:px-4 rounded-md bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-semibold uppercase text-[10px] sm:text-[11px] tracking-wider active:scale-95 shadow-sm flex items-center justify-center gap-1 sm:gap-1.5",
                                                                                     children: [
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                            className: "text-[15px] leading-none mb-[1px]",
+                                                                                            className: "text-[14px] sm:text-[15px] leading-none mb-[1px]",
                                                                                             children: "+"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                                            lineNumber: 279,
+                                                                                            lineNumber: 278,
                                                                                             columnNumber: 43
                                                                                         }, this),
                                                                                         " Add"
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                                    lineNumber: 278,
+                                                                                    lineNumber: 277,
                                                                                     columnNumber: 41
                                                                                 }, this)
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                                lineNumber: 262,
+                                                                                lineNumber: 261,
                                                                                 columnNumber: 36
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                        lineNumber: 255,
+                                                                        lineNumber: 254,
                                                                         columnNumber: 33
                                                                     }, this)
                                                                 ]
@@ -2711,12 +2701,12 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                                     className: "w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                    lineNumber: 291,
+                                                                    lineNumber: 290,
                                                                     columnNumber: 31
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                lineNumber: 290,
+                                                                lineNumber: 289,
                                                                 columnNumber: 29
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2727,7 +2717,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                                         children: cleanName
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                        lineNumber: 296,
+                                                                        lineNumber: 295,
                                                                         columnNumber: 31
                                                                     }, this),
                                                                     prod.originalPrice > prod.price && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2739,13 +2729,13 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                        lineNumber: 298,
+                                                                        lineNumber: 297,
                                                                         columnNumber: 33
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                lineNumber: 295,
+                                                                lineNumber: 294,
                                                                 columnNumber: 29
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2754,23 +2744,23 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                                     className: "text-base text-slate-400 line-through font-bold text-right",
                                                                     children: [
                                                                         "₹",
-                                                                        prod.originalPrice.toLocaleString('en-IN')
+                                                                        Number(prod.originalPrice || 0).toLocaleString('en-IN')
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                    lineNumber: 307,
+                                                                    lineNumber: 306,
                                                                     columnNumber: 33
                                                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     className: "text-base text-slate-400 font-bold text-right",
                                                                     children: "—"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                    lineNumber: 309,
+                                                                    lineNumber: 308,
                                                                     columnNumber: 33
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                lineNumber: 305,
+                                                                lineNumber: 304,
                                                                 columnNumber: 29
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2779,16 +2769,16 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                                     className: "text-xl font-semibold text-festive-green text-right",
                                                                     children: [
                                                                         "₹",
-                                                                        prod.price.toLocaleString('en-IN')
+                                                                        Number(prod.price || 0).toLocaleString('en-IN')
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                    lineNumber: 315,
+                                                                    lineNumber: 314,
                                                                     columnNumber: 31
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                lineNumber: 314,
+                                                                lineNumber: 313,
                                                                 columnNumber: 29
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2804,7 +2794,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                                                     children: "−"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                                    lineNumber: 323,
+                                                                                    lineNumber: 322,
                                                                                     columnNumber: 37
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -2817,7 +2807,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                                                     className: "w-10 h-full font-semibold text-slate-900 text-base bg-gray-50 text-center border-x border-gray-200 outline-none focus:bg-white [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                                    lineNumber: 324,
+                                                                                    lineNumber: 323,
                                                                                     columnNumber: 37
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2826,13 +2816,13 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                                                     children: "+"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                                    lineNumber: 333,
+                                                                                    lineNumber: 332,
                                                                                     columnNumber: 37
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                            lineNumber: 322,
+                                                                            lineNumber: 321,
                                                                             columnNumber: 35
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2852,17 +2842,17 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                                                     d: "m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                                    lineNumber: 336,
+                                                                                    lineNumber: 335,
                                                                                     columnNumber: 169
                                                                                 }, this)
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                                lineNumber: 336,
+                                                                                lineNumber: 335,
                                                                                 columnNumber: 37
                                                                             }, this)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                            lineNumber: 335,
+                                                                            lineNumber: 334,
                                                                             columnNumber: 35
                                                                         }, this)
                                                                     ]
@@ -2890,36 +2880,36 @@ function ProductCatalog({ priceListUrl = "" }) {
                                                                                 d: "M12 4.5v15m7.5-7.5h-15"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                                lineNumber: 341,
+                                                                                lineNumber: 340,
                                                                                 columnNumber: 171
                                                                             }, this)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                            lineNumber: 341,
+                                                                            lineNumber: 340,
                                                                             columnNumber: 35
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                             children: "Add"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                            lineNumber: 342,
+                                                                            lineNumber: 341,
                                                                             columnNumber: 35
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                    lineNumber: 340,
+                                                                    lineNumber: 339,
                                                                     columnNumber: 33
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                                lineNumber: 319,
+                                                                lineNumber: 318,
                                                                 columnNumber: 29
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/components/ProductCatalog.tsx",
-                                                        lineNumber: 288,
+                                                        lineNumber: 287,
                                                         columnNumber: 27
                                                     }, this)
                                                 ]
@@ -2952,7 +2942,7 @@ function ProductCatalog({ priceListUrl = "" }) {
                                 children: "🎆"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/ProductCatalog.tsx",
-                                lineNumber: 357,
+                                lineNumber: 356,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2960,13 +2950,13 @@ function ProductCatalog({ priceListUrl = "" }) {
                                 children: "Wait for it... more sparkles coming soon!"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/ProductCatalog.tsx",
-                                lineNumber: 358,
+                                lineNumber: 357,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/ProductCatalog.tsx",
-                        lineNumber: 356,
+                        lineNumber: 355,
                         columnNumber: 11
                     }, this)
                 ]

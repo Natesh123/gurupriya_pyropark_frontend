@@ -1,0 +1,13 @@
+#!/usr/bin/expect -f
+set timeout -1
+set password "Prasath@1990"
+set ip "103.191.208.98"
+
+spawn ssh -o StrictHostKeyChecking=no root@$ip "sed -i 's/3002/3006/g' /etc/apache2/sites-enabled/gurupriyapyropark.conf /etc/apache2/sites-enabled/gurupriyapyropark-le-ssl.conf; systemctl restart apache2; pm2 stop gurupriya_frontend; pm2 delete gurupriya_frontend; cd /var/www/gurupriyapyropark/frontend && pm2 start npm --name 'gurupriya_frontend' -- start -- -p 3006"
+expect {
+    "password:" {
+        send "$password\r"
+        exp_continue
+    }
+    eof
+}

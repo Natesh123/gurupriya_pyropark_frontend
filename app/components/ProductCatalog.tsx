@@ -223,16 +223,16 @@ export default function ProductCatalog({ priceListUrl = "" }: ProductCatalogProp
                     const qty = getCartQty(prod.id);
                     const prodDiscount = prod.discount || Math.round(((prod.originalPrice - prod.price) / prod.originalPrice) * 100);
                     const isLast = idx === group.products.length - 1;
-                    const cleanName = prod.name.replace(/\s*\([^)]*[\u0B80-\u0BFF]+[^)]*\)/g, '').trim();
+                    const cleanName = prod.name ? prod.name.replace(/\s*\([^)]*[\u0B80-\u0BFF]+[^)]*\)/g, '').trim() : '';
 
                     return (
                       <div key={prod.id} className={`transition-all duration-300 hover:bg-amber-50/50 ${!isLast ? 'border-b border-gray-100' : ''}`}>
                           
                           {/* --- MOBILE VIEW --- */}
-                          <div className="md:hidden flex p-3 gap-3 relative">
+                          <div className="md:hidden flex p-2.5 sm:p-3 gap-2.5 sm:gap-3 relative">
                              {/* Discount Badge */}
                              {prod.originalPrice > prod.price && (
-                               <div className="absolute top-2 left-2 z-10 scale-75 origin-top-left">
+                               <div className="absolute top-1.5 left-1.5 z-10 scale-75 origin-top-left">
                                  <span className="bg-gradient-to-r from-festive-red to-red-500 text-white font-semibold px-2 py-0.5 rounded-md text-[10px] tracking-wider shadow-sm">
                                    {prodDiscount}% OFF
                                  </span>
@@ -240,28 +240,27 @@ export default function ProductCatalog({ priceListUrl = "" }: ProductCatalogProp
                              )}
                              
                              {/* Image */}
-                             <div className="w-[85px] h-[85px] rounded-lg bg-gray-50 border border-gray-100 flex items-center justify-center p-1.5 overflow-hidden shrink-0 relative">
+                             <div className="w-[80px] h-[80px] sm:w-[85px] sm:h-[85px] rounded-lg bg-gray-50 border border-gray-100 flex items-center justify-center p-1.5 overflow-hidden shrink-0 relative">
                                <img src={prod.image || "/assets/images/placeholder.png"} alt={cleanName} loading="lazy" decoding="async" className="w-full h-full object-contain" />
                              </div>
 
                              {/* Content */}
-                             <div className="flex-1 flex flex-col justify-between py-0.5">
+                             <div className="flex-1 min-w-0 flex flex-col justify-between py-0.5">
                                 <div>
                                    <div className="flex items-start gap-1">
-                                   <h4 className="font-semibold text-slate-800 text-[14px] leading-tight line-clamp-2">{cleanName}</h4>
+                                   <h4 className="font-semibold text-slate-800 text-[13px] sm:text-[14px] leading-tight line-clamp-2">{cleanName}</h4>
                                  </div>
-                                   <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider mt-1 block truncate max-w-full">{prod.category}</span>
                                 </div>
                                 <div className="flex items-end justify-between mt-2">
-                                   <div className="flex flex-col">
+                                   <div className="flex flex-col min-w-0 pr-1">
                                       {prod.originalPrice > prod.price && (
-                                        <span className="text-[10px] text-slate-400 line-through font-bold">₹{prod.originalPrice.toLocaleString('en-IN')}</span>
+                                        <span className="text-[9px] sm:text-[10px] text-slate-400 line-through font-bold truncate">₹{Number(prod.originalPrice || 0).toLocaleString('en-IN')}</span>
                                       )}
-                                      <span className="text-[14px] font-semibold text-festive-green">₹{prod.price.toLocaleString('en-IN')}</span>
+                                      <span className="text-[13px] sm:text-[14px] font-semibold text-festive-green truncate">₹{Number(prod.price || 0).toLocaleString('en-IN')}</span>
                                    </div>
-                                   <div className="shrink-0 mr-1">
+                                   <div className="shrink-0">
                                       {qty > 0 ? (
-                                        <div className="flex items-center border-2 border-festive-green/20 rounded-md overflow-hidden bg-white h-8 w-[85px]">
+                                        <div className="flex items-center border-2 border-festive-green/20 rounded-md overflow-hidden bg-white h-7 sm:h-8 w-[75px] sm:w-[85px]">
                                           <button onClick={() => updateQuantity(prod.id, qty - 1)} className="flex-1 h-full text-slate-600 active:scale-95 font-semibold text-sm flex items-center justify-center">−</button>
                                           <input 
                                             type="number" 
@@ -270,13 +269,13 @@ export default function ProductCatalog({ priceListUrl = "" }: ProductCatalogProp
                                               const val = e.target.value === '' ? 0 : parseInt(e.target.value);
                                               if (!isNaN(val) && val >= 0) updateQuantity(prod.id, val);
                                             }}
-                                            className="w-9 h-full font-semibold text-slate-900 text-[12px] bg-gray-50 text-center border-x border-gray-200 outline-none focus:bg-white [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                                            className="w-8 sm:w-9 h-full font-semibold text-slate-900 text-[11px] sm:text-[12px] bg-gray-50 text-center border-x border-gray-200 outline-none focus:bg-white [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                                           />
                                           <button onClick={() => updateQuantity(prod.id, qty + 1)} className="flex-1 h-full text-slate-600 active:scale-95 font-semibold text-sm flex items-center justify-center">+</button>
                                         </div>
                                       ) : (
-                                        <button onClick={() => addToCart({ id: prod.id, name: cleanName, price: prod.price, originalPrice: prod.originalPrice, image: prod.image, category: prod.category })} className="h-8 px-5 rounded-md bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-semibold uppercase text-[11px] tracking-wider active:scale-95 shadow-sm flex items-center justify-center gap-1.5">
-                                          <span className="text-[15px] leading-none mb-[1px]">+</span> Add
+                                        <button onClick={() => addToCart({ id: prod.id, name: cleanName, price: prod.price, originalPrice: prod.originalPrice, image: prod.image, category: prod.category })} className="h-7 sm:h-8 px-3 sm:px-4 rounded-md bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-semibold uppercase text-[10px] sm:text-[11px] tracking-wider active:scale-95 shadow-sm flex items-center justify-center gap-1 sm:gap-1.5">
+                                          <span className="text-[14px] sm:text-[15px] leading-none mb-[1px]">+</span> Add
                                         </button>
                                       )}
                                    </div>
@@ -304,7 +303,7 @@ export default function ProductCatalog({ priceListUrl = "" }: ProductCatalogProp
                             {/* Original Price */}
                             <div className="flex flex-col items-end justify-center">
                               {prod.originalPrice > prod.price ? (
-                                <span className="text-base text-slate-400 line-through font-bold text-right">₹{prod.originalPrice.toLocaleString('en-IN')}</span>
+                                <span className="text-base text-slate-400 line-through font-bold text-right">₹{Number(prod.originalPrice || 0).toLocaleString('en-IN')}</span>
                               ) : (
                                 <span className="text-base text-slate-400 font-bold text-right">—</span>
                               )}
@@ -312,7 +311,7 @@ export default function ProductCatalog({ priceListUrl = "" }: ProductCatalogProp
 
                             {/* Sale Price */}
                             <div className="flex flex-col items-end justify-center">
-                              <span className="text-xl font-semibold text-festive-green text-right">₹{prod.price.toLocaleString('en-IN')}</span>
+                              <span className="text-xl font-semibold text-festive-green text-right">₹{Number(prod.price || 0).toLocaleString('en-IN')}</span>
                             </div>
 
                             {/* Cart Actions */}

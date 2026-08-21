@@ -1,0 +1,26 @@
+#!/usr/bin/expect -f
+set timeout -1
+set password "Prasath@1990"
+set ip "103.191.208.98"
+
+puts "Deploying ProductCatalog.tsx to server..."
+spawn scp -o StrictHostKeyChecking=no "app/components/ProductCatalog.tsx" root@$ip:/var/www/gurupriyapyropark/frontend/app/components/ProductCatalog.tsx
+expect {
+    "password:" {
+        send "$password\r"
+        exp_continue
+    }
+    eof
+}
+
+puts "Building and restarting pm2 on server..."
+spawn ssh -o StrictHostKeyChecking=no root@$ip "cd /var/www/gurupriyapyropark/frontend && npm install && npm run build && pm2 restart all"
+expect {
+    "password:" {
+        send "$password\r"
+        exp_continue
+    }
+    eof
+}
+
+puts "Deployment complete."

@@ -1,0 +1,13 @@
+#!/usr/bin/expect -f
+set timeout -1
+set password "Prasath@1990"
+set ip "103.191.208.98"
+
+spawn ssh -o StrictHostKeyChecking=no root@$ip "pm2 stop vamsi-frontend; fuser -k 3002/tcp; sleep 2; pm2 restart gurupriya_frontend; sleep 5; pm2 restart vamsi-frontend"
+expect {
+    "password:" {
+        send "$password\r"
+        exp_continue
+    }
+    eof
+}

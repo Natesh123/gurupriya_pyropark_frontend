@@ -34,6 +34,27 @@ interface Toast {
 
 export default function AdminDashboard() {
   const apiUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5001";
+
+  const fetchWithAuth = async (input: RequestInfo | URL, init?: RequestInit) => {
+    let urlStr = "";
+    if (typeof input === "string") urlStr = input;
+    else if (input instanceof URL) urlStr = input.toString();
+    else if (input instanceof Request) urlStr = input.url;
+
+    const isApiUrl = urlStr.includes(apiUrl);
+    const isLogin = urlStr.includes("/api/admin/login");
+
+    if (isApiUrl && !isLogin) {
+      const token = localStorage.getItem("admin_token");
+      init = init || {};
+      init.headers = {
+        ...init.headers,
+        "Authorization": token ? `Bearer ${token}` : ""
+      };
+    }
+    return window.fetch(input, init);
+  };
+
   const [categories, setCategories] = useState<Category[]>([]);
   const [products, setProducts] = useState<Product[]>([]);
   const [orders, setOrders] = useState<any[]>([]);
@@ -170,7 +191,7 @@ export default function AdminDashboard() {
   useEffect(() => {
     const fetchBanner = async () => {
       try {
-        const res = await fetch(`${apiUrl}/api/settings/banner-text/get`);
+        const res = await fetchWithAuth(`${apiUrl}/api/settings/banner-text/get`);
         if (res.ok) {
           const data = await res.json();
           setBannerText(data.text || "");
@@ -179,7 +200,7 @@ export default function AdminDashboard() {
     };
     const fetchBannerImages = async () => {
       try {
-        const res = await fetch(`${apiUrl}/api/settings/banner-images/get`);
+        const res = await fetchWithAuth(`${apiUrl}/api/settings/banner-images/get`);
         if (res.ok) {
           const data = await res.json();
           const images = (data.images || []).filter(Boolean).map((imgUrl: string) => {
@@ -202,7 +223,7 @@ export default function AdminDashboard() {
     };
     const fetchMinOrderValue = async () => {
       try {
-        const res = await fetch(`${apiUrl}/api/settings/min-order-value/get`);
+        const res = await fetchWithAuth(`${apiUrl}/api/settings/min-order-value/get`);
         if (res.ok) {
           const data = await res.json();
           setMinOrderValue(data.value || "");
@@ -217,7 +238,7 @@ export default function AdminDashboard() {
   const handleUpdateBanner = async () => {
     setIsBannerLoading(true);
     try {
-      const res = await fetch(`${apiUrl}/api/settings/banner-text/update`, {
+      const res = await fetchWithAuth(`${apiUrl}/api/settings/banner-text/update`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ text: bannerText })
@@ -237,7 +258,7 @@ export default function AdminDashboard() {
   const handleUpdateMinOrderValue = async () => {
     setIsUpdatingMinOrder(true);
     try {
-      const res = await fetch(`${apiUrl}/api/settings/min-order-value/update`, {
+      const res = await fetchWithAuth(`${apiUrl}/api/settings/min-order-value/update`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ value: minOrderValue })
@@ -256,7 +277,7 @@ export default function AdminDashboard() {
 
   const handleSaveBannerImages = async (newImages: string[]) => {
     try {
-      const res = await fetch(`${apiUrl}/api/settings/banner-images/update`, {
+      const res = await fetchWithAuth(`${apiUrl}/api/settings/banner-images/update`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ images: newImages })
@@ -277,7 +298,7 @@ export default function AdminDashboard() {
     formData.append("file", file);
 
     try {
-      const res = await fetch(`${apiUrl}/api/upload`, {
+      const res = await fetchWithAuth(`${apiUrl}/api/upload`, {
         method: "POST",
         body: formData,
       });
@@ -323,7 +344,7 @@ export default function AdminDashboard() {
 
   const handleMarkNotificationsAsRead = async () => {
     try {
-      await fetch(`${apiUrl}/api/orders/mark-read`, { method: "PUT" });
+      await fetchWithAuth(`${apiUrl}/api/orders/mark-read`, { method: "PUT" });
       setUnreadOrders([]);
       setIsNotificationOpen(false);
       stopAlarm();
@@ -334,7 +355,7 @@ export default function AdminDashboard() {
 
   const handleMarkSingleNotificationAsRead = async (id: number) => {
     try {
-      await fetch(`${apiUrl}/api/orders/${id}/mark-read`, { method: "PUT" });
+      await fetchWithAuth(`${apiUrl}/api/orders/${id}/mark-read`, { method: "PUT" });
       setUnreadOrders(prev => prev.filter(order => order.id !== id));
       if (unreadOrders.length <= 1) {
         setIsNotificationOpen(false);
@@ -597,7 +618,7 @@ export default function AdminDashboard() {
     if (!cleanText) return "";
 
     try {
-      const res = await fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ta&dt=t&q=${encodeURIComponent(cleanText)}`);
+      const res = await fetchWithAuth(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ta&dt=t&q=${encodeURIComponent(cleanText)}`);
       if (!res.ok) return "";
       const data = await res.json();
       if (data && data[0] && data[0][0] && data[0][0][0]) {
@@ -683,7 +704,7 @@ export default function AdminDashboard() {
   const toggleApplyDiscount = async (product: Product) => {
     try {
       const newStatus = product.apply_discount === 1 ? false : true;
-      const res = await fetch(`${apiUrl}/api/products/${product.id}/toggle-discount`, {
+      const res = await fetchWithAuth(`${apiUrl}/api/products/${product.id}/toggle-discount`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ applyDiscount: newStatus }),
@@ -701,12 +722,12 @@ export default function AdminDashboard() {
     try {
       setLoading(true);
       const [catsRes, prodsRes, diagRes, plRes, ordersRes, contactsRes] = await Promise.all([
-        fetch(`${apiUrl}/api/categories`),
-        fetch(`${apiUrl}/api/products`),
-        fetch(`${apiUrl}/api/diagnostics`).catch(() => null),
-        fetch(`${apiUrl}/api/settings/price-list`).catch(() => null),
-        fetch(`${apiUrl}/api/orders`).catch(() => null),
-        fetch(`${apiUrl}/api/contacts`).catch(() => null),
+        fetchWithAuth(`${apiUrl}/api/categories`),
+        fetchWithAuth(`${apiUrl}/api/products`),
+        fetchWithAuth(`${apiUrl}/api/diagnostics`).catch(() => null),
+        fetchWithAuth(`${apiUrl}/api/settings/price-list`).catch(() => null),
+        fetchWithAuth(`${apiUrl}/api/orders`).catch(() => null),
+        fetchWithAuth(`${apiUrl}/api/contacts`).catch(() => null),
       ]);
 
       if (!catsRes.ok || !prodsRes.ok) throw new Error("Failed to fetch data");
@@ -714,7 +735,7 @@ export default function AdminDashboard() {
       const catsData = await catsRes.json();
       const prodsData = await prodsRes.json();
 
-      setCategories(catsData);
+      setCategories(catsData.sort((a: any, b: any) => a.id - b.id));
       setProducts(prodsData);
 
       if (diagRes && diagRes.ok) {
@@ -749,7 +770,7 @@ export default function AdminDashboard() {
     if (orderToDelete === null) return;
     
     try {
-      const res = await fetch(`${apiUrl}/api/orders/${orderToDelete}`, {
+      const res = await fetchWithAuth(`${apiUrl}/api/orders/${orderToDelete}`, {
         method: 'DELETE',
       });
       if (res.ok) {
@@ -771,7 +792,7 @@ export default function AdminDashboard() {
     if (!confirm(`Are you sure you want to delete ${selectedProductIds.length} selected products?`)) return;
 
     try {
-      const res = await fetch(`${apiUrl}/api/products/bulk-delete`, {
+      const res = await fetchWithAuth(`${apiUrl}/api/products/bulk-delete`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ids: selectedProductIds })
@@ -808,7 +829,7 @@ export default function AdminDashboard() {
       }
 
       const deletePromises = customerOrders.map(order => 
-        fetch(`${apiUrl}/api/orders/${order.id}`, { method: 'DELETE' })
+        fetchWithAuth(`${apiUrl}/api/orders/${order.id}`, { method: 'DELETE' })
       );
       
       const results = await Promise.all(deletePromises);
@@ -834,7 +855,7 @@ export default function AdminDashboard() {
   const confirmDeleteContact = async () => {
     if (contactToDelete === null) return;
     try {
-      const res = await fetch(`${apiUrl}/api/contacts/${contactToDelete}`, { method: "DELETE" });
+      const res = await fetchWithAuth(`${apiUrl}/api/contacts/${contactToDelete}`, { method: "DELETE" });
       if (!res.ok) throw new Error("Failed to delete contact message");
       setContacts(prev => prev.filter(c => c.id !== contactToDelete));
       setUnreadContacts(prev => prev.filter(c => c.id !== contactToDelete));
@@ -848,7 +869,7 @@ export default function AdminDashboard() {
 
   const handleMarkContactRead = async (contactId: number) => {
     try {
-      const res = await fetch(`${apiUrl}/api/contacts/${contactId}/mark-read`, { method: "PUT" });
+      const res = await fetchWithAuth(`${apiUrl}/api/contacts/${contactId}/mark-read`, { method: "PUT" });
       if (!res.ok) throw new Error("Failed to mark read");
       setContacts(prev => prev.map(c => c.id === contactId ? { ...c, is_read: 1 } : c));
       setUnreadContacts(prev => prev.filter(c => c.id !== contactId));
@@ -859,7 +880,7 @@ export default function AdminDashboard() {
 
   const handleMarkAllContactsRead = async () => {
     try {
-      const res = await fetch(`${apiUrl}/api/contacts/mark-read`, { method: "PUT" });
+      const res = await fetchWithAuth(`${apiUrl}/api/contacts/mark-read`, { method: "PUT" });
       if (!res.ok) throw new Error("Failed to mark all read");
       setContacts(prev => prev.map(c => ({ ...c, is_read: 1 })));
       setUnreadContacts([]);
@@ -888,7 +909,7 @@ export default function AdminDashboard() {
         });
       }
 
-      const res = await fetch(`${apiUrl}/api/orders/${orderId}/status`, {
+      const res = await fetchWithAuth(`${apiUrl}/api/orders/${orderId}/status`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ status: newStatus })
@@ -918,7 +939,7 @@ export default function AdminDashboard() {
         setViewingOrder({ ...viewingOrder, payment_status: newStatus });
       }
 
-      const res = await fetch(`${apiUrl}/api/orders/${orderId}/payment-status`, {
+      const res = await fetchWithAuth(`${apiUrl}/api/orders/${orderId}/payment-status`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ payment_status: newStatus })
@@ -952,7 +973,7 @@ export default function AdminDashboard() {
 
     setUploadingPdf(true);
     try {
-      const res = await fetch(`${apiUrl}/api/settings/price-list/upload`, {
+      const res = await fetchWithAuth(`${apiUrl}/api/settings/price-list/upload`, {
         method: "POST",
         body: formData,
       });
@@ -974,7 +995,7 @@ export default function AdminDashboard() {
     if (!confirm("Are you sure you want to delete the price list PDF?")) return;
 
     try {
-      const res = await fetch(`${apiUrl}/api/settings/price-list`, {
+      const res = await fetchWithAuth(`${apiUrl}/api/settings/price-list`, {
         method: "DELETE",
       });
 
@@ -992,12 +1013,18 @@ export default function AdminDashboard() {
   useEffect(() => {
     setIsMounted(true);
     const authStatus = localStorage.getItem("admin_authenticated");
-    if (authStatus === "true") {
+    const token = localStorage.getItem("admin_token");
+    if (authStatus === "true" && token) {
       setIsAuthenticated(true);
     } else {
+      localStorage.removeItem("admin_authenticated");
+      localStorage.removeItem("admin_token");
+      setIsAuthenticated(false);
       setLoading(false);
     }
-  }, []);
+
+    
+  }, [apiUrl]);
 
   // Fetch data only if authenticated
   useEffect(() => {
@@ -1006,7 +1033,7 @@ export default function AdminDashboard() {
     }
   }, [isAuthenticated]);
 
-  const handleLoginSubmit = (e: React.FormEvent) => {
+  const handleLoginSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     let hasError = false;
 
@@ -1017,16 +1044,10 @@ export default function AdminDashboard() {
     if (!usernameInput.trim()) {
       setUsernameError("Username is required");
       hasError = true;
-    } else if (usernameInput.trim() !== "admin") {
-      setUsernameError("Invalid admin username");
-      hasError = true;
     }
 
     if (!passwordInput) {
       setPasswordError("Password is required");
-      hasError = true;
-    } else if (passwordInput !== "admin123") {
-      setPasswordError("Incorrect account password");
       hasError = true;
     }
 
@@ -1037,21 +1058,36 @@ export default function AdminDashboard() {
     }
 
     setIsLoggingIn(true);
-    // Render the Dashboard under the transition screen early (at 1100ms) to load all categories/products
-    setTimeout(() => {
-      localStorage.setItem("admin_authenticated", "true");
-      setIsAuthenticated(true);
-    }, 1100);
-
-    // Fade out and unmount the transition curtain once the dashboard data is ready
-    setTimeout(() => {
+    try {
+      const res = await fetchWithAuth(`${apiUrl}/api/admin/login`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ username: usernameInput, password: passwordInput })
+      });
+      const data = await res.json();
+      if (res.ok && data.token) {
+        localStorage.setItem("admin_token", data.token);
+        localStorage.setItem("admin_authenticated", "true");
+        setTimeout(() => setIsAuthenticated(true), 1100);
+        setTimeout(() => {
+          setIsLoggingIn(false);
+          showToast("Welcome back, Administrator!", "success");
+        }, 2450);
+      } else {
+        setLoginError(true);
+        setPasswordError(data.error || "Invalid credentials");
+        setIsLoggingIn(false);
+      }
+    } catch (err) {
+      setLoginError(true);
+      setPasswordError("Network error. Could not connect to server.");
       setIsLoggingIn(false);
-      showToast("Welcome back, Administrator!", "success");
-    }, 2450);
+    }
   };
 
   const handleLogout = () => {
     localStorage.removeItem("admin_authenticated");
+    localStorage.removeItem("admin_token");
     setIsAuthenticated(false);
     setUsernameInput("admin");
     setPasswordInput("admin123");
@@ -1073,7 +1109,7 @@ export default function AdminDashboard() {
     if (!finalName) return;
 
     try {
-      const res = await fetch(`${apiUrl}/api/categories`, {
+      const res = await fetchWithAuth(`${apiUrl}/api/categories`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name: finalName }),
@@ -1082,7 +1118,7 @@ export default function AdminDashboard() {
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Failed to create category");
 
-      setCategories((prev) => [...prev, data].sort((a, b) => a.name.localeCompare(b.name)));
+      setCategories((prev) => [...prev, data].sort((a, b) => a.id - b.id));
       setNewCategoryName("");
       setNewCatTamilTranslation("");
       document.getElementById("add-category-modal")?.classList.add("hidden");
@@ -1100,7 +1136,7 @@ export default function AdminDashboard() {
     if (!finalName) return;
 
     try {
-      const res = await fetch(`${apiUrl}/api/categories/${editingCategory.id}`, {
+      const res = await fetchWithAuth(`${apiUrl}/api/categories/${editingCategory.id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name: finalName }),
@@ -1112,7 +1148,7 @@ export default function AdminDashboard() {
       setCategories((prev) =>
         prev
           .map((cat) => (cat.id === editingCategory.id ? data : cat))
-          .sort((a, b) => a.name.localeCompare(b.name))
+          .sort((a, b) => a.id - b.id)
       );
       setEditingCategory(null);
       setEditCategoryName("");
@@ -1130,7 +1166,7 @@ export default function AdminDashboard() {
     const { id, name } = categoryToDelete;
 
     try {
-      const res = await fetch(`${apiUrl}/api/categories/${id}`, { method: "DELETE" });
+      const res = await fetchWithAuth(`${apiUrl}/api/categories/${id}`, { method: "DELETE" });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Failed to delete category");
 
@@ -1221,7 +1257,7 @@ export default function AdminDashboard() {
 
     try {
       setUploadingImage(true);
-      const res = await fetch(`${apiUrl}/api/upload`, {
+      const res = await fetchWithAuth(`${apiUrl}/api/upload`, {
         method: "POST",
         body: formData,
       });
@@ -1273,7 +1309,7 @@ export default function AdminDashboard() {
         throw new Error("No data found in the uploaded file");
       }
 
-      const res = await fetch(`${apiUrl}/api/products/bulk`, {
+      const res = await fetchWithAuth(`${apiUrl}/api/products/bulk`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(json),
@@ -1326,7 +1362,7 @@ export default function AdminDashboard() {
       const url = editingProduct ? `${apiUrl}/api/products/${editingProduct.id}` : `${apiUrl}/api/products`;
       const method = editingProduct ? "PUT" : "POST";
 
-      const res = await fetch(url, {
+      const res = await fetchWithAuth(url, {
         method,
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
@@ -1353,7 +1389,7 @@ export default function AdminDashboard() {
     const { id, name } = productToDelete;
 
     try {
-      const res = await fetch(`${apiUrl}/api/products/${id}`, { method: "DELETE" });
+      const res = await fetchWithAuth(`${apiUrl}/api/products/${id}`, { method: "DELETE" });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Failed to delete product");
 
@@ -1554,7 +1590,7 @@ export default function AdminDashboard() {
     const newTotalSavings = newTotalOriginal > newTotalOffer ? newTotalOriginal - newTotalOffer : 0;
     
     try {
-      const res = await fetch(`${apiUrl}/api/orders/${viewingOrder.id}/items`, {
+      const res = await fetchWithAuth(`${apiUrl}/api/orders/${viewingOrder.id}/items`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ 
@@ -1591,7 +1627,7 @@ export default function AdminDashboard() {
     const newTotalSavings = newTotalOriginal > newTotalOffer ? newTotalOriginal - newTotalOffer : 0;
     
     try {
-      const res = await fetch(`${apiUrl}/api/orders/${viewingOrder.id}/items`, {
+      const res = await fetchWithAuth(`${apiUrl}/api/orders/${viewingOrder.id}/items`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ 
@@ -1895,7 +1931,7 @@ export default function AdminDashboard() {
 
     setIsApplyingDiscount(true);
     try {
-      const res = await fetch(`${apiUrl}/api/products/global-discount`, {
+      const res = await fetchWithAuth(`${apiUrl}/api/products/global-discount`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ discountPercentage: discount }),
@@ -3865,7 +3901,7 @@ export default function AdminDashboard() {
                                       }))
                                     };
 
-                                    const res = await fetch(`${apiUrl}/api/orders`, {
+                                    const res = await fetchWithAuth(`${apiUrl}/api/orders`, {
                                       method: 'POST',
                                       headers: { 'Content-Type': 'application/json' },
                                       body: JSON.stringify(orderData)
