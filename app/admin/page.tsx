@@ -484,9 +484,28 @@ export default function AdminDashboard() {
   const [openDropdownId, setOpenDropdownId] = useState<number | null>(null);
   const [updatingStatusForId, setUpdatingStatusForId] = useState<number | null>(null);
   const [viewingOrder, setViewingOrder] = useState<any | null>(null);
+
+  const [packingChargeType, setPackingChargeType] = useState<"amount" | "percentage">("percentage");
+  const [packingChargeValue, setPackingChargeValue] = useState<string>("3");
+
+  const handleViewOrder = (order: any) => {
+    setViewingOrder(order);
+    setPackingChargeType("percentage");
+    setPackingChargeValue("3");
+  };
+
+  const getPackingChargeAmtStr = () => {
+    const val = Number(packingChargeValue || 0);
+    if (val === 0) return "0";
+    if (packingChargeType === "percentage") {
+      const orderAmt = Number(viewingOrder?.totalAmount || viewingOrder?.total_amount || 0);
+      return Math.round((orderAmt * val) / 100).toString();
+    }
+    return val.toString();
+  };
+
   const [additionalDiscountType, setAdditionalDiscountType] = useState<"amount" | "percentage">("amount");
   const [additionalDiscountValue, setAdditionalDiscountValue] = useState<string>("");
-  const [packingCharge, setPackingCharge] = useState<string>("");
   const [selectedProductId, setSelectedProductId] = useState<number | "">("");
   const [addQty, setAddQty] = useState<string>("1");
   const [stagedProducts, setStagedProducts] = useState<{productId: string, qty: string}[]>([{productId: "", qty: "1"}]);
@@ -3005,7 +3024,7 @@ export default function AdminDashboard() {
                                       </td>
                                       <td className="px-6 py-5 text-right">
                                         <div className="flex justify-end gap-2 transition-opacity">
-                                          <button onClick={() => setViewingOrder(order)} className="w-9 h-9 bg-white text-emerald-600 border border-slate-200 rounded-lg flex items-center justify-center hover:bg-emerald-50 hover:border-emerald-200 shadow-sm transition-all" title="View Details">
+                                          <button onClick={() => handleViewOrder(order)} className="w-9 h-9 bg-white text-emerald-600 border border-slate-200 rounded-lg flex items-center justify-center hover:bg-emerald-50 hover:border-emerald-200 shadow-sm transition-all" title="View Details">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
                                               <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
                                               <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
@@ -3130,7 +3149,7 @@ export default function AdminDashboard() {
                                       </div>
                                     </div>
                                     <div className="flex justify-end gap-2 mt-2">
-                                      <button onClick={() => setViewingOrder(order)} className="w-9 h-9 bg-white text-emerald-600 border border-slate-200 rounded-lg flex items-center justify-center hover:bg-emerald-50 shadow-sm" title="View Details">
+                                      <button onClick={() => handleViewOrder(order)} className="w-9 h-9 bg-white text-emerald-600 border border-slate-200 rounded-lg flex items-center justify-center hover:bg-emerald-50 shadow-sm" title="View Details">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
                                           <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
                                           <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
@@ -3735,7 +3754,8 @@ export default function AdminDashboard() {
                                 setBillingCart([]);
                                 setBillingCustomer({ name: '', phone: '', email: '', city: '', address: '' });
                                 setAdditionalDiscountValue('');
-                                setPackingCharge('');
+                                setPackingChargeValue('3');
+                                setPackingChargeType('percentage');
                                 setAdditionalDiscountType('amount');
                                 showToast("Bill cleared completely", "success");
                               }}
@@ -3810,7 +3830,8 @@ export default function AdminDashboard() {
                             
                             const extraVal = Number(additionalDiscountValue || 0);
                             const extraAmt = additionalDiscountType === "percentage" ? (total * extraVal) / 100 : extraVal;
-                            const packChg = Number(packingCharge || 0);
+                            const packChgVal = Number(packingChargeValue || 0);
+                            const packChg = packingChargeType === "percentage" ? (total * packChgVal) / 100 : packChgVal;
                             
                             const finalTotal = Math.max(0, total - extraAmt + packChg);
                             const finalSavings = (subtotal - total) + extraAmt;
@@ -3848,14 +3869,26 @@ export default function AdminDashboard() {
                                   {/* Packing Charges */}
                                   <div className="flex bg-white border border-slate-200 rounded-lg focus-within:ring-2 focus-within:ring-emerald-500/20 focus-within:border-emerald-500 transition-all items-center pl-2.5 shadow-sm">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-3.5 h-3.5 text-emerald-500 flex-shrink-0"><path fillRule="evenodd" d="M11.986 3H12a2 2 0 0 1 2 2v6a2 2 0 0 1-1.5 1.937V7A2.5 2.5 0 0 0 10 4.5H4.063A2 2 0 0 1 6 3h.014A2.25 2.25 0 0 1 8.25 1h3.5a2.25 2.25 0 0 1 2.236 2ZM10.5 4v-.75a.75.75 0 0 0-.75-.75h-3.5a.75.75 0 0 0-.75.75V4h5Z" clipRule="evenodd" /><path fillRule="evenodd" d="M3 6a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H3Zm6 8.5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3Z" clipRule="evenodd" /></svg>
-                                    <span className="text-slate-400 font-bold text-xs pl-1.5 pr-1 py-1.5">₹</span>
+                                    <div className="relative flex items-center ml-1">
+                                      <select 
+                                        value={packingChargeType} 
+                                        onChange={(e) => setPackingChargeType(e.target.value as "amount"|"percentage")}
+                                        className="bg-transparent hover:bg-slate-50 text-slate-600 font-bold text-[11px] rounded pl-2 pr-4 py-1 outline-none cursor-pointer appearance-none transition-colors"
+                                      >
+                                        <option value="amount">₹ Amt</option>
+                                        <option value="percentage">% Pct</option>
+                                      </select>
+                                      <div className="absolute inset-y-0 right-0 pr-1 flex items-center pointer-events-none text-slate-400">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-3 h-3"><path fillRule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" /></svg>
+                                      </div>
+                                    </div>
                                     <div className="w-px h-3.5 bg-slate-200 mx-1"></div>
                                     <input 
                                       type="number" 
                                       min="0"
-                                      placeholder="Packing"
-                                      value={packingCharge}
-                                      onChange={(e) => setPackingCharge(e.target.value)}
+                                      placeholder="Value"
+                                      value={packingChargeValue}
+                                      onChange={(e) => setPackingChargeValue(e.target.value)}
                                       className="w-full bg-transparent text-slate-700 font-bold text-xs px-2 py-1.5 outline-none placeholder:text-slate-400"
                                     />
                                   </div>
@@ -4924,22 +4957,32 @@ export default function AdminDashboard() {
                       <td colSpan={3} className="py-4 px-6 border-r border-slate-200/60">
                         <div className="flex items-center gap-3">
                           <span className="text-sm font-semibold text-slate-500 uppercase tracking-wider flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 text-emerald-500"><path fillRule="evenodd" d="M11.986 3H12a2 2 0 0 1 2 2v6a2 2 0 0 1-1.5 1.937V7A2.5 2.5 0 0 0 10 4.5H4.063A2 2 0 0 1 6 3h.014A2.25 2.25 0 0 1 8.25 1h3.5a2.25 2.25 0 0 1 2.236 2ZM10.5 4v-.75a.75.75 0 0 0-.75-.75h-3.5a.75.75 0 0 0-.75.75V4h5Z" clipRule="evenodd" /><path fillRule="evenodd" d="M3 6a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H3Zm6 8.5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3Z" clipRule="evenodd" /></svg> Packing Charges:</span>
-                          <div className="relative">
-                            <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400 font-bold">₹</span>
+                          <div className="flex items-center gap-2">
+                            <select 
+                              value={packingChargeType} 
+                              onChange={(e) => setPackingChargeType(e.target.value as "amount" | "percentage")} 
+                              className="bg-white border border-slate-200 text-sm font-bold text-slate-800 rounded-xl px-2 py-2.5 outline-none cursor-pointer"
+                            >
+                              <option value="amount">Amount (₹)</option>
+                              <option value="percentage">Percentage (%)</option>
+                            </select>
                             <input 
                               type="number" 
-                              min="0"
-                              placeholder="0.00"
-                              value={packingCharge}
-                              onChange={(e) => setPackingCharge(e.target.value)}
-                              className="w-32 bg-white hover:bg-slate-50 border border-slate-200 text-slate-800 font-bold text-sm rounded-xl pl-8 pr-4 py-2 focus:outline-none focus:ring-4 focus:ring-emerald-500/10 focus:border-emerald-500 shadow-sm transition-all placeholder:text-slate-400 placeholder:font-medium"
+                              value={packingChargeValue} 
+                              onChange={(e) => setPackingChargeValue(e.target.value)} 
+                              className="bg-white border border-slate-200 text-sm font-bold text-slate-800 rounded-xl px-3 py-2.5 w-24 outline-none placeholder:text-slate-400" 
+                              placeholder="Value" 
                             />
                           </div>
                         </div>
                       </td>
                       <td className="py-4 px-6 text-right text-base font-bold tracking-tight text-slate-500">Packing Charges:</td>
                       <td className="py-4 px-6 text-right text-lg font-semibold text-slate-900">
-                        +₹{Number(packingCharge || 0).toFixed(2)}
+                        +₹{(() => {
+                           const pVal = Number(packingChargeValue || 0);
+                           const orderAmt = Number(viewingOrder?.totalAmount || viewingOrder?.total_amount || 0);
+                           return (packingChargeType === "percentage" ? (orderAmt * pVal) / 100 : pVal).toFixed(2);
+                        })()}
                       </td>
                     </tr>
                     <tr className="border-t border-emerald-200 bg-emerald-50">
@@ -4950,8 +4993,10 @@ export default function AdminDashboard() {
                            const extraAmt = additionalDiscountType === "percentage" 
                              ? (viewingOrder.total_amount * extraVal) / 100 
                              : extraVal;
-                           const packChg = Number(packingCharge || 0);
-                           return Math.max(0, viewingOrder.total_amount - extraAmt + packChg).toFixed(2);
+                           const pVal = Number(packingChargeValue || 0);
+                           const orderAmt = Number(viewingOrder?.totalAmount || viewingOrder?.total_amount || 0);
+                           const packChgAmt = packingChargeType === "percentage" ? (orderAmt * pVal) / 100 : pVal;
+                           return Math.max(0, viewingOrder.total_amount - extraAmt + packChgAmt).toFixed(2);
                         })()}
                       </td>
                     </tr>
@@ -5040,19 +5085,30 @@ export default function AdminDashboard() {
                     <span className="text-xs font-semibold text-slate-500 uppercase flex items-center gap-1.5">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 text-emerald-500"><path fillRule="evenodd" d="M11.986 3H12a2 2 0 0 1 2 2v6a2 2 0 0 1-1.5 1.937V7A2.5 2.5 0 0 0 10 4.5H4.063A2 2 0 0 1 6 3h.014A2.25 2.25 0 0 1 8.25 1h3.5a2.25 2.25 0 0 1 2.236 2ZM10.5 4v-.75a.75.75 0 0 0-.75-.75h-3.5a.75.75 0 0 0-.75.75V4h5Z" clipRule="evenodd" /><path fillRule="evenodd" d="M3 6a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H3Zm6 8.5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3Z" clipRule="evenodd" /></svg> Packing Charges
                     </span>
-                    <div className="relative">
-                      <span className="absolute inset-y-0 left-0 pl-3 flex items-center text-slate-400 font-bold">₹</span>
+                    <div className="flex items-center gap-2">
+                      <select 
+                        value={packingChargeType} 
+                        onChange={(e) => setPackingChargeType(e.target.value as "amount" | "percentage")} 
+                        className="bg-white border border-slate-200 text-sm font-bold text-slate-800 rounded-xl px-2 py-2.5 outline-none cursor-pointer"
+                      >
+                        <option value="amount">Amount (₹)</option>
+                        <option value="percentage">Percentage (%)</option>
+                      </select>
                       <input 
                         type="number" 
-                        value={packingCharge} 
-                        onChange={(e) => setPackingCharge(e.target.value)} 
-                        className="bg-white border border-slate-200 text-sm font-bold text-slate-800 rounded-xl pl-8 pr-3 py-2.5 w-full outline-none placeholder:text-slate-400" 
-                        placeholder="0.00" 
+                        value={packingChargeValue} 
+                        onChange={(e) => setPackingChargeValue(e.target.value)} 
+                        className="bg-white border border-slate-200 text-sm font-bold text-slate-800 rounded-xl px-3 py-2.5 w-24 outline-none placeholder:text-slate-400 flex-1" 
+                        placeholder="Value" 
                       />
                     </div>
-                    {Number(packingCharge || 0) > 0 && (
+                    {Number(packingChargeValue || 0) > 0 && (
                       <div className="flex justify-end text-slate-900 font-bold text-sm mt-1">
-                        +₹{Number(packingCharge || 0).toFixed(2)}
+                        +₹{(() => {
+                           const pVal = Number(packingChargeValue || 0);
+                           const orderAmt = Number(viewingOrder?.totalAmount || viewingOrder?.total_amount || 0);
+                           return (packingChargeType === "percentage" ? (orderAmt * pVal) / 100 : pVal).toFixed(2);
+                        })()}
                       </div>
                     )}
                   </div>
@@ -5061,8 +5117,10 @@ export default function AdminDashboard() {
                     <span className="text-2xl font-bold text-emerald-700">₹{(() => {
                       const extraVal = Number(additionalDiscountValue || 0);
                       const extraAmt = additionalDiscountType === "percentage" ? (viewingOrder.total_amount * extraVal) / 100 : extraVal;
-                      const packChg = Number(packingCharge || 0);
-                      return Math.max(0, viewingOrder.total_amount - extraAmt + packChg).toFixed(2);
+                      const pVal = Number(packingChargeValue || 0);
+                      const orderAmt = Number(viewingOrder?.totalAmount || viewingOrder?.total_amount || 0);
+                      const packChgAmt = packingChargeType === "percentage" ? (orderAmt * pVal) / 100 : pVal;
+                      return Math.max(0, viewingOrder.total_amount - extraAmt + packChgAmt).toFixed(2);
                     })()}</span>
                   </div>
                 </div>
@@ -5072,7 +5130,7 @@ export default function AdminDashboard() {
             <div className="bg-slate-50 border-t border-slate-200 p-4 md:px-8 md:py-5 flex flex-col md:flex-row justify-end gap-3 md:gap-4 shrink-0">
 
               <button
-                onClick={() => handlePrintOrder(viewingOrder, additionalDiscountType, additionalDiscountValue, packingCharge)}
+                onClick={() => handlePrintOrder(viewingOrder, additionalDiscountType, additionalDiscountValue, getPackingChargeAmtStr())}
                 className="w-full md:w-auto px-8 py-3.5 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white text-base font-semibold tracking-tight transition-all shadow-lg shadow-emerald-600/20 flex items-center justify-center gap-2 border border-emerald-500/20"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-5 h-5">
