@@ -1084,8 +1084,8 @@ export default function AdminDashboard() {
         body: JSON.stringify({ username: usernameInput, password: passwordInput })
       });
       const data = await res.json();
-      if (res.ok && data.token) {
-        localStorage.setItem("admin_token", data.token);
+      if (res.ok && data.auth) {
+        localStorage.setItem("admin_token", "dummy_token_no_auth_required");
         localStorage.setItem("admin_authenticated", "true");
         setTimeout(() => setIsAuthenticated(true), 1100);
         setTimeout(() => {
