@@ -5139,7 +5139,7 @@ export default function AdminDashboard() {
                 Print / Download PDF
               </button>
               <button
-                onClick={() => { setViewingOrder(null); setAdditionalDiscountValue(""); setPackingCharge(""); setStagedProducts([{productId: "", qty: "1"}]); }}
+                onClick={() => { setViewingOrder(null); setAdditionalDiscountValue(""); setPackingChargeValue("3"); setPackingChargeType("percentage"); setStagedProducts([{productId: "", qty: "1"}]); }}
                 className="w-full md:w-auto px-8 py-3.5 rounded-xl bg-white border border-slate-300 hover:bg-slate-50 hover:border-slate-400 text-base font-semibold tracking-tight text-slate-700 transition-all shadow-sm flex items-center justify-center"
               >
                 Close View
