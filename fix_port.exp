@@ -1,0 +1,15 @@
+#!/usr/bin/expect -f
+set timeout -1
+set password "Prasath@1990"
+set ip "103.191.208.98"
+
+puts "Killing process on port 3001 and restarting pm2..."
+spawn ssh -o StrictHostKeyChecking=no root@$ip "fuser -k 3001/tcp || true && pm2 restart gurupriya_frontend"
+expect {
+    "password:" {
+        send "$password\r"
+        exp_continue
+    }
+    eof
+}
+puts "Complete."

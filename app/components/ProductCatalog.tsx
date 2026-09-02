@@ -31,6 +31,7 @@ export default function ProductCatalog({ priceListUrl = "" }: ProductCatalogProp
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
   const [activeFilter, setActiveFilter] = useState("All");
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const { cartItems, addToCart, updateQuantity, removeFromCart } = useCart();
   const router = useRouter();
 
@@ -209,7 +210,7 @@ export default function ProductCatalog({ priceListUrl = "" }: ProductCatalogProp
                 </div>
 
                 {/* ═══ Table Header (Desktop Only) ═══ */}
-                <div className="hidden md:grid md:grid-cols-[80px_1fr_140px_120px_130px] lg:grid-cols-[90px_1fr_150px_130px_150px] items-center gap-4 px-6 lg:px-8 py-3.5 bg-gradient-to-r from-emerald-600 via-emerald-500 to-emerald-600 text-xs font-semibold text-white uppercase tracking-wider shadow-sm border-b-2 border-festive-gold/30">
+                <div className="hidden md:grid md:grid-cols-[90px_1fr_140px_120px_130px] lg:grid-cols-[100px_1fr_150px_130px_150px] items-center gap-4 px-6 lg:px-8 py-3.5 bg-gradient-to-r from-emerald-600 via-emerald-500 to-emerald-600 text-xs font-semibold text-white uppercase tracking-wider shadow-sm border-b-2 border-festive-gold/30">
                   <span className="text-center drop-shadow-sm">Image</span>
                   <span className="drop-shadow-sm">Product Name</span>
                   <span className="text-right drop-shadow-sm">MRP</span>
@@ -240,7 +241,10 @@ export default function ProductCatalog({ priceListUrl = "" }: ProductCatalogProp
                              )}
                              
                              {/* Image */}
-                             <div className="w-[80px] h-[80px] sm:w-[85px] sm:h-[85px] rounded-lg bg-gray-50 border border-gray-100 flex items-center justify-center p-1.5 overflow-hidden shrink-0 relative">
+                             <div 
+                               className="w-[85px] h-[85px] sm:w-[95px] sm:h-[95px] rounded-lg bg-gray-50 border border-gray-100 flex items-center justify-center p-0.5 sm:p-1 overflow-hidden shrink-0 relative cursor-pointer"
+                               onClick={() => setSelectedImage(prod.image || "/assets/images/placeholder.png")}
+                             >
                                <img src={prod.image || "/assets/images/placeholder.png"} alt={cleanName} loading="lazy" decoding="async" className="w-full h-full object-contain" />
                              </div>
 
@@ -284,9 +288,12 @@ export default function ProductCatalog({ priceListUrl = "" }: ProductCatalogProp
                           </div>
 
                           {/* --- DESKTOP VIEW --- */}
-                          <div className="hidden md:grid group relative grid-cols-[80px_1fr_140px_120px_130px] lg:grid-cols-[90px_1fr_150px_130px_150px] items-center gap-4 px-6 lg:px-8 py-3.5">
+                          <div className="hidden md:grid group relative grid-cols-[90px_1fr_140px_120px_130px] lg:grid-cols-[100px_1fr_150px_130px_150px] items-center gap-4 px-6 lg:px-8 py-3.5">
                             {/* Product Image */}
-                            <div className="w-[80px] lg:w-[90px] h-[70px] lg:h-[75px] rounded-lg bg-gray-50 border border-gray-100 flex items-center justify-center p-1.5 overflow-hidden flex-shrink-0 group-hover:border-festive-gold/30 transition-all mx-auto">
+                            <div 
+                              className="w-[90px] lg:w-[100px] h-[80px] lg:h-[90px] rounded-lg bg-gray-50 border border-gray-100 flex items-center justify-center p-1 overflow-hidden flex-shrink-0 group-hover:border-festive-gold/30 transition-all mx-auto cursor-pointer"
+                              onClick={() => setSelectedImage(prod.image || "/assets/images/placeholder.png")}
+                            >
                               <img src={prod.image || "/assets/images/placeholder.png"} alt={cleanName} loading="lazy" decoding="async" className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500" />
                             </div>
 
@@ -358,6 +365,16 @@ export default function ProductCatalog({ priceListUrl = "" }: ProductCatalogProp
           </div>
         )}
       </div>
+
+      {/* Image Modal */}
+      {selectedImage && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm" onClick={() => setSelectedImage(null)}>
+          <div className="relative max-w-3xl max-h-[90vh] w-full flex items-center justify-center" onClick={(e) => e.stopPropagation()}>
+            <button onClick={() => setSelectedImage(null)} className="absolute -top-12 right-0 text-white hover:text-festive-gold text-4xl font-bold transition-colors cursor-pointer">&times;</button>
+            <img src={selectedImage} alt="Product full view" className="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl bg-white p-2" />
+          </div>
+        </div>
+      )}
     </section>
   );
 }

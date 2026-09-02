@@ -1,0 +1,16 @@
+#!/usr/bin/expect -f
+set timeout -1
+set password "Prasath@1990"
+set ip "103.191.208.98"
+set dest_dir "/var/www/gurupriyapyropark/frontend/"
+
+puts "Rebuilding sqlite3 and running build..."
+spawn ssh -o StrictHostKeyChecking=no root@$ip "cd $dest_dir && npm rebuild sqlite3 && npm run build && pm2 restart all"
+expect {
+    "password:" {
+        send "$password\r"
+        exp_continue
+    }
+    eof
+}
+puts "Complete."
