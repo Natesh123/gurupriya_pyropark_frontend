@@ -4,7 +4,7 @@ import { useCart } from "../context/CartContext";
 import { usePathname } from "next/navigation";
 
 export default function FloatingCart() {
-  const { cartCount, cartTotal, setCartOpen, isCartOpen } = useCart();
+  const { cartCount, finalTotal, setCartOpen, isCartOpen } = useCart();
   const [isVisible, setIsVisible] = useState(false);
   const pathname = usePathname();
 
@@ -25,7 +25,7 @@ export default function FloatingCart() {
           </span>
           <div className="flex items-end gap-1">
              <span className="text-xl font-semibold tracking-wider leading-none text-festive-gold">
-               ₹{cartTotal}
+               ₹{finalTotal}
              </span>
              <span className="text-[9px] font-bold text-white/50 mb-0.5 ml-1">PLUS TAXES</span>
           </div>

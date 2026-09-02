@@ -1,0 +1,27 @@
+#!/usr/bin/expect -f
+set timeout -1
+set password "Prasath@1990"
+set ip "103.191.208.98"
+set dest_dir "/var/www/gurupriyapyropark/frontend"
+
+puts "Deploying modified files..."
+spawn rsync -avR -e "ssh -o StrictHostKeyChecking=no" app/context/CartContext.tsx app/components/CartDrawer.tsx app/components/FloatingCart.tsx app/admin/page.tsx root@$ip:$dest_dir/
+expect {
+    "password:" {
+        send "$password\r"
+        exp_continue
+    }
+    eof
+}
+
+puts "Building and restarting pm2..."
+spawn ssh -o StrictHostKeyChecking=no root@$ip "cd $dest_dir && npm run build && pm2 restart all"
+expect {
+    "password:" {
+        send "$password\r"
+        exp_continue
+    }
+    eof
+}
+
+puts "Done!"

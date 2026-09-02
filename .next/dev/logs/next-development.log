@@ -1,14 +1,31 @@
-[00:00:03.215] Server  LOG      ✓ Ready in 2.5s
-[00:00:08.392] Server  LOG      ○ Compiling / ...
-[00:00:11.254] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:11.695] Browser WARN    Image with src "/assets/images/gurupriya_pyropark_logo_primary.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:11.695] Browser WARN    Image with src "/assets/images/gallery/firework_1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:11.695] Browser WARN    Image with src "/assets/images/gallery/firework_2.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:11.695] Browser WARN    Image with src "/assets/images/gallery/firework_3.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:11.695] Browser WARN    Image with src "/assets/images/gallery/firework_4.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:12:21.093] Server  LOG      ✓ Compiled in 1295ms
-[00:12:48.731] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:12:49.520] Browser WARN    Image with src "/assets/images/gurupriya_pyropark_logo_primary.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[03:00:59.045] Server  LOG      ✓ Compiled in 524ms
-[03:10:50.062] Server  LOG      ✓ Compiled in 468ms
-[03:11:05.765] Server  LOG      ✓ Compiled in 248ms
+[00:00:04.244] Server  LOG      ✓ Ready in 3.4s
+[00:00:10.130] Server  LOG      ○ Compiling / ...
+[00:00:11.267] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:11.527] Browser WARN    Image with src "/assets/images/gurupriya_pyropark_logo_primary.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:11.527] Browser WARN    Image with src "/assets/images/gallery/firework_1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:11.527] Browser WARN    Image with src "/assets/images/gallery/firework_2.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:11.527] Browser WARN    Image with src "/assets/images/gallery/firework_3.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:11.527] Browser WARN    Image with src "/assets/images/gallery/firework_4.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:01:53.117] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:53.654] Browser WARN    Image with src "/assets/images/gurupriya_pyropark_logo_primary.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:01:53.654] Browser WARN    Image with src "/assets/images/gallery/firework_1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:01:53.654] Browser WARN    Image with src "/assets/images/gallery/firework_2.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:01:53.654] Browser WARN    Image with src "/assets/images/gallery/firework_3.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:01:53.654] Browser WARN    Image with src "/assets/images/gallery/firework_4.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:01:58.554] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:11.368] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/context/CartContext.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:02:11.370] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/context/CartContext.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:02:11.739] Server  LOG      ✓ Compiled in 547ms
+[00:02:13.332] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:14.322] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:16.085] Browser WARN    Image with src "/assets/images/gurupriya_pyropark_logo_primary.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:16.085] Browser WARN    Image with src "/assets/images/gallery/firework_1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:16.085] Browser WARN    Image with src "/assets/images/gallery/firework_2.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:16.085] Browser WARN    Image with src "/assets/images/gallery/firework_3.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:16.085] Browser WARN    Image with src "/assets/images/gallery/firework_4.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:16.085] Browser WARN    Image with src "/assets/images/gallery/firework_2.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:02:32.232] Server  LOG      ✓ Compiled in 268ms
+[00:02:50.906] Server  LOG      ✓ Compiled in 153ms
+[00:04:40.686] Server  LOG      ✓ Compiled in 427ms
+[00:07:54.292] Server  LOG      ✓ Compiled in 965ms

@@ -3872,8 +3872,8 @@ export default function AdminDashboard() {
                                     <div className="relative flex items-center ml-1">
                                       <select 
                                         value={packingChargeType} 
-                                        onChange={(e) => setPackingChargeType(e.target.value as "amount"|"percentage")}
-                                        className="bg-transparent hover:bg-slate-50 text-slate-600 font-bold text-[11px] rounded pl-2 pr-4 py-1 outline-none cursor-pointer appearance-none transition-colors"
+                                        disabled
+                                        className="bg-transparent text-slate-500 font-bold text-[11px] rounded pl-2 pr-4 py-1 outline-none appearance-none cursor-not-allowed"
                                       >
                                         <option value="amount">₹ Amt</option>
                                         <option value="percentage">% Pct</option>
@@ -3888,8 +3888,8 @@ export default function AdminDashboard() {
                                       min="0"
                                       placeholder="Value"
                                       value={packingChargeValue}
-                                      onChange={(e) => setPackingChargeValue(e.target.value)}
-                                      className="w-full bg-transparent text-slate-700 font-bold text-xs px-2 py-1.5 outline-none placeholder:text-slate-400"
+                                      readOnly
+                                      className="w-full bg-transparent text-slate-500 font-bold text-xs px-2 py-1.5 outline-none cursor-not-allowed"
                                     />
                                   </div>
                                 </div>
@@ -4960,8 +4960,8 @@ export default function AdminDashboard() {
                           <div className="flex items-center gap-2">
                             <select 
                               value={packingChargeType} 
-                              onChange={(e) => setPackingChargeType(e.target.value as "amount" | "percentage")} 
-                              className="bg-white border border-slate-200 text-sm font-bold text-slate-800 rounded-xl px-2 py-2.5 outline-none cursor-pointer"
+                              disabled
+                              className="bg-slate-50 border border-slate-200 text-sm font-bold text-slate-500 rounded-xl px-2 py-2.5 outline-none cursor-not-allowed"
                             >
                               <option value="amount">Amount (₹)</option>
                               <option value="percentage">Percentage (%)</option>
@@ -4969,8 +4969,8 @@ export default function AdminDashboard() {
                             <input 
                               type="number" 
                               value={packingChargeValue} 
-                              onChange={(e) => setPackingChargeValue(e.target.value)} 
-                              className="bg-white border border-slate-200 text-sm font-bold text-slate-800 rounded-xl px-3 py-2.5 w-24 outline-none placeholder:text-slate-400" 
+                              readOnly
+                              className="bg-slate-50 border border-slate-200 text-sm font-bold text-slate-500 rounded-xl px-3 py-2.5 w-24 outline-none cursor-not-allowed" 
                               placeholder="Value" 
                             />
                           </div>
@@ -5088,8 +5088,8 @@ export default function AdminDashboard() {
                     <div className="flex items-center gap-2">
                       <select 
                         value={packingChargeType} 
-                        onChange={(e) => setPackingChargeType(e.target.value as "amount" | "percentage")} 
-                        className="bg-white border border-slate-200 text-sm font-bold text-slate-800 rounded-xl px-2 py-2.5 outline-none cursor-pointer"
+                        disabled
+                        className="bg-slate-50 border border-slate-200 text-sm font-bold text-slate-500 rounded-xl px-2 py-2.5 outline-none cursor-not-allowed"
                       >
                         <option value="amount">Amount (₹)</option>
                         <option value="percentage">Percentage (%)</option>
@@ -5097,8 +5097,8 @@ export default function AdminDashboard() {
                       <input 
                         type="number" 
                         value={packingChargeValue} 
-                        onChange={(e) => setPackingChargeValue(e.target.value)} 
-                        className="bg-white border border-slate-200 text-sm font-bold text-slate-800 rounded-xl px-3 py-2.5 w-24 outline-none placeholder:text-slate-400 flex-1" 
+                        readOnly
+                        className="bg-slate-50 border border-slate-200 text-sm font-bold text-slate-500 rounded-xl px-3 py-2.5 w-24 outline-none flex-1 cursor-not-allowed" 
                         placeholder="Value" 
                       />
                     </div>

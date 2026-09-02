@@ -188,6 +188,8 @@ function CartProvider({ children }) {
     };
     const cartCount = cartItems.reduce((acc, item)=>acc + item.quantity, 0);
     const cartTotal = cartItems.reduce((acc, item)=>acc + item.price * item.quantity, 0);
+    const packingCharges = Math.round(cartTotal * 0.03);
+    const finalTotal = cartTotal + packingCharges;
     const cartOriginalTotal = cartItems.reduce((acc, item)=>acc + item.originalPrice * item.quantity, 0);
     const cartDiscountableOriginalTotal = cartItems.reduce((acc, item)=>acc + (item.originalPrice > item.price ? item.originalPrice * item.quantity : 0), 0);
     const cartSavings = cartOriginalTotal - cartTotal;
@@ -200,6 +202,8 @@ function CartProvider({ children }) {
             clearCart,
             cartCount,
             cartTotal,
+            packingCharges,
+            finalTotal,
             cartOriginalTotal,
             cartDiscountableOriginalTotal,
             cartSavings,
@@ -209,7 +213,7 @@ function CartProvider({ children }) {
         children: children
     }, void 0, false, {
         fileName: "[project]/app/context/CartContext.tsx",
-        lineNumber: 108,
+        lineNumber: 112,
         columnNumber: 5
     }, this);
 }

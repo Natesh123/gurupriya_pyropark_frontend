@@ -1,0 +1,27 @@
+#!/usr/bin/expect -f
+set timeout -1
+set password "Prasath@1990"
+set ip "103.191.208.98"
+set dest_dir "/var/www/gurupriyapyropark/frontend/"
+
+puts "Deploying modified files using rsync..."
+spawn rsync -avz --exclude="node_modules/" --exclude=".git/" --exclude=".next/" -e "ssh -o StrictHostKeyChecking=no" /Users/balaji/Documents/Natesh/Gurupriya\ Pyropark/gurupriya_pyropark_frontend/ root@$ip:$dest_dir
+expect {
+    "password:" {
+        send "$password\r"
+        exp_continue
+    }
+    eof
+}
+
+puts "Building and restarting pm2 on server..."
+spawn ssh -o StrictHostKeyChecking=no root@$ip "cd $dest_dir && npm run build && pm2 restart all"
+expect {
+    "password:" {
+        send "$password\r"
+        exp_continue
+    }
+    eof
+}
+
+puts "Deployment complete."

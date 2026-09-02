@@ -11,6 +11,8 @@ export default function CartDrawer() {
     clearCart,
     cartCount,
     cartTotal,
+    packingCharges,
+    finalTotal,
     cartOriginalTotal,
     cartDiscountableOriginalTotal,
     cartSavings,
@@ -71,7 +73,9 @@ export default function CartDrawer() {
         customer_email: customerEmail,
         customer_city: customerCity,
         customer_address: customerAddress,
-        total_amount: cartTotal,
+        total_amount: finalTotal,
+        packing_charges: packingCharges,
+        sub_total: cartTotal,
         total_savings: cartSavings,
         items: cartItems.map(item => ({
           id: item.id,
@@ -303,18 +307,35 @@ export default function CartDrawer() {
         {/* Footer */}
         {cartItems.length > 0 && (
           <div className="bg-white px-6 py-6 border-t border-gray-100 z-10 shadow-[0_-10px_30px_rgba(0,0,0,0.03)]">
-            <div className="mb-5 flex flex-col gap-1">
-              <div className="flex items-baseline gap-3">
-                <span className="text-[#64748B] font-bold uppercase tracking-widest text-sm">TOTAL:</span>
-                <span className="text-3xl font-bold text-[#2A1E5C]">₹{cartTotal}</span>
+            <div className="mb-5 flex flex-col gap-2">
+              <div className="flex items-center justify-between">
+                <span className="text-[#64748B] font-semibold text-sm">Total MRP:</span>
+                <span className="font-bold text-slate-800 line-through">₹{cartOriginalTotal}</span>
               </div>
-              <div className="flex items-center gap-3">
-                <span className="text-[#059669] font-bold text-sm">Savings: ₹{cartSavings}</span>
-                {overallDiscountPercent > 0 && (
-                  <span className="bg-[#ECFDF5] border border-[#A7F3D0] text-[#059669] px-3 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider">
-                    {overallDiscountPercent}% OFF
-                  </span>
-                )}
+              <div className="flex items-center justify-between">
+                <span className="text-[#059669] font-semibold text-sm">Discount Savings:</span>
+                <span className="font-bold text-[#059669]">
+                  - ₹{cartSavings}
+                  {overallDiscountPercent > 0 && (
+                    <span className="ml-2 bg-[#ECFDF5] border border-[#A7F3D0] text-[#059669] px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider">
+                      {overallDiscountPercent}% OFF
+                    </span>
+                  )}
+                </span>
+              </div>
+              <div className="flex items-center justify-between border-t border-gray-100 pt-2 mt-1">
+                <span className="text-[#64748B] font-semibold text-sm">Price After Discount:</span>
+                <span className="font-bold text-slate-800">₹{cartTotal}</span>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-[#64748B] font-semibold text-sm flex items-center gap-1">
+                  Packing Charges <span className="text-[10px] bg-gray-100 px-1.5 py-0.5 rounded text-gray-500">3%</span>
+                </span>
+                <span className="font-bold text-slate-800">+ ₹{packingCharges}</span>
+              </div>
+              <div className="flex items-baseline justify-between mt-1 pt-3 border-t border-gray-100">
+                <span className="text-[#2A1E5C] font-bold uppercase tracking-widest text-sm">FINAL TOTAL:</span>
+                <span className="text-3xl font-bold text-[#2A1E5C]">₹{finalTotal}</span>
               </div>
             </div>
 
@@ -327,9 +348,9 @@ export default function CartDrawer() {
                   >
                     <span className="text-lg leading-none">+</span> ADD MORE
                   </button>
-                  {minOrderValue > 0 && cartTotal < minOrderValue ? (
+                  {minOrderValue > 0 && finalTotal < minOrderValue ? (
                     <div className="w-full py-4 rounded-xl bg-orange-50 text-orange-800 font-bold text-sm border border-orange-200 flex flex-col items-center justify-center text-center">
-                      <span>Min Order: ₹{minOrderValue} (Add ₹{minOrderValue - cartTotal} more)</span>
+                      <span>Min Order: ₹{minOrderValue} (Add ₹{minOrderValue - finalTotal} more)</span>
                     </div>
                   ) : (
                     <button

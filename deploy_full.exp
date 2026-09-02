@@ -1,0 +1,26 @@
+#!/usr/bin/expect -f
+set timeout -1
+set password "Prasath@1990"
+set ip "103.191.208.98"
+
+puts "Deploying full frontend to server..."
+spawn rsync -avz --exclude="node_modules" --exclude=".git" -e "ssh -o StrictHostKeyChecking=no" /Users/balaji/Documents/Natesh/Gurupriya\ Pyropark/gurupriya_pyropark_frontend/ root@$ip:/var/www/gurupriyapyropark/frontend/
+expect {
+    "password:" {
+        send "$password\r"
+        exp_continue
+    }
+    eof
+}
+
+puts "Restarting pm2 on server..."
+spawn ssh -o StrictHostKeyChecking=no root@$ip "cd /var/www/gurupriyapyropark/frontend && pm2 restart all"
+expect {
+    "password:" {
+        send "$password\r"
+        exp_continue
+    }
+    eof
+}
+
+puts "Deployment complete."
