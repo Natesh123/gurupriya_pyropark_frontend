@@ -3,7 +3,8 @@ set timeout -1
 set password "Prasath@1990"
 set ip "103.191.208.98"
 
-spawn ssh -o StrictHostKeyChecking=no root@$ip "netstat -tulpn | grep 3002"
+puts "Checking port 3006..."
+spawn ssh -o StrictHostKeyChecking=no root@$ip "netstat -tulpn | grep 3006 && ps aux | grep 3006"
 expect {
     "password:" {
         send "$password\r"

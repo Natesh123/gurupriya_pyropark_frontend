@@ -1,0 +1,14 @@
+#!/usr/bin/expect -f
+set timeout -1
+set password "Prasath@1990"
+set ip "103.191.208.98"
+
+puts "Fixing PM2..."
+spawn ssh -o StrictHostKeyChecking=no root@$ip "pm2 stop gurupriya_frontend && fuser -k 3006/tcp || true && sleep 2 && pm2 start gurupriya_frontend && pm2 logs gurupriya_frontend --lines 10 --nostream"
+expect {
+    "password:" {
+        send "$password\r"
+        exp_continue
+    }
+    eof
+}

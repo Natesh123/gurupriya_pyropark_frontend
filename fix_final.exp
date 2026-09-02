@@ -1,0 +1,16 @@
+#!/usr/bin/expect -f
+set timeout -1
+set password "Prasath@1990"
+set ip "103.191.208.98"
+set dest_dir "/var/www/gurupriyapyropark/frontend"
+
+puts "Fixing port 3001 and pm2..."
+spawn ssh -o StrictHostKeyChecking=no root@$ip "pm2 delete gurupriya_frontend && fuser -k 3001/tcp || true && cd $dest_dir && pm2 start npm --name 'gurupriya_frontend' -- start -- -p 3001 && pm2 save"
+expect {
+    "password:" {
+        send "$password\r"
+        exp_continue
+    }
+    eof
+}
+puts "Done!"

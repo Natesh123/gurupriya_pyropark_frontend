@@ -3,8 +3,8 @@ set timeout -1
 set password "Prasath@1990"
 set ip "103.191.208.98"
 
-puts "Checking pm2 show..."
-spawn ssh -o StrictHostKeyChecking=no root@$ip "pm2 show gurupriya_frontend && pm2 show vamsi-frontend"
+puts "Killing process on port 3006 and restarting pm2..."
+spawn ssh -o StrictHostKeyChecking=no root@$ip "fuser -k 3006/tcp && pm2 restart gurupriya_frontend"
 expect {
     "password:" {
         send "$password\r"
@@ -12,3 +12,4 @@ expect {
     }
     eof
 }
+puts "Done!"
