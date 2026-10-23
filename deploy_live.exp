@@ -1,0 +1,28 @@
+#!/usr/bin/expect -f
+set timeout 300
+set password "Prasath@1990"
+set ip "103.191.208.98"
+set src "/Users/balaji/Documents/Natesh/Gurupriya Pyropark/gurupriya_pyropark_frontend/"
+set dest "/var/www/gurupriyapyropark/frontend/"
+
+puts ">>> Step 1: Rsyncing frontend files..."
+spawn rsync -avz --exclude=node_modules --exclude=.git --exclude=.next --exclude=run_remote.exp --exclude=deploy_live.exp --exclude=.env* -e "ssh -o StrictHostKeyChecking=no" $src root@$ip:$dest
+expect {
+    "password:" {
+        send "$password\r"
+        exp_continue
+    }
+    eof
+}
+
+puts ">>> Step 2: Installing dependencies, building Next.js and starting PM2..."
+spawn ssh -o StrictHostKeyChecking=no root@$ip "cd $dest && npm install && npm run build && pm2 delete gurupriya-frontend 2>/dev/null; pm2 start npm --name gurupriya-frontend -- start && pm2 save && systemctl reload apache2"
+expect {
+    "password:" {
+        send "$password\r"
+        exp_continue
+    }
+    eof
+}
+
+puts ">>> Deployment complete!"
